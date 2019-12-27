@@ -1,6 +1,7 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+title: Hello World avec un titre plus long
+publicationDate: "2018-05-12"
+updateDate: "2019-06-10"
 ---
 
 This is my first post on my new fake blog! How exciting!
