@@ -3,7 +3,8 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     "./src/**/*.html",
     "./src/**/*.js",
     "./content/**/*.svg",
-    "./static/**/*.svg"
+    "./static/**/*.svg",
+    "gatsby-config.js"
   ],
   defaultExtractor: content => content.match(/[\w-/:%()]+(?<!:)/g) || []
 });
