@@ -36,7 +36,7 @@ function renderProjects(projects) {
       <li className="mt-3" key={index}>
         {project.url.includes("www.louiscuvelier.com") ? (
           <a
-            href={`${project.url}/?utm_source=louiscuvelier.com`}
+            href={`${project.url}`}
             className="btn btn-secondary inline-flex items-center move-up-right"
           >
             {project.title}
@@ -45,7 +45,7 @@ function renderProjects(projects) {
           <a
             href={`${project.url}/?utm_source=louiscuvelier.com`}
             className="btn btn-secondary inline-flex items-center move-up-right"
-            rel={"noreferrer noopener"}
+            rel="noopener noreferrer"
             target="_blank"
           >
             {project.title}

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import IconHome from "../../content/assets/svgs/icon-home.svg";
-import "../styles/global.css";
 import Copyright from "./Copyright";
 
 class Layout extends React.Component {
