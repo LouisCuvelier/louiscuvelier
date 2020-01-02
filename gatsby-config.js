@@ -152,7 +152,7 @@ module.exports = {
         cookieExpires: 33696000,
         transport: "beacon",
         forceSSL: true
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -176,7 +176,7 @@ module.exports = {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
                 <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at overreacted.io. You can read it online by <a href="${siteUrl +
-                edge.node.fields.slug}">clicking here</a>.)</div>
+                  edge.node.fields.slug}">clicking here</a>.)</div>
               `;
 
                 let html = edge.node.html;
@@ -191,7 +191,7 @@ module.exports = {
                   date: edge.node.frontmatter.publicationDate,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': html + postText }],
+                  custom_elements: [{ "content:encoded": html + postText }]
                 });
               });
             },
@@ -199,30 +199,30 @@ module.exports = {
               {
                 allMarkdownRemark(
                   limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] }
+                  sort: { order: DESC, fields: [frontmatter___publicationDate] }
                 ) {
                   edges {
                     node {
-                      excerpt(pruneLength: 250)
                       html
+                      excerpt(pruneLength: 160)
                       fields { 
                         slug   
                       }
                       frontmatter {
                         title
-                        publicationDate
                         description
+                        publicationDate
                       }
                     }
                   }
                 }
               }
             `,
-            output: '/rss.xml',
-            title: "Flux RSS de Louis Cuvelier",
-          },
-        ],
-      },
+            output: "/rss.xml",
+            title: "Flux RSS de Louis Cuvelier"
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

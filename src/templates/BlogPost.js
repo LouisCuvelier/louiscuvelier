@@ -128,8 +128,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         image {
-              publicURL
-            }
+          publicURL
+        }
         description
         updateDate
         publicationDate
