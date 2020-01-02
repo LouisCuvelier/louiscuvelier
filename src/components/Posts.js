@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import IconArrowThinRight from "../../content/assets/svgs/icon-arrow-thin-right-circle.svg";
-import PostMetadata from "./PostMetadata"
+import PostMetadata from "./PostMetadata";
 
 const Posts = () => {
   const data = useStaticQuery(graphql`
@@ -39,10 +39,14 @@ const Posts = () => {
           <Link to={node.fields.slug} key={node.fields.slug}>
             <article
               key={node.fields.slug}
-              className="bg-white rounded-lg shadow p-7 mb-7"
+              className="bg-white rounded-lg shadow p-7 mb-7 bar bar-up"
             >
               <h1 className="title title-3">{title}</h1>
-              <PostMetadata timeToRead={node.timeToRead} publicationDate={node.frontmatter.publicationDate} updateDate={node.frontmatter.publicationDate}/>
+              <PostMetadata
+                timeToRead={node.timeToRead}
+                publicationDate={node.frontmatter.publicationDate}
+                updateDate={node.frontmatter.updateDate}
+              />
               <p
                 className="body body-base"
                 dangerouslySetInnerHTML={{

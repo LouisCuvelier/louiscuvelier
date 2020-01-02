@@ -6,7 +6,7 @@ import Copyright from "./Copyright";
 
 class Layout extends React.Component {
   render() {
-    const { location, children, pageTitle, slug } = this.props;
+    const { location, children } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
 
     return (

@@ -10,7 +10,9 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function Seo({ description, lang, meta, title }) {
+function Seo(props) {
+  const { description, lang, meta, image } = props;
+  const title = props.title || "";
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +21,7 @@ function Seo({ description, lang, meta, title }) {
             title
             description
             author
+            cover
           }
         }
       }
@@ -26,6 +29,7 @@ function Seo({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const metaImage = image || site.siteMetadata.cover;
 
   return (
     <Helmet
@@ -36,8 +40,11 @@ function Seo({ description, lang, meta, title }) {
         class:
           "bg-gray-200 antialiased min-h-screen body body-md p-7 max-w-5xl mx-auto"
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={
+        title.trim()
+          ? `${title} | ${site.siteMetadata.title}`
+          : `${site.siteMetadata.title} | Bidouilleur professionnel de code et de design`
+      }
       meta={[
         {
           name: `description`,
@@ -70,6 +77,14 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription
+        },
+        {
+          name: `og:image`,
+          content: metaImage
+        },
+        {
+          name: `twitter:image`,
+          content: metaImage
         }
       ].concat(meta)}
     />
@@ -79,14 +94,16 @@ function Seo({ description, lang, meta, title }) {
 Seo.defaultProps = {
   lang: `fr`,
   meta: [],
-  description: ``
+  description: ``,
+  image: ``
 };
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired
+  title: PropTypes.string,
+  image: PropTypes.string
 };
 
 export default Seo;

@@ -26,7 +26,7 @@ const previousProjects = [
   { title: "Taskalog", url: "https://www.taskalog.com" },
   {
     title: "Bonne Dose",
-    url: "https://medium.com/bonne-dose/dose-finale-22f1ebb05de6"
+    url: "https://www.louiscuvelier.com/dose-finale/"
   }
 ];
 
@@ -34,13 +34,25 @@ function renderProjects(projects) {
   return projects.map((project, index) => {
     return (
       <li className="mt-3" key={index}>
-        <a
-          href={`${project.url}/?utm_source=louiscuvelier.com`}
-          className="btn btn-secondary inline-flex items-center move-up-right"
-        >
-          {project.title}{" "}
-          <IconExternalWindow className="w-6 h-full inline-flex ml-2 fill-current" />
-        </a>
+        {project.url.includes("www.louiscuvelier.com") ? (
+          <a
+            href={`${project.url}/?utm_source=louiscuvelier.com`}
+            className="btn btn-secondary inline-flex items-center move-up-right"
+          >
+            {project.title}
+          </a>
+        ) : (
+          <a
+            href={`${project.url}/?utm_source=louiscuvelier.com`}
+            className="btn btn-secondary inline-flex items-center move-up-right"
+            rel={"noreferrer noopener"}
+            target="_blank"
+          >
+            {project.title}
+            <IconExternalWindow className="w-6 inline-flex ml-2 fill-current" />
+          </a>
+        )}
+
       </li>
     );
   });
@@ -55,7 +67,7 @@ const Bio = () => {
         return (
           <aside className="w-full md:w-5/12 px-4">
             <div className="sticky top-5">
-              <div className="bg-white rounded-lg shadow p-6">
+              <div className="bg-white rounded-lg shadow p-7 bar bar-up">
                 <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row">
                   <Image
                     fixed={data.avatar.childImageSharp.fixed}
@@ -73,13 +85,12 @@ const Bio = () => {
                 <div className="mt-8">
                   <h2 className="label label-md mb-2">À propos</h2>
                   <p className="body body-base">
-                    Entrepreneur et étudiant de 22 ans en 4ème année à Ingésup
-                    Bordeaux.
+                    Entrepreneur et étudiant en 5ème année à Ingésup Bordeaux.
                   </p>
                   <p className="body body-base mt-4">
                     Passionné par l’entrepreneuriat, tout en étant amoureux du
-                    web, de l’informatique et du design, j'ai une grande
-                    sensibilité pour la perfection.
+                    web, de l’informatique et du design, j'aime mettre sur pieds
+                    des projets de A à Z.
                   </p>
                 </div>
                 <div className="mt-8">

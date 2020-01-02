@@ -6,7 +6,7 @@ import Seo from "../components/Seo";
 import PostMetadata from "../components/PostMetadata";
 import IconArrowThinRight from "../../content/assets/svgs/icon-arrow-thin-right-circle.svg";
 import IconArrowThinLeft from "../../content/assets/svgs/icon-arrow-thin-left-circle.svg";
-import Copyright from "../components/Copyright";
+import IconDiscuss from "../../content/assets/svgs/icon-chat-group.svg";
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -25,9 +25,10 @@ class BlogPostTemplate extends React.Component {
         <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          image={post.frontmatter.image.publicURL}
         />
         <article className="max-w-3xl body body-lg mx-auto -mt-2">
-          <div className="max-w-2xl mx-auto">
+          <div className="mx-auto max-w-2xl">
             <h1 className="title title-1 mb-3">{post.frontmatter.title}</h1>
             <PostMetadata
               timeToRead={post.timeToRead}
@@ -42,50 +43,60 @@ class BlogPostTemplate extends React.Component {
                 }}
               />
             )}
-            <div className="my-10 bg-white rounded-lg shadow p-7">
-              <div className="label label-lg mb-5">Sommaire</div>
-              <div
-                className="toc title title-6"
-                dangerouslySetInnerHTML={{ __html: toc }}
-              />
-            </div>
+          </div>
+          <div className="max-w-3xl my-10 bg-white rounded-lg shadow p-7 bar bar-up">
+            <div className="label label-lg mb-5">Sommaire</div>
+            <div
+              className="toc title title-6"
+              dangerouslySetInnerHTML={{ __html: toc }}
+            />
           </div>
           <div
             dangerouslySetInnerHTML={{ __html: post.html }}
-            className={"external-link"}
+            className={"cw-external-link"}
           />
         </article>
 
-        <div className="mx-auto max-w-3xl p-7 bg-white rounded-lg shadow mt-10 mb-7">
-          <ul className="-mx-7 flex flex-wrap flex-col sm:flex-row justify-between">
-            <li className="px-7 w-1/2">
+        <aside className={"max-w-2xl mx-auto my-11"}>
+          <a
+            className="btn btn-primary inline-flex items-center move-up-right"
+            href={`https://twitter.com/search?q=${encodeURIComponent(
+              this.props.data.site.siteMetadata.siteUrl + slug
+            )}`}
+          >
+            Échanger sur Twitter
+            <IconDiscuss className="w-6 inline-flex ml-2 fill-current" />
+          </a>
+        </aside>
+
+        <div className="mx-auto max-w-3xl p-7 bg-white rounded-lg shadow mt-10 mb-7 bar bar-up">
+          <ul className="-mx-7 flex flex-wrap flex-col sm:flex-row justify-between items-start">
+            <li className="px-7 w-full md:w-1/2">
               {previous && (
                 <>
-                  <div className="label label-base mb-2">Article précédent</div>
+                  <div className="label label-base mb-3">Article précédent</div>
                   <Link
                     to={previous.fields.slug}
                     rel="prev"
-                    className="title title-6 move-left btn btn-secondary"
+                    className="move-left flex flex-col items-start btn btn-secondary text-xl text-left rounded-lg p-5"
                   >
-                    <IconArrowThinLeft className="fill-current w-6 h-full mr-2" />
                     {previous.frontmatter.title}
+                    <IconArrowThinLeft className="fill-current w-7 mt-3" />
                   </Link>
                 </>
               )}
             </li>
-            <li className="px-7 w-1/2 mt-7 sm:mt-0 ">
+            <li className="px-7 w-full md:w-1/2 mt-7 md:mt-0 ">
               {next && (
                 <>
-                  <div className="label label-base sm:text-right mb-2">
-                    Article suivant
-                  </div>
+                  <div className="label label-base mb-3">Article suivant</div>
                   <Link
                     to={next.fields.slug}
                     rel="next"
-                    className="title title-6 move-right btn btn-secondary"
+                    className="move-right flex flex-col items-start btn btn-secondary text-xl text-left rounded-lg p-5"
                   >
                     {next.frontmatter.title}
-                    <IconArrowThinRight className="fill-current w-6 h-full ml-2" />
+                    <IconArrowThinRight className="fill-current w-7 mt-3 ml-auto" />
                   </Link>
                 </>
               )}
@@ -105,6 +116,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -115,6 +127,9 @@ export const pageQuery = graphql`
       tableOfContents
       frontmatter {
         title
+        image {
+              publicURL
+            }
         description
         updateDate
         publicationDate

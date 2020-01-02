@@ -18,21 +18,21 @@ const PostMetadata = props => {
   return (
     <div className="flex flex-wrap label label-base mt-2 mb-4 items-center">
       <div className={"flex items-center"}>
-        <IconTime className="w-0875 h-full mr-1 fill-current" />
+        <IconTime className="w-0875 h-full mr-2 fill-current" />
         <time pubdate="pubdate" dateTime={publicationDate} className="">
           {publicationDateFormatted.toLocaleDateString("fr-FR", dateOptions)}
         </time>
       </div>
       <span className="mx-2">{" • "}</span>
       <div className={"flex items-center"}>
-        <IconUpdateTime className="w-0875 h-full h-100 mr-1 fill-current" />
+        <IconUpdateTime className="w-0875 h-full h-100 mr-2 fill-current" />
         <time dateTime={updateDate} className="">
           {updateDateFormatted.toLocaleDateString("fr-FR", dateOptions)}
         </time>
       </div>
       <span className="mx-2">{" • "}</span>
       <div className={"flex items-center"}>
-        <IconTimeRead className="w-0875 h-full h-100 mr-1 fill-current" />
+        <IconTimeRead className="w-0875 h-full h-100 mr-2 fill-current" />
         {timeToRead} {timeToRead > 1 ? "minutes" : "minute"}
       </div>
     </div>

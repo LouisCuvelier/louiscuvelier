@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <div className="flex flex-wrap justify-center -mx-4">
-          <Seo title="All posts" />
+          <Seo />
           <Bio />
           <hr className="md:hidden w-full h-1 bg-gray-300 mt-7 border-0 rounded-lg"/>
           <Posts />
