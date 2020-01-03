@@ -227,7 +227,7 @@
 
 /* purgecss ignore */
 .gatsby-resp-image-figure {
-  @apply max-w-3xl;
+  @apply max-w-3xl m-0;
 }
 
 /* purgecss ignore */
@@ -277,7 +277,7 @@
 }
 
 .anchor {
-  @apply absolute w-6 h-6 -left-1 fill-current float-none block pr-0;
+  @apply absolute w-6 h-6 -left-1 fill-current float-none block pr-0 !important;
 
   svg {
     @apply visible !important;
@@ -357,7 +357,7 @@
 }
 
 .cw-lists {
-  @apply max-w-2xl mx-auto list-outside body body-md list-disc mb-8 -mt-7;
+  @apply pl-6 max-w-2xl mx-auto list-outside body body-md list-disc mb-8 -mt-7;
 
   p + & {
     @apply -mt-6;
@@ -373,6 +373,10 @@
 
   > li > ul {
     @apply mb-0;
+  }
+
+  @screen sm {
+    @apply pl-0;
   }
 }
 
