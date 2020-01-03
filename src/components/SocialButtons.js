@@ -1,8 +1,8 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons"
-import IconMail from "../../content/assets/svgs/icon-mail.svg"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import IconMail from "../../content/assets/svgs/icon-mail.svg";
+import IconTwitter from "../../content/assets/svgs/icon-twitter.svg";
+import IconLinkedIn from "../../content/assets/svgs/icon-linkedin.svg";
 
 class SocialButtons extends React.Component {
   render() {
@@ -10,32 +10,31 @@ class SocialButtons extends React.Component {
       <StaticQuery
         query={socialQuery}
         render={data => {
-          const { socials } = data.site.siteMetadata
+          const { socials } = data.site.siteMetadata;
           return (
             <>
               <ul className="flex">
                 {socials.map((social, index) => {
-                  let icon
-                  let element
+                  let icon;
+                  let element;
 
                   if (social.title === "Email") {
-                    icon = <IconMail className="fill-current w-5 h-full" />
+                    icon = <IconMail className="fill-current w-5 h-full" />;
 
                     element = (
                       <button className="btn btn-secondary btn-icon">
                         {icon}
                       </button>
-                    )
+                    );
                   } else {
-                    let iconRef
-
-                    switch (social.title) {
-                      case "LinkedIn":
-                        iconRef = faLinkedinIn
-                        break
-                      default:
-                        iconRef = faTwitter
-                        break
+                    if (social.title === "LinkedIn") {
+                      icon = (
+                        <IconLinkedIn className="fill-current w-5 h-full" />
+                      );
+                    } else {
+                      icon = (
+                        <IconTwitter className="fill-current w-5 h-full" />
+                      );
                     }
 
                     element = (
@@ -46,24 +45,22 @@ class SocialButtons extends React.Component {
                         rel="noopener noreferrer"
                         className="btn btn-secondary btn-icon"
                       >
-                        <FontAwesomeIcon
-                          icon={iconRef}
-                        />
+                        {icon}
                       </a>
-                    )
+                    );
                   }
                   return (
                     <li key={index} className="mr-2 flex">
                       {element}
                     </li>
-                  )
+                  );
                 })}
               </ul>
             </>
-          )
+          );
         }}
       />
-    )
+    );
   }
 }
 
@@ -79,6 +76,6 @@ const socialQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default SocialButtons
+export default SocialButtons;
