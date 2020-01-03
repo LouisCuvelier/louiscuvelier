@@ -225,15 +225,18 @@
   width: 0.875rem;
 }
 
+/* purgecss ignore */
 .gatsby-resp-image-figure {
   @apply max-w-3xl;
 }
 
+/* purgecss ignore */
 .gatsby-resp-image-image,
 .gatsby-resp-image-background-image {
   @apply rounded-lg;
 }
 
+/* purgecss ignore */
 .gatsby-resp-image-figcaption {
   @apply label label-base max-w-2xl mx-auto mt-3;
 }
@@ -342,7 +345,7 @@
 }
 
 .cw-quote {
-  @apply italic max-w-3xl mx-auto rounded-lg bg-white p-7 mb-8 -mt-5 shadow bar bar-left;
+  @apply italic max-w-3xl mx-auto rounded-lg bg-gray-300 shadow-inner p-7 mb-8;
 
   * {
     @apply relative max-w-full z-10 !important;

@@ -49,7 +49,7 @@ function renderProjects(projects) {
             target="_blank"
           >
             {project.title}
-            <IconExternalWindow className="w-6 inline-flex ml-2 fill-current" />
+            <IconExternalWindow className="w-5 inline-flex ml-2 fill-current" />
           </a>
         )}
 
@@ -90,7 +90,7 @@ const Bio = () => {
                   <p className="body body-base mt-4">
                     Passionné par l’entrepreneuriat, tout en étant amoureux du
                     web, de l’informatique et du design, j'aime mettre sur pieds
-                    des projets de A à Z.
+                    des projets de A&nbsp;à&nbsp;Z.
                   </p>
                 </div>
                 <div className="mt-8">
