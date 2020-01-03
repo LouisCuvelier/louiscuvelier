@@ -12,13 +12,16 @@ import { useStaticQuery, graphql } from "gatsby";
 
 function Seo(props) {
   const { description, lang, meta, image } = props;
-  const title = props.title || "";
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
+            socials {
+              title
+              handle
+            }
             description
             author
             cover
@@ -27,9 +30,15 @@ function Seo(props) {
       }
     `
   );
+  const title = props.title || "";
+  const seoTitle = title.trim()
+    ? `${title} | ${site.siteMetadata.title}`
+    : `${site.siteMetadata.title} | Bidouilleur professionnel de code et de design`;
 
   const metaDescription = description || site.siteMetadata.description;
   const metaImage = image || site.siteMetadata.cover;
+  const socials = site.siteMetadata.socials;
+  const twitter = socials.find(element => element.title === "Twitter");
 
   return (
     <Helmet
@@ -40,11 +49,7 @@ function Seo(props) {
         class:
           "bg-gray-200 antialiased min-h-screen body body-md p-7 max-w-5xl mx-auto"
       }}
-      title={
-        title.trim()
-          ? `${title} | ${site.siteMetadata.title}`
-          : `${site.siteMetadata.title} | Bidouilleur professionnel de code et de design`
-      }
+      title={seoTitle}
       meta={[
         {
           name: `description`,
@@ -52,7 +57,7 @@ function Seo(props) {
         },
         {
           property: `og:title`,
-          content: title
+          content: seoTitle
         },
         {
           property: `og:description`,
@@ -63,24 +68,28 @@ function Seo(props) {
           content: `website`
         },
         {
+          name: `og:image`,
+          content: metaImage
+        },
+        {
           name: `twitter:card`,
           content: `summary`
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: `@${twitter.handle}`
         },
         {
           name: `twitter:title`,
-          content: title
+          content: seoTitle
         },
         {
           name: `twitter:description`,
           content: metaDescription
         },
         {
-          name: `og:image`,
-          content: metaImage
+          name: `twitter:site`,
+          content: `@${twitter.handle}`
         },
         {
           name: `twitter:image`,
