@@ -12,8 +12,14 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <div className={"flex flex-col items-center"}>
+          <h1 className={"title title-1"}>Oups ... page introuvable</h1>
+          <div className={"mb-10 mt-7"}>
+            <a className={"btn btn-primary"} href={"/"}>
+              Revenir à l'accueil
+            </a>
+          </div>
+        </div>
       </Layout>
     );
   }

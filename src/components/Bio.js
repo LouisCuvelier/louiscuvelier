@@ -26,7 +26,7 @@ const previousProjects = [
   { title: "Taskalog", url: "https://www.taskalog.com" },
   {
     title: "Bonne Dose",
-    url: "https://www.louiscuvelier.com/dose-finale/"
+    url: "https://www.louiscuvelier.com/bonne-dose-finale/"
   }
 ];
 
