@@ -18,6 +18,7 @@ function Seo(props) {
         site {
           siteMetadata {
             title
+            siteUrl
             socials {
               title
               handle
@@ -69,7 +70,7 @@ function Seo(props) {
         },
         {
           name: `og:image`,
-          content: metaImage
+          content: `${site.siteMetadata.siteUrl}${metaImage}`
         },
         {
           name: `twitter:card`,
@@ -93,7 +94,7 @@ function Seo(props) {
         },
         {
           name: `twitter:image`,
-          content: metaImage
+          content: `${site.siteMetadata.siteUrl}${metaImage}`
         }
       ].concat(meta)}
     />
