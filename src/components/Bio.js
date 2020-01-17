@@ -43,7 +43,7 @@ function renderProjects(projects) {
           </a>
         ) : (
           <a
-            href={`${project.url}/?utm_source=louiscuvelier.com`}
+            href={`${project.url}/?ref=louiscuvelier.com`}
             className="btn btn-secondary inline-flex items-center move-up-right"
             rel="noopener noreferrer"
             target="_blank"
