@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "modules/fonts.css";
+@import "modules/components.css";
+
+@import "tailwindcss/utilities";
+
+@layer components {
+  .bg-paper {
+    background-image: url("../public/images/background.png");
+    @apply bg-slate-50 dark:bg-slate-900;
+  }
+}

@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/dashboard-analytics"
-  to = "https://datastudio.google.com/open/1kTrBbtmViJt7OZJg2BLkCisuRY9Ebgdk"
-  status = 301
-  force = true
-  query = {}

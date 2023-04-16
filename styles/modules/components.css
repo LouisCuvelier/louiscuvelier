@@ -1,0 +1,29 @@
+.btn {
+  @apply tracking-wider px-4 py-2 font-sans text-lg;
+  background: repeating-linear-gradient(
+    -45deg,
+    theme("colors.slate.800"),
+    theme("colors.slate.200") 1px,
+    theme("colors.transparent") 1px,
+    theme("colors.transparent") 3px
+  );
+
+  span {
+    @apply transition ease-in-out duration-300;
+    @apply bg-paper px-1 leading-none rounded-full;
+  }
+
+  &:hover {
+    span {
+      background: transparent;
+    }
+  }
+}
+
+.btn-primary {
+  border-radius: 40% 30% 50% 20% / 50% 70% 70% 70%;
+}
+
+.btn-secondary {
+  border-radius: 80% 70% 80% 60% / 70% 80% 90% 70%;
+}
