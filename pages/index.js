@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../public/images/profile.jpeg";
-import Layout from "../components/layouts/layout";
+import Layout from "../components/layouts/Layout";
 import Link from "next/link";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Layout style={"h-screen flex flex-col justify-between"}>
         <section className={"grid grid-cols-12 gap-16"}>
           <div className={"col-span-5"}>
-            <Image src={profilePic} />
+            <Image src={profilePic} alt={"Profile picture"} />
           </div>
           <div className={"col-span-7"}>
             <h1 className={"font-sans text-7xl"}>Louis Cuvelier</h1>

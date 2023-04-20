@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <header className={"w-full max-w-screen-xl mx-auto p-5"}>
       <nav className={"flex flex-row justify-between"}>
-        <div>Logo</div>
+        <Link href={"/"}>Logo</Link>
         <ul className={"flex-row flex font-sans space-x-5 justify-end"}>
           <li>
             <Link href={""} className={"btn btn-secondary"}>
