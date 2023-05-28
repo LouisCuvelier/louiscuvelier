@@ -1,6 +1,8 @@
 import "../styles/global.css";
 import localFont from "next/font/local";
 import { Playfair_Display } from "next/font/google";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const QanelasSoft = localFont({
   src: [
@@ -23,6 +25,20 @@ const PlayfaireDisplay = Playfair_Display({
   subsets: ["latin"],
 });
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <div
+          className={`bg-paper h-screen flex flex-col justify-between min-h-screen text-slate-900 dark:text-slate-50 font-serif`}
+        >
+          <Navbar />
+          <main className={"max-w-screen-xl mx-auto px-5 py-28"}>
+            {children}
+          </main>
+          <Footer />
+        </div>
+      </body>
+    </html>
+  );
 }

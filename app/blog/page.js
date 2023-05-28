@@ -1,18 +1,10 @@
-import Layout from "../../components/layouts/Layout";
 import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
-
-export async function getStaticProps() {
+export default function Post() {
   const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-export default function Post({ allPostsData }) {
+
   return (
-    <Layout>
+    <>
       <section className={"text-center mb-32"}>
         <h1 className={"font-sans text-7xl"}>Blog</h1>
       </section>
@@ -35,7 +27,7 @@ export default function Post({ allPostsData }) {
                 <p className={"text-lg mt-5"}>{description}</p>
                 <div className={"text-right mt-5"}>
                   <span className={"btn btn-secondary"}>
-                    <span class={"bg-paper"}>Lire la suite</span>
+                    <span className={"bg-paper"}>Lire la suite</span>
                   </span>
                 </div>
               </Link>
@@ -43,6 +35,6 @@ export default function Post({ allPostsData }) {
           )
         )}
       </section>
-    </Layout>
+    </>
   );
 }
