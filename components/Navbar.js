@@ -8,22 +8,22 @@ export default function Navbar() {
         <ul className={"flex-row flex font-sans space-x-5 justify-end"}>
           <li>
             <Link href={""} className={"btn btn-secondary"}>
-              <span>Projets</span>
+              Projets
             </Link>
           </li>
           <li>
             <Link href={"/blog"} className={"btn btn-secondary"}>
-              <span>Blog</span>
+              Blog
             </Link>
           </li>
           <li>
             <Link href={""} className={"btn btn-secondary"}>
-              <span>À propos</span>
+              À propos
             </Link>
           </li>
           <li>
             <Link href={""} className={"btn btn-secondary"}>
-              <span>Contact</span>
+              Contact
             </Link>
           </li>
         </ul>

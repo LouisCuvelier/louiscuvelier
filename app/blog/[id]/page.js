@@ -11,9 +11,9 @@ export default async function Post({ params }) {
   return (
     <>
       <article className={"max-w-screen-sm mx-auto"}>
-        <header>
-          <h1 className={"text-5xl font-sans"}>{frontmatter.title}</h1>
-          <div className={"text-xs font-sans uppercase tracking-widest mt-2"}>
+        <header className={"space-y-3"}>
+          <h1 className={"title title-2"}>{frontmatter.title}</h1>
+          <div className={"uppertitle-2 uppertitle"}>
             <span>
               Publié le{" "}
               <Date isPubDate={true} dateString={frontmatter.publicationDate} />
@@ -24,10 +24,8 @@ export default async function Post({ params }) {
               <Date isPubDate={false} dateString={frontmatter.updateDate} />
             </span>
           </div>
+          <p className={"body body-1"}>{frontmatter.description}</p>
         </header>
-        <p className={"text-xl mt-8 leading-normal"}>
-          {frontmatter.description}
-        </p>
         {content}
       </article>
     </>

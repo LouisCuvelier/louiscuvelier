@@ -1,0 +1,6 @@
+/* Base elements of the design */
+@layer base {
+  body {
+    @apply font-serif antialiased;
+  }
+}

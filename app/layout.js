@@ -27,10 +27,11 @@ const PlayfaireDisplay = Playfair_Display({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="fr">
+      <body className={"relative"}>
+        <div class={"bg-paper"}></div>
         <div
-          className={`bg-paper h-screen flex flex-col justify-between min-h-screen text-slate-900 dark:text-slate-50 font-serif`}
+          className={`relative z-10 flex flex-col justify-between min-h-screen text-slate-900 font-serif`}
         >
           <Navbar />
           <main className={"max-w-screen-xl mx-auto px-5 py-28"}>
