@@ -5,9 +5,9 @@ export default async function Post({ params }) {
   return (
     <>
       <article className={"max-w-screen-sm mx-auto"}>
-        <header className={"space-y-3"}>
+        <header>
           <h1 className={"title title-2"}>{frontmatter.title}</h1>
-          <div className={"uppertitle-2 uppertitle"}>
+          <div className={"caption caption-1"}>
             <span>
               Publié le{" "}
               <Date isPubDate={true} dateString={frontmatter.publicationDate} />
@@ -18,7 +18,7 @@ export default async function Post({ params }) {
               <Date isPubDate={false} dateString={frontmatter.updateDate} />
             </span>
           </div>
-          <p className={"body body-1"}>{frontmatter.description}</p>
+          <p className={"body body-1 mt-8"}>{frontmatter.description}</p>
         </header>
         {content}
       </article>

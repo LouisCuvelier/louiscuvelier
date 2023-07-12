@@ -1,21 +1,23 @@
 /* Typography rules of the design */
 @layer components {
-  .bg-dashed {
+  .bg-hatch {
     background: repeating-linear-gradient(
       -45deg,
-      theme("colors.slate.700"),
-      theme("colors.slate.100") 1px,
-      theme("colors.transparent") 3px
+      theme("colors.transparent"),
+      theme("colors.transparent") 3px,
+      theme("colors.slate.600") 4px
     );
-    text-shadow: 0 0 10px theme("colors.slate.50");
+    text-shadow: 0 0 5px theme("colors.slate.50");
   }
-  .border-dashedd {
+
+  .border-hatch {
     border-image: repeating-linear-gradient(
-      -45deg,
-      theme("colors.slate.700"),
-      theme("colors.slate.100") 1px,
-      theme("colors.transparent") 3px
-    );
+        -45deg,
+        theme("colors.transparent"),
+        theme("colors.transparent") 3px,
+        theme("colors.slate.600") 4px
+      )
+      13;
   }
 
   .title {
@@ -189,7 +191,7 @@
   }
 
   .btn {
-    @apply bg-dashed tracking-wider px-4 py-2 font-sans text-lg;
+    @apply bg-hatch tracking-wider px-4 py-2 font-sans text-lg;
     @apply transition-all ease-in-out duration-300;
     border-radius: 40% 30% 50% 20% / 50% 70% 70% 70%;
 
@@ -223,23 +225,23 @@
 
   .btn-primary {
     &:hover {
-      @apply ring-2 ring-slate-700;
+      @apply ring-2 ring-slate-600;
     }
 
     &.active,
     &:active {
-      @apply ring-[3px] ring-slate-700;
+      @apply ring-[3px] ring-slate-600;
     }
   }
 
   .btn-secondary {
     &:hover {
-      @apply ring-2 ring-slate-700;
+      @apply ring-2 ring-slate-600;
     }
 
     &.active,
     &:active {
-      @apply ring-[3px] ring-slate-700;
+      @apply ring-[3px] ring-slate-600;
     }
   }
 
@@ -398,7 +400,7 @@
       @apply relative pl-7;
 
       &::before {
-        @apply bg-dashed  inline-block -ml-7 mr-2 w-5 h-1.5 mb-0.5 bg-slate-700;
+        @apply bg-hatch inline-block -ml-7 mr-2 w-4 h-4 -mb-1;
         border-radius: 70% 30% 78% 22% / 43% 67% 33% 57%;
         content: "";
       }
@@ -413,7 +415,7 @@
       counter-increment: decimal-counter;
 
       &::before {
-        @apply bg-dashed -ml-7 mr-1 font-sans font-semibold text-slate-800 p-0.5;
+        @apply bg-hatch -ml-7 mr-1 font-sans font-semibold text-slate-800 p-0.5;
         content: counter(decimal-counter, decimal-leading-zero);
         border-radius: 70% 30% 78% 22% / 43% 67% 33% 57%;
       }
