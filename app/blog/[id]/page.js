@@ -1,11 +1,5 @@
 import { getAllPostIds, getPostData } from "../../../lib/posts";
 import Date from "../../../components/Date";
-
-export async function generateStaticParams() {
-  const paths = getAllPostIds();
-  return [paths];
-}
-
 export default async function Post({ params }) {
   const { frontmatter, content } = await getPostData(params.id);
   return (

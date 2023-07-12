@@ -1,57 +1,109 @@
-import { getSortedPostsData } from "../../lib/posts";
 import Link from "next/link";
-import Date from "../../components/Date";
+import { getSortedProjectsData } from "../../lib/projects";
+import Image from "next/image";
 export default function Projects() {
-  const allPostsData = getSortedPostsData();
+  const allProjectsData = getSortedProjectsData();
+  const projectsLength = allProjectsData.length;
 
   return (
     <>
       <section className={"text-center mb-32"}>
         <h1 className={"title title-1"}>Projets</h1>
       </section>
-      {/* Nom */}
-      {/* Description */}
-      {/*Technos*/}
-      {/*Type de projet*/}
-      <section>
-        <h2>Bulneo</h2>
-        <p>
-          Bulneo est l'entreprise spécialiste de la rénovation de salle de bain.
-          Du simple remplacement de baignoire par une douche en 48h jusqu'à la
-          rénovation totale de la salle de bain en 5 jours, les travaux sont
-          réalisés sans sous-traitance, avec des produits sur mesure, fabriqués
-          en France et disposant d'une garantie étendue de 10 ans.
-        </p>
-        <p>
-          Étant co-fondateur de Bulneo, j'ai pu avoir une grande liberté
-          d'action. Ainsi, cela m'a permis de développer l'intégralité du site
-          vitrine, mettre en place la stratégie SEO et SEA, créer tous les
-          processus internes, automatiser un grand nombre d'actions, donner des
-          formations et développer des outils customs, notamment sous Zoho.
-        </p>
-        <p>2019 à maintenant</p>
-        <ul>
-          <li>Craft CMS</li>
-          <li>Tailwind CSS</li>
-          <li>Alpine JS</li>
-          <li>Twig</li>
-          <li>Zoho</li>
-          <li>SEO</li>
-        </ul>
-        <ul>
-          <li>Site vitrine</li>
-          <li>SEO</li>
-          <li>Formation</li>
-          <li>Automatisation</li>
-        </ul>
-        <Link
-          href={"https://www.bulneo.fr"}
-          className={"link link-primary"}
-          rel={"noopener noreferrer"}
-          target={"_blank"}
-        >
-          Bulneo
-        </Link>
+
+      <section className={"grid grid-cols-2 gap-16 mx-auto"}>
+        {allProjectsData.map(
+          (
+            {
+              id,
+              client,
+              description,
+              website,
+              categories,
+              work,
+              duration,
+              technologies,
+              logo,
+            },
+            index
+          ) => (
+            <>
+              <article
+                key={id}
+                className={"border-dashedd border-[20px] border-solid"}
+              >
+                <div className={"p-5"}>
+                  <div className={"space-y-10"}>
+                    <div className={"flex justify-between items-stretch"}>
+                      <div>
+                        <span className={"uppertitle uppertitle-1"}>
+                          Client
+                        </span>
+                        <h2 className={"title title-2"}>{client}</h2>
+                        <Link
+                          href={website}
+                          className={"link link-primary body body-1"}
+                          rel={"noopener noreferrer"}
+                          target={"_blank"}
+                        >
+                          Voir le projet
+                        </Link>
+                      </div>
+                      <figure
+                        className={
+                          "bg-dashed w-[100px] sm:w-[116px] relative object-contain rounded-[76%_24%_68%_32%_/_29%_67%_33%_71%]"
+                        }
+                      >
+                        <Image
+                          src={logo}
+                          alt={`Logo de ${client}`}
+                          fill={true}
+                          className={"p-5"}
+                        />
+                      </figure>
+                    </div>
+
+                    <p className={"body body-1"}>{description}</p>
+
+                    <div>
+                      <h3 className={"title title-3"}>Prestation réalisée</h3>
+                      <ul className={"gap-2 flex flex-row flex-wrap mt-1"}>
+                        {categories.map((value) => (
+                          <li
+                            className={
+                              "uppertitle uppertitle-2 bg-dashed rounded px-2"
+                            }
+                          >
+                            {value}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <p className={"body body-1"}>{work}</p>
+                    <div>
+                      <h3 className={"title title-5"}>Technologies</h3>
+                      <ul className={"gap-2 flex flex-row flex-wrap mt-1"}>
+                        {technologies.map((value) => (
+                          <li
+                            className={
+                              "uppertitle uppertitle-2 bg-dashed rounded px-2"
+                            }
+                          >
+                            {value}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className={"title title-5 mt-5"}>Durée</h3>
+                      <p className={"body body-1"}>{duration}</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </>
+          )
+        )}
       </section>
     </>
   );

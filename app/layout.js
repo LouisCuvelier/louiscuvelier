@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={"relative"}>
-        <div class={"bg-paper"}></div>
+        <div className={"bg-paper"}></div>
         <div
           className={`relative z-10 flex flex-col justify-between min-h-screen text-slate-900 font-serif`}
         >

@@ -1,0 +1,16 @@
+{
+  "date": "2023-06-12",
+  "client": "Fisicaly",
+  "description": "Bulneo est l'entreprise spécialiste de la rénovation de salle de bain. Du simple remplacement de baignoire par une douche en 48h jusqu'à la rénovation totale de la salle de bain en 5 jours, les travaux sont réalisés sans sous-traitance, avec des produits sur mesure, fabriqués en France et disposant d'une garantie étendue de 10 ans.",
+  "website": "https://www.bulneo.fr/",
+  "categories": [
+    "Développement site vitrine",
+    "SEO",
+    "Formation",
+    "Automatisation"
+  ],
+  "work": "Étant co-fondateur de Bulneo, j'ai pu avoir une grande liberté d'action. Ainsi, cela m'a permis de développer l'intégralité du site vitrine, mettre en place la stratégie SEO et SEA, créer tous les processus internes, automatiser un grand nombre d'actions, donner des formations et développer des outils customs, notamment sous Zoho.",
+  "duration": "De 2019 à maintenant",
+  "technologies": ["Craft CMS", "Tailwind CSS", "Alpine JS", "Twig", "Zoho"],
+  "logo": "/images/logo_twitter.svg"
+}
