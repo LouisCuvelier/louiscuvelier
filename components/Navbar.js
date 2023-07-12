@@ -7,7 +7,7 @@ export default function Navbar() {
         <Link href={"/"}>Logo</Link>
         <ul className={"flex-row flex font-sans space-x-5 justify-end"}>
           <li>
-            <Link href={""} className={"btn btn-secondary"}>
+            <Link href={"/projets"} className={"btn btn-secondary"}>
               Projets
             </Link>
           </li>

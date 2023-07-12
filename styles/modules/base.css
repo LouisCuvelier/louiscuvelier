@@ -1,6 +1,5 @@
-/* Base elements of the design */
 @layer base {
   body {
-    @apply font-serif antialiased;
+    @apply font-serif antialiased bg-slate-50;
   }
 }

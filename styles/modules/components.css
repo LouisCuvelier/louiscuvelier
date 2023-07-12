@@ -483,18 +483,47 @@
   }
 
   .bg-paper {
-    @apply fixed z-0 w-full h-full left-0 top-0 bg-slate-50;
+    @apply fixed z-0 w-full h-full left-0 top-0 opacity-25;
     background-image: url("../public/images/background.png");
-    background-size: 200px 200px;
+    background-size: 100px 100px;
     background-repeat: repeat;
-    animation: graining linear 1s infinite;
+    animation: grain 7s steps(10) infinite;
+    top: -300%;
+    left: -300%;
+    height: 600%;
+    width: 600%;
 
-    @keyframes graining {
-      0% {
-        background-position: 0 0;
+    @keyframes grain {
+      0%, 100% {
+        transform: translate(0);
       }
-      100% {
-        background-position: 100% 100%;
+
+      10% {
+        transform: translate(-5%,-10%);
+      }
+      20% {
+        transform: translate(-15%,5%);
+      }
+      30% {
+        transform: translate(7%,-25%);
+      }
+      40% {
+        transform: translate(-5%,25%);
+      }
+      50% {
+        transform: translate(-15%,10%);
+      }
+      60% {
+        transform: translate(15%);
+      }
+      70% {
+        transform: translateY(15%);
+      }
+      80% {
+        transform: translate(3%,35%);
+      }
+      90% {
+        transform: translate(-10%,10%);
       }
     }
   }
