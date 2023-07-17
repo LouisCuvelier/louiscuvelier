@@ -8,21 +8,23 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: ["profile_svg__yeux"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Qanelas Soft", ...defaultTheme.fontFamily.sans],
-        serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
+        title: ["Qanelas Soft", ...defaultTheme.fontFamily.sans],
+        body: ["Roc Grotesk", ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [
+    require("@tailwindcss/container-queries"),
     plugin(function ({ addComponents, theme }) {
       const icons = {
         ".external-link-icon-primary": {
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='${encodeURIComponent(
-            theme("colors.slate.800")
-          )}' viewBox='0 0 20 20'%3E%3Cpath d='M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z'%3E%3C/path%3E%3Cpath d='M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z'%3E%3C/path%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.75' stroke='${encodeURIComponent(
+            theme("colors.blue.600")
+          )}' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25' /%3E%3C/svg%3E%0A");`,
         },
         ".select-icon": {
           backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='${encodeURIComponent(

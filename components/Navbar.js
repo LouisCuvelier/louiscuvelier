@@ -17,7 +17,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href={""} className={"btn btn-secondary"}>
+            <Link href={"a-propos"} className={"btn btn-secondary"}>
               À propos
             </Link>
           </li>

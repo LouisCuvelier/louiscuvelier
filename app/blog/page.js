@@ -17,7 +17,7 @@ export default function Blog() {
               <span className={"uppertitle uppertitle-2 my-3"}>
                 <Date isPubDate={true} dateString={publicationDate} />
               </span>
-              <p className={"body body-1"}>{description}</p>
+              <p className={"subtitle subtitle-1"}>{description}</p>
               <div className={"text-right mt-5"}>
                 <button className={"btn btn-primary"}>Lire la suite</button>
               </div>

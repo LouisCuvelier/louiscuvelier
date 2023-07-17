@@ -1,6 +1,5 @@
 import "../styles/global.css";
 import localFont from "next/font/local";
-import { Playfair_Display } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -19,22 +18,41 @@ const QanelasSoft = localFont({
   ],
 });
 
-const PlayfaireDisplay = Playfair_Display({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
+const RocGrotesk = localFont({
+  src: [
+    {
+      path: "../public/fonts/roc-grotesk-400.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/roc-grotesk-400.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/roc-grotesk-500.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/roc-grotesk-500.woff2",
+      weight: "500",
+      style: "normal",
+    },
+  ],
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className={"relative"}>
+      <body className={"font-serif antialiased bg-slate-50 text-slate-950"}>
         <div className={"bg-paper"}></div>
         <div
-          className={`relative z-10 flex flex-col justify-between min-h-screen text-slate-900 font-serif`}
+          className={"relative z-10 flex flex-col justify-between min-h-screen"}
         >
           <Navbar />
-          <main className={"max-w-screen-xl mx-auto px-5 py-28"}>
+          <main className={"w-full max-w-screen-xl mx-auto px-5 py-28"}>
             {children}
           </main>
           <Footer />

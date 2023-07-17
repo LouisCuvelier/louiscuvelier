@@ -1,5 +1,2 @@
 @layer base {
-  body {
-    @apply font-serif antialiased bg-slate-50;
-  }
 }

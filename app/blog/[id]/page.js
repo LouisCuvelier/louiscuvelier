@@ -18,7 +18,9 @@ export default async function Post({ params }) {
               <Date isPubDate={false} dateString={frontmatter.updateDate} />
             </span>
           </div>
-          <p className={"body body-1 mt-8"}>{frontmatter.description}</p>
+          <p className={"subtitle subtitle-2 mt-8"}>
+            {frontmatter.description}
+          </p>
         </header>
         {content}
       </article>
