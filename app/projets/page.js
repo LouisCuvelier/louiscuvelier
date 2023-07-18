@@ -9,7 +9,7 @@ export default function Projects() {
         <h1 className={"title title-1"}>Projets</h1>
       </section>
 
-      <section className={"flex flex-col gap-16 mx-auto"}>
+      <section className={"perspective-10000 flex flex-col gap-16 mx-auto"}>
         {allProjectsData.map((props, index) => (
           <ProjectCard index={index} {...props} />
         ))}

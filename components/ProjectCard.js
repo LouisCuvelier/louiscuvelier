@@ -21,7 +21,7 @@ export default function ProjectCard({
     // Sélectionnez toutes les cartes avec la classe "projects"
     const projects = document.querySelectorAll(".projects");
 
-    // Fonction pour effectuer l'inclinaison et la mise à l'échelle de la carte en fonction de la position de la souris
+    // Fonction pour effectuer l'inclinaison de la carte en fonction de la position de la souris
     function rotateToMouse(e) {
       const bounds = e.currentTarget.getBoundingClientRect(); // Récupérez les dimensions de la carte en utilisant getBoundingClientRect()
       const mouseX = e.clientX;
@@ -34,12 +34,16 @@ export default function ProjectCard({
       };
       const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
 
+      // Calculez l'inclinaison en fonction de la distance de la souris par rapport au centre de la carte
+      const inclinationX = center.y / bounds.height;
+      const inclinationY = -center.x / bounds.width;
+
       // Mettre à l'échelle et incliner la carte en fonction de la position de la souris
       e.currentTarget.style.transform = `
-    scale3d(1.05, 1.05, 1.05)
+    scale3d(1.03, 1.03, 1.03)
     rotate3d(
-      ${center.y / 100},
-      ${-center.x / 100},
+      ${inclinationX},
+      ${inclinationY},
       0,
       ${Math.log(distance) * 2}deg
     )
@@ -67,13 +71,13 @@ export default function ProjectCard({
       // Lorsque la souris quitte la carte, appelez handleMouseLeave
       project.addEventListener("mouseleave", handleMouseLeave);
     });
-  });
+  }, []);
 
   return (
     <article
       key={index}
       className={
-        "projects border-hatch duration-800 @container border-[12px] rounded hover:shadow-lg"
+        "projects border-hatch @container border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out"
       }
     >
       <div className={"w-full relative"}>

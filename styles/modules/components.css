@@ -1,5 +1,9 @@
 /* Typography rules of the design */
 @layer components {
+  .perspective-10000 {
+    perspective: 10000px;
+  }
+
   .profile_svg__yeux {
     @apply bg-blue-600 absolute;
   }
@@ -15,10 +19,10 @@
 
   .bg-hatch-secondary {
     background: repeating-linear-gradient(
-            -45deg,
-            theme("colors.transparent"),
-            theme("colors.transparent") 3px,
-            theme("colors.slate.500") 4px
+      -45deg,
+      theme("colors.transparent"),
+      theme("colors.transparent") 3px,
+      theme("colors.slate.500") 4px
     );
   }
 
@@ -182,7 +186,7 @@
 
   .btn,
   .tab {
-    @apply  px-4 py-2 inline-flex items-center tracking-wider font-title text-lg;
+    @apply px-4 py-2 inline-flex items-center tracking-wider font-title text-lg;
     border-radius: 40% 30% 50% 20% / 50% 70% 70% 70%;
     text-shadow: 0px 0px 3px theme("colors.slate.50");
 
@@ -428,7 +432,7 @@
       counter-increment: decimal-counter;
 
       &::before {
-        @apply ring-1 ring-slate-400 bg-hatch-secondary -ml-16 mr-6 font-body font-medium text-slate-800 py-0.5 px-2;
+        @apply bg-hatch-secondary ring-1 ring-slate-400 -ml-16 mr-6 font-body font-medium text-slate-800 py-0.5 px-2;
         content: counter(decimal-counter, decimal-leading-zero);
         border-radius: 70% 30% 78% 22% / 43% 67% 33% 57%;
       }
