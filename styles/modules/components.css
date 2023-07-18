@@ -1,7 +1,7 @@
 /* Typography rules of the design */
 @layer components {
   .profile_svg__yeux {
-    @apply -translate-y-1 -translate-x-2 bg-blue-600;
+    @apply bg-blue-600 absolute;
   }
 
   .bg-hatch-primary {
