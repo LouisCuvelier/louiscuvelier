@@ -23,7 +23,7 @@ export default function Home() {
         const angle = Math.atan2(mouseY - eyeY, mouseX - eyeX);
 
         // Calculez la distance entre l'œil et la souris pour limiter la portée de mouvement
-        const maxDistance = 6; // Ajustez la valeur selon votre préférence
+        const maxDistance = 4; // Ajustez la valeur selon votre préférence
 
         // Calculez la nouvelle position de l'œil
         const translateX = Math.cos(angle) * maxDistance;
@@ -36,8 +36,8 @@ export default function Home() {
         const pupil = eye.querySelector("path:last-of-type");
 
         // Calculez la position de la pupille en fonction du mouvement de l'œil
-        const pupilX = (Math.cos(angle) + 1) * 1; // Remplacez 50 par la valeur qui contrôle la position de la pupille dans l'œil
-        const pupilY = (Math.sin(angle) + 1) * 1; // Remplacez 50 par la valeur qui contrôle la position de la pupille dans l'œil
+        const pupilX = (Math.cos(angle) + 1) * 1.2; // Remplacez 50 par la valeur qui contrôle la position de la pupille dans l'œil
+        const pupilY = (Math.sin(angle) + 1) * 1.2; // Remplacez 50 par la valeur qui contrôle la position de la pupille dans l'œil
 
         // Appliquez la nouvelle position à la pupille en utilisant translate()
         pupil.style.transform = `translate(${pupilX}px, ${pupilY}px)`;
@@ -51,7 +51,7 @@ export default function Home() {
         className={"grid grid-cols-12 gap-16 items-center auto-rows-min"}
       >
         <div className={"col-span-5"}>
-          <Profile className={""} />
+          <Profile className={"w-10/12 mx-auto"} />
         </div>
         <div className={"col-span-7"}>
           <h1 className={"title title-2"}>Louis Cuvelier</h1>

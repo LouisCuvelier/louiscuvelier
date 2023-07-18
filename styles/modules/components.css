@@ -4,10 +4,6 @@
     perspective: 10000px;
   }
 
-  .profile_svg__yeux {
-    @apply bg-blue-600 absolute;
-  }
-
   .bg-hatch-primary {
     background: repeating-linear-gradient(
       -45deg,
