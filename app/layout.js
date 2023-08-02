@@ -2,6 +2,7 @@ import "../styles/global.css";
 import localFont from "next/font/local";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CustomToaster from "../components/CustomToaster";
 
 const QanelasSoft = localFont({
   src: [
@@ -46,8 +47,8 @@ const RocGrotesk = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className={"font-serif antialiased bg-slate-50 text-slate-950"}>
-        <div className={"bg-paper"}></div>
+      <body className={"font-body antialiased bg-slate-50 text-slate-950"}>
+        <div className={"bg-paper-animated"}></div>
         <div
           className={"relative z-10 flex flex-col justify-between min-h-screen"}
         >
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
           <Footer />
+          <CustomToaster />
         </div>
       </body>
     </html>

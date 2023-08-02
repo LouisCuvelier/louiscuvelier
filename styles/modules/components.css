@@ -1,7 +1,7 @@
 /* Typography rules of the design */
 @layer components {
-  .perspective-10000 {
-    perspective: 10000px;
+  .perspective-20000 {
+    perspective: 20000px;
   }
 
   .bg-hatch-primary {
@@ -9,7 +9,7 @@
       -45deg,
       theme("colors.transparent"),
       theme("colors.transparent") 3px,
-      theme("colors.blue.600") 4px
+      theme("colors.teal.600") 4px
     );
   }
 
@@ -141,7 +141,7 @@
   }
 
   .caption-2-light {
-    @apply caption-2 font-normal;
+    @apply caption-2 font-normal text-slate-400;
   }
 
   .body {
@@ -189,7 +189,7 @@
     &.btn,
     &.tab,
     &.tab > span {
-      @apply transition-all ease-in-out duration-300;
+      @apply transition ease-in-out duration-300;
     }
 
     & svg:first-of-type:not(:last-child) {
@@ -223,25 +223,38 @@
     & svg {
       @apply w-6 h-6;
     }
+
+    &:hover {
+      @apply ring-2 ring-teal-600;
+    }
+
+    &.active,
+    &:active {
+      @apply ring-[3px] ring-teal-600;
+    }
   }
 
   .btn,
   .btn-icon {
     & svg {
-      @apply fill-current;
+      @apply stroke-current;
     }
   }
 
   .btn-primary {
-    @apply bg-hatch-primary text-blue-600;
+    @apply bg-hatch-primary text-teal-600;
 
     &:hover {
-      @apply ring-2 ring-blue-600;
+      @apply ring-2 ring-teal-600;
+    }
+
+    &:focus {
+      @apply ring-1 ring-teal-600;
     }
 
     &.active,
     &:active {
-      @apply ring-[3px] ring-blue-600;
+      @apply ring-[3px] ring-teal-600;
     }
   }
 
@@ -250,6 +263,10 @@
 
     &:hover {
       @apply ring-2 ring-slate-600;
+    }
+
+    &:focus {
+      @apply ring-1 ring-slate-600;
     }
 
     &.active,
@@ -262,7 +279,11 @@
     @apply border-hatch ring-1 ring-slate-600;
 
     &:hover {
-      @apply ring-2 ring-blue-600 text-blue-600;
+      @apply ring-2 ring-teal-600 text-teal-600;
+    }
+
+    &:focus {
+      @apply ring-1 ring-teal-600 text-teal-600;
     }
 
     &.active,
@@ -396,7 +417,7 @@
   }
 
   .link-primary {
-    @apply decoration-slate-600 underline-offset-2 text-blue-600 decoration-blue-600;
+    @apply decoration-slate-600 underline-offset-2 text-teal-600 decoration-teal-600;
 
     &:hover {
       @apply decoration-dashed;
@@ -512,11 +533,15 @@
     background-image: url("../public/images/background.png");
     background-size: 100px 100px;
     background-repeat: repeat;
-    animation: grain 7s steps(10) infinite;
     top: -300%;
     left: -300%;
     height: 600%;
     width: 600%;
+  }
+
+  .bg-paper-animated {
+    @apply bg-paper;
+    animation: grain 7s steps(10) infinite;
 
     @keyframes grain {
       0%,

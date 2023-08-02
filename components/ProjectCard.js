@@ -40,7 +40,7 @@ export default function ProjectCard({
 
       // Mettre à l'échelle et incliner la carte en fonction de la position de la souris
       e.currentTarget.style.transform = `
-    scale3d(1.03, 1.03, 1.03)
+    scale3d(1.02, 1.02, 1.02)
     rotate3d(
       ${inclinationX},
       ${inclinationY},
@@ -90,14 +90,14 @@ export default function ProjectCard({
         />
         <ul
           className={
-            "absolute right-12 bottom-12 z-10 gap-2 flex flex-row flex-wrap mt-1"
+            "hidden @lg:flex absolute inset-x-8 bottom-8 z-10 gap-2 flex-row flex-wrap justify-end"
           }
         >
           {categories.map((value, index) => (
             <li
               key={index}
               className={
-                "uppertitle uppertitle-2 bg-hatch-secondary shadow-blue-950 rounded pl-3 pr-2 py-1 bg-blue-100/50 text-white shadow-xl"
+                "uppertitle uppertitle-2 bg-hatch-secondary shadow-slate-800/50 rounded pl-3 pr-2 py-1 bg-slate-500/80 text-white shadow-lg"
               }
             >
               {value}
@@ -106,8 +106,8 @@ export default function ProjectCard({
         </ul>
       </div>
 
-      <div className={"p-14"}>
-        <div className={"@xl:gap-14 @xl:grid @xl:grid-cols-2"}>
+      <div className={"p-5 @md:p-14"}>
+        <div className={"gap-14 grid @2xl:grid-cols-2"}>
           <div>
             <div className={"flex justify-between items-stretch mb-14"}>
               <div>
@@ -116,23 +116,41 @@ export default function ProjectCard({
                   {duration}
                 </div>
                 <h2 className={"title title-2 mt-8 mb-4"}>{client}</h2>
-                <Link
-                  href={website}
-                  className={"btn btn-tertiary"}
-                  rel={"noopener noreferrer"}
-                  target={"_blank"}
+                <ul
+                  className={
+                    "flex @lg:hidden gap-2 flex flex-row flex-wrap mt-1 my-5"
+                  }
                 >
-                  <span>Voir le projet</span>
-                  <ArrowUpRight />
-                </Link>
+                  {categories.map((value, index) => (
+                    <li
+                      key={index}
+                      className={
+                        "uppertitle uppertitle-2 bg-hatch-secondary rounded pl-2 pr-1"
+                      }
+                    >
+                      {value}
+                    </li>
+                  ))}
+                </ul>
+                {website != null && (
+                  <Link
+                    href={website}
+                    className={"btn btn-tertiary"}
+                    rel={"noopener noreferrer"}
+                    target={"_blank"}
+                  >
+                    <span>Voir le projet</span>
+                    <ArrowUpRight />
+                  </Link>
+                )}
               </div>
             </div>
             <div>
-              <p className={"subtitle subtitle-2 mb-14 @lg:mb-0"}>{work}</p>
+              <p className={"subtitle subtitle-2 @xl:mb-0"}>{work}</p>
             </div>
           </div>
 
-          <div className={"mt-16 space-y-8 self-end"}>
+          <div className={"@2xl:mt-16 space-y-14 self-end"}>
             <div>
               <h3 className={"title title-4 mb-3"}>Client</h3>
               <p className={"body body-1"}>{description}</p>

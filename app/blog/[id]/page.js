@@ -4,7 +4,7 @@ export default async function Post({ params }) {
   const { frontmatter, content } = await getPostData(params.id);
   return (
     <>
-      <article className={"perspective-10000 max-w-screen-sm mx-auto"}>
+      <article className={"perspective-20000 max-w-screen-sm mx-auto"}>
         <header>
           <h1 className={"title title-2"}>{frontmatter.title}</h1>
           <div className={"caption caption-1"}>

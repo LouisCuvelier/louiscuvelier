@@ -1,16 +1,10 @@
 {
   "date": "2023-06-12",
   "client": "Coursier Job",
-  "description": "Bulneo est l'entreprise spécialiste de la rénovation de salle de bain. Du simple remplacement de baignoire par une douche en 48h jusqu'à la rénovation totale de la salle de bain en 5 jours, les travaux sont réalisés sans sous-traitance, avec des produits sur mesure, fabriqués en France et disposant d'une garantie étendue de 10 ans.",
-  "website": "https://www.bulneo.fr/",
-  "categories": [
-    "Développement site vitrine",
-    "SEO",
-    "Formation",
-    "Automatisation"
-  ],
-  "work": "Étant co-fondateur de Bulneo, j'ai pu avoir une grande liberté d'action. Ainsi, cela m'a permis de développer l'intégralité du site vitrine, mettre en place la stratégie SEO et SEA, créer tous les processus internes, automatiser un grand nombre d'actions, donner des formations et développer des outils customs, notamment sous Zoho.",
-  "duration": "De 2019 à maintenant",
-  "technologies": ["Craft CMS", "Tailwind CSS", "Alpine JS", "Twig", "Zoho"],
-  "cover": "/images/bulneo.jpg"
+  "description": "Coursier Job guidait et en mettait en relation les coursiers avec les entreprises qui recrutent dans plus de 425 villes de France. Explications de toutes les démarches, conseils pour s'équiper, actualités du métier, outil de gestion comptable, voilà ce qu'était Coursier Job. Le site a été vendu fin 2022.",
+  "categories": ["Développement site vitrine", "SEO", "Automatisation"],
+  "work": "Le site était d'abord un WordPress mais les limites ont vite été atteintes. Une migration sous Craft CMS s'est imposée début 2019 afin d'optimiser la performance, l'automatisation et la stratégie SEO. J'ai ensuite introduit de nouvelles technologies comme Tailwind CSS ou Alpine JS. C'était pour moi un véritable laboratoire technique qui pouvait servir jusqu'à 160 000 pages vues mensuellement.",
+  "duration": "De 2017 à 2022",
+  "technologies": ["Craft CMS", "Tailwind CSS", "Alpine JS", "Twig", "Zapier", "Google Sheet"],
+  "cover": "/images/coursier-job.jpg"
 }
