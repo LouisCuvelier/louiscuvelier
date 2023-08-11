@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Qanelas Soft";
+  src: url("../public/fonts/QanelasSoft-ExtraBold.woff2") format("woff2"),
+    url("../public/fonts/QanelasSoft-ExtraBold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roc Grotesk";
+  src: url("../public/fonts/roc-grotesk-400.woff2") format("woff2"),
+    url("../public/fonts/roc-grotesk-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roc Grotesk";
+  src: url("../public/fonts/roc-grotesk-500.woff2") format("woff2"),
+    url("../public/fonts/roc-grotesk-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

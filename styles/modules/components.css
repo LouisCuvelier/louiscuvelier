@@ -1,0 +1,581 @@
+/* Typography rules of the design */
+@layer components {
+  .perspective-20000 {
+    perspective: 20000px;
+  }
+
+  .bg-hatch-primary {
+    background: repeating-linear-gradient(
+      -45deg,
+      theme("colors.transparent"),
+      theme("colors.transparent") 3px,
+      theme("colors.teal.600") 4px
+    );
+  }
+
+  .bg-hatch-secondary {
+    background: repeating-linear-gradient(
+      -45deg,
+      theme("colors.transparent"),
+      theme("colors.transparent") 3px,
+      theme("colors.slate.500") 4px
+    );
+  }
+
+  .border-hatch {
+    border-image: repeating-linear-gradient(
+        -45deg,
+        theme("colors.transparent"),
+        theme("colors.transparent") 3px,
+        theme("colors.slate.500") 4px
+      )
+      13;
+  }
+
+  .title {
+    @apply font-title font-semibold text-slate-900;
+  }
+
+  .title-1 {
+    @apply text-7xl;
+
+    @screen sm {
+      @apply text-8xl;
+    }
+  }
+
+  .title-2 {
+    @apply text-5xl;
+
+    @screen sm {
+      @apply text-6xl;
+    }
+  }
+
+  .title-3 {
+    @apply text-3xl;
+
+    @screen sm {
+      @apply text-4xl;
+    }
+  }
+
+  .title-4 {
+    @apply text-xl;
+
+    @screen sm {
+      @apply text-2xl;
+    }
+  }
+
+  .title-5 {
+    @apply text-base;
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+
+  .title-5-light {
+    @apply title-5 font-normal;
+  }
+
+  .subtitle {
+    @apply font-body font-medium text-slate-700;
+  }
+
+  .subtitle-1 {
+    @apply text-xl;
+
+    @screen sm {
+      @apply text-2xl;
+    }
+  }
+
+  .subtitle-2 {
+    @apply text-lg;
+
+    @screen sm {
+      @apply text-xl;
+    }
+  }
+
+  .uppertitle {
+    @apply font-title font-semibold text-slate-900 uppercase tracking-[0.20rem];
+  }
+
+  .uppertitle-1 {
+    @apply text-base;
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+
+  .uppertitle-2 {
+    @apply text-xs;
+
+    @screen sm {
+      @apply text-sm;
+    }
+  }
+
+  .caption {
+    @apply font-title font-semibold text-slate-900 leading-tight;
+  }
+
+  .caption-1 {
+    @apply text-base;
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+
+  .caption-2 {
+    @apply text-sm;
+
+    @screen sm {
+      @apply text-base;
+    }
+  }
+
+  .caption-2-light {
+    @apply caption-2 font-normal text-slate-400;
+  }
+
+  .body {
+    @apply font-body text-slate-700;
+
+    & strong {
+      @apply font-medium;
+    }
+
+    & *:not(a) > strong {
+      @apply text-slate-800;
+    }
+  }
+
+  .body-1 {
+    @apply text-lg;
+
+    @screen sm {
+      @apply text-xl;
+    }
+  }
+
+  .body-2 {
+    @apply text-base;
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+
+  .body-3 {
+    @apply text-sm;
+
+    @screen sm {
+      @apply text-base;
+    }
+  }
+
+  .btn,
+  .tab {
+    @apply px-4 py-2 inline-flex items-center tracking-wider font-title text-lg;
+    border-radius: 40% 30% 50% 20% / 50% 70% 70% 70%;
+    text-shadow: 0px 0px 3px theme("colors.slate.50");
+
+    &.btn,
+    &.tab,
+    &.tab > span {
+      @apply transition ease-in-out duration-300;
+    }
+
+    & svg:first-of-type:not(:last-child) {
+      @apply -ml-1 mr-2 h-5 w-5;
+    }
+
+    & svg:last-of-type:not(:first-child) {
+      @apply -mr-1 ml-2 h-5 w-5;
+    }
+
+    @screen sm {
+      @apply text-lg;
+    }
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  .tab {
+    @apply leading-6 border-2 border-transparent text-slate-600;
+
+    & > span {
+      @apply ounded-md flex w-full items-center px-4 py-2 transition-shadow;
+    }
+  }
+
+  .btn-icon {
+    @apply leading-6 inline-flex items-center p-2 rounded-md border-2 border-transparent;
+
+    & svg {
+      @apply w-6 h-6;
+    }
+
+    &:hover {
+      @apply ring-2 ring-teal-700;
+    }
+
+    &.active,
+    &:active {
+      @apply ring-[3px] ring-teal-700;
+    }
+  }
+
+  .btn,
+  .btn-icon {
+    & svg {
+      @apply stroke-current;
+    }
+  }
+
+  .btn-primary {
+    @apply bg-hatch-primary text-teal-700;
+
+    &:hover {
+      @apply ring-2 ring-teal-700;
+    }
+
+    &:focus {
+      @apply ring-1 ring-teal-700;
+    }
+
+    &.active,
+    &:active {
+      @apply ring-[3px] ring-teal-700;
+    }
+  }
+
+  .btn-secondary {
+    @apply bg-hatch-secondary;
+
+    &:hover {
+      @apply ring-2 ring-slate-600;
+    }
+
+    &:focus {
+      @apply ring-1 ring-slate-600;
+    }
+
+    &.active,
+    &:active {
+      @apply ring-[3px] ring-slate-600;
+    }
+  }
+
+  .btn-tertiary {
+    @apply border-hatch ring-1 ring-slate-600;
+
+    &:hover {
+      @apply ring-2 ring-teal-700 text-teal-700;
+    }
+
+    &:focus {
+      @apply ring-1 ring-teal-700 text-teal-700;
+    }
+
+    &.active,
+    &:active {
+      @apply ring-[3px] ring-slate-600;
+    }
+  }
+
+  .tab-primary {
+    &:hover {
+      @apply bg-slate-100 text-slate-700;
+    }
+
+    &.active,
+    &:active {
+      @apply shadow-inner bg-slate-200 text-slate-700;
+    }
+
+    &:focus {
+      @apply bg-slate-200 text-slate-700 outline-none;
+    }
+
+    &:focus > span {
+    }
+  }
+
+  .tab-secondary {
+    &:hover {
+      @apply bg-slate-200 text-slate-800;
+    }
+
+    &.active,
+    &:active {
+      @apply shadow-inner bg-slate-300 text-slate-700;
+    }
+
+    &:focus {
+      @apply bg-slate-300 text-slate-800 outline-none;
+    }
+
+    &:focus > span {
+    }
+  }
+
+  .action {
+    @apply font-title transition rounded-lg inline-flex items-center text-base leading-6 font-semibold;
+
+    &,
+    &::after {
+      @apply ease-in-out duration-300;
+    }
+
+    &:focus {
+      @apply outline-none;
+    }
+
+    &.active,
+    &:active {
+      @apply underline;
+    }
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+
+  .action-primary,
+  .action-secondary {
+    @apply text-slate-600;
+
+    &:hover {
+      @apply text-slate-500;
+    }
+  }
+
+  .action-primary {
+    &::after {
+      @apply transition-transform ml-1;
+      content: "→";
+    }
+
+    &:hover {
+      &::after {
+        @apply transform translate-x-1;
+      }
+    }
+  }
+
+  .action-tertiary {
+    @apply text-slate-700;
+
+    &:hover {
+      @apply text-slate-600;
+    }
+  }
+
+  .action-positive {
+    @apply text-green-600;
+
+    &:hover {
+      @apply text-green-500;
+    }
+  }
+
+  .action-negative {
+    @apply text-red-600;
+
+    &:hover {
+      @apply text-red-500;
+    }
+  }
+
+  .link {
+    @apply transition duration-300 ease-in-out rounded-md underline decoration-1;
+
+    &:focus {
+      @apply outline-none;
+    }
+
+    &:active {
+      @apply no-underline;
+    }
+  }
+
+  /* purgecss ignore */
+  .link[target="_blank"]::after {
+    @apply ml-1 relative w-4 h-4 inline-block bg-no-repeat;
+    bottom: -2px;
+    content: "";
+    background-size: theme("spacing.4");
+  }
+
+  .link-primary {
+    @apply decoration-slate-600 underline-offset-2 text-teal-700 decoration-teal-700;
+
+    &:hover {
+      @apply decoration-dashed;
+    }
+  }
+
+  /* purgecss ignore */
+  .link-primary[target="_blank"]::after {
+    @apply external-link-icon-primary;
+  }
+
+  .list-ul {
+    & li {
+      @apply relative pl-16;
+
+      &::before {
+        @apply bg-hatch-secondary ring-1 ring-slate-400 inline-block -ml-12 mr-8 w-4 h-4 -mb-1;
+        border-radius: 70% 30% 78% 22% / 43% 67% 33% 57%;
+        content: "";
+      }
+    }
+  }
+
+  .list-ol {
+    counter-reset: decimal-counter;
+
+    & li {
+      @apply relative pl-16;
+      counter-increment: decimal-counter;
+
+      &::before {
+        @apply bg-hatch-secondary ring-1 ring-slate-400 -ml-16 mr-6 font-body font-medium text-slate-800 py-0.5 px-2;
+        content: counter(decimal-counter, decimal-leading-zero);
+        border-radius: 70% 30% 78% 22% / 43% 67% 33% 57%;
+      }
+    }
+  }
+
+  .form-input {
+    @apply w-full font-title text-base rounded-md leading-6 px-3 py-2 border-2 border-slate-500 text-slate-900;
+    appearance: none;
+
+    &,
+    &::placeholder {
+      @apply transition duration-300 ease-in-out;
+    }
+
+    &::placeholder {
+      @apply text-slate-400;
+    }
+
+    &:focus {
+      @apply outline-none border-slate-500;
+
+      &::placeholder {
+        @apply text-slate-500;
+      }
+    }
+
+    &.error {
+      @apply border-red-500;
+    }
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+
+  select.form-input,
+  .form-input select {
+    @apply select-icon bg-no-repeat;
+    appearance: none;
+    background-position: calc(100% - theme("spacing.5")) center;
+    background-size: theme("spacing.5");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' stroke='%23718096'%3E%3Cpath d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .form-box {
+    @apply relative flex items-baseline;
+    appearance: none;
+
+    & input,
+    & select,
+    & label {
+      @apply cursor-pointer;
+    }
+
+    & input {
+      @apply relative z-10 ml-3 -mr-3;
+    }
+
+    & input:hover + label,
+    & label:hover {
+      @apply text-slate-800 bg-slate-200;
+    }
+
+    & label {
+      @apply caption caption-1 w-full rounded-md py-2 pr-3 pl-10 transition duration-300 ease-in-out flex flex-col;
+      margin-left: -14px;
+
+      & > span {
+        @apply caption caption-2-light;
+      }
+    }
+
+    & input:checked + label {
+      @apply transition duration-300 ease-in-out text-slate-800;
+    }
+  }
+
+  .bg-paper {
+    @apply fixed z-0 w-full h-full left-0 top-0 opacity-25;
+    background-image: url("../public/images/background.png");
+    background-size: 100px 100px;
+    background-repeat: repeat;
+    top: -300%;
+    left: -300%;
+    height: 600%;
+    width: 600%;
+  }
+
+  .bg-paper-animated {
+    @apply bg-paper;
+    animation: grain 7s steps(10) infinite;
+
+    @keyframes grain {
+      0%,
+      100% {
+        transform: translate(0);
+      }
+
+      10% {
+        transform: translate(-5%, -10%);
+      }
+      20% {
+        transform: translate(-15%, 5%);
+      }
+      30% {
+        transform: translate(7%, -25%);
+      }
+      40% {
+        transform: translate(-5%, 25%);
+      }
+      50% {
+        transform: translate(-15%, 10%);
+      }
+      60% {
+        transform: translate(15%);
+      }
+      70% {
+        transform: translateY(15%);
+      }
+      80% {
+        transform: translate(3%, 35%);
+      }
+      90% {
+        transform: translate(-10%, 10%);
+      }
+    }
+  }
+}
