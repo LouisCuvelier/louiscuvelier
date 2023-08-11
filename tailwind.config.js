@@ -1,174 +1,38 @@
-function convertHex(hex, opacity) {
-  hex = hex.replace("#", "");
-  r = parseInt(hex.substring(0, 2), 16);
-  g = parseInt(hex.substring(2, 4), 16);
-  b = parseInt(hex.substring(4, 6), 16);
-
-  return `rgba(${r}, ${g}, ${b}, ${opacity / 100})`;
-}
-
 const defaultTheme = require("tailwindcss/defaultTheme");
-
-const spacingValues = [
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  8,
-  10,
-  12,
-  16,
-  20,
-  24,
-  32,
-  40,
-  48,
-  56,
-  64,
-  72,
-  80,
-  96,
-  112,
-  128,
-  144,
-  160,
-  192,
-  224,
-  256,
-  288,
-  320,
-  384,
-  448,
-  512
-];
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
-    container: {
-      center: true
-    },
-    fontFamily: {
-      sans: ["Nunito", ...defaultTheme.fontFamily.sans],
-      serif: ["Merriweather", ...defaultTheme.fontFamily.serif]
-    },
-    spacing: () => {
-      const spacing = {
-        "0": "0px",
-        "1px": "1px",
-        "1": "2px",
-      };
-      let i = 2;
-
-      for (let value of spacingValues) {
-        spacing[`${i}`] = `${value * 0.25}rem`;
-        i++;
-      }
-
-      return spacing;
-    },
     extend: {
-      maxWidth: theme => {
-        const spacing = theme("spacing");
-        const values = {
-          "1/4": "25%",
-          "1/2": "50%",
-          "3/4": "75%",
-          "4/5": "80%"
-        };
-
-        for (let key in spacing) {
-          Object.assign(values, {
-            [`${key}`]: `${spacing[key]}`
-          });
-        }
-
-        return values;
+      fontFamily: {
+        title: ["Qanelas Soft", ...defaultTheme.fontFamily.sans],
+        body: ["Roc Grotesk", ...defaultTheme.fontFamily.sans],
       },
-      minWidth: theme => {
-        const spacing = theme("spacing");
-        const values = {
-          "1/4": "25%",
-          "1/2": "50%",
-          "3/4": "75%"
-        };
-
-        for (let key in spacing) {
-          Object.assign(values, {
-            [`${key}`]: `${spacing[key]}`
-          });
-        }
-
-        return values;
-      },
-      maxHeight: theme => {
-        const spacing = theme("spacing");
-        const values = {};
-
-        for (let key in spacing) {
-          Object.assign(values, {
-            [`${key}`]: `${spacing[key]}`
-          });
-        }
-
-        return values;
-      },
-      minHeight: theme => {
-        const spacing = theme("spacing");
-        const values = {
-          "1/4": "25%",
-          "1/2": "50%",
-          "3/4": "75%"
-        };
-
-        for (let key in spacing) {
-          Object.assign(values, {
-            [`${key}`]: `${spacing[key]}`
-          });
-        }
-
-        return values;
-      },
-      borderWidth: {
-        "6": "6px"
-      },
-      boxShadow: theme => {
-        const color = theme("colors.gray.300");
-        return {
-          outline: `0 0 0 3px ${convertHex(color, 50)}`,
-          focus: "0 0 0 3px rgba(66,153,225,0.5)"
-        };
-      },
-      inset: theme => {
-        const positiveValues = theme("spacing");
-        const negativeValues = {};
-        const otherValues = {
-          unset: "unset",
-          "50per": "50%"
-        };
-
-        for (let key in positiveValues) {
-          Object.assign(negativeValues, {
-            [`-${key}`]: `-${positiveValues[key]}`
-          });
-        }
-
-        const values = Object.assign(negativeValues, positiveValues);
-        return Object.assign(values, otherValues);
-      },
-      zIndex: {
-        "(-2)": "-2",
-        "(-1)": "-1",
-        "50": 50,
-        "60": 60,
-        "70": 70,
-        "80": 80,
-        "90": 90,
-        "100": 100
-      }
-    }
+    },
   },
-  variants: {},
-  plugins: []
+  plugins: [
+    require("@tailwindcss/container-queries"),
+    plugin(function ({ addComponents, theme }) {
+      const icons = {
+        ".external-link-icon-primary": {
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.75' stroke='${encodeURIComponent(
+            theme("colors.teal.600")
+          )}' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25' /%3E%3C/svg%3E%0A");`,
+        },
+        ".select-icon": {
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='${encodeURIComponent(
+            theme("colors.slate.800")
+          )}' viewBox='0 0 20 20'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'%3E%3C/path%3E%3C/svg%3E");`,
+        },
+      };
+
+      addComponents(icons);
+    }),
+  ],
 };

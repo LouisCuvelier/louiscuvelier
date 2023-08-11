@@ -1,22 +1,13 @@
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: [
-    "./src/**/*.html",
-    "./src/**/*.js",
-    "./content/**/*.svg",
-    "./static/**/*.svg",
-    "gatsby-config.js"
-  ],
-  defaultExtractor: content => content.match(/[\w-/:%()]+(?<!:)/g) || []
-});
-
 module.exports = {
-  plugins: [
-    require("tailwindcss"),
-    require("autoprefixer"),
-    require("postcss-nested"),
-    require("postcss-color-function"),
-    ...(process.env.NODE_ENV === "production"
-      ? [purgecss, require("cssnano")]
-      : [])
-  ]
+  plugins: {
+    "postcss-import": {},
+    "tailwindcss/nesting": {},
+    tailwindcss: {},
+    "postcss-preset-env": {
+      stage: 1,
+      features: {
+        "nesting-rules": true,
+      },
+    },
+  },
 };
