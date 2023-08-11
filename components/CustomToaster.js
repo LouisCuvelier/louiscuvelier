@@ -5,7 +5,7 @@ import { resolveValue, Toaster, ToastIcon } from "react-hot-toast";
 export default function CustomToaster() {
   return (
     <Toaster
-      position={"bottom-right"}
+      position={"top-center"}
       toastOptions={{
         success: {
           iconTheme: {

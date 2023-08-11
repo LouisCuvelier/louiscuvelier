@@ -1,5 +1,5 @@
-import { getSortedProjectsData } from "../../lib/projects";
-import ProjectCard from "../../components/ProjectCard";
+import { getSortedProjectsData } from "../../../lib/projects";
+import ProjectCard from "../../../components/ProjectCard";
 export default function Projects() {
   const allProjectsData = getSortedProjectsData();
 

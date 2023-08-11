@@ -1,8 +1,6 @@
-import "../styles/global.css";
+import "/styles/global.css";
 import localFont from "next/font/local";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import CustomToaster from "../components/CustomToaster";
+import CustomToaster from "/components/CustomToaster";
 
 const QanelasSoft = localFont({
   src: [
@@ -52,11 +50,7 @@ export default function RootLayout({ children }) {
         <div
           className={"relative z-10 flex flex-col justify-between min-h-screen"}
         >
-          <Navbar />
-          <main className={"w-full max-w-screen-xl mx-auto px-5 py-28"}>
-            {children}
-          </main>
-          <Footer />
+          {children}
           <CustomToaster />
         </div>
       </body>

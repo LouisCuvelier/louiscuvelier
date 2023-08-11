@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Profile from "../public/images/profile.svg";
+import Profile from "../../public/images/profile.svg";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -48,24 +48,31 @@ export default function Home() {
   return (
     <>
       <section
-        className={"grid grid-cols-12 gap-16 items-center auto-rows-min"}
+        className={
+          "grid grid-cols-1 md:grid-cols-12 -mt-16 md:mt-0 gap-16 md:gap-16 items-center md:auto-rows-min"
+        }
       >
-        <div className={"col-span-5"}>
-          <Profile className={"w-10/12 mx-auto"} />
+        <div className={"md:col-span-5"}>
+          <Profile className={"w-6/12 md:w-10/12 mx-auto"} />
         </div>
-        <div className={"col-span-7"}>
-          <h1 className={"title title-2"}>Louis Cuvelier</h1>
+        <div className={"md:col-span-7"}>
+          <h1 className={"title title-1"}>Louis Cuvelier</h1>
           <h2 className={"title title-3 mt-2 mb-6"}>
-            Bidouilleur freelance de code et de design
+            Front-end, automatisation et SEO
           </h2>
           <p className={"body body-1"}>
-            Je suis développeur front end, expert SEO et amoureux du pixel
-            perfect. Je peux vous accompagner sur le design, le développement et
-            le classement SEO de votre site web.
+            Je suis un freelance passionné par le code et l'entrepreneuriat,
+            avec une expertise en <strong>développement front-end</strong>,{" "}
+            <strong>automatisation</strong> et <strong>SEO</strong>. Mon
+            objectif est d'aider mes clients à atteindre leurs objectifs en
+            créant des solutions sur mesure innovantes.
           </p>
-          <div className={"mt-9"}>
+          <div className={"mt-9 flex flex-wrap gap-8"}>
             <Link href={"/"} className={"btn btn-primary"}>
               Voir mon travail
+            </Link>
+            <Link href={"/a-propos"} className={"btn btn-secondary"}>
+              En savoir plus
             </Link>
           </div>
         </div>

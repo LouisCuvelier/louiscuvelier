@@ -1,5 +1,5 @@
-import { getAllPostIds, getPostData } from "../../../lib/posts";
-import Date from "../../../components/Date";
+import { getAllPostIds, getPostData } from "../../../../lib/posts";
+import Date from "../../../../components/Date";
 export default async function Post({ params }) {
   const { frontmatter, content } = await getPostData(params.id);
   return (
