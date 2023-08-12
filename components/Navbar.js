@@ -79,15 +79,23 @@ export default function Navbar() {
                   <nav className="order-1">
                     <ul className="text-slate-800 space-y-3">
                       <li>
-                        <Link href={"/"} className={"btn btn-secondary"}>
+                        <Popover.Button
+                          as={Link}
+                          href={"/"}
+                          className={"btn btn-secondary"}
+                        >
                           Accueil
-                        </Link>
+                        </Popover.Button>
                       </li>
                       {paths.map((path) => (
                         <li key={path.url}>
-                          <Link href={path.url} className={"btn btn-secondary"}>
+                          <Popover.Button
+                            as={Link}
+                            href={path.url}
+                            className={"btn btn-secondary"}
+                          >
                             {path.title}
-                          </Link>
+                          </Popover.Button>
                         </li>
                       ))}
                     </ul>
