@@ -1,5 +1,11 @@
 import CustomLink from "../../../components/CustomLink";
 
+export const metadata = {
+  title: "À propos - Louis Cuvelier",
+  description:
+    "Découvrez l'histoire derrière mon parcours en freelance et entrepreneuriat. Diplômé d'un Master 2 en Chef de projet web, j'ai évolué dans le monde du développement front-end, de l'automatisation et du SEO. Mon engagement à créer des solutions pratiques et innovantes est renforcé par mon expérience entrepreneuriale. Plongez dans mon profil professionnel et contactez-moi pour collaborer sur vos défis digitaux.",
+};
+
 export default function About() {
   return (
     <>
