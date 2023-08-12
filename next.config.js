@@ -6,6 +6,7 @@ const nextConfig = {
 
 const withMDX = require("@next/mdx")();
 module.exports = {
+  output: "export",
   withMDX(nextConfig) {},
   webpack(config) {
     // Grab the existing rule that handles SVG imports
