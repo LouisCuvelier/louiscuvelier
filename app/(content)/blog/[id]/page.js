@@ -5,11 +5,21 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const data = await getPostData(params.id);
   const { frontmatter } = data;
 
+  const title = `${frontmatter.title}`;
+  const description = `${frontmatter.description}`;
+
   return {
-    title: frontmatter.title + " - Louis Cuvelier",
-    description: frontmatter.description,
+    title,
+    description,
     openGraph: {
       images: [frontmatter.image],
+      title,
+      description,
+      url: `https://louiscuvelier.com/blog/${params.id}`,
+    },
+    twitter: {
+      title,
+      description,
     },
   };
 }

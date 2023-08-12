@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={"w-full max-w-screen-xl mx-auto p-5"}>
+    <header className={"w-full max-w-screen-lg mx-auto p-5"}>
       <nav className={"flex flex-row justify-between items-center"}>
         {pathname !== "/" ? (
           <Link href={"/"}>
