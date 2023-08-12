@@ -29,7 +29,7 @@ export default function CopyClipboard({ copyText }) {
 
   return (
     <button className={"action action-secondary"} onClick={handleCopyClick}>
-      <Copy className={"h-4 w-4"} />
+      <Copy className={"h-4 w-4 stroke-current stroke-teal-700"} />
     </button>
   );
 }

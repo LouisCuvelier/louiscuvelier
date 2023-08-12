@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import Profile from "../../public/images/profile.svg";
+import Profile from "../../public/images/logo.svg";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    const eyes = document.querySelectorAll(".profile_svg__yeux");
+    const eyes = document.querySelectorAll(".logo_svg__yeux");
 
     window.addEventListener("mousemove", (e) => {
       // Récupérez les coordonnées de la souris

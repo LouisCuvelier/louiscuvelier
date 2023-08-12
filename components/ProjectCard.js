@@ -138,7 +138,7 @@ export default function ProjectCard({
                     rel={"noopener noreferrer"}
                     target={"_blank"}
                   >
-                    <span>Voir le projet</span>
+                    <span>Voir la réalisation</span>
                     <ArrowUpRight />
                   </Link>
                 )}

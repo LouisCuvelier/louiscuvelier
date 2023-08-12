@@ -11,7 +11,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const paths = [
-    { url: "/projets", title: "Projets" },
+    { url: "/realisations", title: "Réalisations" },
     { url: "/blog", title: "Blog" },
     { url: "/a-propos", title: "À propos" },
     { url: "/contact", title: "Contact" },
@@ -79,15 +79,23 @@ export default function Navbar() {
                   <nav className="order-1">
                     <ul className="text-slate-800 space-y-3">
                       <li>
-                        <Link href={"/"} className={"btn btn-secondary"}>
+                        <Popover.Button
+                          as={Link}
+                          href={"/"}
+                          className={"btn btn-secondary"}
+                        >
                           Accueil
-                        </Link>
+                        </Popover.Button>
                       </li>
                       {paths.map((path) => (
                         <li key={path.url}>
-                          <Link href={path.url} className={"btn btn-secondary"}>
+                          <Popover.Button
+                            as={Link}
+                            href={path.url}
+                            className={"btn btn-secondary"}
+                          >
                             {path.title}
-                          </Link>
+                          </Popover.Button>
                         </li>
                       ))}
                     </ul>
