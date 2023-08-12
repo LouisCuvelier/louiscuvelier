@@ -2,5 +2,5 @@
 module.exports = {
   siteUrl: "https://louiscuvelier.com",
   generateRobotsTxt: true,
-  // ...other options
+  output: "export",
 };
