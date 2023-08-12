@@ -2,26 +2,23 @@ import "/styles/global.css";
 import localFont from "next/font/local";
 import CustomToaster from "/components/CustomToaster";
 
+const title = "Louis Cuvelier - Développeur front-end, automatisation et SEO";
+const description =
+  "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.";
+
 export const metadata = {
-  title: "Louis Cuvelier - Développeur front-end, automatisation et SEO",
-  description:
-    "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.",
+  metadataBase: new URL("https://louiscuvelier.com"),
+  title,
+  description,
   openGraph: {
-    title: "Louis Cuvelier - Développeur front-end, automatisation et SEO",
-    description:
-      "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.",
+    title,
+    description,
     url: "https://louiscuvelier.com/",
-    siteName: "Louis Cuvelier",
     images: [],
-    locale: "fr_FR",
-    type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Louis Cuvelier - Développeur front-end, automatisation et SEO",
-    description:
-      "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.",
-    creator: "@LouisCuvelier_",
+    title,
+    description,
     images: [""],
   },
 };
