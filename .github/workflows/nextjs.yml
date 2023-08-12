@@ -77,7 +77,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} build
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} export
-      - name: Generate sitemap and robots.txt
+      - name: Generate sitemap.xml and robots.txt
         run: ${{ steps.detect-package-manager.outputs.runner }} postbuild
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
@@ -95,3 +95,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+
+  # Clear cache job
+  clear:
+    steps:
+      - name: Cloudflare Cache Purge Action
+        uses: NathanVaughn/actions-cloudflare-purge@v3.1.0
+        with:
+          cf_zone: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          cf_auth: ${{ secrets.CLOUDFLARE_TOKEN_PURGE_CACHE }}
+
+
