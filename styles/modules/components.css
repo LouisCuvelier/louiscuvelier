@@ -221,7 +221,7 @@
     @apply leading-6 inline-flex items-center p-2 rounded-md border-2 border-transparent;
 
     & svg {
-      @apply w-6 h-6;
+      @apply w-8 h-8;
     }
 
     &:hover {
