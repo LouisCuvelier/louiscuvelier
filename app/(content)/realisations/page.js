@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <>
       <section className={"text-center mb-32"}>
-        <h1 className={"title title-1"}>Projets</h1>
+        <h1 className={"title title-1"}>Réalisations</h1>
       </section>
 
       <section

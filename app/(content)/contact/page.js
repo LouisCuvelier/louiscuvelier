@@ -3,13 +3,18 @@ import CopyClipboard from "../../../components/CopyClipboard";
 
 export default function Contact() {
   const socials = [
-    { name: "Twitter", url: "", icon: "" },
-    { name: "LinkedIn", url: "", icon: "" },
+    { name: "Twitter", url: "https://twitter.com/LouisCuvelier_" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/louiscuvelier/" },
   ];
   return (
     <>
       <section className={"text-center mb-32"}>
-        <h1 className={"title title-1"}>Contact</h1>
+        <h1 className={"title title-1 max-w-screen-md mx-auto"}>
+          Besoin de mes services ?
+        </h1>
+        <h2 className={"caption caption-1 mt-4"}>
+          Je réponds dans les 24h (ouvrables)
+        </h2>
       </section>
 
       <section
@@ -19,7 +24,7 @@ export default function Contact() {
       >
         <div>
           <h2 className={"title title-3 mb-3"}>E-mail</h2>
-          <div className={"body body-1 flex items-center space-x-2"}>
+          <div className={"body body-1 flex items-center space-x-1"}>
             <Link
               href={"mailto:hello@louiscuvelier.com"}
               className={"link link-primary"}
@@ -32,36 +37,35 @@ export default function Contact() {
         <div>
           <h2 className={"title title-3 mb-3"}>Plateformes</h2>
           <div className={"body body-1 flex items-center space-x-2"}>
-            <Link
-              target={"_blank"}
-              href={"https://www.malt.fr/profile/louiscuvelier"}
-              className={"link link-primary"}
-            >
-              Malt
-            </Link>
+            <ul className={"space-y-2"}>
+              <li>
+                <Link
+                  target={"_blank"}
+                  href={"https://www.malt.fr/profile/louiscuvelier"}
+                  className={"link link-primary"}
+                >
+                  Malt
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         <div>
           <h2 className={"title title-3 mb-3"}>Réseaux sociaux</h2>
-          <div className={"body body-1 flex items-start space-y-2 flex-col"}>
-            <div>
-              <Link
-                target={"_blank"}
-                href={"https://twitter.com/LouisCuvelier_"}
-                className={"link link-primary"}
-              >
-                Twitter
-              </Link>
-            </div>
-            <div>
-              <Link
-                target={"_blank"}
-                href={"https://www.linkedin.com/in/louiscuvelier/"}
-                className={"link link-primary"}
-              >
-                LinkedIn
-              </Link>
-            </div>
+          <div className={"body body-1 flex items-start flex-col"}>
+            <ul className={"space-y-2"}>
+              {socials.map(({ name, url }) => (
+                <li>
+                  <Link
+                    target={"_blank"}
+                    href={url}
+                    className={"link link-primary"}
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

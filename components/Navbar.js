@@ -11,7 +11,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const paths = [
-    { url: "/projets", title: "Projets" },
+    { url: "/realisations", title: "Réalisations" },
     { url: "/blog", title: "Blog" },
     { url: "/a-propos", title: "À propos" },
     { url: "/contact", title: "Contact" },
