@@ -1,8 +1,8 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function ResponsiveImage(props) {
   return (
-    <Image
+    <ExportedImage
       {...props}
       className={"border-offset-2 border-2 border-slate-700 rounded"}
     />

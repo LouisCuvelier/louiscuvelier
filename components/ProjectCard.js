@@ -1,13 +1,12 @@
 "use client";
-import Image from "next/image";
 import Clock from "../public/images/clock.svg";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import { useEffect } from "react";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function ProjectCard({
   index,
-  id,
   client,
   description,
   website,
@@ -81,7 +80,7 @@ export default function ProjectCard({
       }
     >
       <div className={"w-full relative"}>
-        <Image
+        <ExportedImage
           src={cover}
           className={"rounded-t"}
           width={5312}
