@@ -2,6 +2,12 @@ import "/styles/global.css";
 import localFont from "next/font/local";
 import CustomToaster from "/components/CustomToaster";
 
+export const metadata = {
+  title: "Louis Cuvelier - Développeur front-end, automatisation et SEO",
+  description:
+    "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.",
+};
+
 const QanelasSoft = localFont({
   src: [
     {

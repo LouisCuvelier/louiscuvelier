@@ -1,6 +1,12 @@
 import Link from "next/link";
 import CopyClipboard from "../../../components/CopyClipboard";
 
+export const metadata = {
+  title: "Contact - Louis Cuvelier",
+  description:
+    "Prêt à donner vie à vos idées digitales ? Contactez-moi dès maintenant pour des solutions en développement front-end, automatisation et SEO. Ensemble, créons l'avenir de votre projet.",
+};
+
 export default function Contact() {
   const socials = [
     { name: "Twitter", url: "https://twitter.com/LouisCuvelier_" },

@@ -1,6 +1,13 @@
 import { getSortedPostsData } from "../../../lib/posts";
 import Link from "next/link";
 import Date from "../../../components/Date";
+
+export const metadata = {
+  title: "Blog - Louis Cuvelier",
+  description:
+    "Explorez mon blog pour découvrir des articles sur le développement front-end, l'automatisation, le SEO et bien plus encore. Découvrez des astuces, des analyses approfondies et des conseils pratiques pour optimiser vos projets digitaux.",
+};
+
 export default function Blog() {
   const allPostsData = getSortedPostsData();
 

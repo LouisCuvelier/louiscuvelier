@@ -1,7 +1,14 @@
-import { getSortedProjectsData } from "../../../lib/projects";
+import { getSortedRealizationsData } from "../../../lib/realizations";
 import ProjectCard from "../../../components/ProjectCard";
-export default function Projects() {
-  const allProjectsData = getSortedProjectsData();
+
+export const metadata = {
+  title: "Réalisations - Louis Cuvelier",
+  description:
+    "Découvrez mes réalisations en développement front-end, automatisation et SEO. Parcourez des projets sur mesure et innovants qui ont aidé mes clients à atteindre leurs objectifs.",
+};
+
+export default function Realizations() {
+  const allProjectsData = getSortedRealizationsData();
 
   return (
     <>

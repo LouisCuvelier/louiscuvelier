@@ -1,5 +1,18 @@
 import { getAllPostIds, getPostData } from "/lib/posts";
 import Date from "/components/Date";
+
+export async function generateMetadata({ params, searchParams }, parent) {
+  const data = await getPostData(params.id);
+  const { frontmatter } = data;
+
+  return {
+    title: frontmatter.title + " - Louis Cuvelier",
+    description: frontmatter.description,
+    openGraph: {
+      images: [frontmatter.image],
+    },
+  };
+}
 export default async function Post({ params }) {
   if (params.id) {
     const data = await getPostData(params.id);
