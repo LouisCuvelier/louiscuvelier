@@ -6,5 +6,6 @@
   "work": "Le site était d'abord un WordPress mais les limites ont vite été atteintes. Une migration sous Craft CMS s'est imposée début 2019 afin d'optimiser la performance, l'automatisation et la stratégie SEO. J'ai ensuite introduit de nouvelles technologies comme Tailwind CSS ou Alpine JS. C'était pour moi un véritable laboratoire technique qui pouvait servir jusqu'à 160 000 pages vues mensuellement.",
   "duration": "De 2017 à 2022",
   "technologies": ["Craft CMS", "Tailwind CSS", "Alpine JS", "Twig", "Zapier", "Google Sheet"],
-  "cover": "/images/coursier-job.jpg"
+  "cover": "/images/coursier-job.jpg",
+  "website": "https://web.archive.org/web/20220704155746/https://www.coursierjob.com/"
 }
