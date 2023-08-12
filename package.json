@@ -9,6 +9,7 @@
     "next": "^13.4.4",
     "next-image-export-optimizer": "^1.8.3",
     "next-mdx-remote": "^4.4.1",
+    "next-sitemap": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1"
@@ -18,7 +19,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export && next-image-export-optimizer"
+    "export": "next export && next-image-export-optimizer",
+    "postbuild": "next-sitemap"
   },
   "devDependencies": {
     "@next/mdx": "^13.4.4",
