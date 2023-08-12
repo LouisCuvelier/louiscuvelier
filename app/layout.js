@@ -6,6 +6,24 @@ export const metadata = {
   title: "Louis Cuvelier - Développeur front-end, automatisation et SEO",
   description:
     "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.",
+  openGraph: {
+    title: "Louis Cuvelier - Développeur front-end, automatisation et SEO",
+    description:
+      "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.",
+    url: "https://louiscuvelier.com/",
+    siteName: "Louis Cuvelier",
+    images: [],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Louis Cuvelier - Développeur front-end, automatisation et SEO",
+    description:
+      "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.",
+    creator: "@LouisCuvelier_",
+    images: [""],
+  },
 };
 
 const QanelasSoft = localFont({
