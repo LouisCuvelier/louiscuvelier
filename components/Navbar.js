@@ -41,69 +41,71 @@ export default function Navbar() {
         </ul>
 
         <Popover className={"md:hidden"}>
-          <Popover.Button className="btn btn-icon">
+          <Popover.Button className="btn btn-icon -mr-2">
             <MenuBar />
           </Popover.Button>
-          <Transition.Root>
+          <Transition>
             <Transition.Child
-              as={Fragment}
-              enter="duration-150 ease-out"
+              as={Popover.Overlay}
+              enter="duration-300 ease-out"
               enterFrom="opacity-0"
               enterTo="opacity-100"
-              leave="duration-150 ease-in"
+              leave="duration-300 ease-in"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
-            >
-              <Popover.Overlay className="fixed inset-0 z-50 bg-slate-800/40 backdrop-blur-sm" />
-            </Transition.Child>
+              className="fixed inset-0 z-50 bg-slate-800/40 backdrop-blur-sm"
+            ></Transition.Child>
             <Transition.Child
-              as={Fragment}
-              enter="duration-150 ease-out"
-              enterFrom="opacity-0 scale-95"
-              enterTo="opacity-100 scale-100"
-              leave="duration-150 ease-in"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
+              as={Popover.Panel}
+              enter="duration-300 ease-out"
+              enterFrom="translate-x-full rounded-l-[1000px]"
+              enterTo="translate-x-0 rounded-none"
+              leave="duration-[200ms] ease-in"
+              leaveFrom="translate-x-0 rounded-none"
+              leaveTo="translate-x-full rounded-l-[200px]"
+              focus
+              className="origin-right bg-slate-50 fixed h-screen top-0 inset-x-0 z-50 p-5 ring-1 ring-slate-900/5"
             >
-              <Popover.Panel
-                focus
-                className="bg-slate-50 fixed inset-x-4 top-4 z-50 origin-top rounded-md p-8 ring-1 ring-zinc-900/5"
+              <Transition.Child
+                enter="delay-100 duration-300 ease-out"
+                enterFrom="opacity-0 translate-x-full"
+                enterTo="opacity-100 translate-x-0"
+                leave="duration-300 ease-in"
+                leaveFrom="opacity-100 translate-x-0"
+                leaveTo="opacity-0 translate-x-full"
+                className="origin-right flex flex-col items-stretch"
               >
-                <div className="flex justify-between items-start">
+                <div className={"flex items-center justify-between"}>
+                  <div>
+                    <Popover.Button as={Link} href={"/"}>
+                      <Logo className={"h-20"} />
+                    </Popover.Button>
+                  </div>
                   <Popover.Button
                     aria-label="Fermer le menu"
-                    className="btn btn-icon order-2 -mt-3 -mr-3"
+                    className="btn btn-icon -mr-2"
                   >
                     <Close />
                   </Popover.Button>
-                  <nav className="order-1">
-                    <ul className="text-slate-800 space-y-3">
-                      <li>
+                </div>
+                <nav>
+                  <ul className="text-slate-800 space-y-3">
+                    {paths.map((path) => (
+                      <li key={path.url}>
                         <Popover.Button
                           as={Link}
-                          href={"/"}
+                          href={path.url}
                           className={"btn btn-secondary"}
                         >
-                          Accueil
+                          {path.title}
                         </Popover.Button>
                       </li>
-                      {paths.map((path) => (
-                        <li key={path.url}>
-                          <Popover.Button
-                            as={Link}
-                            href={path.url}
-                            className={"btn btn-secondary"}
-                          >
-                            {path.title}
-                          </Popover.Button>
-                        </li>
-                      ))}
-                    </ul>
-                  </nav>
-                </div>
-              </Popover.Panel>
+                    ))}
+                  </ul>
+                </nav>
+              </Transition.Child>
             </Transition.Child>
-          </Transition.Root>
+          </Transition>
         </Popover>
       </nav>
     </header>
