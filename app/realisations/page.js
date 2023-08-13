@@ -1,5 +1,5 @@
-import { getSortedRealizationsData } from "../../../lib/realizations";
-import ProjectCard from "../../../components/ProjectCard";
+import { getSortedRealizationsData } from "/lib/realizations";
+import RealizationCard from "/components/RealizationCard";
 
 const title = "Réalisations";
 const description =
@@ -38,7 +38,7 @@ export default function Realizations() {
         }
       >
         {allProjectsData.map((props, index) => (
-          <ProjectCard key={index} index={index} {...props} />
+          <RealizationCard key={index} index={index} {...props} />
         ))}
       </section>
     </>

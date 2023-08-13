@@ -5,7 +5,7 @@ import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import { useEffect } from "react";
 import ExportedImage from "next-image-export-optimizer";
 
-export default function ProjectCard({
+export default function RealizationCard({
   index,
   client,
   description,

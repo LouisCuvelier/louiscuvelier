@@ -1,5 +1,7 @@
 import Link from "next/link";
-import CopyClipboard from "../../../components/CopyClipboard";
+import CopyClipboard from "../../components/CopyClipboard";
+import { contact } from "/data/contact";
+
 const title = "Contact";
 const description =
   "Prêt à donner vie à vos idées digitales ? Contactez-moi dès maintenant pour des solutions en développement front-end, automatisation et SEO. Ensemble, créons l'avenir de votre projet.";
@@ -19,10 +21,8 @@ export const metadata = {
 };
 
 export default function Contact() {
-  const socials = [
-    { name: "Twitter", url: "https://twitter.com/LouisCuvelier_" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/louiscuvelier/" },
-  ];
+  const { socials, platforms, emails } = contact;
+
   return (
     <>
       <section
@@ -38,7 +38,7 @@ export default function Contact() {
 
       <section
         className={
-          "max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-24"
+          "max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-0"
         }
       >
         <div className={""}>
@@ -63,28 +63,33 @@ export default function Contact() {
           <h2 className={"title title-4 mb-3"}>Plateformes</h2>
           <div className={"body body-1 flex items-center space-x-2"}>
             <ul className={"space-y-2"}>
-              <li>
-                <Link
-                  target={"_blank"}
-                  href={"https://www.malt.fr/profile/louiscuvelier"}
-                  className={"link link-primary"}
-                >
-                  Malt
-                </Link>
-              </li>
+              {platforms.map(({ name, url }) => (
+                <li>
+                  <Link
+                    target={"_blank"}
+                    href={url}
+                    className={"link link-primary"}
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
         <div className={""}>
           <h2 className={"title title-4 mb-3"}>E-mail</h2>
           <div className={"body body-1 flex items-center space-x-1"}>
-            <Link
-              href={"mailto:hello@louiscuvelier.com"}
-              className={"link link-primary"}
-            >
-              hello@louiscuvelier.com
-            </Link>
-            <CopyClipboard copyText={"hello@louiscuvelier.com"} />
+            <ul className={"space-y-2"}>
+              {emails.map(({ name, url }) => (
+                <li className={"flex items-center"}>
+                  <Link href={url} className={"link link-primary mr-1"}>
+                    {name}
+                  </Link>
+                  <CopyClipboard copyText={name} />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

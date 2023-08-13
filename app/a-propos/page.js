@@ -1,4 +1,4 @@
-import CustomLink from "../../../components/CustomLink";
+import CustomLink from "../../components/CustomLink";
 
 const title = "À propos";
 const description =
@@ -29,8 +29,8 @@ export default function About() {
         <h1 className={"title title-1"}>À propos</h1>
       </section>
 
-      <section className={"max-w-screen-lg mx-auto space-y-9"}>
-        <div className={"max-w-screen-md"}>
+      <section className={"max-w-screen-lg mx-auto"}>
+        <div className={"max-w-screen-md space-y-9"}>
           <p className={"body body-1"}>
             Je suis Louis Cuvelier, freelance et entrepreneur de{" "}
             {Math.floor(

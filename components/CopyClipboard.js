@@ -3,7 +3,7 @@ import Copy from "../public/images/copy.svg";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-export default function CopyClipboard({ copyText }) {
+export default function CopyClipboard({ copyText, className }) {
   const [isCopied, setIsCopied] = useState(false);
 
   async function copyTextToClipboard(text) {
@@ -28,7 +28,10 @@ export default function CopyClipboard({ copyText }) {
   };
 
   return (
-    <button className={"action action-secondary"} onClick={handleCopyClick}>
+    <button
+      className={`action action-secondary ${className}`}
+      onClick={handleCopyClick}
+    >
       <Copy className={"h-4 w-4 stroke-current stroke-teal-700"} />
     </button>
   );
