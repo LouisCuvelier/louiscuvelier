@@ -1,6 +1,8 @@
 import "/styles/global.css";
 import localFont from "next/font/local";
 import CustomToaster from "/components/CustomToaster";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const title = "Louis Cuvelier - Développeur front-end, automatisation et SEO";
 const description =
@@ -71,7 +73,15 @@ export default function RootLayout({ children }) {
         <div
           className={"relative z-10 flex flex-col justify-between min-h-screen"}
         >
-          {children}
+          <div>
+            <Navbar />
+            <main
+              className={"w-full max-w-screen-xl mx-auto px-5 py-20 md:py-28"}
+            >
+              {children}
+            </main>
+          </div>
+          <Footer className={"mt-auto"} />
           <CustomToaster />
         </div>
       </body>

@@ -5,10 +5,13 @@ import { usePathname } from "next/navigation";
 import MenuBar from "../public/images/menu.svg";
 import Close from "../public/images/close.svg";
 import { Popover, Transition } from "@headlessui/react";
-import { Fragment } from "react";
+import { contact } from "/data/contact";
+import CopyClipboard from "./CopyClipboard";
 
 export default function Navbar() {
   const pathname = usePathname();
+
+  const { socials, emails, platforms } = contact;
 
   const paths = [
     { url: "/realisations", title: "Réalisations" },
@@ -18,8 +21,10 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={"w-full max-w-screen-lg mx-auto p-5"}>
-      <nav className={"flex flex-row justify-between items-center"}>
+    <header className={"w-full max-w-screen-xl p-5 mx-auto"}>
+      <nav
+        className={"max-w-screen-lg flex flex-row justify-between items-center"}
+      >
         {pathname !== "/" ? (
           <Link href={"/"}>
             <Logo className={"h-20"} />
@@ -63,7 +68,6 @@ export default function Navbar() {
               leave="duration-[200ms] ease-in"
               leaveFrom="translate-x-0 rounded-none"
               leaveTo="translate-x-full rounded-l-[200px]"
-              focus
               className="origin-right bg-slate-50 fixed h-screen top-0 inset-x-0 z-50 p-5 ring-1 ring-slate-900/5"
             >
               <Transition.Child
@@ -73,36 +77,77 @@ export default function Navbar() {
                 leave="duration-300 ease-in"
                 leaveFrom="opacity-100 translate-x-0"
                 leaveTo="opacity-0 translate-x-full"
-                className="origin-right flex flex-col items-stretch"
+                className="origin-right flex flex-col justify-between h-full"
               >
-                <div className={"flex items-center justify-between"}>
-                  <div>
-                    <Popover.Button as={Link} href={"/"}>
-                      <Logo className={"h-20"} />
+                <div>
+                  <div className={"flex items-center justify-between"}>
+                    <div>
+                      <Popover.Button as={Link} href={"/"}>
+                        <Logo className={"h-20"} />
+                      </Popover.Button>
+                    </div>
+                    <Popover.Button
+                      aria-label="Fermer le menu"
+                      className="btn btn-icon -mr-2"
+                    >
+                      <Close />
                     </Popover.Button>
                   </div>
-                  <Popover.Button
-                    aria-label="Fermer le menu"
-                    className="btn btn-icon -mr-2"
-                  >
-                    <Close />
-                  </Popover.Button>
+
+                  <nav className={"mt-16"}>
+                    <ul className="space-y-8 text-slate-800">
+                      {paths.map((path) => (
+                        <li key={path.url}>
+                          <Popover.Button
+                            as={Link}
+                            href={path.url}
+                            className={"title title-2"}
+                          >
+                            {path.title}
+                          </Popover.Button>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
                 </div>
-                <nav>
-                  <ul className="text-slate-800 space-y-3">
-                    {paths.map((path) => (
-                      <li key={path.url}>
-                        <Popover.Button
-                          as={Link}
-                          href={path.url}
-                          className={"btn btn-secondary"}
-                        >
-                          {path.title}
-                        </Popover.Button>
+
+                <div className={"body body-1 space-y-4"}>
+                  <ul className={"flex space-x-2"}>
+                    {emails.map(({ name, url }, index) => (
+                      <li key={index} className={"flex items-center"}>
+                        <Link href={url} className={"link link-primary mr-1"}>
+                          {name}
+                        </Link>
+                        <CopyClipboard copyText={name} />
                       </li>
                     ))}
                   </ul>
-                </nav>
+
+                  <ul className={"flex space-x-2 -ml-3"}>
+                    {platforms.map(({ name, url, icon }, index) => (
+                      <li key={index}>
+                        <Link
+                          href={url}
+                          target={"_blank"}
+                          className={"btn btn-icon"}
+                        >
+                          {icon}
+                        </Link>
+                      </li>
+                    ))}
+                    {socials.map(({ name, url, icon }, index) => (
+                      <li key={index}>
+                        <Link
+                          href={url}
+                          target={"_blank"}
+                          className={"btn btn-icon"}
+                        >
+                          {icon}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </Transition.Child>
             </Transition.Child>
           </Transition>

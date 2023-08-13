@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import Profile from "../../public/images/logo.svg";
+import Profile from "public/images/profile.svg";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    const eyes = document.querySelectorAll(".logo_svg__yeux");
+    const eyes = document.querySelectorAll(".profile_svg__yeux");
 
     window.addEventListener("mousemove", (e) => {
       // Récupérez les coordonnées de la souris
@@ -49,7 +49,7 @@ export default function Home() {
     <>
       <section
         className={
-          "grid grid-cols-1 md:grid-cols-12 -mt-16 md:mt-0 gap-16 md:gap-16 items-center md:auto-rows-min"
+          "max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-12 -mt-16 md:mt-0 gap-16 md:gap-16 items-center md:auto-rows-min md:py-32"
         }
       >
         <div className={"md:col-span-5"}>
