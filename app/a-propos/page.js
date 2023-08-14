@@ -32,15 +32,14 @@ export default function About() {
       <section className={"max-w-screen-lg mx-auto"}>
         <div className={"max-w-screen-md space-y-9"}>
           <p className={"body body-1"}>
-            Je suis Louis Cuvelier, freelance et entrepreneur de{" "}
+            Je suis un freelance et entrepreneur de{" "}
             {Math.floor(
               (new Date() - new Date("1997-04-01").getTime()) / 3.15576e10
             )}{" "}
             ans diplômé d'un Master 2 Chef de projet web à Ynov Informatique
-            (ex- Ingésup). Passionné par l'informatique, et plus
-            particulièrement le code, j'aime créer des outils beaux, utiles et
-            pratiques qui permettent de faire rendre la vie meilleur à leurs
-            utilisateurs.
+            (ex-Ingésup). Passionné par l'informatique, et plus particulièrement
+            le code, j'aime créer des outils beaux, utiles et pratiques qui
+            permettent de faire rendre la vie meilleur à leurs utilisateurs.
           </p>
           <p className={"body body-1"}>
             Ainsi, dès 2016, en parallèle de mes études, j'ai débuté en
