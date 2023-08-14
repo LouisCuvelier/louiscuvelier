@@ -68,7 +68,7 @@ export default function Home() {
             créant des solutions sur mesure innovantes.
           </p>
           <div className={"mt-9 flex flex-wrap gap-8"}>
-            <Link href={"/"} className={"btn btn-primary"}>
+            <Link href={"/realisations"} className={"btn btn-primary"}>
               Voir mon travail
             </Link>
             <Link href={"/a-propos"} className={"btn btn-secondary"}>

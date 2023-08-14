@@ -57,17 +57,18 @@ export default function About() {
             de salle de bain.
           </p>
           <p className={"body body-1"}>
-            Désormais, je reviens à mon premier amour, le code, pour faire
-            bénéficier de mes services, mon savoir et mes conseils à mes
-            clients. Plus particulièrement, grâce à mon expérience
-            entrepreneurial, je suis capable de comprendre en profondeur leurs
-            problématiques business et je leur apporte des solutions sur le
-            développement front-end (HTML, CSS, JavaScript, React,
-            Next.js&nbsp;...), l'automatisation (Make, Zapier, Zoho Flow, code
-            custom&nbsp;...) et le SEO (programmatique, rédaction&nbsp;...) pour
-            qu'ils atteignent leurs objectifs.
+            Désormais, je renoue avec ma passion première : le code. Mon but est
+            de mettre à profit mon expertise, mes connaissances et mes conseils
+            au service de mes clients.
           </p>
-
+          <p className={"body body-1"}>
+            Fort de mon parcours entrepreneurial, je sais plonger en profondeur
+            dans les enjeux business de mes clients afin de proposer des
+            solutions en développement front-end (HTML, CSS, JavaScript, React,
+            Next.js&nbsp;…), automatisation (Make, Zapier, Zoho Flow, code sur
+            mesure&nbsp;…) et SEO (programmatique, rédaction&nbsp;…) pour
+            concrétiser leurs ambitions.
+          </p>
           <p className={"body body-1"}>
             Si vous avez besoin d'un développeur front-end expérimenté, d'un
             expert en automatisation ou d'un consultant en SEO, n'hésitez pas à

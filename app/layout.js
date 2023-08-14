@@ -10,7 +10,10 @@ const description =
 
 export const metadata = {
   metadataBase: new URL("https://louiscuvelier.com"),
-  title,
+  title: {
+    template: "%s - Louis Cuvelier",
+    default: title,
+  },
   description,
   openGraph: {
     title,
