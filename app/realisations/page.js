@@ -29,7 +29,7 @@ export default function Realizations() {
           "border-hatch mx-auto max-w-screen-lg mb-32 border-b-[10px] pb-16"
         }
       >
-        <h1 className={"title title-1"}>Réalisations</h1>
+        <h1 className={"title title-1 text-6xl sm:text-8xl"}>Réalisations</h1>
       </section>
 
       <section

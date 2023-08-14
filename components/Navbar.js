@@ -15,7 +15,7 @@ export default function Navbar() {
 
   const paths = [
     { url: "/realisations", title: "Réalisations" },
-    { url: "/blog", title: "Blog" },
+    // { url: "/blog", title: "Blog" },
     { url: "/a-propos", title: "À propos" },
     { url: "/contact", title: "Contact" },
   ];
@@ -23,7 +23,9 @@ export default function Navbar() {
   return (
     <header className={"w-full max-w-screen-xl p-5 mx-auto"}>
       <nav
-        className={"max-w-screen-lg flex flex-row justify-between items-center"}
+        className={
+          "max-w-screen-lg mx-auto flex flex-row justify-between items-center"
+        }
       >
         {pathname !== "/" ? (
           <Link href={"/"}>
@@ -68,7 +70,7 @@ export default function Navbar() {
               leave="duration-[200ms] ease-in"
               leaveFrom="translate-x-0 rounded-none"
               leaveTo="translate-x-full rounded-l-[200px]"
-              className="origin-right bg-slate-50 fixed h-screen top-0 inset-x-0 z-50 p-5 ring-1 ring-slate-900/5"
+              className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 p-5 h-full"
             >
               <Transition.Child
                 enter="delay-100 duration-300 ease-out"
@@ -112,17 +114,6 @@ export default function Navbar() {
                 </div>
 
                 <div className={"body body-1 space-y-4"}>
-                  <ul className={"flex space-x-2"}>
-                    {emails.map(({ name, url }, index) => (
-                      <li key={index} className={"flex items-center"}>
-                        <Link href={url} className={"link link-primary mr-1"}>
-                          {name}
-                        </Link>
-                        <CopyClipboard copyText={name} />
-                      </li>
-                    ))}
-                  </ul>
-
                   <ul className={"flex space-x-2 -ml-3"}>
                     {platforms.map(({ name, url, icon }, index) => (
                       <li key={index}>
@@ -144,6 +135,17 @@ export default function Navbar() {
                         >
                           {icon}
                         </Link>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <ul className={"flex space-x-2"}>
+                    {emails.map(({ name, url }, index) => (
+                      <li key={index} className={"flex items-center"}>
+                        <Link href={url} className={"link link-primary mr-1"}>
+                          {name}
+                        </Link>
+                        <CopyClipboard copyText={name} />
                       </li>
                     ))}
                   </ul>
