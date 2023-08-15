@@ -7,8 +7,10 @@ import Close from "../public/images/close.svg";
 import { Popover, Transition } from "@headlessui/react";
 import { contact } from "/data/contact";
 import CopyClipboard from "./CopyClipboard";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
   const { socials, emails, platforms } = contact;
@@ -19,6 +21,10 @@ export default function Navbar() {
     { url: "/a-propos", title: "À propos" },
     { url: "/contact", title: "Contact" },
   ];
+
+  useEffect(() => {
+    document.body.classList.toggle("overflow-hidden", isOpen);
+  }, [isOpen]);
 
   return (
     <header className={"w-full max-w-screen-xl p-5 mx-auto"}>
@@ -49,7 +55,7 @@ export default function Navbar() {
 
         <Popover className={"md:hidden"}>
           {({ open }) => {
-            document.body.classList.toggle("overflow-hidden", open);
+            setIsOpen(open);
 
             return (
               <>
