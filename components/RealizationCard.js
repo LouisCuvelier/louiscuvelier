@@ -45,7 +45,7 @@ export default function RealizationCard({
             <li
               key={index}
               className={
-                "uppertitle uppertitle-2 bg-hatch-secondary shadow-slate-800/50 rounded pl-3 pr-2 py-1 bg-slate-500/80 text-white shadow-lg"
+                "surtitle surtitle-2 bg-hatch-secondary shadow-slate-800/25 rounded pl-3 pr-2 py-1 bg-slate-500/25 text-white shadow-xl"
               }
             >
               {value}
@@ -59,7 +59,7 @@ export default function RealizationCard({
           <div>
             <div className={"flex justify-between items-stretch mb-14"}>
               <div>
-                <div className={"uppertitle uppertitle-2 flex text-slate-500"}>
+                <div className={"surtitle surtitle-2 flex text-slate-500"}>
                   <Clock className={"mr-2 h-5 w-5"} />
                   {duration}
                 </div>
@@ -73,7 +73,7 @@ export default function RealizationCard({
                     <li
                       key={index}
                       className={
-                        "uppertitle uppertitle-2 bg-hatch-secondary rounded pl-2 pr-1"
+                        "surtitle surtitle-2 bg-hatch-secondary rounded pl-2 pr-1"
                       }
                     >
                       {value}
@@ -110,7 +110,7 @@ export default function RealizationCard({
                   <li
                     key={index}
                     className={
-                      "uppertitle uppertitle-2 bg-hatch-secondary rounded pl-2 pr-1"
+                      "surtitle surtitle-2 bg-hatch-secondary rounded pl-2 pr-1"
                     }
                   >
                     {value}

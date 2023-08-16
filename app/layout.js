@@ -19,12 +19,12 @@ export const metadata = {
     title,
     description,
     url: "https://louiscuvelier.com/",
-    images: [],
+    images: ["/images/cover.png"],
   },
   twitter: {
     title,
     description,
-    images: [""],
+    images: ["/images/cover.png"],
   },
 };
 
