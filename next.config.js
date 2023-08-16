@@ -6,6 +6,7 @@ const nextConfig = {
 
 const withMDX = require("@next/mdx")();
 module.exports = {
+  trailingSlash: false,
   output: "export",
   images: {
     loader: "custom",

@@ -1,6 +1,7 @@
 import TwitterIcon from "/public/images/twitter.svg";
 import MaltIcon from "/public/images/malt.svg";
 import LinkedInIcon from "/public/images/linkedin.svg";
+import GitHub from "/public/images/github.svg";
 
 export const contact = {
   socials: [
@@ -8,6 +9,11 @@ export const contact = {
       name: "Twitter",
       url: "https://twitter.com/LouisCuvelier_",
       icon: <TwitterIcon />,
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/LouisCuvelier",
+      icon: <GitHub />,
     },
     {
       name: "LinkedIn",
