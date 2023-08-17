@@ -530,7 +530,7 @@
 
   .bg-paper {
     @apply fixed z-0 w-full h-full left-0 top-0 opacity-25;
-    background-image: url("../public/images/background.png");
+    background-image: url("../public/images/background.webp");
     background-size: 100px 100px;
     background-repeat: repeat;
     top: -300%;

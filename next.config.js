@@ -1,11 +1,9 @@
+const withMDX = require("@next/mdx")();
+
 const nextConfig = {
   experimental: {
     mdxRs: true,
   },
-};
-
-const withMDX = require("@next/mdx")();
-module.exports = {
   trailingSlash: false,
   output: "export",
   images: {
@@ -26,7 +24,6 @@ module.exports = {
     // `placeholder="empty"` to all <ExportedImage> components.
     nextImageExportOptimizer_generateAndUseBlurImages: true,
   },
-  withMDX(nextConfig) {},
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -54,3 +51,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = withMDX(nextConfig);
