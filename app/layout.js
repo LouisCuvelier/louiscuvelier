@@ -11,6 +11,9 @@ const description =
 
 export const metadata = {
   metadataBase: new URL("https://louiscuvelier.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     template: "%s - Louis Cuvelier",
     default: title,

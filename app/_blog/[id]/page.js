@@ -8,15 +8,19 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
   const title = `${frontmatter.title}`;
   const description = `${frontmatter.description}`;
+  const url = `blog/${params.id}`;
 
   return {
+    alternates: {
+      canonical: url,
+    },
     title,
     description,
     openGraph: {
       images: [frontmatter.image],
       title,
       description,
-      url: `https://louiscuvelier.com/blog/${params.id}`,
+      url: url,
       ...openGraphImage,
     },
     twitter: {

@@ -5,14 +5,18 @@ import { openGraphImage } from "../shared-metadata";
 const title = "Réalisations";
 const description =
   "Découvrez mes réalisations en développement front-end, automatisation et SEO. Parcourez des projets sur mesure et innovants qui ont aidé mes clients à atteindre leurs objectifs.";
+const url = "realisations";
 
 export const metadata = {
+  alternates: {
+    canonical: url,
+  },
   title,
   description,
   openGraph: {
     title,
     description,
-    url: "https://louiscuvelier.com/realisations",
+    url: url,
     ...openGraphImage,
   },
   twitter: {
