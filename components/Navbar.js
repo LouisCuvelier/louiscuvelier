@@ -69,7 +69,10 @@ export default function Navbar() {
 
             return (
               <>
-                <Popover.Button className="btn btn-icon -mr-2">
+                <Popover.Button
+                  className="btn btn-icon -mr-2"
+                  aria-label={"Ouvrir le menu"}
+                >
                   <MenuBar />
                 </Popover.Button>
                 <Transition>

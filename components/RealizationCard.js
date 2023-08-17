@@ -30,6 +30,7 @@ export default function RealizationCard({
     >
       <div className={"w-full relative"}>
         <Image
+          {...(index === 0 && { priority: true })}
           src={cover}
           className={"rounded-t"}
           width={5312}
