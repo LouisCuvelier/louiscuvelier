@@ -68,11 +68,18 @@ export default function Home() {
             créant des solutions sur mesure innovantes.
           </p>
           <div className={"mt-9 flex flex-wrap gap-8"}>
-            <Link href={"/realisations"} className={"btn btn-primary"}>
-              Voir mon travail
+            <Link
+              href={
+                "https://docs.google.com/forms/d/e/1FAIpQLSfuNoB281AfU3hIBjbIxNM4f0-0GRf5FAb9FV8cxISjNvMyGw/viewform?usp=pp_url"
+              }
+              target={"_blank"}
+              rel="nofollow noopener noreferrer"
+              className={"btn btn-primary"}
+            >
+              Commencer votre projet
             </Link>
-            <Link href={"/a-propos"} className={"btn btn-secondary"}>
-              En savoir plus
+            <Link href={"/realisations"} className={"btn btn-secondary"}>
+              Voir mon travail
             </Link>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function CustomLink(props) {
       {...props}
       className={"link link-primary"}
       {...(!isInternalLink
-        ? { target: "_blank", rel: "noopener noreferrer" }
+        ? { target: "_blank", rel: "nofollow noopener noreferrer" }
         : "")}
     >
       {props.children}

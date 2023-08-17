@@ -34,9 +34,20 @@ export default function Contact() {
         }
       >
         <h1 className={"title title-1"}>Besoin de mes services&nbsp;?</h1>
-        <h2 className={"title title-3 mt-4"}>
+        <h2 className={"title title-3 mt-4 mb-10"}>
           Contactez-moi, je vous réponds dans les 24h.
         </h2>
+
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfuNoB281AfU3hIBjbIxNM4f0-0GRf5FAb9FV8cxISjNvMyGw/viewform?usp=pp_url"
+          }
+          target={"_blank"}
+          rel="nofollow noopener noreferrer"
+          className={"btn btn-primary"}
+        >
+          Commencer votre projet
+        </Link>
       </section>
 
       <section
@@ -53,6 +64,7 @@ export default function Contact() {
                   <Link
                     target={"_blank"}
                     href={url}
+                    rel="nofollow noopener noreferrer"
                     className={"link link-primary"}
                   >
                     {name}
@@ -71,6 +83,7 @@ export default function Contact() {
                   <Link
                     target={"_blank"}
                     href={url}
+                    rel="nofollow noopener noreferrer"
                     className={"link link-primary"}
                   >
                     {name}
