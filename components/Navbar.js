@@ -16,10 +16,15 @@ export default function Navbar() {
   const { socials, emails, platforms } = contact;
 
   const paths = [
-    { url: "/realisations", title: "Réalisations" },
-    // { url: "/blog", title: "Blog" },
-    { url: "/a-propos", title: "À propos" },
-    { url: "/contact", title: "Contact" },
+    { url: "/realisations", title: "Réalisations", isPrimary: false },
+    // { url: "/blog", title: "Blog",isPrimary: false, },
+    { url: "/a-propos", title: "À propos", isPrimary: false },
+    { url: "/contact", title: "Contact", isPrimary: false },
+    {
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSfuNoB281AfU3hIBjbIxNM4f0-0GRf5FAb9FV8cxISjNvMyGw/viewform?usp=pp_url",
+      title: "Commencer votre projet",
+      isPrimary: true,
+    },
   ];
 
   useEffect(() => {
@@ -46,7 +51,12 @@ export default function Navbar() {
         >
           {paths.map((path) => (
             <li key={path.url}>
-              <Link href={path.url} className={"btn btn-secondary"}>
+              <Link
+                href={path.url}
+                className={`btn ${
+                  path.isPrimary ? "btn-primary" : "btn-secondary"
+                }`}
+              >
                 {path.title}
               </Link>
             </li>
@@ -114,7 +124,9 @@ export default function Navbar() {
                                 <Popover.Button
                                   as={Link}
                                   href={path.url}
-                                  className={"title title-2"}
+                                  className={`title title-2 ${
+                                    path.isPrimary ? "text-teal-700" : ""
+                                  }`}
                                 >
                                   {path.title}
                                 </Popover.Button>
@@ -131,6 +143,7 @@ export default function Navbar() {
                               <Link
                                 href={url}
                                 target={"_blank"}
+                                rel="nofollow noopener noreferrer"
                                 className={"btn btn-icon"}
                               >
                                 {icon}
@@ -142,6 +155,7 @@ export default function Navbar() {
                               <Link
                                 href={url}
                                 target={"_blank"}
+                                rel="nofollow noopener noreferrer"
                                 className={"btn btn-icon"}
                               >
                                 {icon}

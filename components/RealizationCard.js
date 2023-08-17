@@ -85,7 +85,7 @@ export default function RealizationCard({
                   <Link
                     href={website}
                     className={"btn btn-tertiary"}
-                    rel={"noopener noreferrer"}
+                    rel="nofollow noopener noreferrer"
                     target={"_blank"}
                   >
                     <span>Voir la réalisation</span>
