@@ -6,14 +6,18 @@ import { openGraphImage } from "../shared-metadata";
 const title = "Contact";
 const description =
   "Prêt à donner vie à vos idées digitales ? Contactez-moi dès maintenant pour des solutions en développement front-end, automatisation et SEO. Ensemble, créons l'avenir de votre projet.";
+const url = "contact";
 
 export const metadata = {
+  alternates: {
+    canonical: url,
+  },
   title,
   description,
   openGraph: {
     title,
     description,
-    url: "https://louiscuvelier.com/contact",
+    url: url,
     ...openGraphImage,
   },
   twitter: {
