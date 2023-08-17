@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import CustomToaster from "/components/CustomToaster";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { openGraphImage } from "./shared-metadata";
 
 const title = "Louis Cuvelier - Développeur front-end, automatisation et SEO";
 const description =
@@ -16,15 +17,21 @@ export const metadata = {
   },
   description,
   openGraph: {
-    title,
+    title: {
+      template: "%s - Louis Cuvelier",
+      default: title,
+    },
     description,
     url: "https://louiscuvelier.com/",
-    images: ["/images/cover.png"],
+    ...openGraphImage,
   },
   twitter: {
-    title,
+    title: {
+      template: "%s - Louis Cuvelier",
+      default: title,
+    },
     description,
-    images: ["/images/cover.png"],
+    ...openGraphImage,
   },
 };
 

@@ -1,5 +1,6 @@
 import { getSortedPostsData } from "../../lib/posts";
 import BlogPostCard from "../../components/BlogPostCard";
+import { openGraphImage } from "../shared-metadata";
 
 const title = "Blog";
 const description =
@@ -12,10 +13,12 @@ export const metadata = {
     title,
     description,
     url: "https://louiscuvelier.com/blog",
+    ...openGraphImage,
   },
   twitter: {
     title,
     description,
+    ...openGraphImage,
   },
 };
 
