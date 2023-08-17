@@ -1480,9 +1480,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/next-on-pages@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "@cloudflare/next-on-pages@npm:1.5.1"
+"@cloudflare/next-on-pages@npm:1.5.0":
+  version: 1.5.0
+  resolution: "@cloudflare/next-on-pages@npm:1.5.0"
   dependencies:
     acorn: ^8.8.0
     ast-types: ^0.14.2
@@ -1500,7 +1500,7 @@ __metadata:
     wrangler: ^3.0.0
   bin:
     next-on-pages: bin/index.js
-  checksum: 2404c340fdb04970434ab5e2bf355cda259f4c2d5678d0580aab12a1aa864098372b5bc546a02e791850fdf374a0cc90d2ec7fa86fbd639f65a1d24334106184
+  checksum: bbb7feb66f0e062e2c9262b1e0af654a3f0d38327eaa5d849e907fd2a1a76742bcf747d424085e63d825de895aa4d5b66f8385cfe5cd8a25c06bcc285eba2998
   languageName: node
   linkType: hard
 
@@ -7438,7 +7438,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@cloudflare/next-on-pages": ^1.5.1
+    "@cloudflare/next-on-pages": 1.5.0
     "@headlessui/react": ^1.7.16
     "@mdx-js/loader": ^2.3.0
     "@mdx-js/mdx": ^2.3.0
