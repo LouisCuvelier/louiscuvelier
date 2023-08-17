@@ -3,8 +3,8 @@ import Clock from "../public/images/clock.svg";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import { useEffect } from "react";
-import Image from "next/image";
 import cardEffect from "../lib/card-effect";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function RealizationCard({
   index,

@@ -4,7 +4,6 @@ import CustomToaster from "/components/CustomToaster";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { openGraphImage } from "./shared-metadata";
-import Image from "next/image";
 
 const title = "Louis Cuvelier - Développeur front-end, automatisation et SEO";
 const description =
