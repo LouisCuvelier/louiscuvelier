@@ -6,12 +6,11 @@
     "@mdx-js/react": "^2.3.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/mdx": "^2.0.5",
-    "next": "^13.4.4",
-    "next-image-export-optimizer": "^1.8.3",
+    "next": "latest",
     "next-mdx-remote": "^4.4.1",
     "next-sitemap": "^4.2.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "latest",
+    "react-dom": "latest",
     "react-hot-toast": "^2.4.1"
   },
   "scripts": {
@@ -19,10 +18,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export && next-image-export-optimizer",
+    "export": "next export",
     "postbuild": "next-sitemap"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "1.5.0",
     "@next/mdx": "^13.4.4",
     "@svgr/webpack": "^8.0.1",
     "@types/node": "20.4.10",

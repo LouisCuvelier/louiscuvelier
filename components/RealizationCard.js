@@ -3,7 +3,7 @@ import Clock from "../public/images/clock.svg";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import { useEffect } from "react";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import cardEffect from "../lib/card-effect";
 
 export default function RealizationCard({
@@ -29,8 +29,8 @@ export default function RealizationCard({
       }
     >
       <div className={"w-full relative"}>
-        <ExportedImage
-          placeholder="blur"
+        <Image
+          {...(index === 0 && { priority: true })}
           src={cover}
           className={"rounded-t"}
           width={5312}
