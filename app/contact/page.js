@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CopyClipboard from "../../components/CopyClipboard";
 import { contact } from "/data/contact";
+import { openGraphImage } from "../shared-metadata";
 
 const title = "Contact";
 const description =
@@ -13,10 +14,12 @@ export const metadata = {
     title,
     description,
     url: "https://louiscuvelier.com/contact",
+    ...openGraphImage,
   },
   twitter: {
     title,
     description,
+    ...openGraphImage,
   },
 };
 

@@ -1,5 +1,6 @@
 import { getSortedRealizationsData } from "/lib/realizations";
 import RealizationCard from "/components/RealizationCard";
+import { openGraphImage } from "../shared-metadata";
 
 const title = "Réalisations";
 const description =
@@ -12,10 +13,12 @@ export const metadata = {
     title,
     description,
     url: "https://louiscuvelier.com/realisations",
+    ...openGraphImage,
   },
   twitter: {
     title,
     description,
+    ...openGraphImage,
   },
 };
 

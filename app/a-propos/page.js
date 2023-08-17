@@ -1,4 +1,5 @@
 import CustomLink from "../../components/CustomLink";
+import { openGraphImage } from "../shared-metadata";
 
 const title = "À propos";
 const description =
@@ -11,10 +12,12 @@ export const metadata = {
     title,
     description,
     url: "https://louiscuvelier.com/a-propos",
+    ...openGraphImage,
   },
   twitter: {
     title,
     description,
+    ...openGraphImage,
   },
 };
 

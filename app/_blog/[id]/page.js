@@ -1,5 +1,6 @@
 import { getAllPostIds, getPostData } from "/lib/posts";
 import Date from "/components/Date";
+import { openGraphImage } from "../../shared-metadata";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const data = await getPostData(params.id);
@@ -16,10 +17,12 @@ export async function generateMetadata({ params, searchParams }, parent) {
       title,
       description,
       url: `https://louiscuvelier.com/blog/${params.id}`,
+      ...openGraphImage,
     },
     twitter: {
       title,
       description,
+      ...openGraphImage,
     },
   };
 }
