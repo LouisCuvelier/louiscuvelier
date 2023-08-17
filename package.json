@@ -22,6 +22,7 @@
     "postbuild": "next-sitemap"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.5.1",
     "@next/mdx": "^13.4.4",
     "@svgr/webpack": "^8.0.1",
     "@types/node": "20.4.10",
