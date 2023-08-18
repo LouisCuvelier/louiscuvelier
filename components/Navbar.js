@@ -39,7 +39,7 @@ export default function Navbar() {
         }
       >
         {pathname !== "/" ? (
-          <Link href={"/"}>
+          <Link href={"/"} aria-label={"Accueil"}>
             <Logo className={"h-20"} />
           </Link>
         ) : (
@@ -108,7 +108,11 @@ export default function Navbar() {
                       <div>
                         <div className={"flex items-center justify-between"}>
                           <div>
-                            <Popover.Button as={Link} href={"/"}>
+                            <Popover.Button
+                              as={Link}
+                              href={"/"}
+                              aria-label={"Accueil"}
+                            >
                               <Logo className={"h-20"} />
                             </Popover.Button>
                           </div>
