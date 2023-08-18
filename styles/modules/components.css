@@ -185,7 +185,7 @@
   .tab {
     @apply px-4 py-2 inline-flex items-center tracking-wider font-title text-lg;
     border-radius: 40% 30% 50% 20% / 50% 70% 70% 70%;
-    text-shadow: 0px 0px 3px theme("colors.slate.50");
+    text-shadow: 0 0 3px theme("colors.slate.50");
 
     &.btn,
     &.tab,
@@ -423,7 +423,7 @@
   }
 
   .link-primary {
-    @apply decoration-slate-600 underline-offset-2 text-teal-700 decoration-teal-700;
+    @apply underline-offset-2 text-teal-700 decoration-teal-700;
 
     &:hover {
       @apply decoration-dashed;
