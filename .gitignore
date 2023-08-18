@@ -46,6 +46,8 @@ Temporary Items
 # next.js
 /.next/
 /out/
+/public/images/nextImageExportOptimizer/*
+/public/images/next-image-export-optimizer-hashes.json
 
 # production
 /build
@@ -189,7 +191,5 @@ fabric.properties
 
 # and uncomment the following lines
 # .pnp.*
-
-# End of https://www.toptal.com/developers/gitignore/api/yarn
 
 # End of https://www.toptal.com/developers/gitignore/api/nextjs,webstorm+all,macos,react
