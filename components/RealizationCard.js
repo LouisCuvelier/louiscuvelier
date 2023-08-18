@@ -29,25 +29,26 @@ export default function RealizationCard({
       }
     >
       <div className={"w-full relative"}>
-        <ExportedImage
-          {...(index === 0 && { priority: true })}
-          placeholder="blur"
-          src={cover}
-          className={"rounded-t"}
-          width={5312}
-          height={2724}
-          alt={`Image de couverture de ${client}`}
-        />
+        <div className={"h-[500px]"}>
+          <ExportedImage
+            {...(index === 0 && { priority: true })}
+            placeholder="blur"
+            src={cover}
+            className={"object-left-top rounded-t object-cover"}
+            fill={true}
+            alt={`Image de couverture de ${client}`}
+          />
+        </div>
         <ul
           className={
-            "hidden @lg:flex absolute inset-x-8 bottom-8 z-10 gap-2 flex-row flex-wrap justify-end"
+            "flex absolute inset-x-8 bottom-8 z-10 gap-2 flex-row flex-wrap justify-end"
           }
         >
           {categories.map((value, index) => (
             <li
               key={index}
               className={
-                "surtitle surtitle-2 bg-hatch-secondary shadow-slate-800/25 rounded pl-3 pr-2 py-1 bg-slate-500/25 text-white shadow-xl"
+                "surtitle surtitle-2 bg-hatch-secondary backdrop-blur-xl shadow-slate-800/25 rounded pl-3 pr-2 py-1 bg-slate-500/25 text-white shadow-xl inline-flex"
               }
             >
               {value}
@@ -66,22 +67,6 @@ export default function RealizationCard({
                   {duration}
                 </div>
                 <h2 className={"title title-2 mt-8 mb-4"}>{client}</h2>
-                <ul
-                  className={
-                    "flex @lg:hidden gap-2 flex flex-row flex-wrap mt-1 my-5"
-                  }
-                >
-                  {categories.map((value, index) => (
-                    <li
-                      key={index}
-                      className={
-                        "surtitle surtitle-2 bg-hatch-secondary rounded pl-2 pr-1"
-                      }
-                    >
-                      {value}
-                    </li>
-                  ))}
-                </ul>
                 {website != null && (
                   <Link
                     href={website}

@@ -1,5 +1,6 @@
 /* Typography rules of the design */
 @layer components {
+
   .perspective-20000 {
     perspective: 20000px;
   }
@@ -33,7 +34,7 @@
   }
 
   .title {
-    @apply font-title font-semibold text-slate-900;
+    @apply font-title font-semibold text-slate-900 [text-wrap:balance];
   }
 
   .title-1 {
@@ -406,6 +407,11 @@
     &:active {
       @apply no-underline;
     }
+  }
+
+  /* purgecss ignore */
+  .link[target="_blank"] {
+    @apply whitespace-nowrap;
   }
 
   /* purgecss ignore */
