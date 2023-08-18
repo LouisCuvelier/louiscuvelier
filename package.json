@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-image-export-optimizer",
+    "build": "npx next build && npx next-image-export-optimizer",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap"
