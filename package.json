@@ -16,10 +16,9 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-image-export-optimizer",
+    "build": "next build && next-image-export-optimizer && next-sitemap",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "lint": "next lint"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "1.5.0",
