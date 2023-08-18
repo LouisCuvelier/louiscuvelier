@@ -4,7 +4,8 @@
   "description": "Anaïs Redon est une directrice artistique passionnée et spécialisée en identité de marque, qui allie une expertise pointue et une créativité inspirée pour créer des identités visuelles uniques et percutantes. Son approche holistique garantit des expériences visuelles mémorables qui capturent l'essence de chaque entreprise et résonnent avec le public cible, faisant de chaque projet une fusion entre esthétique et stratégie.",
   "website": "https://anaisredon.com/",
   "categories": [
-    "Développement site vitrine",
+    "Site vitrine",
+    "Développement front-end",
     "SEO"
   ],
   "work": "Afin de développer son activité indépendante, Anaïs Redon souhaitait la création d'un site vitrine percutant. Une maquette Figma m'a été fournie et j'ai réalisé l'intégration. La complexité de ce projet résidait dans le souhait de la cliente d'intégrer un grand nombre d'animations. Ainsi, il a été nécessaire de les implémenter tout en préservant la fluidité, l'ergonomie et les performances du site, sans altérer le référencement SEO.",

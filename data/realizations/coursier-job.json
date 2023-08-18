@@ -2,10 +2,22 @@
   "date": "2023-06-12",
   "client": "Coursier Job",
   "description": "Coursier Job guidait et en mettait en relation les coursiers avec les entreprises qui recrutent dans plus de 425 villes de France. Explications de toutes les démarches, conseils pour s'équiper, actualités du métier, outil de gestion comptable, voilà ce qu'était Coursier Job. Le site a été vendu fin 2022.",
-  "categories": ["Développement site vitrine", "SEO", "Automatisation"],
+  "categories": [
+    "Site vitrine",
+    "Développement front-end",
+    "Automatisation",
+    "SEO"
+  ],
   "work": "J'ai créé Coursier Job en parallèle de mes études. Le site était d'abord un WordPress mais les limites ont vite été atteintes. Une migration sous Craft CMS s'est imposée début 2019 afin d'optimiser la performance, l'automatisation et la stratégie SEO. J'ai ensuite introduit de nouvelles technologies comme Tailwind CSS ou Alpine JS. C'était pour moi un véritable laboratoire technique qui pouvait servir jusqu'à 160 000 pages vues mensuellement.",
   "duration": "De 2017 à 2022",
-  "technologies": ["Craft CMS", "Tailwind CSS", "Alpine JS", "Twig", "Zapier", "Google Sheet", "SEO"],
+  "technologies": [
+    "Craft CMS",
+    "Tailwind CSS",
+    "Alpine JS",
+    "Twig",
+    "Zapier",
+    "Google Sheet"
+  ],
   "cover": "/images/coursier_job.jpg",
   "website": "https://web.archive.org/web/20220704155746/https://www.coursierjob.com/"
 }
