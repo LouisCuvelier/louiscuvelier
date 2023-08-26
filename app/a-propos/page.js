@@ -70,10 +70,12 @@ export default function About() {
           <p className={"body body-1"}>
             Fort de mon parcours entrepreneurial, je sais plonger en profondeur
             dans les enjeux business de mes clients afin de proposer des
-            solutions sur mesure en développement front-end (HTML, CSS,
-            JavaScript, React, Next.js&nbsp;…), automatisation (Make, Zapier,
-            Zoho Flow, code personnalisé&nbsp;…) et SEO (programmatique,
-            rédaction&nbsp;…) pour concrétiser leurs objectifs.
+            solutions sur mesure en développement front-end (Conception de site,
+            avec ou sans maquette, avec Strapi CMS (équivalent WordPress), HTML,
+            CSS, JavaScript, React, Next.js&nbsp;…), automatisation des
+            processus (Make, Zapier, Zoho Flow, code personnalisé&nbsp;…) et
+            SEO/référencement naturel (programmatique, rédaction&nbsp;…) pour
+            concrétiser leurs objectifs.
           </p>
           <p className={"body body-1"}>
             Si vous avez besoin d'un développeur front-end expérimenté, d'un
