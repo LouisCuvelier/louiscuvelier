@@ -45,7 +45,7 @@ export default function Prestations() {
           {
             title: "Création de site internet",
             subtitle:
-              "Performants, sur mesure, adapaté à tous les écrans et optimisé pour le SEO",
+              "Performant, sur mesure, adapaté à tous les écrans et optimisé pour le SEO",
             technologies: [
               "Next.js",
               "Tailwind CSS",
