@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import { openGraphImage } from "./shared-metadata";
 
 const title =
-  "Louis Cuvelier - Créaiton de site internet, automatisation et SEO";
+  "Louis Cuvelier - Création de site internet, automatisation et SEO";
 const description =
   "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en création de site internet, automatisation et référencement naturel.";
 
