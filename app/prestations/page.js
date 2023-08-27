@@ -1,10 +1,10 @@
 import { openGraphImage } from "../shared-metadata";
 import PrestationCard from "../../components/PrestationCard";
 
-const title = "À propos";
+const title = "Prestations";
 const description =
-  "Découvrez l'histoire derrière mon parcours en freelance et entrepreneuriat. Diplômé d'un Master 2 en Chef de projet web, j'ai évolué dans le monde du développement front-end, de l'automatisation et du SEO. Mon engagement à créer des solutions pratiques et innovantes est renforcé par mon expérience entrepreneuriale. Plongez dans mon profil professionnel et contactez-moi pour collaborer sur vos défis digitaux.";
-const url = "a-propos";
+  "De la création de votre site internet à l'automatisation méticuleuse et au référencement naturel stratégique, nos prestations transforment vos ambitions en succès en ligne. Découvrez comment nous créons, simplifions et propulsons votre présence sur internet.";
+const url = "prestations";
 
 export const metadata = {
   alternates: {
