@@ -17,11 +17,11 @@ export default function PrestationCard({
   return (
     <article
       className={
-        "cards border-hatch w-full grid grid-cols-2 max-w-screen-lg mx-auto gap-12 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out p-14"
+        "cards border-hatch w-full grid grid-cols-2 max-w-screen-lg mx-auto gap-12 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out p-5 sm:p-14"
       }
     >
       <div className={"col-span-2"}>
-        <h2 className={"title title-2 mb-2"}>{title}</h2>
+        <h2 className={"title title-2 hyphens-auto mb-2"}>{title}</h2>
         <p className={"title title-4"}>{subtitle}</p>
       </div>
 

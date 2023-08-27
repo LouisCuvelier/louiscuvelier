@@ -33,7 +33,7 @@ export default function Prestations() {
           "border-hatch mb-32 max-w-screen-lg mx-auto border-b-[10px] pb-16"
         }
       >
-        <h1 className={"title title-1"}>Prestations</h1>
+        <h1 className={"title title-1 text-6xl sm:text-8xl"}>Prestations</h1>
       </section>
 
       <section
@@ -72,7 +72,7 @@ export default function Prestations() {
             services: ["Opérationnels", "Support", "Pilotage", "Mesure"],
           },
           {
-            title: "Référencement naturel/SEO",
+            title: "Référencement naturel (SEO)",
             subtitle:
               "Pour augmenter votre visiblité sur les moteurs de recherche",
             services: [
