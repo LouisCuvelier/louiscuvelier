@@ -17,7 +17,7 @@ export default function PrestationCard({
   return (
     <article
       className={
-        "cards border-hatch @container w-full grid grid-cols-2 max-w-screen-lg mx-auto gap-12 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out p-14"
+        "cards border-hatch w-full grid grid-cols-2 max-w-screen-lg mx-auto gap-12 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out p-14"
       }
     >
       <div className={"col-span-2"}>
@@ -25,7 +25,7 @@ export default function PrestationCard({
         <p className={"title title-4"}>{subtitle}</p>
       </div>
 
-      <div className={"col-span-2 @2xl:col-span-1"}>
+      <div className={"col-span-2 md:col-span-1"}>
         <ul className={"list list-ul body body-1"}>
           {services.map((item, index) => (
             <li key={index}>{item}</li>
@@ -33,7 +33,7 @@ export default function PrestationCard({
         </ul>
       </div>
 
-      <div className={"col-span-2 @2xl:col-span-1"}>
+      <div className={"col-span-2 md:col-span-1"}>
         {technologies && (
           <>
             <h3 className={"title title-4 mb-3"}>Technologies</h3>
