@@ -25,7 +25,7 @@ export default function PrestationCard({
         <p className={"title title-4"}>{subtitle}</p>
       </div>
 
-      <div className={"col-span-2 @xl:col-span-1"}>
+      <div className={"col-span-2 @2xl:col-span-1"}>
         <ul className={"list list-ul body body-1"}>
           {services.map((item, index) => (
             <li key={index}>{item}</li>
@@ -33,7 +33,7 @@ export default function PrestationCard({
         </ul>
       </div>
 
-      <div className={"col-span-2 @xl:col-span-1"}>
+      <div className={"col-span-2 @2xl:col-span-1"}>
         {technologies && (
           <>
             <h3 className={"title title-4 mb-3"}>Technologies</h3>
