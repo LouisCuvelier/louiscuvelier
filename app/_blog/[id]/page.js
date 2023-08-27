@@ -36,7 +36,7 @@ export default async function Post({ params }) {
 
   return (
     <>
-      <article className={"perspective-20000 max-w-screen-lg mx-auto"}>
+      <article className={"[perspective:20000px] max-w-screen-lg mx-auto"}>
         <header
           className={
             "border-hatch mx-auto max-w-screen-lg mb-32 border-b-[10px] pb-16"

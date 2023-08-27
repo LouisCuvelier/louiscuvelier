@@ -5,9 +5,10 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { openGraphImage } from "./shared-metadata";
 
-const title = "Louis Cuvelier - Développeur front-end, automatisation et SEO";
+const title =
+  "Louis Cuvelier - Créaiton de site internet, automatisation et SEO";
 const description =
-  "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en développement front-end, automatisation et SEO.";
+  "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en création de site internet, automatisation et référencement naturel.";
 
 export const metadata = {
   metadataBase: new URL("https://louiscuvelier.com"),

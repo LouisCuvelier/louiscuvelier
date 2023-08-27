@@ -57,15 +57,16 @@ export default function Home() {
         </div>
         <div className={"md:col-span-7"}>
           <h1 className={"title title-1"}>Louis Cuvelier</h1>
-          <h2 className={"title title-3 mt-2 mb-6"}>
-            Front-end, automatisation et SEO
+          <h2 className={"title title-4 mt-2 mb-6 [text-wrap:balance]"}>
+            Création de site internet, automatisation et SEO
           </h2>
           <p className={"body body-1"}>
             Je suis un freelance passionné par le code et l'entrepreneuriat,
-            avec une expertise en <strong>développement front-end</strong>,{" "}
-            <strong>automatisation</strong> et <strong>SEO</strong>. Mon
-            objectif est d'aider mes clients à atteindre leurs objectifs en
-            créant des solutions sur mesure innovantes.
+            avec une expertise en <strong>création de site internet</strong>,{" "}
+            <strong>automatisation</strong> et{" "}
+            <strong>référencement naturel (SEO)</strong>. Mon objectif est
+            d'aider mes clients à atteindre leurs objectifs en créant des
+            solutions sur mesure.
           </p>
           <div className={"mt-9 flex flex-wrap gap-8"}>
             <Link
@@ -79,7 +80,7 @@ export default function Home() {
               Commencer votre projet
             </Link>
             <Link href={"/realisations"} className={"btn btn-secondary"}>
-              Voir mon travail
+              Voir mes réalisations
             </Link>
           </div>
         </div>

@@ -17,6 +17,7 @@ export default function Navbar() {
 
   const paths = [
     { url: "/realisations", title: "Réalisations", isPrimary: false },
+    { url: "/prestations", title: "Prestations", isPrimary: false },
     // { url: "/blog", title: "Blog",isPrimary: false, },
     { url: "/a-propos", title: "À propos", isPrimary: false },
     { url: "/contact", title: "Contact", isPrimary: false },
@@ -46,24 +47,7 @@ export default function Navbar() {
           <span className={"h-20"}></span>
         )}
 
-        <ul
-          className={"hidden flex-row md:flex font-sans space-x-5 justify-end"}
-        >
-          {paths.map((path) => (
-            <li key={path.url}>
-              <Link
-                href={path.url}
-                className={`btn ${
-                  path.isPrimary ? "btn-primary" : "btn-secondary"
-                }`}
-              >
-                {path.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <Popover className={"md:hidden"}>
+        <Popover>
           {({ open }) => {
             setIsOpen(open);
 
@@ -94,7 +78,7 @@ export default function Navbar() {
                     leave="duration-[200ms] ease-in"
                     leaveFrom="translate-x-0 rounded-none"
                     leaveTo="translate-x-full rounded-l-[200px]"
-                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 p-5 h-full"
+                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 px-5 h-full"
                   >
                     <Transition.Child
                       enter="delay-100 duration-300 ease-out"
@@ -103,28 +87,32 @@ export default function Navbar() {
                       leave="duration-300 ease-in"
                       leaveFrom="opacity-100 translate-x-0"
                       leaveTo="opacity-0 translate-x-full"
-                      className="origin-right flex flex-col justify-between h-full"
+                      className="origin-right flex flex-col h-full w-full max-w-screen-lg mx-auto"
                     >
-                      <div>
-                        <div className={"flex items-center justify-between"}>
-                          <div>
-                            <Popover.Button
-                              as={Link}
-                              href={"/"}
-                              aria-label={"Accueil"}
-                            >
-                              <Logo className={"h-20"} />
-                            </Popover.Button>
-                          </div>
+                      <div
+                        className={
+                          "border-hatch pb-5 sm:pb-14 flex items-center justify-between pt-5 border-b-[12px]"
+                        }
+                      >
+                        <div>
                           <Popover.Button
-                            aria-label="Fermer le menu"
-                            className="btn btn-icon -mr-2"
+                            as={Link}
+                            href={"/"}
+                            aria-label={"Accueil"}
                           >
-                            <Close />
+                            <Logo className={"h-20"} />
                           </Popover.Button>
                         </div>
+                        <Popover.Button
+                          aria-label="Fermer le menu"
+                          className="btn btn-icon"
+                        >
+                          <Close />
+                        </Popover.Button>
+                      </div>
 
-                        <nav className={"mt-16"}>
+                      <div className={"overflow-y-scroll"}>
+                        <nav className={"mt-16 sm:mt-32"}>
                           <ul className="space-y-8 text-slate-800">
                             {paths.map((path) => (
                               <li key={path.url}>
@@ -141,49 +129,49 @@ export default function Navbar() {
                             ))}
                           </ul>
                         </nav>
-                      </div>
 
-                      <div className={"body body-1 space-y-4"}>
-                        <ul className={"flex space-x-2 -ml-3"}>
-                          {platforms.map(({ name, url, icon }, index) => (
-                            <li key={index}>
-                              <Link
-                                href={url}
-                                target={"_blank"}
-                                rel="nofollow noopener noreferrer"
-                                className={"btn btn-icon"}
-                              >
-                                {icon}
-                              </Link>
-                            </li>
-                          ))}
-                          {socials.map(({ name, url, icon }, index) => (
-                            <li key={index}>
-                              <Link
-                                href={url}
-                                target={"_blank"}
-                                rel="nofollow noopener noreferrer"
-                                className={"btn btn-icon"}
-                              >
-                                {icon}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
+                        <div className={"body body-1 mt-16 sm:mt-32 space-y-4"}>
+                          <ul className={"flex space-x-2 -ml-3"}>
+                            {platforms.map(({ name, url, icon }, index) => (
+                              <li key={index}>
+                                <Link
+                                  href={url}
+                                  target={"_blank"}
+                                  rel="nofollow noopener noreferrer"
+                                  className={"btn btn-icon"}
+                                >
+                                  {icon}
+                                </Link>
+                              </li>
+                            ))}
+                            {socials.map(({ name, url, icon }, index) => (
+                              <li key={index}>
+                                <Link
+                                  href={url}
+                                  target={"_blank"}
+                                  rel="nofollow noopener noreferrer"
+                                  className={"btn btn-icon"}
+                                >
+                                  {icon}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
 
-                        <ul className={"flex space-x-2"}>
-                          {emails.map(({ name, url }, index) => (
-                            <li key={index} className={"flex items-center"}>
-                              <Link
-                                href={url}
-                                className={"link link-primary mr-1"}
-                              >
-                                {name}
-                              </Link>
-                              <CopyClipboard copyText={name} />
-                            </li>
-                          ))}
-                        </ul>
+                          <ul className={"flex space-x-2"}>
+                            {emails.map(({ name, url }, index) => (
+                              <li key={index} className={"flex items-center"}>
+                                <Link
+                                  href={url}
+                                  className={"link link-primary mr-1"}
+                                >
+                                  {name}
+                                </Link>
+                                <CopyClipboard copyText={name} />
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </Transition.Child>
                   </Transition.Child>

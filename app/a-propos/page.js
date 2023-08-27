@@ -1,5 +1,6 @@
 import CustomLink from "../../components/CustomLink";
 import { openGraphImage } from "../shared-metadata";
+import Link from "next/link";
 
 const title = "À propos";
 const description =
@@ -36,7 +37,7 @@ export default function About() {
         <h1 className={"title title-1"}>À propos</h1>
       </section>
 
-      <section className={"max-w-screen-lg mx-auto"}>
+      <section className={"max-w-screen-lg mx-auto mb-20"}>
         <div className={"max-w-screen-md space-y-9"}>
           <p className={"body body-1"}>
             Je m'appelle Louis Cuvelier, freelance et entrepreneur de{" "}
@@ -70,17 +71,24 @@ export default function About() {
           <p className={"body body-1"}>
             Fort de mon parcours entrepreneurial, je sais plonger en profondeur
             dans les enjeux business de mes clients afin de proposer des
-            solutions sur mesure en développement front-end (Conception de site,
-            avec ou sans maquette, avec Strapi CMS (équivalent WordPress), HTML,
-            CSS, JavaScript, React, Next.js&nbsp;…), automatisation des
-            processus (Make, Zapier, Zoho Flow, code personnalisé&nbsp;…) et
-            SEO/référencement naturel (programmatique, rédaction&nbsp;…) pour
-            concrétiser leurs objectifs.
+            solutions sur mesure en{" "}
+            <Link className={"link link-primary"} href={"/prestations"}>
+              création de site internet
+            </Link>
+            ,{" "}
+            <Link className={"link link-primary"} href={"/prestations"}>
+              automatisation des processus
+            </Link>{" "}
+            et{" "}
+            <Link className={"link link-primary"} href={"/prestations"}>
+              référencement naturel
+            </Link>{" "}
+            pour concrétiser leurs objectifs.
           </p>
           <p className={"body body-1"}>
-            Si vous avez besoin d'un développeur front-end expérimenté, d'un
-            expert en automatisation ou d'un consultant en référencement SEO,
-            n'hésitez pas à me{" "}
+            Si vous avez besoin d'un créateur de site internet expérimenté, d'un
+            expert en automatisation ou d'un professionnel en référencement
+            naturel (SEO), n'hésitez pas à me{" "}
             <CustomLink href={"/contact"}>contacter</CustomLink> pour discuter
             de votre projet.
           </p>
