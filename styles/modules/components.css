@@ -1,10 +1,5 @@
 /* Typography rules of the design */
 @layer components {
-
-  .perspective-20000 {
-    perspective: 20000px;
-  }
-
   .bg-hatch-primary {
     background: repeating-linear-gradient(
       -45deg,

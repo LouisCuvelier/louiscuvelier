@@ -41,7 +41,7 @@ export default function Realizations() {
 
       <section
         className={
-          "perspective-20000 max-w-screen-lg flex flex-col gap-16 mx-auto"
+          "[perspective:20000px] max-w-screen-lg flex flex-col gap-16 mx-auto"
         }
       >
         {allProjectsData.map((props, index) => (
