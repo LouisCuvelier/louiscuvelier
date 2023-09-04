@@ -59,19 +59,20 @@ export default function About() {
             Depuis, j'ai revendu Coursier Job, un site que j'avais créé, et j'ai
             co-fondé{" "}
             <CustomLink href={"https://www.bulneo.fr"}>Bulneo</CustomLink> (+ de
-            15 salariés aujourd'hui) avec comme but d'apporter mon expertise
-            pour révolutionner les anciennes pratiques du monde de la rénovation
-            de salle de bain.
+            15 salariés aujourd'hui) avec comme ambition d'apporter mon
+            expertise pour révolutionner les anciennes pratiques du monde de la
+            rénovation de salle de bain.
           </p>
           <p className={"body body-1"}>
-            Désormais, je renoue avec ma passion première : le code. Mon but est
-            de mettre à profit mon expertise, mes connaissances et mes conseils,
-            au service de mes clients.
+            Désormais, je renoue avec ma passion première, le code, avec comme
+            but de mettre à profit mon expertise, mes connaissances et mes
+            conseils, au service de mes clients pour leur faire gagner du temps
+            et de l'argent.
           </p>
           <p className={"body body-1"}>
-            Fort de mon parcours entrepreneurial, je sais plonger en profondeur
-            dans les enjeux business de mes clients afin de proposer des
-            solutions sur mesure en{" "}
+            Fort de mon parcours entrepreneurial, j'ai acquis une vision à 360°
+            qui me permet de comprendre tous les enjeux business autour d'une
+            problématique et d'y apporter des solutions sur mesure en{" "}
             <Link className={"link link-primary"} href={"/prestations"}>
               création de site internet
             </Link>
@@ -82,8 +83,8 @@ export default function About() {
             et{" "}
             <Link className={"link link-primary"} href={"/prestations"}>
               référencement naturel
-            </Link>{" "}
-            pour concrétiser leurs objectifs.
+            </Link>
+            .
           </p>
           <p className={"body body-1"}>
             Si vous avez besoin d'un créateur de site internet expérimenté, d'un
