@@ -131,7 +131,7 @@ export default function Navbar() {
                         </nav>
 
                         <div className={"body body-1 mt-16 sm:mt-32 space-y-4"}>
-                          <ul className={"flex space-x-2 -ml-3"}>
+                          <ul className={"flex space-x-2 ml-1"}>
                             {platforms.map(({ name, url, icon }, index) => (
                               <li key={index}>
                                 <Link
