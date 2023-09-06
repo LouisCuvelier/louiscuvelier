@@ -33,7 +33,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <header className={"w-full max-w-screen-xl p-5 mx-auto"}>
+    <header className={"w-full max-w-screen-xl px-5 pt-5 mx-auto"}>
       <nav
         className={
           "max-w-screen-lg mx-auto flex flex-row justify-between items-center"
@@ -54,7 +54,7 @@ export default function Navbar() {
             return (
               <>
                 <Popover.Button
-                  className="btn btn-icon -mr-2"
+                  className="btn btn-icon"
                   aria-label={"Ouvrir le menu"}
                 >
                   <MenuBar />
@@ -78,7 +78,7 @@ export default function Navbar() {
                     leave="duration-[200ms] ease-in"
                     leaveFrom="translate-x-0 rounded-none"
                     leaveTo="translate-x-full rounded-l-[200px]"
-                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 px-5 h-full"
+                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 h-full overflow-y-scroll"
                   >
                     <Transition.Child
                       enter="delay-100 duration-300 ease-out"
@@ -87,11 +87,11 @@ export default function Navbar() {
                       leave="duration-300 ease-in"
                       leaveFrom="opacity-100 translate-x-0"
                       leaveTo="opacity-0 translate-x-full"
-                      className="origin-right flex flex-col h-full w-full max-w-screen-lg mx-auto"
+                      className="origin-right flex flex-col w-full max-w-screen-lg mx-auto py-5"
                     >
                       <div
                         className={
-                          "border-hatch pb-5 sm:pb-14 flex items-center justify-between pt-5 border-b-[12px]"
+                          "border-hatch sm:pb-14 flex items-center justify-between border-b-[12px]"
                         }
                       >
                         <div>
@@ -111,7 +111,7 @@ export default function Navbar() {
                         </Popover.Button>
                       </div>
 
-                      <div className={"overflow-y-scroll"}>
+                      <div>
                         <nav className={"mt-16 sm:mt-32"}>
                           <ul className="space-y-8 text-slate-800">
                             {paths.map((path) => (
