@@ -49,7 +49,7 @@ export default function Home() {
     <>
       <section
         className={
-          "max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-12 -mt-16 md:mt-0 gap-16 md:gap-16 items-center md:auto-rows-min md:py-32"
+          "max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-12 -mt-16 md:mt-0 gap-16 md:gap-16 items-center md:auto-rows-min"
         }
       >
         <div className={"md:col-span-5"}>

@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
           <div>
             <Navbar />
             <main
-              className={"w-full max-w-screen-xl mx-auto px-5 py-20 md:py-28"}
+              className={"md:py-26 w-full max-w-screen-xl mx-auto px-5 py-20"}
             >
               {children}
             </main>
