@@ -58,10 +58,10 @@ export default function Prestations() {
             services: [
               "Site vitrine / institutionnel",
               "Application web",
-              "Outil interne",
-              "Intranet/Extranet",
-              "Intégration web",
               "MVP",
+              "Intégration web",
+              "Outil interne",
+              "Intranet / Extranet",
             ],
           },
           {
