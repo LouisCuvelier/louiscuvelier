@@ -3,7 +3,7 @@ import PrestationCard from "../../components/PrestationCard";
 
 const title = "Prestations";
 const description =
-  "De la création de votre site internet à l'automatisation méticuleuse et au référencement naturel stratégique, nos prestations transforment vos ambitions en succès en ligne. Découvrez comment nous créons, simplifions et propulsons votre présence sur internet.";
+  "Je réalise des sites internet sur-mesure, optimisés pour le référencement naturel (SEO) et j'automatise vos processus.";
 const url = "prestations";
 
 export const metadata = {
@@ -45,7 +45,7 @@ export default function Prestations() {
           {
             title: "Création de site internet",
             subtitle:
-              "Performant, sur mesure, adapté à tous les écrans et optimisé pour le SEO",
+              "Performant, sur-mesure, adapté à tous les écrans et optimisé pour le SEO",
             technologies: [
               "Next.js",
               "Tailwind CSS",
@@ -65,16 +65,9 @@ export default function Prestations() {
             ],
           },
           {
-            title: "Automatisation",
-            technologies: ["Zapier", "Make", "Zoho Flow", "Code personnalisé"],
-            subtitle:
-              "De vos processus pour vous faire gagner du temps et de l'argent",
-            services: ["Opérationnels", "Support", "Pilotage", "Mesure"],
-          },
-          {
             title: "Référencement naturel (SEO)",
             subtitle:
-              "Pour augmenter votre visiblité sur les moteurs de recherche",
+              "Pour augmenter votre visiblité sur Google et les autres moteurs de recherche",
             services: [
               "Conception d'architecture",
               "Optimisation technique",
@@ -83,6 +76,12 @@ export default function Prestations() {
               "Consulting",
               "Formation",
             ],
+          },
+          {
+            title: "Automatisation des processus",
+            technologies: ["Zapier", "Make", "Zoho Flow", "Code personnalisé"],
+            subtitle: "Pour vous faire gagner du temps et de l'argent",
+            services: ["Opérationnels", "Support", "Pilotage", "Mesure"],
           },
         ].map((props, index) => (
           <PrestationCard key={index} index={index} {...props} />

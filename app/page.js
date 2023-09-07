@@ -58,15 +58,16 @@ export default function Home() {
         <div className={"md:col-span-7"}>
           <h1 className={"title title-1"}>Louis Cuvelier</h1>
           <h2 className={"title title-4 mt-2 mb-6 [text-wrap:balance]"}>
-            Création de site internet, automatisation et SEO
+            Je code votre site, je le classe sur Google et j'automatise vos
+            process
           </h2>
           <p className={"body body-1"}>
-            Je suis un freelance passionné par le code et l'entrepreneuriat,
-            avec une expertise en <strong>création de site internet</strong>,{" "}
-            <strong>automatisation</strong> et{" "}
-            <strong>référencement naturel (SEO)</strong>. Mon objectif est
-            d'aider mes clients à atteindre leurs objectifs en créant des
-            solutions sur mesure.
+            Freelance passionné par le code et l'entrepreneuriat, j'ai une
+            expertise en <strong>création de site internet</strong>,{" "}
+            <strong>référencement naturel (SEO)</strong> et{" "}
+            <strong>automatisation</strong>. J'aide mes clients à gagner du
+            temps, de l'argent et de la productivité en créant des solutions
+            sur-mesure.
           </p>
           <div className={"mt-9 flex flex-wrap gap-8"}>
             <Link

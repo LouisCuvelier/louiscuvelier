@@ -5,7 +5,7 @@ import { openGraphImage } from "../shared-metadata";
 
 const title = "Contact";
 const description =
-  "Prêt à donner vie à vos idées digitales ? Contactez-moi dès maintenant pour des solutions en développement front-end, automatisation et SEO. Ensemble, créons l'avenir de votre projet.";
+  "Prêt à donner vie à vos idées ? Contactez-moi dès maintenant pour démarrer votre projet !";
 const url = "contact";
 
 export const metadata = {
