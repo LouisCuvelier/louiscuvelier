@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const title = "À propos";
 const description =
-  "Découvrez l'histoire derrière mon parcours en freelance et entrepreneuriat. Diplômé d'un Master 2 en Chef de projet web, j'ai évolué dans le monde du développement front-end, de l'automatisation et du SEO. Mon engagement à créer des solutions pratiques et innovantes est renforcé par mon expérience entrepreneuriale. Plongez dans mon profil professionnel et contactez-moi pour collaborer sur vos défis digitaux.";
+  "Découvrez l'histoire derrière mon parcours en freelance et entrepreneuriat.";
 const url = "a-propos";
 
 export const metadata = {
@@ -69,26 +69,27 @@ export default function About() {
             au service de mes clients.
           </p>
           <p className={"body body-1"}>
-            Fort de mon parcours entrepreneurial, je sais plonger en profondeur
-            dans les enjeux business de mes clients afin de proposer des
-            solutions sur mesure en{" "}
+            Fort de mon parcours entrepreneurial, j'ai acquis une vision à 360°
+            qui me permet de comprendre tous les enjeux business autour d'une
+            problématique. J'y apporte des solutions sur-mesure en{" "}
             <Link className={"link link-primary"} href={"/prestations"}>
               création de site internet
             </Link>
             ,{" "}
             <Link className={"link link-primary"} href={"/prestations"}>
-              automatisation des processus
+              référencement naturel (SEO)
             </Link>{" "}
             et{" "}
             <Link className={"link link-primary"} href={"/prestations"}>
-              référencement naturel
+              automatisation des processus
             </Link>{" "}
-            pour concrétiser leurs objectifs.
+            afin de faire gagner à mes clients du temps, de l'argent et de la
+            productivité.
           </p>
           <p className={"body body-1"}>
-            Si vous avez besoin d'un créateur de site internet expérimenté, d'un
-            expert en automatisation ou d'un professionnel en référencement
-            naturel (SEO), n'hésitez pas à me{" "}
+            Si vous avez besoin d'un développeur de site internet expérimenté,
+            d'un professionnel en référencement naturel (SEO) ou d'un expert en
+            automatisation des processus, n'hésitez pas à me{" "}
             <CustomLink href={"/contact"}>contacter</CustomLink> pour discuter
             de votre projet.
           </p>

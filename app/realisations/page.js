@@ -4,7 +4,7 @@ import { openGraphImage } from "../shared-metadata";
 
 const title = "Réalisations";
 const description =
-  "Découvrez mes réalisations en développement front-end, automatisation et SEO. Parcourez des projets sur mesure et innovants qui ont aidé mes clients à atteindre leurs objectifs.";
+  "Découvrez mes réalisations sur-mesure en création de site internet, référencement naturel (SEO) et automatisation des process.";
 const url = "realisations";
 
 export const metadata = {

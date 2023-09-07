@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 import { openGraphImage } from "./shared-metadata";
 
 const title =
-  "Louis Cuvelier - Création de site internet, automatisation et SEO";
+  "Louis Cuvelier - Création de site, SEO et automatisation des processus";
 const description =
-  "Freelance passionné par le code et l'entrepreneuriat, avec une expertise en création de site internet, automatisation et référencement naturel.";
+  "Je code votre site, je le classe sur Google et j'automatise vos processus. Freelance passionné par le code et l'entrepreneuriat, je vous aide à atteindre vos objectifs avec des solutions sur-mesure.";
 
 export const metadata = {
   metadataBase: new URL("https://louiscuvelier.com"),
