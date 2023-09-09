@@ -18,7 +18,7 @@ export default function Navbar() {
   const paths = [
     { url: "/realisations", title: "Réalisations", isPrimary: false },
     { url: "/prestations", title: "Prestations", isPrimary: false },
-    // { url: "/blog", title: "Blog",isPrimary: false, },
+    { url: "/blog", title: "Blog", isPrimary: false },
     { url: "/a-propos", title: "À propos", isPrimary: false },
     { url: "/contact", title: "Contact", isPrimary: false },
     {
@@ -54,7 +54,7 @@ export default function Navbar() {
             return (
               <>
                 <Popover.Button
-                  className="btn btn-icon"
+                  className="btn btn-icon-primary"
                   aria-label={"Ouvrir le menu"}
                 >
                   <MenuBar />
@@ -105,7 +105,7 @@ export default function Navbar() {
                         </div>
                         <Popover.Button
                           aria-label="Fermer le menu"
-                          className="btn btn-icon"
+                          className="btn btn-icon-primary"
                         >
                           <Close />
                         </Popover.Button>
@@ -138,7 +138,7 @@ export default function Navbar() {
                                   href={url}
                                   target={"_blank"}
                                   rel="nofollow noopener noreferrer"
-                                  className={"btn btn-icon"}
+                                  className={"btn btn-icon-primary"}
                                 >
                                   {icon}
                                 </Link>
@@ -150,7 +150,7 @@ export default function Navbar() {
                                   href={url}
                                   target={"_blank"}
                                   rel="nofollow noopener noreferrer"
-                                  className={"btn btn-icon"}
+                                  className={"btn btn-icon-primary"}
                                 >
                                   {icon}
                                 </Link>

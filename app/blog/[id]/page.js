@@ -1,6 +1,9 @@
 import { getAllPostIds, getPostData } from "/lib/posts";
 import Date from "/components/Date";
 import { openGraphImage } from "../../shared-metadata";
+import "styles/prism.css";
+import SocialShare from "../../../components/SocialShare";
+import TableOfContent from "../../../components/TableOfContent";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const data = await getPostData(params.id);
@@ -30,19 +33,21 @@ export async function generateMetadata({ params, searchParams }, parent) {
     },
   };
 }
+
 export default async function Post({ params }) {
-  const data = await getPostData(params.id);
-  const { frontmatter, content } = data;
+  const { frontmatter, content } = await getPostData(params.id);
 
   return (
     <>
-      <article className={"[perspective:20000px] max-w-screen-lg mx-auto"}>
+      <article
+        className={
+          "[perspective:20000px] max-w-screen-lg mx-auto grid grid-cols-12 gap-y-32 gap-x-6"
+        }
+      >
         <header
-          className={
-            "border-hatch mx-auto max-w-screen-lg mb-32 border-b-[10px] pb-16"
-          }
+          className={"border-hatch mx-auto col-span-12 border-b-[10px] pb-16"}
         >
-          <h1 className={"title title-1"}>{frontmatter.title}</h1>
+          <h1 className={"title title-1 mb-3"}>{frontmatter.title}</h1>
           <div className={"caption caption-1"}>
             <span>
               Publié le{" "}
@@ -55,12 +60,21 @@ export default async function Post({ params }) {
             </span>
           </div>
         </header>
-        <div className={"max-w-screen-md"}>
-          <p className={"subtitle subtitle-1 mb-20"}>
+        <div className={"col-span-12 lg:col-span-9"}>
+          <p className={"subtitle subtitle-1 mb-12"}>
             {frontmatter.description}
           </p>
+          <TableOfContent />
           {content}
         </div>
+        <aside className={"col-span-12 lg:col-span-3 relative"}>
+          <div className={"sticky top-6"}>
+            <SocialShare
+              url={`${new URL("https://louiscuvelier.com")}blog/${params.id}`}
+              title={frontmatter.title}
+            />
+          </div>
+        </aside>
       </article>
     </>
   );

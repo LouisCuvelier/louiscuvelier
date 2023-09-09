@@ -2,9 +2,8 @@
 import Clock from "../public/images/clock.svg";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
-import { useEffect } from "react";
-import cardEffect from "../lib/card-effect";
 import ExportedImage from "next-image-export-optimizer";
+import CardEffect from "./CardEffect";
 
 export default function RealizationCard({
   index,
@@ -17,17 +16,8 @@ export default function RealizationCard({
   technologies,
   cover,
 }) {
-  useEffect(() => {
-    cardEffect(".cards");
-  }, []);
-
   return (
-    <article
-      key={index}
-      className={
-        "cards border-hatch @container border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out"
-      }
-    >
+    <CardEffect as={"article"} key={index} className={"@container"}>
       <div className={"w-full relative"}>
         <div className={"h-[500px]"}>
           <ExportedImage
@@ -108,6 +98,6 @@ export default function RealizationCard({
           </div>
         </div>
       </div>
-    </article>
+    </CardEffect>
   );
 }

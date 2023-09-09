@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import cardEffect from "../lib/card-effect";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
+import CardEffect from "./CardEffect";
 
 export default function PrestationCard({
   services,
@@ -15,10 +16,9 @@ export default function PrestationCard({
   }, []);
 
   return (
-    <article
-      className={
-        "cards border-hatch w-full grid grid-cols-2 max-w-screen-lg mx-auto gap-12 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out p-5 sm:p-14"
-      }
+    <CardEffect
+      as={"article"}
+      className={"grid grid-cols-2 gap-12 p-5 sm:p-14"}
     >
       <div className={"col-span-2"}>
         <h2 className={"title title-2 hyphens-auto mb-2"}>{title}</h2>
@@ -66,6 +66,6 @@ export default function PrestationCard({
           <ArrowUpRight />
         </Link>
       </div>
-    </article>
+    </CardEffect>
   );
 }

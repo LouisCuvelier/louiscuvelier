@@ -33,33 +33,49 @@
   }
 
   .title-1 {
-    @apply text-7xl;
+    @apply text-6xl;
 
     @screen sm {
+      @apply text-7xl;
+    }
+
+    @screen lg {
       @apply text-8xl;
     }
   }
 
   .title-2 {
-    @apply text-5xl;
+    @apply text-4xl;
 
     @screen sm {
+      @apply text-5xl;
+    }
+
+    @screen lg {
       @apply text-6xl;
     }
   }
 
   .title-3 {
-    @apply text-3xl;
+    @apply text-2xl;
 
     @screen sm {
+      @apply text-3xl;
+    }
+
+    @screen lg {
       @apply text-4xl;
     }
   }
 
   .title-4 {
-    @apply text-xl;
+    @apply text-lg;
 
     @screen sm {
+      @apply text-xl;
+    }
+
+    @screen lg {
       @apply text-2xl;
     }
   }
@@ -70,10 +86,6 @@
     @screen sm {
       @apply text-lg;
     }
-  }
-
-  .title-5-light {
-    @apply title-5 font-normal;
   }
 
   .subtitle {
@@ -214,11 +226,7 @@
   }
 
   .btn-icon {
-    @apply leading-6 inline-flex items-center p-2 rounded-md border-2 border-transparent;
-
-    & svg {
-      @apply w-8 h-8;
-    }
+    @apply leading-6 inline-flex items-center rounded-md border-2 border-transparent;
 
     &:hover {
       @apply ring-2 ring-teal-700;
@@ -230,8 +238,25 @@
     }
   }
 
+  .btn-icon-primary {
+    @apply btn-icon p-2;
+
+    & svg {
+      @apply w-8 h-8;
+    }
+  }
+
+  .btn-icon-secondary {
+    @apply btn-icon p-1;
+
+    & svg {
+      @apply w-6 h-6;
+    }
+  }
+
   .btn,
-  .btn-icon {
+  .btn-icon-primary,
+  .btn-icon-secondary {
     & svg {
       @apply stroke-current;
     }
@@ -526,6 +551,28 @@
 
     & input:checked + label {
       @apply transition duration-300 ease-in-out text-slate-800;
+    }
+  }
+
+  .anchor {
+    @apply relative ml-7;
+
+    & > a {
+      @apply transition duration-150 ease-in-out h-6 w-6 absolute -left-7 top-[10px] cursor-pointer;
+    }
+
+    &:hover > a {
+      @apply inline-block opacity-100;
+    }
+
+    @screen lg {
+      & {
+        @apply ml-0;
+
+        & > a {
+          @apply opacity-0;
+        }
+      }
     }
   }
 
