@@ -89,7 +89,7 @@
   }
 
   .subtitle {
-    @apply font-body font-medium text-slate-700;
+    @apply font-body font-semibold text-slate-700;
   }
 
   .subtitle-1 {
@@ -418,7 +418,7 @@
   }
 
   .link {
-    @apply transition duration-300 ease-in-out rounded-md underline decoration-1;
+    @apply transition duration-300 ease-in-out rounded-md decoration-1;
 
     &:focus {
       @apply outline-none;
@@ -443,10 +443,16 @@
   }
 
   .link-primary {
-    @apply underline-offset-2 text-teal-700 decoration-teal-700;
+    @apply underline underline-offset-2 text-teal-700 decoration-teal-700;
 
     &:hover {
       @apply decoration-dashed;
+    }
+  }
+
+  .link-secondary {
+    &:hover {
+      @apply underline underline-offset-2 text-teal-700 decoration-teal-700;
     }
   }
 
@@ -571,6 +577,26 @@
 
         & > a {
           @apply opacity-0;
+        }
+      }
+    }
+  }
+
+  .toc {
+    & ol {
+      counter-reset: section;
+
+      & li {
+        &::before {
+          @apply ml-3 mr-2;
+          counter-increment: section;
+          content: counters(section, ".") ".";
+        }
+
+        &:nth-child(n+10):before {
+          @apply ml-0 mr-2;
+          counter-increment: section;
+          content: "" counters(section, ".") ".";
         }
       }
     }

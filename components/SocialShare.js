@@ -9,10 +9,8 @@ import CardEffect from "./CardEffect";
 
 export default function SocialShare({ url, title }) {
   return (
-    <CardEffect className={"inline-flex flex-col justify-start lg:w-full p-5"}>
-      <div className={"surtitle surtitle-2 mb-2 text-center lg:text-left"}>
-        Partager
-      </div>
+    <CardEffect className={"inline-flex flex-col justify-start p-5"}>
+      <div className={"surtitle surtitle-2 mb-3"}>Partager</div>
       <ul className={"flex space-x-2"}>
         {[
           {

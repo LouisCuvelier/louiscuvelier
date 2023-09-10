@@ -2,9 +2,10 @@
 
 import { memo, useEffect, useState } from "react";
 import Link from "next/link";
-import CardEffect from "./CardEffect";
+import ChevronDownIcon from "../public/images/chevron-down.svg";
 
 export default memo(function TableOfContent() {
+  const [isOpen, setIsOpen] = useState(false);
   const [headings, setHeadings] = useState([]);
   let shownHeadings = [];
 
@@ -79,14 +80,16 @@ export default memo(function TableOfContent() {
 
   function renderToc(headings) {
     return (
-      <ol className={"body body-1 ml-5"}>
+      <ol className={"body body-1 toc ml-5"}>
         {headings.map((item, index) => {
           if (item.childrens.length > 0) {
             return (
               <li key={`nested-${index}-${item.id}`}>
                 <Link
                   href={`#${item.id}`}
-                  className={"link link-primary mb-1 inline-flex"}
+                  className={
+                    "link link-secondary no-underline mb-2 inline-flex"
+                  }
                 >
                   {item.text}
                 </Link>
@@ -98,7 +101,9 @@ export default memo(function TableOfContent() {
               <li key={`nested-${index}-${item.id}`}>
                 <Link
                   href={`#${item.id}`}
-                  className={"link link-primary mb-1 inline-flex"}
+                  className={
+                    "link link-secondary no-underline mb-2 inline-flex"
+                  }
                 >
                   {item.text}
                 </Link>
@@ -111,9 +116,37 @@ export default memo(function TableOfContent() {
   }
 
   return (
-    <CardEffect as={"nav"} aria-label="Sommaire" className={"py-5 pr-5 mb-14"}>
-      <div className={"surtitle surtitle-1 ml-5 mb-2"}>Sommaire</div>
-      {renderToc(headings)}
-    </CardEffect>
+    <nav
+      aria-label="Sommaire"
+      className={`border-hatch mb-14 pr-5 py-5 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out`}
+    >
+      <div className={"flex justify-between items-center ml-5"} id={"sommaire"}>
+        <div className={"surtitle surtitle-1"}>Sommaire</div>
+        <button
+          aria-expanded={isOpen}
+          className={`btn btn-icon-secondary `}
+          aria-controls={"sommaire-liste"}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <ChevronDownIcon
+            className={`transition ease-in-out duration-300 ${
+              isOpen ? "-rotate-180" : ""
+            }`}
+          />
+        </button>
+      </div>
+      {/*// Add transition headlessUI to hide element when not shown*/}
+      <div
+        id={"sommaire-list"}
+        role="region"
+        aria-labelledby="sommaire"
+        aria-hidden={!isOpen}
+        className={`toc mt-5 grid transition-[grid-template-rows] ease-in-out duration-300 ${
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className={"overflow-hidden"}>{renderToc(headings)}</div>
+      </div>
+    </nav>
   );
 });

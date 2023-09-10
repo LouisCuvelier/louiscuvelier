@@ -47,8 +47,8 @@ export default async function Post({ params }) {
         <header
           className={"border-hatch mx-auto col-span-12 border-b-[10px] pb-16"}
         >
-          <h1 className={"title title-1 mb-3"}>{frontmatter.title}</h1>
-          <div className={"caption caption-1"}>
+          <h1 className={"title title-2 mb-6"}>{frontmatter.title}</h1>
+          <div className={"caption caption-1 text-slate-500"}>
             <span>
               Publié le{" "}
               <Date isPubDate={true} dateString={frontmatter.publicationDate} />

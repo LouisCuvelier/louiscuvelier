@@ -1892,7 +1892,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/react@npm:^1.7.17":
+"@headlessui/react@npm:latest":
   version: 1.7.17
   resolution: "@headlessui/react@npm:1.7.17"
   dependencies:
@@ -7888,7 +7888,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@cloudflare/next-on-pages": 1.5.0
-    "@headlessui/react": ^1.7.17
+    "@headlessui/react": latest
     "@mdx-js/loader": ^2.3.0
     "@mdx-js/mdx": ^2.3.0
     "@mdx-js/react": ^2.3.0

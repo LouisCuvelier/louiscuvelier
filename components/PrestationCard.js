@@ -1,6 +1,4 @@
 "use client";
-import { useEffect } from "react";
-import cardEffect from "../lib/card-effect";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import CardEffect from "./CardEffect";
@@ -11,10 +9,6 @@ export default function PrestationCard({
   title,
   subtitle,
 }) {
-  useEffect(() => {
-    cardEffect(".cards");
-  }, []);
-
   return (
     <CardEffect
       as={"article"}
