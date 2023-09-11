@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Date from "./Date";
 import CardEffect from "./CardEffect";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 export default function BlogPostCard({
   id,
@@ -22,9 +22,8 @@ export default function BlogPostCard({
       <Link href={`/blog/${id}`} className={"h-full flex flex-col"}>
         <div className={"relative"}>
           <div className={`aspect-video`}>
-            <ExportedImage
+            <Image
               {...(index === 0 && { priority: true })}
-              placeholder="blur"
               src={cover}
               className={"object-center rounded-t object-cover"}
               fill={true}

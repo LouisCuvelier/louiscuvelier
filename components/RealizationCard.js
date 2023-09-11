@@ -2,8 +2,8 @@
 import Clock from "../public/images/clock.svg";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
-import ExportedImage from "next-image-export-optimizer";
 import CardEffect from "./CardEffect";
+import Image from "next/image";
 
 export default function RealizationCard({
   index,
@@ -20,9 +20,8 @@ export default function RealizationCard({
     <CardEffect as={"article"} key={index} className={"@container"}>
       <div className={"w-full relative"}>
         <div className={"h-[500px]"}>
-          <ExportedImage
+          <Image
             {...(index === 0 && { priority: true })}
-            placeholder="blur"
             src={cover}
             className={"object-left-top rounded-t object-cover"}
             fill={true}
