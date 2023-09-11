@@ -43,9 +43,7 @@ export default function Contact() {
         </h2>
 
         <Link
-          href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSfuNoB281AfU3hIBjbIxNM4f0-0GRf5FAb9FV8cxISjNvMyGw/viewform?usp=pp_url"
-          }
+          href={"https://calendly.com/louiscuvelier/intro"}
           target={"_blank"}
           rel="nofollow noopener noreferrer"
           className={"btn btn-primary"}

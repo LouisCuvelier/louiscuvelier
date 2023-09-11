@@ -430,13 +430,8 @@
   }
 
   /* purgecss ignore */
-  .link[target="_blank"] {
-    @apply whitespace-nowrap;
-  }
-
-  /* purgecss ignore */
   .link[target="_blank"]::after {
-    @apply ml-1 relative w-4 h-4 inline-block bg-no-repeat;
+    @apply whitespace-nowrap ml-1 relative w-4 h-4 inline-block bg-no-repeat;
     bottom: -2px;
     content: "";
     background-size: theme("spacing.4");
@@ -564,11 +559,17 @@
     @apply relative ml-7;
 
     & > a {
-      @apply transition duration-150 ease-in-out h-6 w-6 absolute -left-7 top-[10px] cursor-pointer;
+      @apply transition duration-150 ease-in-out h-5 w-5 -left-7 top-[5px] absolute cursor-pointer;
     }
 
     &:hover > a {
       @apply inline-block opacity-100;
+    }
+
+    @screen sm {
+      & > a {
+        @apply h-5 w-5 -left-7 top-[10px];
+      }
     }
 
     @screen lg {
@@ -576,7 +577,7 @@
         @apply ml-0;
 
         & > a {
-          @apply opacity-0;
+          @apply opacity-0 h-5 w-5 -left-7 top-[14px];
         }
       }
     }

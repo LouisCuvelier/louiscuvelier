@@ -37,7 +37,7 @@ export default function BlogPostCard({
             <h2 className={`title mb-2 ${index === 0 ? "title-2" : "title-3"}`}>
               {title}
             </h2>
-            <div className={"caption caption-1"}>
+            <div className={"caption caption-1 text-slate-500"}>
               <Date isPubDate={true} dateString={publicationDate} />
             </div>
             <p

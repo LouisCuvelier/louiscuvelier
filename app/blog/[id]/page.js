@@ -1,9 +1,10 @@
 import { getAllPostIds, getPostData } from "/lib/posts";
 import Date from "/components/Date";
-import { openGraphImage } from "../../shared-metadata";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
 import TableOfContent from "../../../components/TableOfContent";
+import Sidebar from "../../../components/Sidebar";
+import Link from "next/link";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const data = await getPostData(params.id);
@@ -24,12 +25,11 @@ export async function generateMetadata({ params, searchParams }, parent) {
       title,
       description,
       url: url,
-      ...openGraphImage,
     },
     twitter: {
       title,
       description,
-      ...openGraphImage,
+      images: [frontmatter.image],
     },
   };
 }
@@ -69,10 +69,24 @@ export default async function Post({ params }) {
         </div>
         <aside className={"col-span-12 lg:col-span-3 relative"}>
           <div className={"sticky top-6"}>
-            <SocialShare
-              url={`${new URL("https://louiscuvelier.com")}blog/${params.id}`}
-              title={frontmatter.title}
-            />
+            <Sidebar>
+              <div className={"body body-1 p-5"}>
+                Besoin d'un site, d'être mieux référencé sur Google ou
+                d'automatiser vos process ?{" "}
+                <Link
+                  href={"https://calendly.com/louiscuvelier/intro"}
+                  target={"_blank"}
+                  rel="nofollow noopener noreferrer"
+                  className={"link link-primary"}
+                >
+                  Commencer dès maintenant
+                </Link>
+              </div>
+              <SocialShare
+                url={`${new URL("https://louiscuvelier.com")}blog/${params.id}`}
+                title={frontmatter.title}
+              />
+            </Sidebar>
           </div>
         </aside>
       </article>

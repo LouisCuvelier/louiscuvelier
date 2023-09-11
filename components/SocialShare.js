@@ -5,11 +5,10 @@ import TwitterIcon from "../public/images/twitter.svg";
 import LinkedInIcon from "../public/images/linkedin.svg";
 import FacebookIcon from "../public/images/facebook.svg";
 import Link from "next/link";
-import CardEffect from "./CardEffect";
 
 export default function SocialShare({ url, title }) {
   return (
-    <CardEffect className={"inline-flex flex-col justify-start p-5"}>
+    <div className={"inline-flex flex-col justify-start p-5"}>
       <div className={"surtitle surtitle-2 mb-3"}>Partager</div>
       <ul className={"flex space-x-2"}>
         {[
@@ -42,6 +41,6 @@ export default function SocialShare({ url, title }) {
           </li>
         ))}
       </ul>
-    </CardEffect>
+    </div>
   );
 }

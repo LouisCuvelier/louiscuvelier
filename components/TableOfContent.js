@@ -3,6 +3,7 @@
 import { memo, useEffect, useState } from "react";
 import Link from "next/link";
 import ChevronDownIcon from "../public/images/chevron-down.svg";
+import { Transition } from "@headlessui/react";
 
 export default memo(function TableOfContent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -136,17 +137,22 @@ export default memo(function TableOfContent() {
         </button>
       </div>
       {/*// Add transition headlessUI to hide element when not shown*/}
-      <div
+      <Transition
+        show={isOpen}
         id={"sommaire-list"}
         role="region"
         aria-labelledby="sommaire"
         aria-hidden={!isOpen}
-        className={`toc mt-5 grid transition-[grid-template-rows] ease-in-out duration-300 ${
-          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-        }`}
+        enter={""}
+        enterFrom={"grid-rows-[0fr]"}
+        enterTo={"grid-rows-[1fr]"}
+        leave={""}
+        leaveFrom={"grid-rows-[1fr]"}
+        leaveTo={"grid-rows-[0fr]"}
+        className={`toc grid transition-[grid-template-rows] ease-in-out duration-300`}
       >
-        <div className={"overflow-hidden"}>{renderToc(headings)}</div>
-      </div>
+        <div className={"overflow-hidden mt-5"}>{renderToc(headings)}</div>
+      </Transition>
     </nav>
   );
 });

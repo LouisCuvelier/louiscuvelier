@@ -22,7 +22,7 @@ export default function Navbar() {
     { url: "/a-propos", title: "À propos", isPrimary: false },
     { url: "/contact", title: "Contact", isPrimary: false },
     {
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfuNoB281AfU3hIBjbIxNM4f0-0GRf5FAb9FV8cxISjNvMyGw/viewform?usp=pp_url",
+      url: "https://calendly.com/louiscuvelier/intro",
       title: "Commencer votre projet",
       isPrimary: true,
     },

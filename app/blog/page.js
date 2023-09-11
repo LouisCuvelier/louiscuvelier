@@ -41,7 +41,7 @@ export default function Blog() {
 
       <section
         className={
-          "[perspective:20000px] max-w-screen-lg mx-auto gap-20 grid grid-cols-2"
+          "gap-16 [perspective:20000px] max-w-screen-lg mx-auto grid grid-cols-2"
         }
       >
         {allPostsData.map((props, index) => (
