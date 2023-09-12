@@ -1,12 +1,11 @@
-"use client";
 import Clock from "../public/images/clock.svg";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
-import { useEffect } from "react";
-import cardEffect from "../lib/card-effect";
-import ExportedImage from "next-image-export-optimizer";
+import CardEffect from "./CardEffect";
+import Image from "next/image";
+import getBase64 from "../lib/getBase64";
 
-export default function RealizationCard({
+export default async function RealizationCard({
   index,
   client,
   description,
@@ -17,23 +16,17 @@ export default function RealizationCard({
   technologies,
   cover,
 }) {
-  useEffect(() => {
-    cardEffect(".cards");
-  }, []);
+  const base64 = await getBase64(cover);
 
   return (
-    <article
-      key={index}
-      className={
-        "cards border-hatch @container border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out"
-      }
-    >
+    <CardEffect as={"article"} key={index} className={"@container"}>
       <div className={"w-full relative"}>
         <div className={"h-[500px]"}>
-          <ExportedImage
+          <Image
             {...(index === 0 && { priority: true })}
-            placeholder="blur"
             src={cover}
+            placeholder={"blur"}
+            blurDataURL={base64}
             className={"object-left-top rounded-t object-cover"}
             fill={true}
             alt={`Image de couverture de ${client}`}
@@ -108,6 +101,6 @@ export default function RealizationCard({
           </div>
         </div>
       </div>
-    </article>
+    </CardEffect>
   );
 }

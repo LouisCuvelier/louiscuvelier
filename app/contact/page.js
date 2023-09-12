@@ -1,31 +1,14 @@
 import Link from "next/link";
 import CopyClipboard from "../../components/CopyClipboard";
 import { contact } from "/data/contact";
-import { openGraphImage } from "../shared-metadata";
+import getMetadata from "../../lib/getMetadata";
 
 const title = "Contact";
 const description =
   "Prêt à donner vie à vos idées ? Contactez-moi dès maintenant pour démarrer votre projet !";
 const url = "contact";
 
-export const metadata = {
-  alternates: {
-    canonical: url,
-  },
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    url: url,
-    ...openGraphImage,
-  },
-  twitter: {
-    title,
-    description,
-    ...openGraphImage,
-  },
-};
+export const metadata = getMetadata({ url, title, description });
 
 export default function Contact() {
   const { socials, platforms, emails } = contact;
@@ -43,9 +26,7 @@ export default function Contact() {
         </h2>
 
         <Link
-          href={
-            "https://docs.google.com/forms/d/e/1FAIpQLSfuNoB281AfU3hIBjbIxNM4f0-0GRf5FAb9FV8cxISjNvMyGw/viewform?usp=pp_url"
-          }
+          href={"https://calendly.com/louiscuvelier/intro"}
           target={"_blank"}
           rel="nofollow noopener noreferrer"
           className={"btn btn-primary"}

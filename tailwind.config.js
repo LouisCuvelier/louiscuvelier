@@ -11,8 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["Qanelas Soft", ...defaultTheme.fontFamily.sans],
-        body: ["Roc Grotesk", ...defaultTheme.fontFamily.sans],
+        title: ["var(--font-qanelas-soft)", ...defaultTheme.fontFamily.sans],
+        body: ["var(--font-roc-grotesk)", ...defaultTheme.fontFamily.sans],
       },
     },
   },

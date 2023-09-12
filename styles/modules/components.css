@@ -29,37 +29,53 @@
   }
 
   .title {
-    @apply font-title font-semibold text-slate-900 [text-wrap:balance];
+    @apply font-title font-extrabold text-slate-900 [text-wrap:balance];
   }
 
   .title-1 {
-    @apply text-7xl;
+    @apply text-6xl;
 
     @screen sm {
+      @apply text-7xl;
+    }
+
+    @screen lg {
       @apply text-8xl;
     }
   }
 
   .title-2 {
-    @apply text-5xl;
+    @apply text-4xl;
 
     @screen sm {
+      @apply text-5xl;
+    }
+
+    @screen lg {
       @apply text-6xl;
     }
   }
 
   .title-3 {
-    @apply text-3xl;
+    @apply text-2xl;
 
     @screen sm {
+      @apply text-3xl;
+    }
+
+    @screen lg {
       @apply text-4xl;
     }
   }
 
   .title-4 {
-    @apply text-xl;
+    @apply text-lg;
 
     @screen sm {
+      @apply text-xl;
+    }
+
+    @screen lg {
       @apply text-2xl;
     }
   }
@@ -72,12 +88,8 @@
     }
   }
 
-  .title-5-light {
-    @apply title-5 font-normal;
-  }
-
   .subtitle {
-    @apply font-body font-medium text-slate-700;
+    @apply font-body font-semibold text-slate-700;
   }
 
   .subtitle-1 {
@@ -97,7 +109,7 @@
   }
 
   .surtitle {
-    @apply font-title font-semibold text-slate-900 uppercase tracking-[0.20rem];
+    @apply font-title text-slate-900 uppercase tracking-[0.20rem];
   }
 
   .surtitle-1 {
@@ -117,7 +129,7 @@
   }
 
   .caption {
-    @apply font-title font-semibold text-slate-900 leading-tight;
+    @apply font-title font-extrabold text-slate-900 leading-tight;
   }
 
   .caption-1 {
@@ -214,11 +226,7 @@
   }
 
   .btn-icon {
-    @apply leading-6 inline-flex items-center p-2 rounded-md border-2 border-transparent;
-
-    & svg {
-      @apply w-8 h-8;
-    }
+    @apply leading-6 inline-flex items-center rounded-md border-2 border-transparent;
 
     &:hover {
       @apply ring-2 ring-teal-700;
@@ -230,8 +238,25 @@
     }
   }
 
+  .btn-icon-primary {
+    @apply btn-icon p-2;
+
+    & svg {
+      @apply w-8 h-8;
+    }
+  }
+
+  .btn-icon-secondary {
+    @apply btn-icon p-1;
+
+    & svg {
+      @apply w-6 h-6;
+    }
+  }
+
   .btn,
-  .btn-icon {
+  .btn-icon-primary,
+  .btn-icon-secondary {
     & svg {
       @apply stroke-current;
     }
@@ -393,7 +418,7 @@
   }
 
   .link {
-    @apply transition duration-300 ease-in-out rounded-md underline decoration-1;
+    @apply transition duration-300 ease-in-out rounded-md decoration-1;
 
     &:focus {
       @apply outline-none;
@@ -405,23 +430,24 @@
   }
 
   /* purgecss ignore */
-  .link[target="_blank"] {
-    @apply whitespace-nowrap;
-  }
-
-  /* purgecss ignore */
   .link[target="_blank"]::after {
-    @apply ml-1 relative w-4 h-4 inline-block bg-no-repeat;
+    @apply whitespace-nowrap ml-1 relative w-4 h-4 inline-block bg-no-repeat;
     bottom: -2px;
     content: "";
     background-size: theme("spacing.4");
   }
 
   .link-primary {
-    @apply underline-offset-2 text-teal-700 decoration-teal-700;
+    @apply underline underline-offset-2 text-teal-700 decoration-teal-700;
 
     &:hover {
       @apply decoration-dashed;
+    }
+  }
+
+  .link-secondary {
+    &:hover {
+      @apply underline underline-offset-2 text-teal-700 decoration-teal-700;
     }
   }
 
@@ -526,6 +552,54 @@
 
     & input:checked + label {
       @apply transition duration-300 ease-in-out text-slate-800;
+    }
+  }
+
+  .anchor {
+    @apply relative ml-7;
+
+    & > a {
+      @apply transition duration-150 ease-in-out h-5 w-5 -left-7 top-[5px] absolute cursor-pointer;
+    }
+
+    &:hover > a {
+      @apply inline-block opacity-100;
+    }
+
+    @screen sm {
+      & > a {
+        @apply h-5 w-5 -left-7 top-[10px];
+      }
+    }
+
+    @screen lg {
+      & {
+        @apply ml-0;
+
+        & > a {
+          @apply opacity-0 h-5 w-5 -left-7 top-[14px];
+        }
+      }
+    }
+  }
+
+  .toc {
+    & ol {
+      counter-reset: section;
+
+      & li {
+        &::before {
+          @apply ml-3 mr-2;
+          counter-increment: section;
+          content: counters(section, ".") ".";
+        }
+
+        &:nth-child(n+10):before {
+          @apply ml-0 mr-2;
+          counter-increment: section;
+          content: "" counters(section, ".") ".";
+        }
+      }
     }
   }
 

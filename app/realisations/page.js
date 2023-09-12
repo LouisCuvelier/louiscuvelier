@@ -1,30 +1,13 @@
 import { getSortedRealizationsData } from "/lib/realizations";
 import RealizationCard from "/components/RealizationCard";
-import { openGraphImage } from "../shared-metadata";
+import getMetadata from "../../lib/getMetadata";
 
 const title = "Réalisations";
 const description =
   "Découvrez mes réalisations sur-mesure en création de site internet, référencement naturel (SEO) et automatisation des process.";
 const url = "realisations";
 
-export const metadata = {
-  alternates: {
-    canonical: url,
-  },
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    url: url,
-    ...openGraphImage,
-  },
-  twitter: {
-    title,
-    description,
-    ...openGraphImage,
-  },
-};
+export const metadata = getMetadata({ url, title, description });
 
 export default function Realizations() {
   const allProjectsData = getSortedRealizationsData();

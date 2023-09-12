@@ -1,10 +1,15 @@
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
+import getBase64 from "../lib/getBase64";
 
-export default function ResponsiveImage(props) {
+export default async function ResponsiveImage(props) {
+  const base64 = await getBase64(props.src);
+
   return (
-    <ExportedImage
+    <Image
       {...props}
-      className={"border-offset-2 border-2 border-slate-700 rounded"}
+      placeholder={"blur"}
+      blurDataURL={base64}
+      className={"border-offset-2 mx-auto border-2 border-slate-700 rounded"}
     />
   );
 }

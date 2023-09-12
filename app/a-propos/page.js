@@ -1,5 +1,4 @@
 import CustomLink from "../../components/CustomLink";
-import { openGraphImage } from "../shared-metadata";
 import Link from "next/link";
 
 const title = "À propos";
