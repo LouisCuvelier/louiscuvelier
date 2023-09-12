@@ -1,29 +1,13 @@
 import CustomLink from "../../components/CustomLink";
 import Link from "next/link";
+import getMetadata from "../../lib/getMetadata";
 
 const title = "À propos";
 const description =
   "Découvrez l'histoire derrière mon parcours en freelance et entrepreneuriat.";
 const url = "a-propos";
 
-export const metadata = {
-  alternates: {
-    canonical: url,
-  },
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    url: url,
-    ...openGraphImage,
-  },
-  twitter: {
-    title,
-    description,
-    ...openGraphImage,
-  },
-};
+export const metadata = getMetadata({ title, url, description });
 
 export default function About() {
   return (
