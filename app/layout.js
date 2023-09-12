@@ -4,6 +4,7 @@ import CustomToaster from "/components/CustomToaster";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { baseUrl } from "../lib/baseUrl";
+import { Analytics } from "@vercel/analytics/react";
 
 const title =
   "Louis Cuvelier - Création de site, SEO et automatisation des processus";
@@ -92,6 +93,7 @@ export default function RootLayout({ children }) {
           <Footer className={"mt-auto"} />
           <CustomToaster />
         </div>
+        <Analytics />
       </body>
     </html>
   );
