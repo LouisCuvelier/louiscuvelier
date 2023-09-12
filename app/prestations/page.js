@@ -1,29 +1,12 @@
-import { openGraphImage } from "../shared-metadata";
 import PrestationCard from "../../components/PrestationCard";
+import getMetadata from "../../lib/getMetadata";
 
 const title = "Prestations";
 const description =
   "Je réalise des sites internet sur-mesure, optimisés pour le référencement naturel (SEO) et j'automatise vos processus.";
 const url = "prestations";
 
-export const metadata = {
-  alternates: {
-    canonical: url,
-  },
-  title,
-  description,
-  openGraph: {
-    title,
-    description,
-    url: url,
-    ...openGraphImage,
-  },
-  twitter: {
-    title,
-    description,
-    ...openGraphImage,
-  },
-};
+export const metadata = getMetadata({ url, title, description });
 
 export default function Prestations() {
   return (

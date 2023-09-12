@@ -29,7 +29,7 @@
   }
 
   .title {
-    @apply font-title font-semibold text-slate-900 [text-wrap:balance];
+    @apply font-title font-extrabold text-slate-900 [text-wrap:balance];
   }
 
   .title-1 {
@@ -109,7 +109,7 @@
   }
 
   .surtitle {
-    @apply font-title font-semibold text-slate-900 uppercase tracking-[0.20rem];
+    @apply font-title text-slate-900 uppercase tracking-[0.20rem];
   }
 
   .surtitle-1 {
@@ -129,7 +129,7 @@
   }
 
   .caption {
-    @apply font-title font-semibold text-slate-900 leading-tight;
+    @apply font-title font-extrabold text-slate-900 leading-tight;
   }
 
   .caption-1 {

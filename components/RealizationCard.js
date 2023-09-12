@@ -1,11 +1,11 @@
-"use client";
 import Clock from "../public/images/clock.svg";
 import Link from "next/link";
 import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import CardEffect from "./CardEffect";
 import Image from "next/image";
+import getBase64 from "../lib/getBase64";
 
-export default function RealizationCard({
+export default async function RealizationCard({
   index,
   client,
   description,
@@ -16,6 +16,8 @@ export default function RealizationCard({
   technologies,
   cover,
 }) {
+  const base64 = await getBase64(cover);
+
   return (
     <CardEffect as={"article"} key={index} className={"@container"}>
       <div className={"w-full relative"}>
@@ -23,6 +25,8 @@ export default function RealizationCard({
           <Image
             {...(index === 0 && { priority: true })}
             src={cover}
+            placeholder={"blur"}
+            blurDataURL={base64}
             className={"object-left-top rounded-t object-cover"}
             fill={true}
             alt={`Image de couverture de ${client}`}

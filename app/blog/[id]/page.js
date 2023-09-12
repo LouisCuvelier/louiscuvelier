@@ -5,6 +5,8 @@ import SocialShare from "../../../components/SocialShare";
 import TableOfContent from "../../../components/TableOfContent";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
+import { parseISO } from "date-fns";
+import getMetadata from "../../../lib/getMetadata";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const data = await getPostData(params.id);
@@ -14,24 +16,13 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const description = `${frontmatter.description}`;
   const url = `blog/${params.id}`;
 
-  return {
-    alternates: {
-      canonical: url,
-    },
-    title,
-    description,
-    openGraph: {
-      images: [frontmatter.image],
-      title,
-      description,
-      url: url,
-    },
-    twitter: {
-      title,
-      description,
-      images: [frontmatter.image],
-    },
+  const article = {
+    type: "article",
+    publishedTime: parseISO(frontmatter.publicationDate),
+    modifiedTime: parseISO(frontmatter.updateDate),
   };
+
+  return getMetadata({ url, title, description, article });
 }
 
 export default async function Post({ params }) {
@@ -79,7 +70,7 @@ export default async function Post({ params }) {
                   rel="nofollow noopener noreferrer"
                   className={"link link-primary"}
                 >
-                  Commencer dès maintenant
+                  Commencez dès maintenant
                 </Link>
               </div>
               <SocialShare

@@ -3,39 +3,29 @@ import localFont from "next/font/local";
 import CustomToaster from "/components/CustomToaster";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { openGraphImage } from "./shared-metadata";
+import { baseUrl } from "../lib/baseUrl";
 
 const title =
   "Louis Cuvelier - Création de site, SEO et automatisation des processus";
-const description =
-  "Je code votre site, je le classe sur Google et j'automatise vos processus. Freelance passionné par le code et l'entrepreneuriat, je vous aide à atteindre vos objectifs avec des solutions sur-mesure.";
 
 export const metadata = {
-  metadataBase: new URL("https://louiscuvelier.com"),
-  alternates: {
-    canonical: "/",
-  },
+  metadataBase: new URL(baseUrl),
   title: {
     template: "%s - Louis Cuvelier",
     default: title,
   },
-  description,
   openGraph: {
     title: {
       template: "%s - Louis Cuvelier",
       default: title,
     },
-    description,
-    url: "https://louiscuvelier.com/",
-    ...openGraphImage,
   },
   twitter: {
     title: {
       template: "%s - Louis Cuvelier",
       default: title,
     },
-    description,
-    ...openGraphImage,
+    description: {},
   },
 };
 
@@ -52,6 +42,7 @@ const QanelasSoft = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-qanelas-soft",
 });
 
 const RocGrotesk = localFont({
@@ -77,12 +68,15 @@ const RocGrotesk = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-roc-grotesk",
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className={"font-body antialiased bg-slate-50 text-slate-950"}>
+      <body
+        className={`${QanelasSoft.variable} ${RocGrotesk.variable} font-body antialiased bg-slate-50 text-slate-950`}
+      >
         <div className={"bg-paper-animated"}></div>
         <div
           className={"relative z-10 flex flex-col justify-between min-h-screen"}

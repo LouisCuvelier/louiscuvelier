@@ -3,30 +3,28 @@ import Link from "next/link";
 import Logo from "../public/images/logo.svg";
 import { usePathname } from "next/navigation";
 import MenuBar from "../public/images/menu.svg";
-import Close from "../public/images/close.svg";
 import { Popover, Transition } from "@headlessui/react";
 import { contact } from "/data/contact";
 import CopyClipboard from "./CopyClipboard";
 import { useEffect, useState } from "react";
 
+const paths = [
+  { url: "/realisations", title: "Réalisations", isPrimary: false },
+  { url: "/prestations", title: "Prestations", isPrimary: false },
+  { url: "/blog", title: "Blog", isPrimary: false },
+  { url: "/a-propos", title: "À propos", isPrimary: false },
+  { url: "/contact", title: "Contact", isPrimary: false },
+  {
+    url: "https://calendly.com/louiscuvelier/intro",
+    title: "Commencer votre projet",
+    isPrimary: true,
+  },
+];
+const { socials, emails, platforms } = contact;
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-
-  const { socials, emails, platforms } = contact;
-
-  const paths = [
-    { url: "/realisations", title: "Réalisations", isPrimary: false },
-    { url: "/prestations", title: "Prestations", isPrimary: false },
-    { url: "/blog", title: "Blog", isPrimary: false },
-    { url: "/a-propos", title: "À propos", isPrimary: false },
-    { url: "/contact", title: "Contact", isPrimary: false },
-    {
-      url: "https://calendly.com/louiscuvelier/intro",
-      title: "Commencer votre projet",
-      isPrimary: true,
-    },
-  ];
 
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", isOpen);
@@ -41,7 +39,7 @@ export default function Navbar() {
       >
         {pathname !== "/" ? (
           <Link href={"/"} aria-label={"Accueil"}>
-            <Logo className={"h-20"} />
+            {/*<Logo className={"h-20"} />*/}
           </Link>
         ) : (
           <span className={"h-20"}></span>
@@ -107,7 +105,7 @@ export default function Navbar() {
                           aria-label="Fermer le menu"
                           className="btn btn-icon-primary"
                         >
-                          <Close />
+                          {/*<Close />*/}
                         </Popover.Button>
                       </div>
 

@@ -1,11 +1,10 @@
-"use client";
-
 import Link from "next/link";
 import Date from "./Date";
 import CardEffect from "./CardEffect";
 import Image from "next/image";
+import getBase64 from "../lib/getBase64";
 
-export default function BlogPostCard({
+export default async function BlogPostCard({
   id,
   index,
   title,
@@ -13,6 +12,8 @@ export default function BlogPostCard({
   description,
   cover,
 }) {
+  const base64 = await getBase64(cover);
+
   return (
     <CardEffect
       as={"article"}
@@ -25,6 +26,8 @@ export default function BlogPostCard({
             <Image
               {...(index === 0 && { priority: true })}
               src={cover}
+              placeholder={"blur"}
+              blurDataURL={base64}
               className={"object-center rounded-t object-cover"}
               fill={true}
               alt={title}
