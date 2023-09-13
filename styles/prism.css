@@ -19,7 +19,7 @@ pre {
 
 /* Inline code */
 :not(pre) > code {
-    @apply px-2 rounded inline-block;
+    @apply px-2 rounded break-words;
 }
 
 .token.comment,

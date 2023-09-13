@@ -6,7 +6,7 @@ export default function Profile() {
   useEffect(() => {
     const eyes = document.querySelectorAll(".profile_svg__yeux");
 
-    window.addEventListener("mousemove", (ew) => {
+    window.addEventListener("mousemove", (e) => {
       // Récupérez les coordonnées de la souris
       const mouseX = e.clientX;
       const mouseY = e.clientY;

@@ -3,12 +3,14 @@ import Link from "next/link";
 import Logo from "../public/images/logo.svg";
 import { usePathname } from "next/navigation";
 import MenuBar from "../public/images/menu.svg";
+import Close from "../public/images/close.svg";
 import { Popover, Transition } from "@headlessui/react";
 import { contact } from "/data/contact";
 import CopyClipboard from "./CopyClipboard";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const paths = [
+  { url: "/", title: "Accueil", isPrimary: false },
   { url: "/realisations", title: "Réalisations", isPrimary: false },
   { url: "/prestations", title: "Prestations", isPrimary: false },
   { url: "/blog", title: "Blog", isPrimary: false },
@@ -23,23 +25,18 @@ const paths = [
 const { socials, emails, platforms } = contact;
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    document.body.classList.toggle("overflow-hidden", isOpen);
-  }, [isOpen]);
-
   return (
-    <header className={"w-full max-w-screen-xl px-5 pt-5 mx-auto"}>
+    <header className={"w-full max-w-screen-xl mx-auto"}>
       <nav
         className={
-          "max-w-screen-lg mx-auto flex flex-row justify-between items-center"
+          "max-w-screen-lg mx-auto flex flex-row justify-between pt-5 px-5 items-center"
         }
       >
         {pathname !== "/" ? (
           <Link href={"/"} aria-label={"Accueil"}>
-            {/*<Logo className={"h-20"} />*/}
+            <Logo className={"h-20"} />
           </Link>
         ) : (
           <span className={"h-20"}></span>
@@ -47,7 +44,9 @@ export default function Navbar() {
 
         <Popover>
           {({ open }) => {
-            setIsOpen(open);
+            useEffect(() => {
+              document.body.classList.toggle("overflow-hidden", open);
+            }, [open]);
 
             return (
               <>
@@ -76,7 +75,7 @@ export default function Navbar() {
                     leave="duration-[200ms] ease-in"
                     leaveFrom="translate-x-0 rounded-none"
                     leaveTo="translate-x-full rounded-l-[200px]"
-                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 h-full overflow-y-scroll"
+                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 px-5 h-full overflow-y-scroll"
                   >
                     <Transition.Child
                       enter="delay-100 duration-300 ease-out"
@@ -89,7 +88,7 @@ export default function Navbar() {
                     >
                       <div
                         className={
-                          "border-hatch sm:pb-14 flex items-center justify-between border-b-[12px]"
+                          "border-hatch pb-14 flex items-center justify-between border-b-[12px]"
                         }
                       >
                         <div>
@@ -105,7 +104,7 @@ export default function Navbar() {
                           aria-label="Fermer le menu"
                           className="btn btn-icon-primary"
                         >
-                          {/*<Close />*/}
+                          <Close />
                         </Popover.Button>
                       </div>
 
