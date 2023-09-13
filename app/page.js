@@ -4,7 +4,7 @@ import Profile from "../components/Profile";
 
 const description =
   "Je code votre site, je le classe sur Google et j'automatise vos processus. Freelance passionné par le code et l'entrepreneuriat, je vous aide à atteindre vos objectifs avec des solutions sur-mesure.";
-export const metadata = getMetadata({ url: "/", title: "", description });
+export const metadata = getMetadata({ url: "/", description });
 
 export default function Home() {
   return (
