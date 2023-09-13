@@ -5,6 +5,25 @@ const nextConfig = {
     mdxRs: true
   },
   trailingSlash: false,
+  async redirects() {
+    return [
+      {
+        source: '/bonne-dose-finale',
+        destination: '/blog/bonne-dose-finale',
+        permanent: true,
+      },
+      {
+        source: '/parfaitement-gerer-e-reputation',
+        destination: '/blog/parfaitement-gerer-e-reputation',
+        permanent: true,
+      },
+      {
+        source: '/notifications-maitresses-votre-attention',
+        destination: '/blog/notifications-maitresses-votre-attention',
+        permanent: true,
+      },
+    ]
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
