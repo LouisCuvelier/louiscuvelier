@@ -1,6 +1,6 @@
+import Profile from "components/Profile";
+import getMetadata from "lib/getMetadata";
 import Link from "next/link";
-import getMetadata from "../lib/getMetadata";
-import Profile from "../components/Profile";
 
 const description =
   "Je code votre site, je le classe sur Google et j'automatise vos processus. Freelance passionné par le code et l'entrepreneuriat, je vous aide à atteindre vos objectifs avec des solutions sur-mesure.";

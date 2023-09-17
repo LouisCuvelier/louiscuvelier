@@ -1,5 +1,5 @@
 "use client";
-import ProfileIcon from "public/images/profile.svg";
+import ProfileIcon from "/public/images/profile.svg";
 import { useEffect } from "react";
 
 export default function Profile() {

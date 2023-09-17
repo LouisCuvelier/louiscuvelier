@@ -1,6 +1,6 @@
 import "/styles/global.css";
 import localFont from "next/font/local";
-import CustomToaster from "/components/CustomToaster";
+import CustomToaster from "../components/CustomToaster";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { baseUrl } from "../lib/baseUrl";

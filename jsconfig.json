@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "."
-  }
+    "baseUrl": ".",
+    "module": "ES6",
+    "jsx": "preserve",
+    "checkJs": true,
+    "moduleResolution": "nodenext",
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
 }

@@ -1,6 +1,7 @@
-import { getSortedRealizationsData } from "/lib/realizations";
-import RealizationCard from "/components/RealizationCard";
+import React from "react";
 import getMetadata from "../../lib/getMetadata";
+import RealizationCard from "components/RealizationCard";
+import { getSortedRealizationsData } from "lib/realizations";
 
 const title = "Réalisations";
 const description =

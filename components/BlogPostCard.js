@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Date from "./Date";
+import getBase64 from "lib/getBase64";
 import CardEffect from "./CardEffect";
+import Link from "next/link";
 import Image from "next/image";
-import getBase64 from "../lib/getBase64";
+import Date from "./Date";
 
 export default async function BlogPostCard({
   id,
