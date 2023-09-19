@@ -8,7 +8,6 @@ import { Transition } from "@headlessui/react";
 export default memo(function TableOfContent() {
   const [isOpen, setIsOpen] = useState(false);
   const [headings, setHeadings] = useState([]);
-  let shownHeadings = [];
 
   useEffect(() => {
     const getTocStructure = (headingsNodes) => {
@@ -21,7 +20,7 @@ export default memo(function TableOfContent() {
       const findAncestorHeading = (nodes, index, level) => {
         return nodes
           .slice(0, index)
-          .find((node) => getHeadingLevel(node) === level - 1)?.id;
+          .findLast((node) => getHeadingLevel(node) === level - 1)?.id;
       };
 
       // Get headings
@@ -31,13 +30,15 @@ export default memo(function TableOfContent() {
           const parentId = findAncestorHeading(nodes, index, level);
 
           return {
-            parentId,
+            parentId: parentId || null,
             text: node.innerText,
             id: node.id,
             childrens: [],
           };
         });
       };
+
+      console.log(getHeadings([...headingsNodes]));
 
       // Attach child to parent
       const attachChild = (child, parent) => {
@@ -117,42 +118,46 @@ export default memo(function TableOfContent() {
   }
 
   return (
-    <nav
-      aria-label="Sommaire"
-      className={`border-hatch mb-14 pr-5 py-5 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out`}
-    >
-      <div className={"flex justify-between items-center ml-5"} id={"sommaire"}>
-        <div className={"surtitle surtitle-1"}>Sommaire</div>
-        <button
-          aria-expanded={isOpen}
-          className={`btn btn-icon-secondary `}
-          aria-controls={"sommaire-liste"}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <ChevronDownIcon
-            className={`transition ease-in-out duration-300 ${
-              isOpen ? "-rotate-180" : ""
-            }`}
-          />
-        </button>
-      </div>
-      {/*// Add transition headlessUI to hide element when not shown*/}
-      <Transition
-        show={isOpen}
-        id={"sommaire-list"}
-        role="region"
-        aria-labelledby="sommaire"
-        aria-hidden={!isOpen}
-        enter={""}
-        enterFrom={"grid-rows-[0fr]"}
-        enterTo={"grid-rows-[1fr]"}
-        leave={""}
-        leaveFrom={"grid-rows-[1fr]"}
-        leaveTo={"grid-rows-[0fr]"}
-        className={`toc grid transition-[grid-template-rows] ease-in-out duration-300`}
+    headings.length > 0 && (
+      <nav
+        aria-label="Sommaire"
+        className={`border-hatch mb-14 pr-5 py-5 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out`}
       >
-        <div className={"overflow-hidden mt-5"}>{renderToc(headings)}</div>
-      </Transition>
-    </nav>
+        <div
+          className={"flex justify-between items-center ml-5"}
+          id={"sommaire"}
+        >
+          <div className={"surtitle surtitle-1"}>Sommaire</div>
+          <button
+            aria-expanded={isOpen}
+            className={`btn btn-icon-secondary `}
+            aria-controls={"sommaire-liste"}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <ChevronDownIcon
+              className={`transition ease-in-out duration-300 ${
+                isOpen ? "-rotate-180" : ""
+              }`}
+            />
+          </button>
+        </div>
+        <Transition
+          show={isOpen}
+          id={"sommaire-list"}
+          role="region"
+          aria-labelledby="sommaire"
+          aria-hidden={!isOpen}
+          enter={""}
+          enterFrom={"grid-rows-[0fr]"}
+          enterTo={"grid-rows-[1fr]"}
+          leave={""}
+          leaveFrom={"grid-rows-[1fr]"}
+          leaveTo={"grid-rows-[0fr]"}
+          className={`toc grid transition-[grid-template-rows] ease-in-out duration-300`}
+        >
+          <div className={"overflow-hidden mt-5"}>{renderToc(headings)}</div>
+        </Transition>
+      </nav>
+    )
   );
 });

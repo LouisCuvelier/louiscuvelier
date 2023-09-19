@@ -14,6 +14,7 @@ const paths = [
   { url: "/realisations", title: "Réalisations", isPrimary: false },
   { url: "/prestations", title: "Prestations", isPrimary: false },
   { url: "/blog", title: "Blog", isPrimary: false },
+  { url: "/guide-seo", title: "Guide du SEO", isPrimary: false },
   { url: "/a-propos", title: "À propos", isPrimary: false },
   { url: "/contact", title: "Contact", isPrimary: false },
   {

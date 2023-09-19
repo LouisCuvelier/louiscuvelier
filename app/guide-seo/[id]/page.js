@@ -9,7 +9,7 @@ import { parseISO } from "date-fns";
 import getMetadata from "../../../lib/getMetadata";
 
 export async function generateMetadata({ params, searchParams }, parent) {
-  const data = await getPostData(params.id, "blog");
+  const data = await getPostData(params.id, "guide-seo");
   const { frontmatter } = data;
 
   const title = `${frontmatter.title}`;
@@ -26,7 +26,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 }
 
 export default async function Post({ params }) {
-  const { frontmatter, content } = await getPostData(params.id, "blog");
+  const { frontmatter, content } = await getPostData(params.id, "guide-seo");
 
   return (
     <>
@@ -84,5 +84,5 @@ export default async function Post({ params }) {
 }
 
 export function generateStaticParams() {
-  return getAllPostIds("blog");
+  return getAllPostIds("guide-seo");
 }

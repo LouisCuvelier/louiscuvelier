@@ -50,7 +50,7 @@ export default async function BlogPostCard({
               {description}
             </p>
           </div>
-          <div className={"text-right mt-5"}>
+          <div className={"text-right"}>
             <button className={"btn btn-tertiary"}>Lire la suite</button>
           </div>
         </div>
