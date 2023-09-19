@@ -35,9 +35,7 @@ export default async function Post({ params }) {
           "[perspective:20000px] max-w-screen-lg mx-auto grid grid-cols-12 gap-y-32 gap-x-6"
         }
       >
-        <header
-          className={"border-hatch mx-auto col-span-12 border-b-[10px] pb-16"}
-        >
+        <header className={"border-hatch col-span-12 border-b-[10px] pb-16"}>
           <h1 className={"title title-2 mb-6"}>{frontmatter.title}</h1>
           <div className={"caption caption-1 text-slate-500"}>
             <span>
