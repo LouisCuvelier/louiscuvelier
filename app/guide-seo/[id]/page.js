@@ -15,7 +15,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
   const title = `${frontmatter.title}`;
   const description = `${frontmatter.description}`;
-  const url = `blog/${params.id}`;
+  const url = `guide-seo/${params.id}`;
 
   const article = {
     type: "article",
@@ -66,8 +66,9 @@ export default async function Post({ params }) {
           <div className={"sticky top-6"}>
             <Sidebar>
               <div className={"body body-1 p-5"}>
-                Besoin d'un site, d'être mieux référencé sur Google ou
-                d'automatiser vos process ?{" "}
+                {frontmatter?.cta
+                  ? frontmatter.cta
+                  : "Besoin d'un site, d'être mieux référencé sur Google ou d'automatiser vos process ?"}{" "}
                 <Link
                   href={"https://calendly.com/louiscuvelier/intro"}
                   target={"_blank"}
