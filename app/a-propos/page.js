@@ -17,7 +17,7 @@ export default function About() {
           "border-hatch mb-32 max-w-screen-lg mx-auto border-b-[10px] pb-16"
         }
       >
-        <h1 className={"title title-1"}>À propos</h1>
+        <h1 className={"title title-2"}>À propos</h1>
       </section>
 
       <section className={"max-w-screen-lg mx-auto mb-20"}>

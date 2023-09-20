@@ -7,6 +7,7 @@ import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
 import { parseISO } from "date-fns";
 import getMetadata from "../../../lib/getMetadata";
+import { ClockIcon } from "@heroicons/react/24/outline";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const data = await getPostData(params.id, "guide-seo");
@@ -37,7 +38,12 @@ export default async function Post({ params }) {
       >
         <header className={"border-hatch col-span-12 border-b-[10px] pb-16"}>
           <h1 className={"title title-2 mb-6"}>{frontmatter.title}</h1>
-          <div className={"caption caption-1 text-slate-500"}>
+          <div
+            className={
+              "caption caption-1 text-slate-500 flex flex-wrap items-center"
+            }
+          >
+            <ClockIcon className={"w-4 h-4 mr-1"} />
             <span>
               Publié le{" "}
               <Date isPubDate={true} dateString={frontmatter.publicationDate} />

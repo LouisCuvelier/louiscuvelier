@@ -2,7 +2,7 @@
 title: Comment j’ai développé mon premier plugin Strapi
 publicationDate: "2023-09-08"
 updateDate: "2023-09-08"
-description: Imaginez pouvoir générer du contenu directement dans votre CMS. Le rêve non ? C'est ce que j'ai voulu faire en développant pour la première fois un plugin Strapi pour intégrer OpenAI (ChatGPT).
+description: Imaginez pouvoir générer du contenu directement dans votre CMS. Le rêve non ? C'est ce que j'ai voulu faire en développant pour la première fois un plugin Strapi pour intégrer OpenAI (ChatGPT).
 cover: "/images/strapi.jpg"
 ---
 
@@ -107,22 +107,22 @@ fichier `mon-plugin/admin/src/index.js` en ajoutant la fonction `app.customField
 // mon-plugin/admin/src/index.js
 
 app.customFields.register({
-  name: "generator",
-  pluginId: "generator-ai",
-  type: "string",
-  intlLabel: {
-    id: `${pluginId}.plugin.field.generator.field`,
-    defaultMessage: "Generator button",
-  },
-  intlDescription: {
-    id: `${pluginId}.plugin.field.generator.description`,
-    defaultMessage: "Let AI do your writing !",
-  },
-  icon: PluginIcon,
-  components: {
-    Input: async () =>
-      import("./components/Input"), // Component qui va être appelé à l'affichage de la page d'édition de contenu
-  },
+    name: "generator",
+    pluginId: "generator-ai",
+    type: "string",
+    intlLabel: {
+        id: `${pluginId}.plugin.field.generator.field`,
+        defaultMessage: "Generator button",
+    },
+    intlDescription: {
+        id: `${pluginId}.plugin.field.generator.description`,
+        defaultMessage: "Let AI do your writing !",
+    },
+    icon: PluginIcon,
+    components: {
+        Input: async () =>
+            import("./components/Input"), // Component qui va être appelé à l'affichage de la page d'édition de contenu
+    },
 })
 ```
 
@@ -151,19 +151,19 @@ design system. Nous pouvons alors faire un `import { Button } from "@strapi/desi
 // mon-plugin/admin/src/components/index.js
 
 import React from "react";
-import { Button } from "@strapi/design-system";
+import {Button} from "@strapi/design-system";
 import getTrad from "../../utils/getTrad";
 
 export default function Input() {
-  return (
-    <Button onClick={() => console.log("click")}>
-      // formatMessage() est une fonction qui vient récupérer la clé de
-      traduction et afficher le texte correpsondant
-      {formatMessage({
-        id: getTrad("plugin.field.generator.button"),
-      })}
-    </Button>
-  );
+    return (
+        <Button onClick={() => console.log("click")}>
+            // formatMessage() est une fonction qui vient récupérer la clé de
+            traduction et afficher le texte correpsondant
+            {formatMessage({
+                id: getTrad("plugin.field.generator.button"),
+            })}
+        </Button>
+    );
 }
 ```
 
@@ -209,26 +209,26 @@ fonction `app.createSettingSection()` pour ajouter le code suivant :
 // mon-plugin/admin/src/index.js
 
 app.createSettingSection(
-  {
-    id: pluginId,
-    intlLabel: {
-      id: `${pluginId}.plugin.name`,
-      defaultMessage: "Generator AI",
-    },
-  },
-  [
     {
-      intlLabel: {
-        id: `${pluginId}.plugin.page.configuration`,
-        defaultMessage: "Configuration",
-      },
-      id: "settings.configuration",
-      to: `/settings/${pluginId}/configuration`,
-      Component: async () => {
-        return import("./pages/Settings/Configuration");
-      },
+        id: pluginId,
+        intlLabel: {
+            id: `${pluginId}.plugin.name`,
+            defaultMessage: "Generator AI",
+        },
     },
-  ]
+    [
+        {
+            intlLabel: {
+                id: `${pluginId}.plugin.page.configuration`,
+                defaultMessage: "Configuration",
+            },
+            id: "settings.configuration",
+            to: `/settings/${pluginId}/configuration`,
+            Component: async () => {
+                return import("./pages/Settings/Configuration");
+            },
+        },
+    ]
 );
 ```
 
@@ -252,14 +252,14 @@ Nous pouvons donc faire cela en créant une `route`, qui est gérée par un `con
 // Ajout de la route dans mon-plugin/server/routes/index.js
 
 module.exports = [
-  {
-    method: "POST",
-    path: "/settings",
-    handler: "settingsController.setSettings",
-    config: {
-      policies: [],
-    },
-  }
+    {
+        method: "POST",
+        path: "/settings",
+        handler: "settingsController.setSettings",
+        config: {
+            policies: [],
+        },
+    }
 ];
 ```
 
@@ -268,18 +268,18 @@ module.exports = [
 
 "use strict";
 
-module.exports = ({ strapi }) => ({
-  async setSettings(ctx) {
-    const { body } = ctx.request;
-    try {
-      ctx.body = await strapi
-        .plugin("generator-ai")
-        .service("settings")
-        .setSettings(body);
-    } catch (err) {
-      ctx.throw(500, err);
-    }
-  },
+module.exports = ({strapi}) => ({
+    async setSettings(ctx) {
+        const {body} = ctx.request;
+        try {
+            ctx.body = await strapi
+                .plugin("generator-ai")
+                .service("settings")
+                .setSettings(body);
+        } catch (err) {
+            ctx.throw(500, err);
+        }
+    },
 });
 ```
 
@@ -291,7 +291,7 @@ module.exports = ({ strapi }) => ({
 const settingsController = require("./settings");
 
 module.exports = {
-  settingsController,
+    settingsController,
 };
 ```
 
@@ -300,20 +300,20 @@ module.exports = {
 
 "use strict";
 
-module.exports = ({ strapi }) => {
-  const pluginStore = strapi.store({
-    environment: "",
-    type: "plugin",
-    name: "generator-ai",
-  });
+module.exports = ({strapi}) => {
+    const pluginStore = strapi.store({
+        environment: "",
+        type: "plugin",
+        name: "generator-ai",
+    });
 
-  return {
-    async setSettings(settings) {
-      const value = settings;
-      await pluginStore.set({ key: "settings", value });
-      return "SOMETHING";
-    },
-  };
+    return {
+        async setSettings(settings) {
+            const value = settings;
+            await pluginStore.set({key: "settings", value});
+            return "SOMETHING";
+        },
+    };
 };
 ```
 
@@ -325,7 +325,7 @@ module.exports = ({ strapi }) => {
 const settings = require("./settings");
 
 module.exports = {
-  settings,
+    settings,
 };
 ```
 
@@ -359,19 +359,19 @@ la [documentation des contributeurs](https://contributor.strapi.io/docs/core/hel
 quoi sert ce hook. Il suffit alors de l’utiliser comme ceci :
 
 ```jsx
-import { useState } from "react";
-import { useFetchClient } from "@strapi/helper-plugin";
+import {useState} from "react";
+import {useFetchClient} from "@strapi/helper-plugin";
 
 const Component = () => {
-  const { get } = useFetchClient();
-  const requestURL = "/some-endpoint";
+    const {get} = useFetchClient();
+    const requestURL = "/some-endpoint";
 
-  const handleGetData = async () => {
-    const { data } = await get(requestURL);
-    setItems(data.items);
-  };
+    const handleGetData = async () => {
+        const {data} = await get(requestURL);
+        setItems(data.items);
+    };
 
-  return <button onClick={handleGetData}>Show Items</button>;
+    return <button onClick={handleGetData}>Show Items</button>;
 };
 ```
 
@@ -391,20 +391,21 @@ enregistrer les paramètres par défauts du plugin dans le fichier `mon-plugin/s
 "use strict";
 
 module.exports = {
-  default: ({ env }) => ({
-    prompts: {
-      base: `You're an experienced copywriter, you know how to write SEO-optimized blog post for the topic "__TOPIC__", targeting __TARGET__ audience with a __TONE__ tone. You must write in __LANGUAGE__. Don't make any comments. Keep theses instructions in memory for every answers you will give.`,
-      title: `Generate the title for this blog post. Don't put your answer into quotes.`,
-      introduction: `Generate an introduction for this blog post.`,
-      body: `Generate only the body and with level 2 subtitles for this blog post. Add a lot of details. It must be formatted in markdown and have in bold what’s important. The body must make __LENGTH__ words approximatively.`,
-      metaTitle: `Generate the meta title optimized for SEO with a maximum of 60 characters (white spaces and punctuation included,). Don't put your answer into quotes.`,
-      metaDescription: `Generate the meta description optimized for SEO with a maximum of 160 characters (white spaces and punctuation included). Don't put your answer into quotes.`,
+    default: ({env}) => ({
+        prompts: {
+            base: `You're an experienced copywriter, you know how to write SEO-optimized blog post for the topic "__TOPIC__", targeting __TARGET__ audience with a __TONE__ tone. You must write in __LANGUAGE__. Don't make any comments. Keep theses instructions in memory for every answers you will give.`,
+            title: `Generate the title for this blog post. Don't put your answer into quotes.`,
+            introduction: `Generate an introduction for this blog post.`,
+            body: `Generate only the body and with level 2 subtitles for this blog post. Add a lot of details. It must be formatted in markdown and have in bold what’s important. The body must make __LENGTH__ words approximatively.`,
+            metaTitle: `Generate the meta title optimized for SEO with a maximum of 60 characters (white spaces and punctuation included,). Don't put your answer into quotes.`,
+            metaDescription: `Generate the meta description optimized for SEO with a maximum of 160 characters (white spaces and punctuation included). Don't put your answer into quotes.`,
+        },
+        language: "english",
+        length: 800,
+        model: "gpt-3.5-turbo-16k",
+    }),
+    validator() {
     },
-    language: "english",
-    length: 800,
-    model: "gpt-3.5-turbo-16k",
-  }),
-  validator() {},
 };
 ```
 
@@ -420,98 +421,98 @@ existent dans la base de données et réagir en fonction :
 
 "use strict";
 
-const { array, object, string, number } = require("yup");
+const {array, object, string, number} = require("yup");
 
 const settingsValidationSchema = object({
-  prompts: object({
-    base: string().required().trim(),
-    title: string().required().trim(),
-    introduction: string().required().trim(),
-    body: string().required().trim(),
-    metaTitle: string().required().trim(),
-    metaDescription: string().required().trim(),
-  }),
-  model: string().required().trim(),
-  target: string().trim(),
-  language: string().trim(),
-  tone: string().trim(),
-  length: number().integer().positive(),
-  contentTypes: array().of(
-    object().shape({
-      uid: string().required().trim(),
-      mapping: array().of(
+    prompts: object({
+        base: string().required().trim(),
+        title: string().required().trim(),
+        introduction: string().required().trim(),
+        body: string().required().trim(),
+        metaTitle: string().required().trim(),
+        metaDescription: string().required().trim(),
+    }),
+    model: string().required().trim(),
+    target: string().trim(),
+    language: string().trim(),
+    tone: string().trim(),
+    length: number().integer().positive(),
+    contentTypes: array().of(
         object().shape({
-          generatedField: string().required().trim(),
-          normalField: string().required().trim(),
+            uid: string().required().trim(),
+            mapping: array().of(
+                object().shape({
+                    generatedField: string().required().trim(),
+                    normalField: string().required().trim(),
+                })
+            ),
         })
-      ),
-    })
-  ),
+    ),
 });
 
-module.exports = ({ strapi }) => {
-  // Création du store (connexion avec la base de données)
-  const pluginStore = strapi.store({
-    environment: "",
-    type: "plugin",
-    name: "generator-ai",
-  });
-
-  async function createDefaultConfig() {
-    const settings = {
-      prompts: {
-        base: strapi.plugin("generator-ai").config("prompts.base"),
-        title: strapi.plugin("generator-ai").config("prompts.title"),
-        introduction: strapi
-          .plugin("generator-ai")
-          .config("prompts.introduction"),
-        body: strapi.plugin("generator-ai").config("prompts.body"),
-        metaTitle: strapi.plugin("generator-ai").config("prompts.metaTitle"),
-        metaDescription: strapi
-          .plugin("generator-ai")
-          .config("prompts.metaDescription"),
-      },
-      language: strapi.plugin("generator-ai").config("language"),
-      length: strapi.plugin("generator-ai").config("length"),
-      model: strapi.plugin("generator-ai").config("model"),
-      contentTypes: [],
-    };
-
-    // Enregistrer dans la base de données les réglages par défaut
-    await pluginStore.set({
-      key: "settings",
-      value: settings,
+module.exports = ({strapi}) => {
+    // Création du store (connexion avec la base de données)
+    const pluginStore = strapi.store({
+        environment: "",
+        type: "plugin",
+        name: "generator-ai",
     });
 
-    // Renvoie des settings par défaut
-    return settings;
-  }
+    async function createDefaultConfig() {
+        const settings = {
+            prompts: {
+                base: strapi.plugin("generator-ai").config("prompts.base"),
+                title: strapi.plugin("generator-ai").config("prompts.title"),
+                introduction: strapi
+                    .plugin("generator-ai")
+                    .config("prompts.introduction"),
+                body: strapi.plugin("generator-ai").config("prompts.body"),
+                metaTitle: strapi.plugin("generator-ai").config("prompts.metaTitle"),
+                metaDescription: strapi
+                    .plugin("generator-ai")
+                    .config("prompts.metaDescription"),
+            },
+            language: strapi.plugin("generator-ai").config("language"),
+            length: strapi.plugin("generator-ai").config("length"),
+            model: strapi.plugin("generator-ai").config("model"),
+            contentTypes: [],
+        };
 
-  return {
-    async getSettings() {
-      // Appel à la base de données pour récupérer les settings
-      let config = await pluginStore.get({ key: "settings" });
-      // Si ça ne récupère rien, ça vient récupérer les réglages par défaut
-      if (config === null) {
-        config = await createDefaultConfig();
-      }
+        // Enregistrer dans la base de données les réglages par défaut
+        await pluginStore.set({
+            key: "settings",
+            value: settings,
+        });
 
-      return config;
-    },
+        // Renvoie des settings par défaut
+        return settings;
+    }
 
-    async setSettings(settings) {
-			// Valider si l'objet settings est correct
-			await settingsValidationSchema.validate(settings);
-			// Enregistrer dans la base de données si la validation est bonne
-      await pluginStore.set({ key: "settings", value: settings });
-			// Renvoie de tous les réglages
-      return settings;
-    },
+    return {
+        async getSettings() {
+            // Appel à la base de données pour récupérer les settings
+            let config = await pluginStore.get({key: "settings"});
+            // Si ça ne récupère rien, ça vient récupérer les réglages par défaut
+            if (config === null) {
+                config = await createDefaultConfig();
+            }
 
-    async resetDefaultPrompt({ prompt }) {
-      return strapi.plugin("generator-ai").config(`prompts.${prompt}`);
-    },
-  };
+            return config;
+        },
+
+        async setSettings(settings) {
+            // Valider si l'objet settings est correct
+            await settingsValidationSchema.validate(settings);
+            // Enregistrer dans la base de données si la validation est bonne
+            await pluginStore.set({key: "settings", value: settings});
+            // Renvoie de tous les réglages
+            return settings;
+        },
+
+        async resetDefaultPrompt({prompt}) {
+            return strapi.plugin("generator-ai").config(`prompts.${prompt}`);
+        },
+    };
 };
 ```
 
@@ -528,13 +529,13 @@ fichier `config/plugins.js` pour ajouter la configuration utilisateur comme ceci
 // config/plugin.js
 
 module.exports = {
-  "generator-ai": {
-    enabled: true,
-    config: {
-      openaiApiKey: process.env.OPENAI_API_KEY,
+    "generator-ai": {
+        enabled: true,
+        config: {
+            openaiApiKey: process.env.OPENAI_API_KEY,
+        },
+        resolve: "./src/plugins/generator-ai",
     },
-    resolve: "./src/plugins/generator-ai",
-  },
 };
 ```
 
@@ -551,7 +552,7 @@ manière `strapi.plugin("generator-ai").config("openaiApiKey")`.
 // mon-plugin/server/services/openai.js
 
 const openai = new OpenAI({
-  apiKey: strapi.plugin("generator-ai").config("openaiApiKey"),
+    apiKey: strapi.plugin("generator-ai").config("openaiApiKey"),
 });
 ```
 
@@ -596,119 +597,119 @@ renvoie pour la requête suivante.
 
 const OpenAI = require("openai");
 const generatedFieldsList = [
-  "title",
-  "introduction",
-  "body",
-  "metaTitle",
-  "metaDescription",
+    "title",
+    "introduction",
+    "body",
+    "metaTitle",
+    "metaDescription",
 ];
 
-module.exports = ({ strapi }) => ({
-  async startGenerating({
-    topic,
-    language,
-    tone,
-    length,
-    target,
-    fieldsToGenerate,
-  }) {
-    function replaceMagicKeys(prompt) {
-      return prompt
-        .replace("__TOPIC__", topic)
-        .replace("__LANGUAGE__", language)
-        .replace("__TONE__", tone)
-        .replace("__LENGTH__", length)
-        .replace("__TARGET__", target);
-    }
+module.exports = ({strapi}) => ({
+    async startGenerating({
+                              topic,
+                              language,
+                              tone,
+                              length,
+                              target,
+                              fieldsToGenerate,
+                          }) {
+        function replaceMagicKeys(prompt) {
+            return prompt
+                .replace("__TOPIC__", topic)
+                .replace("__LANGUAGE__", language)
+                .replace("__TONE__", tone)
+                .replace("__LENGTH__", length)
+                .replace("__TARGET__", target);
+        }
 
-    const settings = await strapi
-      .plugin("generator-ai")
-      .service("settings")
-      .getSettings();
+        const settings = await strapi
+            .plugin("generator-ai")
+            .service("settings")
+            .getSettings();
 
-    const openai = new OpenAI({
-      apiKey: strapi.plugin("generator-ai").config("openaiApiKey"),
-    });
-
-    const results = {};
-    let totalTokens = 0;
-    const messages = [
-      {
-        role: "system",
-        content: replaceMagicKeys(settings.prompts.base),
-      },
-    ];
-
-    const orderedFieldsToGenerate = fieldsToGenerate.sort(function (a, b) {
-      return generatedFieldsList.indexOf(a) - generatedFieldsList.indexOf(b);
-    });
-
-    for (const field of orderedFieldsToGenerate) {
-      switch (field) {
-        case "title":
-          messages.push({
-            role: "user",
-            content: replaceMagicKeys(settings.prompts.title),
-          });
-          break;
-        case "introduction":
-          messages.push({
-            role: "user",
-            content: replaceMagicKeys(settings.prompts.introduction),
-          });
-          break;
-        case "body":
-          messages.push({
-            role: "user",
-            content: replaceMagicKeys(settings.prompts.body),
-          });
-          break;
-        case "metaTitle":
-          messages.push({
-            role: "user",
-            content: replaceMagicKeys(settings.prompts.metaTitle),
-          });
-          break;
-        case "metaDescription":
-          messages.push({
-            role: "user",
-            content: replaceMagicKeys(settings.prompts.metaDescription),
-          });
-          break;
-      }
-
-      const completion = await openai.chat.completions
-        .create({
-          messages: messages,
-          model: settings.model,
-        })
-        .catch((err) => {
-          if (err instanceof OpenAI.APIError) {
-            console.log(err.status);
-            console.log(err.name);
-
-            console.log(err.headers);
-          } else {
-            console.log("error");
-            throw err;
-          }
+        const openai = new OpenAI({
+            apiKey: strapi.plugin("generator-ai").config("openaiApiKey"),
         });
 
-      console.log(completion);
-      messages.push({
-        role: "assistant",
-        content: completion.choices[0].message.content,
-      });
+        const results = {};
+        let totalTokens = 0;
+        const messages = [
+            {
+                role: "system",
+                content: replaceMagicKeys(settings.prompts.base),
+            },
+        ];
 
-      results[field] = completion.choices[0].message.content;
-      totalTokens = totalTokens + completion.usage.total_tokens;
+        const orderedFieldsToGenerate = fieldsToGenerate.sort(function (a, b) {
+            return generatedFieldsList.indexOf(a) - generatedFieldsList.indexOf(b);
+        });
+
+        for (const field of orderedFieldsToGenerate) {
+            switch (field) {
+                case "title":
+                    messages.push({
+                        role: "user",
+                        content: replaceMagicKeys(settings.prompts.title),
+                    });
+                    break;
+                case "introduction":
+                    messages.push({
+                        role: "user",
+                        content: replaceMagicKeys(settings.prompts.introduction),
+                    });
+                    break;
+                case "body":
+                    messages.push({
+                        role: "user",
+                        content: replaceMagicKeys(settings.prompts.body),
+                    });
+                    break;
+                case "metaTitle":
+                    messages.push({
+                        role: "user",
+                        content: replaceMagicKeys(settings.prompts.metaTitle),
+                    });
+                    break;
+                case "metaDescription":
+                    messages.push({
+                        role: "user",
+                        content: replaceMagicKeys(settings.prompts.metaDescription),
+                    });
+                    break;
+            }
+
+            const completion = await openai.chat.completions
+                .create({
+                    messages: messages,
+                    model: settings.model,
+                })
+                .catch((err) => {
+                    if (err instanceof OpenAI.APIError) {
+                        console.log(err.status);
+                        console.log(err.name);
+
+                        console.log(err.headers);
+                    } else {
+                        console.log("error");
+                        throw err;
+                    }
+                });
+
+            console.log(completion);
+            messages.push({
+                role: "assistant",
+                content: completion.choices[0].message.content,
+            });
+
+            results[field] = completion.choices[0].message.content;
+            totalTokens = totalTokens + completion.usage.total_tokens;
+        }
+
+        return {
+            results,
+            token: totalTokens,
+        };
     }
-
-    return {
-      results,
-      token: totalTokens,
-    };
-  }
 });
 ```
 
@@ -729,24 +730,24 @@ fini par trouver la solution. L’astuce a été d’utiliser la fonction `formi
 
 ```jsx
 <Field
-  as={SingleSelect}
-  hint={formatMessage({
-    id: getTrad("Settings.Configuration.ContentLayout.prompt.model.hint"),
-  })}
-  label={formatMessage({
-    id: getTrad("Settings.Configuration.ContentLayout.prompt.model.label"),
-  })}
-  name="model"
-  required
-  error={formik?.errors?.model && formik.errors.model}
-  onClear={() => formik.setFieldValue("model", "")} // Faire manuellement l'action
-  onChange={(value) => formik.setFieldValue("model", value)}  // Faire aussi ici manuellement l'action
+    as={SingleSelect}
+    hint={formatMessage({
+        id: getTrad("Settings.Configuration.ContentLayout.prompt.model.hint"),
+    })}
+    label={formatMessage({
+        id: getTrad("Settings.Configuration.ContentLayout.prompt.model.label"),
+    })}
+    name="model"
+    required
+    error={formik?.errors?.model && formik.errors.model}
+    onClear={() => formik.setFieldValue("model", "")} // Faire manuellement l'action
+    onChange={(value) => formik.setFieldValue("model", value)}  // Faire aussi ici manuellement l'action
 >
-  {openaiModelsList.map((item, index) => (
-    <SingleSelectOption value={item} key={index}>
-      {item}
-    </SingleSelectOption>
-  ))}
+    {openaiModelsList.map((item, index) => (
+        <SingleSelectOption value={item} key={index}>
+            {item}
+        </SingleSelectOption>
+    ))}
 </Field>;
 ```
 
@@ -775,11 +776,11 @@ props qui contient la fonction `onChange()`. Et, cette fonction permet de modifi
 
 ```jsx
 onChange({
-  target: {
-    name, // Nom de l'input à modifier
-    value, // Valeur à donner à l'input
-    type, // (Optionnel) le type de champ
-  },
+    target: {
+        name, // Nom de l'input à modifier
+        value, // Valeur à donner à l'input
+        type, // (Optionnel) le type de champ
+    },
 });
 ```
 
@@ -808,9 +809,9 @@ récupérer la clé de traduction correspondante dans notre fichier de langue (e
 
 ```jsx
 formatMessage({
-  id: getTrad("global.notification.generation.get.warning.title"),
-	defaultMessage: "Attention il y a une erreur"
-}),
+    id: getTrad("global.notification.generation.get.warning.title"),
+    defaultMessage: "Attention il y a une erreur"
+})
 ```
 
 Pour faire vos traductions, je vous conseille de faire terminer totalement une langue, puis vous le donner à ChatGPT et

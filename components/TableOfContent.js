@@ -2,8 +2,8 @@
 
 import { memo, useEffect, useState } from "react";
 import Link from "next/link";
-import ChevronDownIcon from "../public/images/chevron-down.svg";
 import { Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export default memo(function TableOfContent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,8 +37,6 @@ export default memo(function TableOfContent() {
           };
         });
       };
-
-      console.log(getHeadings([...headingsNodes]));
 
       // Attach child to parent
       const attachChild = (child, parent) => {

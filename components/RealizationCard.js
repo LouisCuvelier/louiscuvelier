@@ -1,9 +1,8 @@
-import Clock from "../public/images/clock.svg";
 import Link from "next/link";
-import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import CardEffect from "./CardEffect";
 import Image from "next/image";
 import getBase64 from "../lib/getBase64";
+import { ArrowUpRightIcon, ClockIcon } from "@heroicons/react/24/outline";
 
 export default async function RealizationCard({
   index,
@@ -56,10 +55,10 @@ export default async function RealizationCard({
             <div className={"flex justify-between items-stretch mb-14"}>
               <div>
                 <div className={"surtitle surtitle-2 flex text-slate-500"}>
-                  <Clock className={"mr-2 h-5 w-5"} />
+                  <ClockIcon className={"mr-2 h-5 w-5"} />
                   {duration}
                 </div>
-                <h2 className={"title title-2 mt-8 mb-4"}>{client}</h2>
+                <h2 className={"title title-3 mt-8 mb-4"}>{client}</h2>
                 {website != null && (
                   <Link
                     href={website}
@@ -68,7 +67,7 @@ export default async function RealizationCard({
                     target={"_blank"}
                   >
                     <span>Voir la réalisation</span>
-                    <ArrowUpRight />
+                    <ArrowUpRightIcon />
                   </Link>
                 )}
               </div>
@@ -80,11 +79,11 @@ export default async function RealizationCard({
 
           <div className={"@2xl:mt-16 space-y-14 self-end"}>
             <div>
-              <h3 className={"title title-4 mb-3"}>Client</h3>
+              <h3 className={"title title-5 mb-3"}>Client</h3>
               <p className={"body body-1"}>{description}</p>
             </div>
             <div>
-              <h3 className={"title title-4 mb-3"}>Technologies</h3>
+              <h3 className={"title title-5 mb-3"}>Technologies</h3>
               <ul className={"gap-2 flex flex-row flex-wrap mt-1"}>
                 {technologies.map((value, index) => (
                   <li

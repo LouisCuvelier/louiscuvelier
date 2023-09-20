@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import ArrowUpRight from "../public/images/arrow-up-right.svg";
 import CardEffect from "./CardEffect";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 export default function PrestationCard({
   services,
@@ -15,8 +15,8 @@ export default function PrestationCard({
       className={"grid grid-cols-2 gap-12 p-5 sm:p-14"}
     >
       <div className={"col-span-2"}>
-        <h2 className={"title title-2 hyphens-auto mb-2"}>{title}</h2>
-        <p className={"title title-4"}>{subtitle}</p>
+        <h2 className={"title title-3 hyphens-auto mb-2"}>{title}</h2>
+        <p className={"title title-5"}>{subtitle}</p>
       </div>
 
       <div className={"col-span-2 md:col-span-1"}>
@@ -30,7 +30,7 @@ export default function PrestationCard({
       <div className={"col-span-2 md:col-span-1"}>
         {technologies && (
           <>
-            <h3 className={"title title-4 mb-3"}>Technologies</h3>
+            <h3 className={"title title-5 mb-3"}>Technologies</h3>
             <ul className={"gap-2 flex flex-row flex-wrap mt-1"}>
               {technologies.map((item, index) => (
                 <li
@@ -55,7 +55,7 @@ export default function PrestationCard({
           target={"_blank"}
         >
           <span>Commencer votre projet</span>
-          <ArrowUpRight />
+          <ArrowUpRightIcon />
         </Link>
       </div>
     </CardEffect>

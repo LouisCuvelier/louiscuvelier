@@ -3,6 +3,7 @@ import CardEffect from "./CardEffect";
 import Link from "next/link";
 import Image from "next/image";
 import Date from "./Date";
+import { ClockIcon } from "@heroicons/react/24/outline";
 
 export default async function BlogPostCard({
   id,
@@ -36,10 +37,13 @@ export default async function BlogPostCard({
         </div>
         <div className={"p-8 flex flex-col justify-between h-full"}>
           <div>
-            <h2 className={`title mb-2 ${index === 0 ? "title-2" : "title-3"}`}>
+            <h2 className={`title mb-2 ${index === 0 ? "title-3" : "title-4"}`}>
               {title}
             </h2>
-            <div className={"caption caption-1 text-slate-500"}>
+            <div
+              className={"caption caption-1 text-slate-500 flex items-center"}
+            >
+              <ClockIcon className={"w-4 h-4 mr-1"} />
               <Date isPubDate={true} dateString={publicationDate} />
             </div>
             <p

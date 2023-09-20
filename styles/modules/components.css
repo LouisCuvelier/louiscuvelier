@@ -33,50 +33,50 @@
   }
 
   .title-1 {
-    @apply text-6xl;
+    @apply text-7xl;
 
     @screen sm {
-      @apply text-7xl;
+      @apply text-8xl;
     }
 
     @screen lg {
-      @apply text-8xl;
+      @apply text-9xl;
     }
   }
 
   .title-2 {
-    @apply text-4xl;
+    @apply text-5xl;
 
     @screen sm {
-      @apply text-5xl;
+      @apply text-6xl;
     }
 
     @screen lg {
-      @apply text-6xl;
+      @apply text-7xl;
     }
   }
 
   .title-3 {
-    @apply text-2xl;
+    @apply text-3xl;
 
     @screen sm {
-      @apply text-3xl;
+      @apply text-4xl;
     }
 
     @screen lg {
-      @apply text-4xl;
+      @apply text-5xl;
     }
   }
 
   .title-4 {
-    @apply text-lg;
+    @apply text-xl;
 
     @screen sm {
-      @apply text-xl;
+      @apply text-2xl;
     }
 
     @screen lg {
-      @apply text-2xl;
+      @apply text-3xl;
     }
   }
 
@@ -85,6 +85,10 @@
 
     @screen sm {
       @apply text-lg;
+    }
+
+    @screen lg {
+      @apply text-xl;
     }
   }
 
@@ -190,7 +194,7 @@
 
   .btn,
   .tab {
-    @apply px-4 py-2 inline-flex items-center tracking-wider font-title text-lg;
+    @apply px-4 py-2 inline-flex items-center tracking-wider font-title text-base;
     border-radius: 40% 30% 50% 20% / 50% 70% 70% 70%;
     text-shadow: 0 0 3px theme("colors.slate.50");
 
@@ -208,7 +212,7 @@
       @apply -mr-1 ml-2 h-5 w-5;
     }
 
-    @screen sm {
+    @screen md {
       @apply text-lg;
     }
 
@@ -562,7 +566,7 @@
       @apply transition duration-150 ease-in-out cursor-pointer flex items-baseline mr-1;
 
       & > svg {
-        @apply h-5 w-5;
+        @apply h-4 w-4;
       }
     }
 
@@ -575,6 +579,10 @@
 
       & > a {
         @apply opacity-0;
+
+        & > svg {
+          @apply h-5 w-5;
+        }
       }
     }
   }

@@ -63,26 +63,6 @@ const Heading = {
       {props.children}
     </h4>
   ),
-  H5: (props) => (
-    <h5
-      className={"title title-5-light anchor mt-20 mb-10"}
-      tabIndex="-1"
-      dir={"auto"}
-      id={slugify(reactToText(props.children), { lower: true, strict: true })}
-    >
-      <a
-        aria-hidden="true"
-        tabIndex="-1"
-        href={`#${slugify(reactToText(props.children), {
-          lower: true,
-          strict: true,
-        })}`}
-      >
-        <LinkIcon />
-      </a>
-      {props.children}
-    </h5>
-  ),
 };
 
 export default Heading;

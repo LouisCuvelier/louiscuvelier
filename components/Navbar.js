@@ -2,12 +2,11 @@
 import Link from "next/link";
 import Logo from "../public/images/logo.svg";
 import { usePathname } from "next/navigation";
-import MenuBar from "../public/images/menu.svg";
-import Close from "../public/images/close.svg";
 import { Popover, Transition } from "@headlessui/react";
 import { contact } from "/data/contact";
 import CopyClipboard from "./CopyClipboard";
 import { useEffect } from "react";
+import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const paths = [
   { url: "/", title: "Accueil", isPrimary: false },
@@ -55,7 +54,7 @@ export default function Navbar() {
                   className="btn btn-icon-primary"
                   aria-label={"Ouvrir le menu"}
                 >
-                  <MenuBar />
+                  <Bars2Icon />
                 </Popover.Button>
                 <Transition>
                   <Transition.Child
@@ -76,7 +75,7 @@ export default function Navbar() {
                     leave="duration-[200ms] ease-in"
                     leaveFrom="translate-x-0 rounded-none"
                     leaveTo="translate-x-full rounded-l-[200px]"
-                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 px-5 h-full overflow-y-scroll"
+                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 h-full overflow-y-scroll"
                   >
                     <Transition.Child
                       enter="delay-100 duration-300 ease-out"
@@ -89,7 +88,7 @@ export default function Navbar() {
                     >
                       <div
                         className={
-                          "border-hatch pb-14 flex items-center justify-between border-b-[12px]"
+                          "border-hatch pb-14 flex items-center justify-between border-b-[12px] mx-5"
                         }
                       >
                         <div>
@@ -105,11 +104,11 @@ export default function Navbar() {
                           aria-label="Fermer le menu"
                           className="btn btn-icon-primary"
                         >
-                          <Close />
+                          <XMarkIcon />
                         </Popover.Button>
                       </div>
 
-                      <div>
+                      <div className={"px-5"}>
                         <nav className={"mt-16 sm:mt-32"}>
                           <ul className="space-y-8 text-slate-800">
                             {paths.map((path) => (
@@ -117,7 +116,7 @@ export default function Navbar() {
                                 <Popover.Button
                                   as={Link}
                                   href={path.url}
-                                  className={`title title-2 ${
+                                  className={`title title-3 hover:underline ${
                                     path.isPrimary ? "text-teal-700" : ""
                                   }`}
                                 >

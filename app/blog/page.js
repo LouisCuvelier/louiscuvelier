@@ -19,7 +19,7 @@ export default function Blog() {
           "border-hatch mx-auto max-w-screen-lg mb-32 border-b-[10px] pb-16"
         }
       >
-        <h1 className={"title title-1"}>Blog</h1>
+        <h1 className={"title title-2"}>Blog</h1>
       </section>
 
       <section
