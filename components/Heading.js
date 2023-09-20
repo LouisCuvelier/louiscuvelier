@@ -1,6 +1,6 @@
 import slugify from "slugify";
 import reactToText from "react-to-text";
-import LinkIcon from "../public/images/link.svg";
+import { LinkIcon } from "@heroicons/react/24/outline";
 
 const Heading = {
   H2: (props) => (
