@@ -575,10 +575,8 @@
     }
 
     @screen md {
-      @apply -ml-6;
-
       & > a {
-        @apply opacity-0;
+        @apply opacity-0 -ml-6;
 
         & > svg {
           @apply h-5 w-5;
@@ -592,13 +590,13 @@
       counter-reset: section;
 
       & li {
-        &::before {
+        a::before {
           @apply ml-3 mr-2;
           counter-increment: section;
           content: counters(section, ".") ".";
         }
 
-        &:nth-child(n + 10):before {
+        a:nth-child(n + 10)::before {
           @apply ml-0 mr-2;
           counter-increment: section;
           content: "" counters(section, ".") ".";

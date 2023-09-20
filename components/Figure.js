@@ -7,7 +7,9 @@ const Figure = {
     </figure>
   ),
   Caption: (props) => (
-    <figcaption className={"caption caption-2 text-center mt-3"}>
+    <figcaption
+      className={"caption caption-2 text-center mt-3 [text-wrap:balance]"}
+    >
       {props.children}
     </figcaption>
   ),

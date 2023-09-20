@@ -7687,6 +7687,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-intersection-observer@npm:^9.5.2":
+  version: 9.5.2
+  resolution: "react-intersection-observer@npm:9.5.2"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: cdbe40544930d59fc3820bce017fb688910cbecd7baaf382387a3d60d98a36e1d1e4bc27a876775e99b2a9f86762286a29d7bca21f3345f653cff29850c2641d
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -8167,6 +8176,7 @@ __metadata:
     react: latest
     react-dom: latest
     react-hot-toast: ^2.4.1
+    react-intersection-observer: ^9.5.2
     react-to-text: ^2.0.1
     rehype-autolink-headings: ^7.0.0
     rehype-figure: ^1.0.1

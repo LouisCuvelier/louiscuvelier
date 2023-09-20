@@ -20,7 +20,7 @@ const Heading = {
       >
         <LinkIcon />
       </a>
-      {props.children}
+      <span>{props.children}</span>
     </h2>
   ),
   H3: (props) => (
@@ -40,7 +40,7 @@ const Heading = {
       >
         <LinkIcon />
       </a>
-      {props.children}
+      <span className={"flex flex-wrap"}>{props.children}</span>
     </h3>
   ),
   H4: (props) => (
@@ -60,7 +60,7 @@ const Heading = {
       >
         <LinkIcon />
       </a>
-      {props.children}
+      <span>{props.children}</span>
     </h4>
   ),
 };

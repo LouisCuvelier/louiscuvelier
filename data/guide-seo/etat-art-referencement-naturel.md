@@ -148,7 +148,7 @@ unique objectif : améliorer les résultats de recherche en pénalisant ceux qui
 de nouveaux critères de classement comme la notion de géographie dans la recherche. C’est un jeu constant du chat et de
 la souris puisque lorsqu’une faille est trouvée, Google finit toujours par sévir.
 
-## Social Media Optimization : le SEO des sites sociaux
+## Social Media Optimization : le SEO des sites sociaux
 
 Le Search Engine Optimization (SMO) est globalement la même chose que le SEO, mais pour les sites sociaux. Cela consiste
 donc à se placer dans les meilleures positions d’un site social et de tirer profit du trafic et de la visibilité que
@@ -218,8 +218,6 @@ restaurants apparaissent en première position des résultats de recherche. De p
 nous pouvons observer leurs notes, issues d’avis laissés par des internautes.
 
 ![Extrait d’un résultat de recherche pour le mot-clé « restaurant ».](/images/recherche_mot-cle_restaurant.png)
-
-Extrait d’un résultat de recherche pour le mot-clé « restaurant ».
 
 Ici, l’enjeu pour les entreprises locales est tout d’abord de sortir en première position des résultats mais aussi
 d’avoir la meilleure note possible. Le but évident est d’attirer le plus de clients possible. Pour l’exemple des
@@ -460,7 +458,7 @@ Depuis, en
 Globalement, certaines règles citées précédemment servent aussi à améliorer le SEO. Ainsi, le SMO et le SEO sont
 intrinsèquement liés tant par le contenu que la qualité.
 
-## Référencement naturel : une « *science artistique* »
+## Référencement naturel : une « *science artistique* »
 
 Le référencement naturel (SEO et SMO) est la catégorie de référencement qui demande le plus de travail, car c’est une
 compétition méritocratique où le fair-play prime et qui n’a de fin que lorsque les adversaires capitulent. Cette
