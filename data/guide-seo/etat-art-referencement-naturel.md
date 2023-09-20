@@ -16,7 +16,7 @@ nous aborderons la philosophie qui se cache derrière celui-ci.
 Au tout début, les moteurs de recherche étaient non pas maintenus par des algorithmes de manière automatique mais édités
 par des humains.
 
-Afin d’automatiser la chose, il a fallu créer des robots d’indexation, appelés « *web crawlers* » en anglais. De manière
+Afin d’automatiser la chose, il a fallu créer des robots d’indexation, appelés "*web crawlers*" en anglais. De manière
 simple, en passant de lien internet en lien internet, un robot d’indexation permet de parcourir automatiquement des
 pages webs afin d’enregistrer leurs liens, de classer leurs contenus et leurs ressources tout en établissant une
 cartographie détaillée des liens entre les sites internet.
@@ -63,12 +63,12 @@ d’indexer plus rapidement puisque près de [75 millions de pages](https://en.w
 
 ## Débuts du Search Engine Optimization
 
-En 1996, Danny SULLIVAN, publia une étude nommée «*A Webmaster’s Guide To Search Engine*». Ce papier fut l’un des
+En 1996, Danny SULLIVAN, publia une étude nommée "*A Webmaster’s Guide To Search Engine*". Ce papier fut l’un des
 premiers à sortir sur le sujet qui fut à destination des webmasters.
 
 En 1997, Danny créa le site Search Engine Watch, un site avec des astuces destinées aux webmasters afin d’avoir de bons
-résultats sur les moteurs de recherche. C’est d’ailleurs probablement à cette même année que le terme «*Search Engine
-Optimization (SEO)* » a vu le jour.
+résultats sur les moteurs de recherche. C’est d’ailleurs probablement à cette même année que le terme "*Search Engine
+Optimization (SEO)*" a vu le jour.
 
 Ainsi, c’est à partir de ce moment que l’on peut dire que le SEO a commencé véritablement à exister et à prendre de
 l’ampleur puisqu’en 1999, la première conférence dédiée à la recherche sur les moteurs de recherche est organisée.
@@ -95,8 +95,8 @@ Cependant, pour mettre fin à ces pratiques et augmenter la pertinence des résu
 d’une autre façon en utilisant son algorithme PageRank et son robot d’indexation. Ainsi, contrairement aux autres
 moteurs de recherche de l’époque, Google ne regarda pas uniquement le contenu du site pour le classer mais collecta
 aussi des données en dehors du site, comme le nombre de liens et la qualité des sources qui pointent vers le site. La
-logique derrière cela est plutôt simple et revient à dire : «*Si les gens parlent d’un site, alors ce site est
-important, utile ou intéressant*».
+logique derrière cela est plutôt simple et revient à dire : "*Si les gens parlent d’un site, alors ce site est
+important, utile ou intéressant*".
 
 Étant les premiers à utiliser cette logique, Google a entamé le début d’une révolution dans la recherche et a posé les
 bases de ce qu’allait être les moteurs de recherche 20 ans plus tard.
@@ -114,13 +114,13 @@ Ainsi, tout une myriade de sites spécialement créés pour AdSense ont vu le jo
 drainer un maximum de trafic et d’utiliser ce trafic pour générer de l’argent avec AdSense. Néanmoins, afin d’exceller
 en SEO, il a été utilisé des techniques comme le spam, le vol de contenu ou du contenu de très mauvaise qualité.
 
-Autre exemple, en 2006, BMW s’est fait punir par Google pour l’utilisation d’une technique appelée « *cloaking* ». Cette
+Autre exemple, en 2006, BMW s’est fait punir par Google pour l’utilisation d’une technique appelée "*cloaking*". Cette
 technique consiste à présenter une version normale du site à un visiteur et une version sur-optimisée aux robots
 d'indexation.
 
-En ayant recours à cette technique connue depuis les débuts du SEO, BMW a enfreint la recommandation suivante : «*Ne
+En ayant recours à cette technique connue depuis les débuts du SEO, BMW a enfreint la recommandation suivante : "*Ne
 trompez pas vos utilisateurs et ne présentez pas aux moteurs de recherche un contenu différent de celui que vous
-affichez, qui est communément appelé “cloaking”*» [traduction libre]. Ces recommandations émises par Google sont tout à
+affichez, qui est communément appelé "cloaking"*" [traduction libre]. Ces recommandations émises par Google sont tout à
 fait qualifiables de règles à respecter pour faire du SEO.
 
 Par conséquent, en ayant enfreint cette règle, BMW a été réprimandé par Google. L’entreprise californienne a retiré BMW
@@ -129,7 +129,7 @@ sanctions levées, BMW a dû recommencer tout son travail de référencement nat
 sachant que ce travail peut être le fruit de nombreuses années.
 
 Des exemples comme ceux-ci, il y en a eu tout au long de l’histoire des moteurs de recherche et ça continue encore
-aujourd’hui. Toutefois, les moteurs de recherche apprennent de ces cas et mettent à jours leurs algorithmes afin que
+aujourd’hui. Toutefois, les moteurs de recherche apprennent de ces cas et mettent à jour leurs algorithmes afin que
 cela ne se reproduise plus.
 
 En effet, l’une des mises à jour les plus connues dans le milieu est nommée *Florida*. Sortie en 2003, elle est
@@ -166,21 +166,19 @@ Depuis la confirmation de 2010, les moteurs de recherche ne cessent de s’appuy
 comme Reddit, Twitter, Facebook, Pinterest ou Instagram et affichent même le contenu de certains directement dans les
 résultats de recherche.
 
-![Exemple de résultat de recherche Google avec le mot clé « #bordeaux ».](/images/resultat_mot_cle_bordeaux.png)
+![Exemple de résultat de recherche Google avec le mot clé "#bordeaux".](/images/resultat_mot_cle_bordeaux.png)
 
-Exemple de résultat de recherche Google avec le mot clé « #bordeaux ».
-
-Lorsqu’une page est « *likée* », « *retweeté* » ou partagée sur un réseau social, cela est assimilé à une sorte de vote
+Lorsqu’une page est "*likée*", "*retweeté*" ou partagée sur un réseau social, cela est assimilé à une sorte de vote
 pour cette page. Ce vote est alors traité comme un signal par les moteurs de recherche, à l’instar d’une citation d’un
 site par un autre site. Ceci afin d’encore mieux classer les sites.
 
-Par conséquent, cela revient toujours à la même logique dont nous parlions précédemment : « *Si les gens parlent d’un
-site, alors ce site est important, utile ou intéressant* ». Sauf que cette fois, cela est fait presque en temps réel et
+Par conséquent, cela revient toujours à la même logique dont nous parlions précédemment : "*Si les gens parlent d’un
+site, alors ce site est important, utile ou intéressant* ". Sauf que cette fois, cela est fait presque en temps réel et
 à une échelle bien plus importante.
 
 Par ailleurs, en plus d’avoir une influence sur le SEO, le SMO permet aussi d’acquérir une visibilité immense sur les
-médias sociaux grâce aux phénomènes de tendances et autres systèmes de partages, «*like*» et «*retweet*». Ces systèmes
-permettent alors d’avoir de la popularité beaucoup plus rapidement qu’avec le SEO mais cette popularité est éphémère si
+médias sociaux grâce aux phénomènes de tendances et autres systèmes de partages, "*like*" et "*retweet*". Ces systèmes
+permettent alors d’avoir de la popularité beaucoup plus rapidement qu’avec le SEO, mais cette popularité est éphémère si
 du contenu n’est pas régulièrement posté.
 
 ## État actuel du référencement naturel
@@ -199,7 +197,7 @@ environ [31 % des clics vont au premier résultat de recherche, 16 % au second
 
 Ainsi, ces chiffres titanesques mettent en évidence que bien se positionner, en particulier sur Google, dans les
 résultats de recherche naturels, est primordial pour augmenter sa visibilité en ligne. De plus, ces chiffres démontrent
-la suprématie de Google sur la « *Search* ». C’est pourquoi quand nous parlons de référencement et de moteur de
+la suprématie de Google sur la "*Search*". C’est pourquoi quand nous parlons de référencement et de moteur de
 recherche, nous évoquons toujours la firme américaine.
 
 ### De nouveaux moyens pour le Search Engine Optimization
@@ -213,11 +211,11 @@ comportant une dimension géographique. Cela a ouvert une nouvelle dimension du 
 référencement local.
 
 Aujourd’hui, ce type de référencement est devenu une vraie préoccupation pour les restaurateurs, hôteliers, artisans et
-autres entreprises ayant un rayonnement local. En effet, lorsque l’on tape « *restaurant* » sur Google, trois
+autres entreprises ayant un rayonnement local. En effet, lorsque l’on tape "*restaurant*" sur Google, trois
 restaurants apparaissent en première position des résultats de recherche. De plus, associés aux noms des restaurants,
 nous pouvons observer leurs notes, issues d’avis laissés par des internautes.
 
-![Extrait d’un résultat de recherche pour le mot-clé « restaurant ».](/images/recherche_mot-cle_restaurant.png)
+![Extrait d’un résultat de recherche pour le mot-clé "restaurant".](/images/recherche_mot-cle_restaurant.png)
 
 Ici, l’enjeu pour les entreprises locales est tout d’abord de sortir en première position des résultats mais aussi
 d’avoir la meilleure note possible. Le but évident est d’attirer le plus de clients possible. Pour l’exemple des
@@ -232,10 +230,8 @@ commerce local de se battre au quotidien pour ses étoiles, et donc son référe
 Précédemment, nous parlions du site Yelp, spécialisé dans les avis de commerces locaux. Or, des sites comme Yelp, il en
 existe des dizaines, pour différents domaines. Les plus connus sont sans doute TripAdvisor, La Fourchette ou Booking.
 
-![*Exemple des résultats de recherche avec la requête « 10 meilleurs hôtels
-bordeaux ».*](/images/requete_top10.png)
-
-*Exemple des résultats de recherche avec la requête « 10 meilleurs hôtels bordeaux ».*
+![Exemple des résultats de recherche avec la requête "10 meilleurs hôtels
+bordeaux".](/images/requete_top10.png)
 
 Par exemple, pour la requête ci-dessus, nous pouvons observer que le premier résultat est une annonce payante de
 Booking. Ensuite, nous avons une carte avec une liste d’hôtels. Puis, il y a un lien vers TripAdvisor.
@@ -254,7 +250,7 @@ sur les moteurs de recherche provoquant alors une augmentation de la visibilité
 
 #### Position zéro : le Graal à double tranchant
 
-La position zéro est appelé «*Google Answer Box* » par *Google* ou « *Featured Snippet* » par les professionnels. C’est
+La position zéro est appelé "*Google Answer Box*" par *Google* ou "*Featured Snippet*" par les professionnels. C’est
 un encart qui se situe au dessus du premier résultat de recherche d’où son surnom de position zéro, mais qui reste en
 dessous des annonces payantes.
 
@@ -271,14 +267,12 @@ Cependant, la position zéro est à double tranchant puisque si l’internaute t
 le résultat de la position zéro, et qu’il n’a pas besoin de lire la page du site dont la réponse est tirée, alors le
 site n’y gagne pas à être à cette position.
 
-![*Exemple de position
-zéro.*](/images/position_zero.png)
-
-*Exemple de position zéro.*
+![Exemple de position
+zéro.](/images/position_zero.png)
 
 Selon
 une [étude menée par Jumpshot](https://sparktoro.com/blog/how-much-of-googles-search-traffic-is-left-for-anyone-but-themselves/)
-aux États-Unis, au premier trimestre 2019, près de 49 % des recherches sur Google étaient des «*zero-click searches* »,
+aux États-Unis, au premier trimestre 2019, près de 49 % des recherches sur Google étaient des "*zero-click searches*",
 littéralement, des recherches à zéro clic. Celles-ci ont augmenté de presque 12 % en trois ans, ce qui a provoqué une
 baisse de plus de 13 % des clics liés aux résultats naturels, appelés organiques.
 
@@ -286,7 +280,7 @@ Certes, ces 50 % de recherches à zéro clic et leur croissance d’année en an
 organiques. Néanmoins, certains comme Rand FISHKIN voient cela comme un panneau publicitaire ou une mention dans la
 presse qui permet d’exposer son nom de marque à une cible tout en partageant de l’information et dont le suivi de trafic
 est compliqué. Ainsi, avec cette vision, qu’elle amène ou non du trafic sur le site, la position zéro est une position
-intéressante, signe de «*bonne santé SEO*» d’un site.
+intéressante, signe de "*bonne santé SEO*" d’un site.
 
 #### Voix
 
@@ -311,8 +305,8 @@ l’utilisateur a sa réponse lors de la dictée, alors il ne visitera pas le si
 En Février 2018, Google Images représentait 22,6 % des recherches réalisées aux États-Unis. Ce pourcentage révèle donc
 une opportunité immense de se référencer sur des images.
 
-![*Graphique montrant la répartition des canaux de recherche sur internet en Février 2018, aux
-États-Unis.*](/images/repartition_canaux_recherche.png)
+![Graphique montrant la répartition des canaux de recherche sur internet en Février 2018, aux
+États-Unis.](/images/repartition_canaux_recherche.png)
 
 *Graphique montrant la répartition des canaux de recherche sur internet en Février 2018, aux États-Unis.*
 
@@ -343,15 +337,15 @@ requête de l’internaute.
 ### De nouveaux canaux de Social Media Optimization
 
 Régulièrement, les médias sociaux mettent à disposition de leurs utilisateurs de nouvelles fonctionnalités offrant de
-nouveaux moyens de faire du SMO. Par exemple, Instagram a ouvertement copié Snapchat en sortant ses « *stories* » en
+nouveaux moyens de faire du SMO. Par exemple, Instagram a ouvertement copié Snapchat en sortant ses "*stories*" en
 Août 2016. Celles-ci ont ainsi apporté un nouveau moyen d'acquérir de la visibilité sur la plateforme.
 
 De plus, l’apparition de nouvelles plateformes sociales sont une très bonne opportunité de devenir une référence sur ces
-plateformes. En effet, d’après Guy KAWASAKI, «*chaque nouvelle plateforme crée de nouvelles “stars”*» car « *il est
-beaucoup plus facile d’obtenir de nombreux abonnés lorsqu’une plateforme vient d’être lancée ». La raison à cela est
-qu’il y a « moins de personnes à suivre et beaucoup moins de bruit* ». « *Une nouvelle plateforme, c’est la conquête
+plateformes. En effet, d’après Guy KAWASAKI, "*chaque nouvelle plateforme crée de nouvelles "stars"*" car "*il est
+beaucoup plus facile d’obtenir de nombreux abonnés lorsqu’une plateforme vient d’être lancée". La raison à cela est
+qu’il y a "*moins de personnes à suivre et beaucoup moins de bruit*". "*Une nouvelle plateforme, c’est la conquête
 d’un nouveau territoire : si vous voulez y attirer de nombreux abonnés, vous devez agir vite, et cela signifie agir
-avant qu’il ne devienne évident que la plateforme aura du succès* » (*L’art des médias sociaux : Stratégies gagnantes
+avant qu’il ne devienne évident que la plateforme aura du succès*" (*L’art des médias sociaux : Stratégies gagnantes
 pour un usage professionnel).*
 
 Ainsi, les nouveaux canaux sociaux sont une très bonne opportunité si ceux-ci correspondent au ton et à la cible de
@@ -379,11 +373,11 @@ conséquent, permettre que les pages soient facilement trouvables, c’est bén�
 permettant aux humains et aux robots de trouver plus facilement les pages d’un site, celles-ci se retrouvent plus
 facilement et plus rapidement référencées.
 
-### « *Mobile first* »
+### Mobile First
 
 Depuis la fin 2016, Google a changé son fusil d’épaule en partant d’un constat simple : plus de la moitié des requêtes
-sur Google sont effectuées sur mobile. Ainsi, l’entreprise a décidé de passer à une [indexation « *mobile
-first* »](https://webmasters.googleblog.com/2016/11/mobile-first-indexing.html). C’est-à-dire qu’au lieu de scanner les
+sur Google sont effectuées sur mobile. Ainsi, l’entreprise a décidé de passer à une [indexation "*mobile
+first*"](https://webmasters.googleblog.com/2016/11/mobile-first-indexing.html). C’est-à-dire qu’au lieu de scanner les
 sites avec une vue d’ordinateur, les robots se restreignent à une vue mobile car certains sites sont différents entre
 mobile et ordinateur. Ce changement permet alors à Google d’être en cohérence avec le type d’appareil majoritaire.
 
@@ -410,18 +404,18 @@ Pour conclure sur ces bonnes pratiques, tous les éléments cités précédemmen
 Chaque élément est une petite pièce qui permet de créer une expérience utilisateur agréable et satisfaisante.
 
 D’ailleurs, en Mai 2020, Google a annoncé la prise en compte
-de [nouveaux signaux](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) pour le « *page
-experience ranking*». En effet, deux nouveaux critères ont fait leur apparition : l'interactivité et la stabilité
+de [nouveaux signaux](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) pour le "*page
+experience ranking*". En effet, deux nouveaux critères ont fait leur apparition : l'interactivité et la stabilité
 visuelle. Ainsi, pour constituer une bonne expérience selon ces deux nouveaux critères,
 la [page doit être interactive avant 100ms](https://developers.google.com/search/docs/guides/page-experience) et la
 disposition de la page ne doit pas sauter lors du chargement de celle-ci.
 
 Néanmoins, encore une fois, [Google rappel](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html)
-que « *bien que tous les composants de l’expérience de page soient importants, nous [Google] allons prioriser les pages
+que "*bien que tous les composants de l’expérience de page soient importants, nous [Google] allons prioriser les pages
 avec la meilleure information globale, même si certains aspects de l’expérience de page sont en-dessous de la moyenne.
 Une bonne expérience de page ne remplace pas le fait d’avoir un contenu bon et pertinent. Cependant, dans les cas où il
 y a de multiples pages qui ont un contenu similaire, l’expérience de page devient beaucoup plus importants pour la
-visibilité dans les résultats de recherche* » [traduction libre].
+visibilité dans les résultats de recherche*" [traduction libre].
 
 Finalement, malgré ces nouveaux critères, le contenu reste roi. Mais, il ne faut toutefois pas perdre de vue que
 l’expérience utilisateur reflète aussi l’expérience qu’ont les robots d'indexation lors de leur passage sur un site
@@ -458,7 +452,7 @@ Depuis, en
 Globalement, certaines règles citées précédemment servent aussi à améliorer le SEO. Ainsi, le SMO et le SEO sont
 intrinsèquement liés tant par le contenu que la qualité.
 
-## Référencement naturel : une « *science artistique* »
+## Référencement naturel : une "*science artistique*"
 
 Le référencement naturel (SEO et SMO) est la catégorie de référencement qui demande le plus de travail, car c’est une
 compétition méritocratique où le fair-play prime et qui n’a de fin que lorsque les adversaires capitulent. Cette
@@ -467,7 +461,7 @@ augmentée et où les règles sont modifiées, tous les mois.
 
 Par conséquent, à cause de ces perpétuelles évolutions, il ne peut pas y avoir de méthodes précises à respecter pour
 arriver à un résultat souhaité. En ce sens, le référencement ne peut donc pas être une science exacte mais nous
-pourrions plutôt le qualifier de «*science artistique*». D’une part, c’est une science, car il est nécessaire d’avoir
+pourrions plutôt le qualifier de "*science artistique*". D’une part, c’est une science, car il est nécessaire d’avoir
 une rigueur scientifique pour réussir à devenir visible. D’autre part, c’est un art, car il est obligatoire de
 travailler la rédaction, l’architecture et l’expérience utilisateur d’un site pour qu’il plaise, à la fois aux moteurs
 de recherche et aux internautes.
@@ -486,5 +480,5 @@ nous avons montré que l’émergence du SMO vient changer la donne, même dans 
 Puis, nous avons dressé un état actuel du référencement naturel et plus particulièrement des nouveaux moyens pour faire
 du SEO et du SMO.
 
-Enfin, nous avons vu qu’il existait des bonnes pratiques permettant de construire son référencement naturel mais que
-celles-ci ne fonctionnent pas à tous les coups, car le référencement naturel est une «*science artistique*».
+Enfin, nous avons vu qu’il existait des bonnes pratiques permettant de construire son référencement naturel, mais que
+celles-ci ne fonctionnent pas à tous les coups, car le référencement naturel est une "*science artistique*".

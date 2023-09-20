@@ -12,9 +12,9 @@ permettent de réaliser du bon contenu pour le référencement naturel.
 ## Définition du contenu
 
 Avant toutes choses, il faut d’abord définir ce premier pilier qu’est le contenu. Le contenu rédactionnel d’un site est
-ce que nous appelons le «*content marketing*» (marketing de contenu [traduction libre]). Concrètement, le marketing de
-contenu est «
-*[une stratégie marketing qui repose sur la création et la diffusion de contenu de valeur, utile et informatif, afin de communiquer avec son audience et développer sa visibilité](https://blog.hubspot.fr/marketing/content-marketing-information)* ».
+ce que nous appelons le "*content marketing*" (marketing de contenu [traduction libre]). Concrètement, le marketing de
+contenu est "
+*[une stratégie marketing qui repose sur la création et la diffusion de contenu de valeur, utile et informatif, afin de communiquer avec son audience et développer sa visibilité](https://blog.hubspot.fr/marketing/content-marketing-information)*".
 
 ## Trouver des sujets et des mots-clés
 
@@ -32,16 +32,16 @@ Premièrement, il y a Google Suggest qui est la fonctionnalité d’auto-complé
 permet alors de trouver des mots-clés pertinents associés à votre recherche. Elle s’illustre à la fois quand nous tapons
 notre recherche mais aussi tout en bas des résultats de recherche.
 
-Par exemple, pour le terme « *coursier* », voici ci-dessous les différentes suggestions de Google.
+Par exemple, pour le terme "*coursier*", voici ci-dessous les différentes suggestions de Google.
 
-![Exemple de suggestions Google pour le terme « coursier »](/images/resultat_recherche_coursier.png)
+![Exemple de suggestions Google pour le terme "coursier"](/images/resultat_recherche_coursier.png)
 
-Deuxièmement, sur certaines recherches, mélangées aux résultats, un encart appelé « *People Also Asked* » (Autres
+Deuxièmement, sur certaines recherches, mélangées aux résultats, un encart appelé "*People Also Asked*" (Autres
 questions posées) peut apparaître. Il met en évidence des phrases sous forme de questions en lien avec la recherche
-effectuée. Ainsi, c’est surtout utile pour créer du contenu de style «*FAQ / Question fréquentes*», qui peut plus
+effectuée. Ainsi, c’est surtout utile pour créer du contenu de style "*FAQ / Question fréquentes*", qui peut plus
 facilement apparaître en position zéro.
 
-Par exemple, toujours avec le terme « *coursier* », nous pouvons observer les questions en lien avec notre recherche.
+Par exemple, toujours avec le terme "*coursier*", nous pouvons observer les questions en lien avec notre recherche.
 
 ![Exemple d’autres questions posées](/images/questions_liees.png)
 
@@ -55,7 +55,7 @@ De la même manière que Google, YouTube Suggest permet de trouver des idées gr
 est encore plus simple et plus pertinent que sur Google, car sur YouTube, il est possible de clairement voir le nombre
 de vues et donc le succès d’une vidéo. C’est alors un excellent indicateur de la popularité d’un sujet.
 
-Par exemple, avec le terme «*devenir livreur*», voici les suggestions de YouTube.
+Par exemple, avec le terme "*devenir livreur*", voici les suggestions de YouTube.
 
 ![Exemple de suggestions YouTube](/images/suggestions_youtube.png)
 
@@ -66,27 +66,27 @@ tendances des requêtes tapées sur Google ou YouTube. Ainsi, de la même maniè
 des mots-clés associés à notre recherche. Toutefois, Google Trends se révèle complémentaire puisqu’il fait ressortir des
 mots-clés différents de Google (ou YouTube) Suggest.
 
-Par exemple, pour le terme « *coursier* », Google Trends nous propose une liste de 25 requêtes les plus fréquentes,
+Par exemple, pour le terme "*coursier*", Google Trends nous propose une liste de 25 requêtes les plus fréquentes,
 associées au terme recherché.
 
-![ Exemple du résultat « coursier » sur Google Trends sur les 12 derniers mois.](/images/google_trends.png)
+![ Exemple du résultat "coursier" sur Google Trends sur les 12 derniers mois.](/images/google_trends.png)
 
 ### Planificateur de mots-clés Google Ads
 
-Le planificateur de mots-clés est un autre outil gratuit mais qui nécessite la création d’un compte Google Ads. Il
+Le planificateur de mots-clés est un autre outil gratuit, mais qui nécessite la création d’un compte Google Ads. Il
 suffit de taper dans l’outil un sujet qui nous intéresse et Google va automatiquement donner une liste exhaustive
 d’idées de mots-clés liés.
 
-Par exemple, en tapant deux termes-clés «*devenir coursier*» et «*devenir livreur*» dans le planificateur de mots-clés,
+Par exemple, en tapant deux termes-clés "*devenir coursier*" et "*devenir livreur*" dans le planificateur de mots-clés,
 Google donne une liste de 64 idées de mots-clés.
 
-![Exemple d’une planification de mots-clés sur Google Ads pour les termes « devenir coursier » et « devenir livreur »](/images/google_ads_planification_mots_cles.png)
+![Exemple d’une planification de mots-clés sur Google Ads pour les termes "devenir coursier" et "devenir livreur"](/images/google_ads_planification_mots_cles.png)
 
 Mais ce n’est pas tout puisqu’une fois la liste générée, il est possible de regrouper les idées générées par thème. Cela
 permet alors de former des sujets et de constituer, par sujet, un champ lexical qui sera utile lors de la rédaction.
 
-Ainsi, toujours avec le même exemple, l’outil a généré des sujets comme «*Deliveroo*» ou «*Uber Devenir*» (comprendre «
-*Devenir Uber*»).
+Ainsi, toujours avec le même exemple, l’outil a généré des sujets comme "*Deliveroo*" ou "*Uber Devenir*" (comprendre "
+*Devenir Uber*").
 
 ![Exemple d’une planification de mots-clés regroupés.](/images/planification_mots_cles_groupes.png)
 
@@ -96,13 +96,13 @@ Parler avec ses visiteurs, utilisateurs et/ou clients, est un autre moyen extrê
 de mots-clés et de sujets. En effet, que ce soit par téléphone, en commentaire, par message privé ou par email, ils nous
 poseront forcément des questions et aborderont des sujets auxquels nous n’avions pas pensés.
 
-Ainsi, ces sujets peuvent être source de création de contenu type « *FAQ / Questions fréquentes* » ou d’articles de
+Ainsi, ces sujets peuvent être source de création de contenu type "*FAQ / Questions fréquentes*" ou d’articles de
 blog, car, en réalité, si le sujet revient plusieurs fois, c’est qu’il intéresse des centaines d’autres personnes. Par
 conséquent, en créant une page dédiée à ce sujet, nous produisons à coup sûr du contenu qui correspond totalement à ce
 que recherche notre cible. Cela augmente donc les chances de bien se positionner dans les moteurs de recherche, sur le
 sujet en question.
 
-Par exemple, pour Coursier Job, nous ajoutons régulièrement des pages à notre section « *Questions fréquentes* » et nous
+Par exemple, pour Coursier Job, nous ajoutons régulièrement des pages à notre section "*Questions fréquentes*" et nous
 mettons constamment à jour nos articles en fonction des retours et des incompréhensions qui nous sont remontées.
 
 ### Google Search Console
@@ -168,11 +168,11 @@ requêtes.
 ![Positionnement de Coursier Job sur les requêtes, classés par taux de clic décroissant.](/images/position_coursier_job_taux_clic_decroissant.png)
 
 Par exemple, sur le site nous avons une page par ville reprenant les entreprises présentes dans ces villes. Or, d’après
-la dernière figure ci-dessus, nous pouvons observer que le même pattern ressort deux fois : «*uber eat annemasse*» et «
-*uber eat dunkerque*». Nous pouvons donc considérer que ce type de requête est commun pour toutes les villes. Aussi,
+la dernière figure ci-dessus, nous pouvons observer que le même pattern ressort deux fois : "*uber eat annemasse*" et "
+*uber eat dunkerque*". Nous pouvons donc considérer que ce type de requête est commun pour toutes les villes. Aussi,
 nous pouvons voir que nous sommes positionnés aux alentours de la neuvième position, faisant ainsi chuter le CTR. Par
-conséquent, il serait pertinent de retravailler les pages des villes pour qu’elles intègrent les termes «*Uber Eats à
-nom_de_la_ville*». Cela permettrait alors de faire remonter la position du site pour ce type de termes, d’ainsi
+conséquent, il serait pertinent de retravailler les pages des villes pour qu’elles intègrent les termes "*Uber Eats à
+nom_de_la_ville*". Cela permettrait alors de faire remonter la position du site pour ce type de termes, d’ainsi
 améliorer le CTR et par extension, le trafic du site.
 
 ### Google Trends
@@ -184,28 +184,28 @@ Premièrement, Google Trends permet de visualiser la périodicité d’un mot-cl
 planifier la création de contenu et de sortir ce contenu au bon moment, à savoir quelques semaines avant le pic de
 recherches.
 
-Par exemple, pour le sujet « *crème solaire* », nous pouvons clairement voir des pics de recherches correspondant aux
+Par exemple, pour le sujet "*crème solaire*", nous pouvons clairement voir des pics de recherches correspondant aux
 périodes estivales.
 
-![Exemple de « crème solaire » sur Google Trends.](/images/resultat_creme_solaire.png)
+![Exemple de "crème solaire" sur Google Trends.](/images/resultat_creme_solaire.png)
 
 Deuxièmement, il est possible de comparer deux termes synonymes pour savoir lequel est le plus recherché et donc
 déterminer lequel utiliser en priorité dans notre contenu.
 
-Par exemple, entre «*livreur*» et «*coursier*», nous voyons qu’il est préférable d’utiliser le terme «*livreur*» (en
+Par exemple, entre "*livreur*" et "*coursier*", nous voyons qu’il est préférable d’utiliser le terme "*livreur*" (en
 rouge sur le graphique ci-dessous), car il est plus recherché.
 
-![Exemple de « coursier » versus « livreur » sur Google Trends.](/images/versus_google_trends.png)
+![Exemple de "coursier" versus "livreur" sur Google Trends.](/images/versus_google_trends.png)
 
 Troisièmement, nous pouvons savoir quel terme de recherche performe le plus en fonction de la région, du département ou
 de la ville. Ainsi, en ayant ces données géographiques, il est donc possible de faire du référencement local en créant
 des pages dédiées à des villes ou des départements.
 
-À titre d’illustration, avec les termes « *burger* » et « *kebab* », nous pouvons observer que dans les deux
-départements de Corse, le terme « *burger* » est plus recherché. Ainsi, en Corse, il vaut mieux créer du contenu sur des
+À titre d’illustration, avec les termes "*burger*" et "*kebab*", nous pouvons observer que dans les deux
+départements de Corse, le terme "*burger*" est plus recherché. Ainsi, en Corse, il vaut mieux créer du contenu sur des
 burgers plutôt que sur des kebabs.
 
-![Exemple de « burger » versus « kebab » sur Google Trends.](/images/versus_google_trends_2.png)
+![Exemple de "burger" versus "kebab" sur Google Trends.](/images/versus_google_trends_2.png)
 
 Quatrièmement, comme nous l’avons vu précédemment, Google Trends permet de sortir des requêtes associées au terme que
 nous avons tapé. Mais, ce n’est pas tout puisqu’il est aussi possible d’avoir une certaine idée des volumes de ces
@@ -214,10 +214,10 @@ signifie que 100 est la requête la plus souvent recherchée, tandis que 50 est 
 échelle ne donne pas de volumes précis mais permet tout de même de se faire une idée et de savoir quel terme fonctionne
 le mieux.
 
-Par exemple, nous observons qu’avec la requête « *coursier* », les deux requêtes les plus fréquentes associées à la
-requête saisie sont « *uber* » et «*uber coursier*».
+Par exemple, nous observons qu’avec la requête "*coursier*", les deux requêtes les plus fréquentes associées à la
+requête saisie sont "*uber*" et "*uber coursier*".
 
-![Exemple de « coursier » sur Google Trends.](/images/coursier_google_trends.png)
+![Exemple de "coursier" sur Google Trends.](/images/coursier_google_trends.png)
 
 ### Planificateur de mots-clés Google Ads
 
@@ -235,11 +235,11 @@ savoir si des entreprises sont prêtes à payer pour se positionner sur ce mots-
 c’est qu’il y a de l'intérêt pour ce mot-clé et qu’il y a potentiellement de gros sites qui sont positionnés sur ces
 termes.
 
-De même, si l’on reprend l’exemple cité précédemment avec les termes «*devenir coursier*» et « *devenir livreur*», nous
+De même, si l’on reprend l’exemple cité précédemment avec les termes "*devenir coursier*" et "*devenir livreur*", nous
 pouvons observer qu’ils ont un volume de recherche correct avec une concurrence moyenne.
 
-![Exemple d’une planification de mots-clés sur Google Ads pour les termes « devenir coursier » et « devenir
-livreur ».](/images/planification_mots_cles_google_ads.png)
+![Exemple d’une planification de mots-clés sur Google Ads pour les termes "devenir coursier" et "devenir
+livreur".](/images/planification_mots_cles_google_ads.png)
 
 ### Google
 
@@ -252,16 +252,16 @@ de voir si ce sont des sites qui sont déjà connus, qui ont une réputation et 
 Par exemple, d’après la figure ci-dessous, nous pouvons déjà repérer deux gros sites comme legalplace.fr ou
 legalstart.fr.
 
-![Exemple d’un résultat Google pour la recherche « devenir micro entrepreneur coursier ».](/images/resultat_devenir_coursier_micro_entrepreneur.png)
+![Exemple d’un résultat Google pour la recherche "devenir micro entrepreneur coursier".](/images/resultat_devenir_coursier_micro_entrepreneur.png)
 
-Exemple d’un résultat Google pour la recherche « devenir micro entrepreneur coursier ».
+Exemple d’un résultat Google pour la recherche "devenir micro entrepreneur coursier".
 
 Si le coup d’œil ne suffit pas, nous pouvons nous rendre sur le site et rapidement scanner si le site possède de
 nombreuses pages. En effet, plus le site a un nombre de pages élevé, plus il y a de chance qu’il soit ancien et qu’il
 ait une réputation élevée.
 
 Néanmoins, pour être sûr de notre analyse, nous pouvons aller plus loin en entrant un nom de domaine dans un outil
-comme « *Website Authority Checker*» de [ahrefs](https://ahrefs.com/fr/website-authority-checker). Cet outil permet de
+comme "*Website Authority Checker*" de [ahrefs](https://ahrefs.com/fr/website-authority-checker). Cet outil permet de
 mesurer l'autorité d’un site, c’est-à-dire sa réputation, sous la forme d’un score de 0 à 100.
 
 Or, si l’on prend deux sites traitant du même
@@ -292,8 +292,8 @@ de celui-ci.
 
 ### Rédiger par des humains, pour des humains
 
-Dans la définition du content marketing, il y a une chose très importante à souligner : «*contenu de valeur, utile et
-informatif* ». Cela coïncide donc à ce que nous avons répété plusieurs fois dans l’état de l’art, parfois même selon les
+Dans la définition du content marketing, il y a une chose très importante à souligner : "*contenu de valeur, utile et
+informatif*". Cela coïncide donc à ce que nous avons répété plusieurs fois dans l’état de l’art, parfois même selon les
 propres dires de Google : le contenu doit avant tout être pertinent pour le lecteur.
 
 En d’autres termes, cela signifie que le contenu doit apporter de la valeur et placer le lecteur au centre de la
@@ -342,8 +342,8 @@ Ainsi, plus nous simplifions la tâche des robots d'indexation, mieux le référ
 
 ### Avoir une longueur de contenu adaptée
 
-Selon Backlinko, «
-*[le nombre moyen de mots d'un résultat de recherche en première première page de Google est de 1447 mots](https://backlinko.com/search-engine-ranking)* » [traduction libre].
+Selon Backlinko, "
+*[le nombre moyen de mots d'un résultat de recherche en première première page de Google est de 1447 mots](https://backlinko.com/search-engine-ranking)* " [traduction libre].
 Cette moyenne semble suggérer que Google privilégie les contenus longs. En réalité, cela n’est pas aussi simple puisque
 la longueur du contenu n’est pas un critère de classement en soi. Néanmoins, avoir un contenu long permet deux choses.
 
@@ -371,7 +371,7 @@ il s’agit plus d’une relecture pour être sûr que nous n’avons rien oubli
 Il est primordial de bien gérer ses titres pour qu’un humain, comme un robot d’indexation, puisse comprendre d’un seul
 coup d’œil de quoi la page traite.
 
-Tout d’abord, il faut utiliser un seul titre «*h1*» car le robot d’indexation fonctionne comme un humain. Le titre d’une
+Tout d’abord, il faut utiliser un seul titre "*h1*" car le robot d’indexation fonctionne comme un humain. Le titre d’une
 page permet de comprendre tout de suite de quoi celle-ci traite. Or, si la page possède plusieurs titres de premier
 niveau, cela complique le travail du robot d’indexation.
 
@@ -385,7 +385,7 @@ et quelques h3. Rarement des h4 sont utilisés.
 
 En regardant attentivement la figure ci-dessus, il est possible d’observer que le titre (h1) dit tout de suite de quoi
 traite la page. En l'occurrence, le sujet de cette page tourne autour de la micro-entreprise pour les coursiers. Donc,
-notre terme cible est «*coursier micro-entrepreneur*». De plus, nous pouvons remarquer que nous utilisons ce terme, et
+notre terme cible est "*coursier micro-entrepreneur*". De plus, nous pouvons remarquer que nous utilisons ce terme, et
 ses variantes, à plusieurs reprises dans les titres.
 
 Ainsi, en utilisant notre terme cible et ses variantes dans les titres, nous faisons encore mieux comprendre aux robots
@@ -394,7 +394,7 @@ d'indexation de quoi nous parlons.
 ### Adapter spécifiquement son contenu aux moteurs de recherche
 
 L’idée derrière le fait d’adapter son contenu aux moteurs de recherche est de mâcher le travail des robots d'indexation
-en leur fournissant des contenu qu’ils peuvent réutiliser tels quels dans les « *Featured Snippets*» (ou position zéro).
+en leur fournissant des contenu qu’ils peuvent réutiliser tels quels dans les " *Featured Snippets*" (ou position zéro).
 
 Il existe quatre types de Featured Snippets : le paragraphe de texte, le tableau, la liste ordonnée, la liste
 désordonnée.
@@ -411,7 +411,7 @@ de type liste.
 
 ### Rédiger de bons meta tags
 
-Le « *meta tag title* » et le « *meta tag description* » sont deux balises HTML d’en tête d’une page web. C’est le
+Le "*meta tag title*" et le "*meta tag description*" sont deux balises HTML d’en tête d’une page web. C’est le
 contenu de ces deux balises que nous voyons apparaître dans les résultats de recherches ou lorsque nous partageons une
 page sur les réseaux sociaux.
 
@@ -433,7 +433,7 @@ l’internaute.
 ### Faire des liens internes
 
 Les liens internes sont des liens qui pointent vers d’autres pages du même site. Par exemple, nous retrouvons
-classiquement des liens internes en haut du site, dans le menu, et tout en bas du site, dans le «*footer*». Ils
+classiquement des liens internes en haut du site, dans le menu, et tout en bas du site, dans le "*footer*". Ils
 permettent ainsi aux visiteurs de naviguer sur le site, d’une page à une autre.
 
 Cependant, tous les liens internes n’ont pas la même autorité. Un lien ayant une forte autorité sera vu comme étant plus
@@ -441,8 +441,8 @@ important aux yeux des robots d'indexation, comparé à un lien ayant une faible
 une forte autorité, plus il a de chance de remonter dans les résultats de recherches.
 
 Pour bien comprendre cette notion d’autorité, il faut imaginer que, lorsque le robot d’indexation arrive sur une page,
-il dispose de 100 «*points*» à distribuer à tous les liens présents sur la page. Évidemment, les facteurs d’attribution
-de ces «*points*» ne sont pas rendus publics par les moteurs de recherche. Néanmoins, des études ont pu mettre en
+il dispose de 100 "*points*" à distribuer à tous les liens présents sur la page. Évidemment, les facteurs d’attribution
+de ces "*points*" ne sont pas rendus publics par les moteurs de recherche. Néanmoins, des études ont pu mettre en
 évidence quelques facteurs.
 
 Ainsi, l’un des premiers facteurs d’attribution de points est le placement dans la page. En effet, les liens qui se
@@ -453,21 +453,21 @@ De plus, les liens qui se trouvent en haut de page récoltent plus de points et 
 donc [une importance supérieure](https://moz.com/blog/20-illustrations-on-search-engines-valuation-of-links#2).
 
 Un autre facteur d’attribution de points est le texte d’ancrage d’un lien. Pour qu’il récolte des points, il faut éviter
-les textes d’ancrage du type «*cliquez-ici*» et plutôt
+les textes d’ancrage du type "*cliquez-ici*" et plutôt
 privilégier [des textes décrivant la page vers laquelle nous pointons](https://moz.com/blog/20-illustrations-on-search-engines-valuation-of-links#2).
-Par exemple, un bon texte d’ancrage est «*créer une micro-entreprise de coursier*» pour une page pointant vers une page
+Par exemple, un bon texte d’ancrage est "*créer une micro-entreprise de coursier*" pour une page pointant vers une page
 de création de micro-entreprise.
 
 Finalement, en faisant des liens internes de manière intelligente, nous pouvons non seulement orienter les internautes
 dans leur navigation mais surtout guider où nous le souhaitons les robots dans leur processus d’indexation tout en
-transmettant de l’autorité aux pages liées. De cette manière, avec ce système d’attribution de « *points*», nous pouvons
+transmettant de l’autorité aux pages liées. De cette manière, avec ce système d’attribution de " *points*", nous pouvons
 influer sur les pages que nous voulons faire remonter dans les moteurs de recherche.
 
 ## Synthèse
 
 Tout au long de cette sous-partie décrivant le premier pilier du référencement naturel, à savoir le contenu, nous avons
-d’abord commencé par définir ce qu’était le contenu. En réalité, le contenu rédactionnel d’un site se nomme le «*content
-marketing*» et il vise à créer du contenu qualitatif ayant à la fois pour but d’informer et d’augmenter sa visibilité.
+d’abord commencé par définir ce qu’était le contenu. En réalité, le contenu rédactionnel d’un site se nomme le "*content
+marketing*" et il vise à créer du contenu qualitatif ayant à la fois pour but d’informer et d’augmenter sa visibilité.
 
 Ensuite, nous avons dressé une liste d’outils et de méthodes pour faciliter la recherche et l’analyse de sujets et de
 mots-clés à exploiter. Nous pouvons alors citer Google, Google Search Console ou encore Google Trends.
