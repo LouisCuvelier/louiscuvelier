@@ -10,7 +10,7 @@ const url = "blog";
 export const metadata = getMetadata({ url, title, description });
 
 export default function Blog() {
-  const allPostsData = getSortedPostsData("guide-seo");
+  const allPostsData = getSortedPostsData("guide-seo", "desc");
 
   return (
     <>
