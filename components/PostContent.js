@@ -1,13 +1,13 @@
 "use client";
-
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
-export default memo(function TableOfContent() {
+export default memo(function PostContent(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [headings, setHeadings] = useState([]);
+  const contentRef = useRef();
 
   useEffect(() => {
     const getTocStructure = (headingsNodes) => {
@@ -71,7 +71,7 @@ export default memo(function TableOfContent() {
       return nest(getHeadings([...headingsNodes]));
     };
 
-    const titlesNodes = document.querySelectorAll(
+    const titlesNodes = contentRef.current.querySelectorAll(
       "article h2, article h3, article h4, article h5, article h6"
     );
 
@@ -116,46 +116,49 @@ export default memo(function TableOfContent() {
   }
 
   return (
-    headings.length > 0 && (
-      <nav
-        aria-label="Sommaire"
-        className={`border-hatch mb-14 pr-5 py-5 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out`}
-      >
-        <div
-          className={"flex justify-between items-center ml-5"}
-          id={"sommaire"}
+    <>
+      {headings.length > 0 && (
+        <nav
+          aria-label="Sommaire"
+          className={`border-hatch mb-14 pr-5 py-5 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out`}
         >
-          <div className={"surtitle surtitle-1"}>Sommaire</div>
-          <button
-            aria-expanded={isOpen}
-            className={`btn btn-icon-secondary `}
-            aria-controls={"sommaire-liste"}
-            onClick={() => setIsOpen(!isOpen)}
+          <div
+            className={"flex justify-between items-center ml-5"}
+            id={"sommaire"}
           >
-            <ChevronDownIcon
-              className={`transition ease-in-out duration-300 ${
-                isOpen ? "-rotate-180" : ""
-              }`}
-            />
-          </button>
-        </div>
-        <Transition
-          show={isOpen}
-          id={"sommaire-list"}
-          role="region"
-          aria-labelledby="sommaire"
-          aria-hidden={!isOpen}
-          enter={""}
-          enterFrom={"grid-rows-[0fr]"}
-          enterTo={"grid-rows-[1fr]"}
-          leave={""}
-          leaveFrom={"grid-rows-[1fr]"}
-          leaveTo={"grid-rows-[0fr]"}
-          className={`toc grid transition-[grid-template-rows] ease-in-out duration-300`}
-        >
-          <div className={"overflow-hidden mt-5"}>{renderToc(headings)}</div>
-        </Transition>
-      </nav>
-    )
+            <div className={"surtitle surtitle-1"}>Sommaire</div>
+            <button
+              aria-expanded={isOpen}
+              className={`btn btn-icon-secondary `}
+              aria-controls={"sommaire-liste"}
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <ChevronDownIcon
+                className={`transition ease-in-out duration-300 ${
+                  isOpen ? "-rotate-180" : ""
+                }`}
+              />
+            </button>
+          </div>
+          <Transition
+            show={isOpen}
+            id={"sommaire-list"}
+            role="region"
+            aria-labelledby="sommaire"
+            aria-hidden={!isOpen}
+            enter={""}
+            enterFrom={"grid-rows-[0fr]"}
+            enterTo={"grid-rows-[1fr]"}
+            leave={""}
+            leaveFrom={"grid-rows-[1fr]"}
+            leaveTo={"grid-rows-[0fr]"}
+            className={`toc grid transition-[grid-template-rows] ease-in-out duration-300`}
+          >
+            <div className={"overflow-hidden mt-5"}>{renderToc(headings)}</div>
+          </Transition>
+        </nav>
+      )}
+      <div ref={contentRef}>{props.content}</div>
+    </>
   );
 });

@@ -2,15 +2,14 @@
 title: "État de l'art du référencement naturel (SEO)"
 publicationDate: "2023-09-21"
 updateDate: "2023-09-25"
-description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
-cta: "Besoin d'aide pour le référencement de votre site ?"
----
-
-Tout d'abord, nous allons traiter des robots d'indexation, et du début du Search Engine Optimization. Ensuite, nous
+seoDescription: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+introduction: "Tout d'abord, nous allons traiter des robots d'indexation, et du début du Search Engine Optimization. Ensuite, nous
 verrons la révolution que Google a menée dans le milieu du Search Engine Optimization et que ce dernier est un véritable
 jeu du chat et la souris. Puis, nous étudierons l'influence des sites sociaux sur le référencement naturel tout en
 dressant un état actuel du référencement. Enfin, nous répertorierons les bonnes pratiques du référencement naturel et
-nous aborderons la philosophie qui se cache derrière celui-ci.
+nous aborderons la philosophie qui se cache derrière celui-ci."
+cta: "Besoin d'aide pour le référencement de votre site ?"
+---
 
 ## Robot d'indexation : le cœur du moteur de recherche
 

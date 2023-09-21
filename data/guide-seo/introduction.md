@@ -2,13 +2,12 @@
 title: "Introduction au guide du SEO"
 publicationDate: "2023-09-20"
 updateDate: "2023-09-25"
-description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel (SEO)."
+seoDescription: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel (SEO)."
+introduction: "Depuis que le commerce existe, une entreprise a toujours eu besoin d'être visible pour exister. Que ce soit par le
+bouche-à-oreille, l'affichage publicitaire ou la présence sur une carte, il y a constamment eu des canaux permettant
+d'accroître sa visibilité."
 cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
-
-Depuis que le commerce existe, une entreprise a toujours eu besoin d'être visible pour exister. Que ce soit par le
-bouche-à-oreille, l'affichage publicitaire ou la présence sur une carte, il y a constamment eu des canaux permettant
-d'accroître sa visibilité.
 
 Néanmoins, avec la démocratisation d'internet depuis les années 90, de nouveaux supports de visibilité sont apparus à
 l'instar de Facebook Ads qui permet de diffuser de la publicité auprès de

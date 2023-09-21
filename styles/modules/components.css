@@ -354,12 +354,7 @@
   }
 
   .action {
-    @apply font-title transition rounded-lg inline-flex items-center text-base leading-6 font-semibold;
-
-    &,
-    &::after {
-      @apply ease-in-out duration-300;
-    }
+    @apply transition duration-300 ease-in-out inline-flex items-center;
 
     &:focus {
       @apply outline-none;
@@ -370,54 +365,38 @@
       @apply underline;
     }
 
-    @screen sm {
-      @apply text-lg;
-    }
-  }
-
-  .action-primary,
-  .action-secondary {
-    @apply text-slate-600;
-
     &:hover {
-      @apply text-slate-500;
-    }
-  }
+      & svg.right {
+        @apply translate-x-1;
+      }
 
-  .action-primary {
-    &::after {
-      @apply transition-transform ml-1;
-      content: "→";
+      & svg.left {
+        @apply -translate-x-1;
+      }
     }
 
-    &:hover {
-      &::after {
-        @apply transform translate-x-1;
+    & svg {
+      @apply h-5 w-5 transition-transform;
+
+      &.right {
+        @apply ml-2;
+      }
+
+      &.left {
+        @apply mr-2;
       }
     }
   }
 
-  .action-tertiary {
-    @apply text-slate-700;
-
-    &:hover {
-      @apply text-slate-600;
+  .action-secondary {
+    & svg {
+      @apply h-5 w-5;
     }
-  }
-
-  .action-positive {
-    @apply text-green-600;
 
     &:hover {
-      @apply text-green-500;
-    }
-  }
-
-  .action-negative {
-    @apply text-red-600;
-
-    &:hover {
-      @apply text-red-500;
+      &:not(:has(svg)) {
+        @apply underline;
+      }
     }
   }
 

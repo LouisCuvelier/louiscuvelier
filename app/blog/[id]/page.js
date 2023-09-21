@@ -2,7 +2,7 @@ import { getAllPostIds, getPostData } from "/lib/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
-import TableOfContent from "../../../components/TableOfContent";
+import TableOfContent from "../../../components/PostContent";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
 import { parseISO } from "date-fns";
@@ -40,6 +40,9 @@ export default async function Post({ params }) {
         }
       >
         <header className={"border-hatch col-span-12 border-b-[10px] pb-16"}>
+          <div className={"surtitle surtitle-1 mb-2"}>
+            <Link href={"/blog"}>Blog</Link>
+          </div>
           <h1 className={"title title-2 mb-6"}>{frontmatter.title}</h1>
           <div
             className={

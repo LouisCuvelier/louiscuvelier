@@ -2,7 +2,7 @@ import { getAllPostIds, getPostData, getPreviousAndNextPost } from "/lib/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
-import TableOfContent from "../../../components/TableOfContent";
+import PostContent from "../../../components/PostContent";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
 import { parseISO } from "date-fns";
@@ -18,7 +18,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const { frontmatter } = data;
 
   const title = `${frontmatter.title}`;
-  const description = `${frontmatter.description}`;
+  const description = `${frontmatter.seoDescription}`;
   const url = `guide-seo/${params.id}`;
 
   const article = {
@@ -44,15 +44,17 @@ export default async function Post({ params }) {
   return (
     <article
       className={
-        "[perspective:20000px] max-w-screen-lg mx-auto grid grid-cols-12 gap-y-32 gap-x-6"
+        "[perspective:20000px] max-w-screen-lg mx-auto grid grid-cols-12 gap-y-10 gap-x-6"
       }
     >
       <header className={"border-hatch col-span-12 border-b-[10px] pb-16"}>
-        <div className={"surtitle surtitle-1 mb-2"}>Guide du SEO</div>
+        <div className={"surtitle surtitle-1 mb-2"}>
+          <Link href={"/guide-seo"}>Guide du SEO – Partie 2/6</Link>
+        </div>
         <h1 className={"title title-2 mb-6"}>{frontmatter.title}</h1>
         <div
           className={
-            "caption caption-1 text-slate-500 flex flex-wrap items-center"
+            "caption caption-1 text-slate-500 flex flex-wrap items-center mb-5"
           }
         >
           <ClockIcon className={"w-4 h-4 mr-1"} />
@@ -68,11 +70,39 @@ export default async function Post({ params }) {
           <span className={"px-1"}>–</span>
           <span>{Math.round(readingTime.minutes)} min de lecture</span>
         </div>
+        <div className={"grid gap-10"}>
+          {Object.keys(prevPost).length > 0 && (
+            <article className={""}>
+              <Link
+                href={`${prevPost.id}`}
+                className={"action action-secondary title-5 title"}
+              >
+                <ArrowLeftIcon className={"left"} />
+                <span>Partie précédente</span>
+              </Link>
+            </article>
+          )}
+          {Object.keys(nextPost).length > 0 && (
+            <article
+              className={"order-first md:order-none md:col-start-2 text-right"}
+            >
+              <Link
+                href={`${nextPost.id}`}
+                className={"action action-secondary title-5 title"}
+              >
+                <span>Partie suivante</span>
+                <ArrowRightIcon className={"right"} />
+              </Link>
+            </article>
+          )}
+        </div>
       </header>
       <div className={"col-span-12 lg:col-span-9"}>
-        <p className={"subtitle subtitle-1 mb-12"}>{frontmatter.description}</p>
-        <TableOfContent />
-        {content}
+        <p className={"subtitle subtitle-1 mb-12"}>
+          {frontmatter.introduction}
+        </p>
+
+        <PostContent content={content} />
 
         <div
           className={
@@ -89,7 +119,7 @@ export default async function Post({ params }) {
               >
                 <div className={"mb-5"}>
                   <div className={"surtitle surtitle-2 mb-2"}>
-                    Guide précédent
+                    Partie précédente
                   </div>
                   <h6 className={"title-4 title mb-5"}>{prevPost.title}</h6>
                   <p className={"body body-1"}>{prevPost.description}</p>
@@ -114,7 +144,7 @@ export default async function Post({ params }) {
               >
                 <div className={"mb-5"}>
                   <div className={"surtitle surtitle-2 mb-2"}>
-                    Guide suivant
+                    Partie suivante
                   </div>
                   <h6 className={"title-4 title mb-5"}>{nextPost.title}</h6>
                   <p className={"body body-1"}>{nextPost.description}</p>
