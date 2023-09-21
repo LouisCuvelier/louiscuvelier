@@ -3,6 +3,7 @@ title: "État de l'art du référencement naturel (SEO)"
 publicationDate: "2023-09-21"
 updateDate: "2023-09-25"
 description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 
 Tout d'abord, nous allons traiter des robots d'indexation, et du début du Search Engine Optimization. Ensuite, nous

@@ -3,6 +3,7 @@ title: "Conclusion du guide du référencement naturel"
 publicationDate: "2023-09-25"
 updateDate: "2023-09-25"
 description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 
 Tout au long de ce guide, nous avons traité du sujet de la visibilité en ligne. Plus particulièrement, nous avons répondu à la problématique qui

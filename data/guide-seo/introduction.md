@@ -2,7 +2,7 @@
 title: "Introduction au guide du SEO"
 publicationDate: "2023-09-20"
 updateDate: "2023-09-25"
-description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel (SEO)."
 cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 
@@ -19,7 +19,8 @@ les [dix entreprises ayant la plus grosse valorisation boursière](https://www.v
 sont presque exclusivement des entreprises technologiques, basées sur internet ou ses technologies liées.
 
 Désormais, presque tout passe par internet. L'information est partout, tout le temps,
-et [notre attention vaut de l'or](https://fr.wikipedia.org/wiki/%C3%89conomie_de_l%27attention). La **concurrence devient
+et [notre attention vaut de l'or](https://fr.wikipedia.org/wiki/%C3%89conomie_de_l%27attention). La **concurrence
+devient
 de plus en plus féroce et les entreprises doivent donc s'adapter en travaillant leur visibilité en ligne** afin de
 prospérer.
 
@@ -28,7 +29,8 @@ la [moitié de la population mondiale avait un accès à internet](https://en.wi
 que cela va augmenter d'année en année, il faut être aveugle pour ne pas voir qu'internet est une immense opportunité
 pour quiconque voulant créer une entreprise.
 
-Partant de ce postulat et à la suite d'un cours sur le Search Engine Optimization (SEO), en première année d'études d'informatique, j'ai
+Partant de ce postulat et à la suite d'un cours sur le Search Engine Optimization (SEO), en première année d'études d'
+informatique, j'ai
 souhaité m'essayer dans le domaine de la visibilité sur internet. Ayant toujours eu l'envie profonde d'entreprendre,
 j'ai voulu créer un réseau de site internet où chacun se place premier dans sa catégorie, sur Google.
 
@@ -42,6 +44,10 @@ Analytics. Deuxièmement, nous nous appuierons sur des études et des expérimen
 personnalités et entreprises phares dans le domaine du référencement naturel. Troisièmement, nous utiliserons
 l'expérience que nous avons acquise au cours de ces quatre années dans le domaine du référencement naturel.
 
-Finalement, la réponse à la problématique se fera d'abord en dressant un état de l'art du référencement naturel pour
+Finalement, la réponse à la problématique se fera d'abord en dressant
+un [état de l'art du référencement naturel](/guide-seo/etat-art-referencement-naturel) pour
 déterminer où nous en sommes dans cette discipline. Enfin, nous développerons une réponse concrète pour répondre à la
-problématique.
+problématique en traitant des 3 pilliers du référencement naturel :
+le [contenu](/guide-seo/contenu-premier-pilier-referencement-naturel), la
+[technique](/guide-seo/technique-deuxieme-pilier-referencement-naturel) et
+la [popularité](/guide-seo/popularite-troisieme-pilier-referencement-naturel).

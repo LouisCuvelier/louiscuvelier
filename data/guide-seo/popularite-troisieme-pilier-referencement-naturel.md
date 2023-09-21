@@ -3,6 +3,7 @@ title: "La popularité : le troisième pilier du référencement naturel"
 publicationDate: "2023-09-24"
 updateDate: "2023-09-25"
 description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 
 Le dernier pilier du référencement naturel est celui de la popularité. Il permet de faire sortir du lot tout le travail réalisé avec les deux premiers

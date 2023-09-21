@@ -3,6 +3,7 @@ title: "Le contenu : le premier pilier du référencement naturel"
 publicationDate: "2023-09-22"
 updateDate: "2023-09-25"
 description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 
 Le premier pilier du référencement naturel est celui du contenu. C'est celui qui est le plus important pour acquérir une

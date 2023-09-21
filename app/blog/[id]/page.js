@@ -27,7 +27,10 @@ export async function generateMetadata({ params, searchParams }, parent) {
 }
 
 export default async function Post({ params }) {
-  const { frontmatter, content } = await getPostData(params.id, "blog");
+  const { frontmatter, content, readingTime } = await getPostData(
+    params.id,
+    "blog"
+  );
 
   return (
     <>
@@ -53,6 +56,8 @@ export default async function Post({ params }) {
               Mis à jour le{" "}
               <Date isPubDate={false} dateString={frontmatter.updateDate} />
             </span>
+            <span className={"px-1"}>–</span>
+            <span>{Math.round(readingTime.minutes)} min de lecture</span>
           </div>
         </header>
         <div className={"col-span-12 lg:col-span-9"}>

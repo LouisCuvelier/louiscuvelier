@@ -3,6 +3,7 @@ title: "La technique : le deuxième pilier du référencement naturel"
 publicationDate: "2023-09-23"
 updateDate: "2023-09-25"
 description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 
 Le second pilier du référencement naturel est celui de la technique. Il permet de donner toute sa puissance au contenu

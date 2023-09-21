@@ -2,9 +2,9 @@ import { getSortedPostsData } from "../../lib/posts";
 import getMetadata from "../../lib/getMetadata";
 import GuidePostCard from "../../components/GuidePostCard";
 
-const title = "Blog";
+const title = "Guide du SEO";
 const description =
-  "Explorez mon blog pour découvrir des articles sur le développement front-end, l'automatisation, le SEO et bien plus encore. Découvrez des astuces, des analyses approfondies et des conseils pratiques pour optimiser vos projets digitaux.";
+  "Grâce à ce guide sur le SEO, apprenez les bases du SEO pour commencer à obtenir de la performance sur le référencement de votre site.";
 const url = "blog";
 
 export const metadata = getMetadata({ url, title, description });
