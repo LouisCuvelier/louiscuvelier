@@ -146,7 +146,7 @@ export default function Navbar() {
                                 <Link
                                   href={url}
                                   target={"_blank"}
-                                  rel="nofollow noopener noreferrer"
+                                  rel="nofollow noopener noreferrer me"
                                   className={"btn btn-icon-primary"}
                                 >
                                   {icon}
@@ -161,6 +161,7 @@ export default function Navbar() {
                                 <Link
                                   href={url}
                                   className={"link link-primary mr-1"}
+                                  rel={"me"}
                                 >
                                   {name}
                                 </Link>
