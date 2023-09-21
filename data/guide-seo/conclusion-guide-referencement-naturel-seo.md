@@ -1,8 +1,9 @@
 ---
-title: "Conclusion du guide du référencement naturel"
+title: "C'est quoi le SEO finalement ?"
 publicationDate: "2023-09-25"
 updateDate: "2023-09-25"
-description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+seoDescription: "Après 6 chapitres d'apprentissage sur ce qu'est le SEO, finalement qu'est-ce qu'on retient ?"
+introduction: "Vous connaissez désormais tout. C'est maintenant à vous de jouer pour faire en sorte que votre site soit mieux classé sur les moteurs de recherches. Nous récapitulons votre apprentissage dans ce dernier chapitre."
 cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 

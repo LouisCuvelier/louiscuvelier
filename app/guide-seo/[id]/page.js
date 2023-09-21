@@ -1,4 +1,9 @@
-import { getAllPostIds, getPostData, getPreviousAndNextPost } from "/lib/posts";
+import {
+  getAllPostIds,
+  getPostData,
+  getPreviousAndNextPost,
+  getSortedPostsData,
+} from "/lib/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
@@ -40,6 +45,10 @@ export default async function Post({ params }) {
     "guide-seo",
     "desc"
   );
+  const sortedPostsData = await getSortedPostsData("guide-seo", "desc");
+  const actualIndex = sortedPostsData.findIndex(
+    (post) => post.id === params.id
+  );
 
   return (
     <article
@@ -49,7 +58,9 @@ export default async function Post({ params }) {
     >
       <header className={"border-hatch col-span-12 border-b-[10px] pb-16"}>
         <div className={"surtitle surtitle-1 mb-2"}>
-          <Link href={"/guide-seo"}>Guide du SEO – Partie 2/6</Link>
+          <Link href={"/guide-seo"}>
+            Guide du SEO – Chapitre {actualIndex + 1}/{sortedPostsData.length}
+          </Link>
         </div>
         <h1 className={"title title-2 mb-6"}>{frontmatter.title}</h1>
         <div
@@ -70,7 +81,9 @@ export default async function Post({ params }) {
           <span className={"px-1"}>–</span>
           <span>{Math.round(readingTime.minutes)} min de lecture</span>
         </div>
-        <div className={"grid gap-10"}>
+      </header>
+      <div className={"col-span-12 lg:col-span-9"}>
+        <div className={"grid grid-cols-2 md:gap-10 mb-10"}>
           {Object.keys(prevPost).length > 0 && (
             <article className={""}>
               <Link
@@ -78,26 +91,28 @@ export default async function Post({ params }) {
                 className={"action action-secondary title-5 title"}
               >
                 <ArrowLeftIcon className={"left"} />
-                <span>Partie précédente</span>
+                <span>
+                  <span className={"sr-only sm:not-sr-only"}>Chapitre</span>{" "}
+                  précédent
+                </span>
               </Link>
             </article>
           )}
           {Object.keys(nextPost).length > 0 && (
-            <article
-              className={"order-first md:order-none md:col-start-2 text-right"}
-            >
+            <article className={"md:col-start-2 text-right"}>
               <Link
                 href={`${nextPost.id}`}
                 className={"action action-secondary title-5 title"}
               >
-                <span>Partie suivante</span>
+                <span>
+                  <span className={"sr-only sm:not-sr-only"}>Chapitre</span>{" "}
+                  suivant
+                </span>
                 <ArrowRightIcon className={"right"} />
               </Link>
             </article>
           )}
         </div>
-      </header>
-      <div className={"col-span-12 lg:col-span-9"}>
         <p className={"subtitle subtitle-1 mb-12"}>
           {frontmatter.introduction}
         </p>
@@ -119,7 +134,7 @@ export default async function Post({ params }) {
               >
                 <div className={"mb-5"}>
                   <div className={"surtitle surtitle-2 mb-2"}>
-                    Partie précédente
+                    Chapitre précédente
                   </div>
                   <h6 className={"title-4 title mb-5"}>{prevPost.title}</h6>
                   <p className={"body body-1"}>{prevPost.description}</p>
@@ -144,7 +159,7 @@ export default async function Post({ params }) {
               >
                 <div className={"mb-5"}>
                   <div className={"surtitle surtitle-2 mb-2"}>
-                    Partie suivante
+                    Chapitre suivant
                   </div>
                   <h6 className={"title-4 title mb-5"}>{nextPost.title}</h6>
                   <p className={"body body-1"}>{nextPost.description}</p>

@@ -2,13 +2,10 @@
 title: "Le contenu : le premier pilier du référencement naturel"
 publicationDate: "2023-09-22"
 updateDate: "2023-09-25"
-description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+seoDescription: "Le contenu est la clé n°1 du succès en SEO car sans lui il n'y a rien. Le contenu est le plus important pour espérer être dans les premiers résultats Google."
+introduction: "Le contenu est la clé n°1 du succès en SEO car sans lui il n'y a rien. C'est le contenu qui est le plus important pour espérer être dans les premiers résultats de recherche. Dans ce chapitre nous décryptons les méthodes et les techniques qui permettent de réaliser du bon contenu optimisé pour le SEO."
 cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
-
-Le premier pilier du référencement naturel est celui du contenu. C'est celui qui est le plus important pour acquérir une
-bonne visibilité en ligne, car sans lui, il n'y a rien. Nous allons alors étudier les méthodes et les techniques qui
-permettent de réaliser du bon contenu pour le référencement naturel.
 
 ## Définition du contenu
 

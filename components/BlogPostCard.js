@@ -12,6 +12,7 @@ export default async function BlogPostCard({
   publicationDate,
   description,
   cover,
+  readingTime,
 }) {
   const base64 = await getBase64(cover);
 
@@ -45,6 +46,8 @@ export default async function BlogPostCard({
             >
               <ClockIcon className={"w-4 h-4 mr-1"} />
               <Date isPubDate={true} dateString={publicationDate} />
+              <span className={"px-1"}>–</span>
+              <span>{Math.round(readingTime.minutes)} min de lecture</span>
             </div>
             <p
               className={`subtitle my-8 ${

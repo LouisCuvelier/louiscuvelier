@@ -2,12 +2,10 @@
 title: "La popularité : le troisième pilier du référencement naturel"
 publicationDate: "2023-09-24"
 updateDate: "2023-09-25"
-description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+description: "La popularité permet de faire sortir du lot tout le travail réalisé avec les deux premiers piliers. Quelles sont les facteurs influant sur la popularité en SEO ?"
+introduction: "La popularité permet de faire sortir du lot tout le travail réalisé avec les deux premiers piliers. Quelles sont les facteurs influant sur la popularité dans le monde du référencement naturel ? C'est ce que nous découvrons dans ce chapitre."
 cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
-
-Le dernier pilier du référencement naturel est celui de la popularité. Il permet de faire sortir du lot tout le travail réalisé avec les deux premiers
-piliers. Nous allons alors traiter des facteurs influant sur la popularité dans le monde du référencement naturel.
 
 ## Définition de la popularité
 

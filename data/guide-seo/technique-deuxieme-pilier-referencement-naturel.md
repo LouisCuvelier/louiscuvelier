@@ -2,13 +2,10 @@
 title: "La technique : le deuxième pilier du référencement naturel"
 publicationDate: "2023-09-23"
 updateDate: "2023-09-25"
-description: "Découvrez ce que vous allez apprendre au travers de ce guide sur le référencement naturel."
+seoDescription: "La technique permet de donner toute sa puissance au contenu afin de maximiser les chances de bien se classer dans les résultats de recherche."
+introduction: "La technique permet de donner toute sa puissance au contenu afin de maximiser les chances de bien se classer dans les résultats de recherche. Dans ce chapitre, nous étudions les implémentations techniques à mettre en place afin d'avoir un bon référencement naturel."
 cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
-
-Le second pilier du référencement naturel est celui de la technique. Il permet de donner toute sa puissance au contenu
-afin de maximiser les chances de bien se classer dans les résultats de recherches. Nous allons alors traiter des
-implémentations techniques à mettre en place afin d'avoir un bon référencement naturel.
 
 ## Définition du SEO technique ou "technical SEO"
 
