@@ -47,8 +47,8 @@ Pour répondre au mieux à cette problématique, nous allons utiliser une métho
 3. Troisièmement, nous utiliserons
    l'expérience que nous avons acquise au cours de ces quatre années dans le domaine du référencement naturel.
 
-Finalement, la réponse à la problématique se fera d'abord en dressant
-un [état de l'art du référencement naturel](/guide-seo/etat-art-referencement-naturel) pour
+Finalement, la réponse à la problématique se fera d'abord en faisant un petit [point historique](/guide-seo/histoire-seo) puis dressant
+un [état de l'art du référencement naturel](/guide-seo/seo-aujourdhui) pour
 déterminer où nous en sommes dans cette discipline. Enfin, nous développerons une réponse concrète pour répondre à la
 problématique en traitant des 3 pilliers du référencement naturel :
 le [contenu](/guide-seo/contenu-premier-pilier-referencement-naturel), la
