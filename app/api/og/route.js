@@ -1,7 +1,7 @@
-import { ImageResponse } from "next/server";
-import { baseUrl } from "../../../lib/baseUrl";
-import { format, parseISO } from "date-fns";
-import { fr } from "date-fns/locale";
+import {ImageResponse} from "next/server";
+import {baseUrl} from "../../../lib/baseUrl";
+import {format, parseISO} from "date-fns";
+import {fr} from "date-fns/locale";
 
 // Route segment config
 export const runtime = "edge";
@@ -61,7 +61,7 @@ export async function GET(request) {
           <div tw={"flex flex-col justify-start"}>
             {surtitle && (
               <h2
-                tw={"text-lg mt-0 mb-1 uppercase"}
+                tw={"text-xl mt-0 mb-1 uppercase"}
                 style={{ letterSpacing: "0.20rem" }}
               >
                 {surtitle}
@@ -80,11 +80,13 @@ export async function GET(request) {
             // }}
           />
           <div tw={"flex items-center w-full my-0"}>
+            {/* eslint-disable */}
             <img
               tw={"w-14"}
               src={`${baseUrl}/images/profile.svg`}
               alt={"Logo"}
             />
+            {/* eslint-enable */}
             <div tw={"flex flex-col ml-10 my-0"}>
               <div tw={"text-4xl my-0"}>Louis Cuvelier</div>
               {(date || readingTime) && (
