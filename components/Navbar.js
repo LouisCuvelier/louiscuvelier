@@ -47,7 +47,7 @@ export default function Navbar() {
       }`}
     >
       <hr
-        className={`border-hatch border-t-0 border-b-[12px] backdrop-blur-2xl absolute -bottom-3 -mx-5 w-full duration-300 transition ease-in-out ${
+        className={`border-hatch border-t-0 border-b-[10px] backdrop-blur-lg absolute -bottom-2 -mx-5 w-full duration-300 transition ease-in-out ${
           isScrolling ? "opacity-100" : "opacity-0"
         }`}
       />
@@ -72,7 +72,16 @@ export default function Navbar() {
             </span>
           </Link>
         ) : (
-          <span className={"h-16"}></span>
+          <Link
+            href={"/"}
+            aria-label={"Accueil"}
+            className={`flex items-center transition duration-300 ease-in-out ${
+              isScrolling ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Logo className={`h-16`} />
+            <span className={`title title-4 ml-5`}>Louis Cuvelier</span>
+          </Link>
         )}
 
         <Popover>
@@ -121,7 +130,7 @@ export default function Navbar() {
                     >
                       <div
                         className={
-                          "border-hatch pb-14 flex items-center justify-between border-b-[12px]"
+                          "border-hatch pb-14 flex items-center justify-between border-b-[10px]"
                         }
                       >
                         <div>

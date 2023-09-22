@@ -1,5 +1,5 @@
 "use client";
-import { createElement, useId } from "react";
+import {createElement, useId} from "react";
 
 export default function CardEffect(props) {
   const { as = "div", children, ...rest } = props;
@@ -52,7 +52,7 @@ export default function CardEffect(props) {
     {
       ...rest,
       id: id,
-      className: `border-hatch border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out ${rest.className}`,
+      className: `border-hatch border-[10px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out ${rest.className}`,
       onMouseEnter: (e) => handleMouseEnter(e),
       onMouseLeave: (e) => handleMouseLeave(e),
     },

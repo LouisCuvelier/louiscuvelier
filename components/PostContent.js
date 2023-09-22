@@ -120,7 +120,7 @@ export default memo(function PostContent(props) {
       {headings.length > 0 && (
         <nav
           aria-label="Sommaire"
-          className={`border-hatch mb-14 pr-5 py-5 border-[12px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out`}
+          className={`border-hatch mb-14 pr-5 py-5 border-[10px] rounded hover:shadow-lg transition hover:duration-100 duration-300 ease-in-out`}
         >
           <div
             className={"flex justify-between items-center ml-5"}
