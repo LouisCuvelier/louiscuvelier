@@ -5,7 +5,7 @@ import GuidePostCard from "../../components/GuidePostCard";
 const title = "Guide du SEO";
 const description =
   "Apprenez le SEO de A à Z en 7 chapitres. Ce guide est la compilation de plusieurs années d'expériences pour passer un site de 0 à 160 000 pages vues/mois.";
-const url = "blog";
+const url = "guide-seo";
 
 export const metadata = getMetadata({ url, title, description });
 
