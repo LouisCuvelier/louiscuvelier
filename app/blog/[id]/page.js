@@ -1,17 +1,17 @@
-import { getAllPostIds, getPostData } from "/lib/posts";
+import {getAllPostIds, getPostData} from "/lib/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
 import TableOfContent from "../../../components/PostContent";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
-import { parseISO } from "date-fns";
+import {parseISO} from "date-fns";
 import getMetadata from "../../../lib/getMetadata";
-import { ClockIcon } from "@heroicons/react/24/outline";
+import {ClockIcon} from "@heroicons/react/24/outline";
 
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({ params }) {
   const data = await getPostData(params.id, "blog");
-  const { frontmatter } = data;
+  const { frontmatter, readingTime } = data;
 
   const title = `${frontmatter.title}`;
   const description = `${frontmatter.description}`;
@@ -23,7 +23,15 @@ export async function generateMetadata({ params, searchParams }, parent) {
     modifiedTime: parseISO(frontmatter.updateDate),
   };
 
-  return getMetadata({ url, title, description, article });
+  return getMetadata({
+    url,
+    title,
+    description,
+    article,
+    ogImageSurtitle: "Blog",
+    ogImageDate: frontmatter.updateDate,
+    ogImageReadingTime: Math.round(readingTime.minutes),
+  });
 }
 
 export default async function Post({ params }) {

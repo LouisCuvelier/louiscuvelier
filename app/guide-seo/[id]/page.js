@@ -21,7 +21,11 @@ import CardEffect from "../../../components/CardEffect";
 
 export async function generateMetadata({ params }) {
   const data = await getPostData(params.id, "guide-seo");
-  const { frontmatter } = data;
+  const sortedPostsData = await getSortedPostsData("guide-seo", "desc");
+  const actualIndex = sortedPostsData.findIndex(
+    (post) => post.id === params.id
+  );
+  const { frontmatter, readingTime } = data;
 
   const title = `${frontmatter.title}`;
   const description = `${frontmatter.seoDescription}`;
@@ -33,7 +37,17 @@ export async function generateMetadata({ params }) {
     modifiedTime: parseISO(frontmatter.updateDate),
   };
 
-  return getMetadata({ url, title, description, article });
+  return getMetadata({
+    url,
+    title,
+    description,
+    article,
+    ogImageSurtitle: `Guide du SEO – Chapitre ${actualIndex + 1}/${
+      sortedPostsData.length
+    }`,
+    ogImageDate: frontmatter.updateDate,
+    ogImageReadingTime: Math.round(readingTime.minutes),
+  });
 }
 
 export default async function Post({ params }) {

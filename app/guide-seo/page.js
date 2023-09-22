@@ -2,12 +2,18 @@ import { getSortedPostsData } from "../../lib/posts";
 import getMetadata from "../../lib/getMetadata";
 import GuidePostCard from "../../components/GuidePostCard";
 
-const title = "Guide du SEO";
+const title = `Guide complet du SEO (édition ${new Date().getFullYear()})`;
 const description =
   "Apprenez le SEO de A à Z en 7 chapitres. Ce guide est la compilation de plusieurs années d'expériences pour passer un site de 0 à 160 000 pages vues/mois.";
 const url = "guide-seo";
 
-export const metadata = getMetadata({ url, title, description });
+export const metadata = getMetadata({
+  url,
+  title,
+  description,
+  ogImageTitle: `Acquérir de la visiblité en ligne grâce au SEO : Le guide complet (édition ${new Date().getFullYear()})`,
+  ogImageSurtitle: "Guide du SEO",
+});
 
 export default function Blog() {
   const allPostsData = getSortedPostsData("guide-seo", "desc");
