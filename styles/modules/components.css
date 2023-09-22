@@ -388,11 +388,17 @@
     }
   }
 
-  .action-secondary {
-    & svg {
-      @apply h-5 w-5;
-    }
+  .action-primary {
+    @apply text-teal-700;
 
+    &:hover {
+      &:not(:has(svg)) {
+        @apply underline;
+      }
+    }
+  }
+
+  .action-secondary {
     &:hover {
       &:not(:has(svg)) {
         @apply underline;

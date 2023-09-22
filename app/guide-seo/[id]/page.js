@@ -177,7 +177,7 @@ export default async function Post({ params }) {
         </div>
       </div>
       <aside className={"col-span-12 lg:col-span-3 relative"}>
-        <div className={"sticky top-6"}>
+        <div className={"sticky top-[calc(104px+12px+20px)]"}>
           <Sidebar>
             <div className={"body body-1 p-5"}>
               {frontmatter?.cta

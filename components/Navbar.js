@@ -19,6 +19,7 @@ const paths = [
   {
     url: "https://calendly.com/louiscuvelier/intro",
     title: "Commencer votre projet",
+    rel: "noopener noreferrer nofollow",
     isPrimary: true,
   },
 ];
@@ -56,8 +57,19 @@ export default function Navbar() {
         }
       >
         {pathname !== "/" ? (
-          <Link href={"/"} aria-label={"Accueil"}>
+          <Link
+            href={"/"}
+            aria-label={"Accueil"}
+            className={"flex items-center"}
+          >
             <Logo className={"h-16"} />
+            <span
+              className={`title title-4 ml-5 transition duration-300 ease-in-out ${
+                isScrolling ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              Louis Cuvelier
+            </span>
           </Link>
         ) : (
           <span className={"h-16"}></span>
@@ -117,8 +129,12 @@ export default function Navbar() {
                             as={Link}
                             href={"/"}
                             aria-label={"Accueil"}
+                            className={"flex items-center"}
                           >
                             <Logo className={"h-16"} />
+                            <span className={`title title-4 ml-5 `}>
+                              Louis Cuvelier
+                            </span>
                           </Popover.Button>
                         </div>
                         <Popover.Button
@@ -137,8 +153,11 @@ export default function Navbar() {
                                 <Popover.Button
                                   as={Link}
                                   href={path.url}
-                                  className={`title title-3 hover:underline ${
-                                    path.isPrimary ? "text-teal-700" : ""
+                                  {...(path?.rel && { rel: path.rel })}
+                                  className={`title title-3 action ${
+                                    path.isPrimary
+                                      ? "action-primary"
+                                      : "action-secondary"
                                   }`}
                                 >
                                   {path.title}
