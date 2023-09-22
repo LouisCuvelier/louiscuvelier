@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/server";
 import { baseUrl } from "../../../lib/baseUrl";
+import Image from "next/image";
 
 // Route segment config
 export const runtime = "edge";
@@ -39,7 +40,7 @@ export async function GET(request) {
       >
         <div tw={"flex h-full w-full justify-between"}>
           <div tw={"flex items-center w-4/12 pr-8 mr-8"}>
-            <img
+            <Image
               tw={"w-full"}
               src={`${baseUrl}/images/profile.svg`}
               alt={"Logo"}
@@ -67,8 +68,8 @@ export async function GET(request) {
         },
       ],
       headers: {
-        "X-Robots-Tag": "noindex"
-      }
+        "X-Robots-Tag": "noindex",
+      },
     }
   );
 }

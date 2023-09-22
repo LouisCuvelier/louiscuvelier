@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
 import { contact } from "/data/contact";
 import CopyClipboard from "./CopyClipboard";
-import { useEffect } from "react";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const paths = [
@@ -44,9 +43,9 @@ export default function Navbar() {
 
         <Popover>
           {({ open }) => {
-            useEffect(() => {
+            if (typeof document !== "undefined") {
               document.body.classList.toggle("overflow-hidden", open);
-            }, [open]);
+            }
 
             return (
               <>

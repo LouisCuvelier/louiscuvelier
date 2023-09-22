@@ -2,13 +2,14 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
-export default function AnimatedImage({ base64, ...rest }) {
+export default function AnimatedImage({ base64, alt, ...rest }) {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
 
   return (
     <Image
+      alt={alt}
       ref={ref}
       {...rest}
       placeholder={"blur"}
