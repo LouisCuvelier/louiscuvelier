@@ -6,6 +6,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { contact } from "/data/contact";
 import CopyClipboard from "./CopyClipboard";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useEffect, useState } from "react";
 
 const paths = [
   { url: "/", title: "Accueil", isPrimary: false },
@@ -24,21 +25,42 @@ const paths = [
 const { socials, emails, platforms } = contact;
 
 export default function Navbar() {
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    setIsScrolling(window.scrollY > 0);
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    });
+  }, []);
   const pathname = usePathname();
 
   return (
-    <header className={"w-full max-w-screen-xl mx-auto"}>
+    <header
+      className={`sticky z-50 top-0 px-5 transition duration-300 ease-in-out ${
+        isScrolling ? "bg-slate-50" : ""
+      }`}
+    >
+      <hr
+        className={`border-hatch border-t-0 border-b-[12px] backdrop-blur-2xl absolute -bottom-3 -mx-5 w-full duration-300 transition ease-in-out ${
+          isScrolling ? "opacity-100" : "opacity-0"
+        }`}
+      />
       <nav
         className={
-          "max-w-screen-lg mx-auto flex flex-row justify-between pt-5 px-5 items-center"
+          "max-w-screen-lg mx-auto flex flex-row justify-between items-center py-5"
         }
       >
         {pathname !== "/" ? (
           <Link href={"/"} aria-label={"Accueil"}>
-            <Logo className={"h-20"} />
+            <Logo className={"h-16"} />
           </Link>
         ) : (
-          <span className={"h-20"}></span>
+          <span className={"h-16"}></span>
         )}
 
         <Popover>
@@ -74,7 +96,7 @@ export default function Navbar() {
                     leave="duration-[200ms] ease-in"
                     leaveFrom="translate-x-0 rounded-none"
                     leaveTo="translate-x-full rounded-l-[200px]"
-                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 h-full overflow-y-scroll"
+                    className="origin-right bg-slate-50 fixed top-0 inset-x-0 z-50 h-full p-5 overflow-y-scroll"
                   >
                     <Transition.Child
                       enter="delay-100 duration-300 ease-out"
@@ -83,11 +105,11 @@ export default function Navbar() {
                       leave="duration-300 ease-in"
                       leaveFrom="opacity-100 translate-x-0"
                       leaveTo="opacity-0 translate-x-full"
-                      className="origin-right flex flex-col w-full max-w-screen-lg mx-auto py-5"
+                      className="origin-right flex flex-col w-full max-w-screen-lg mx-auto"
                     >
                       <div
                         className={
-                          "border-hatch pb-14 flex items-center justify-between border-b-[12px] mx-5"
+                          "border-hatch pb-14 flex items-center justify-between border-b-[12px]"
                         }
                       >
                         <div>
@@ -96,7 +118,7 @@ export default function Navbar() {
                             href={"/"}
                             aria-label={"Accueil"}
                           >
-                            <Logo className={"h-20"} />
+                            <Logo className={"h-16"} />
                           </Popover.Button>
                         </div>
                         <Popover.Button
@@ -107,7 +129,7 @@ export default function Navbar() {
                         </Popover.Button>
                       </div>
 
-                      <div className={"px-5"}>
+                      <div className={""}>
                         <nav className={"mt-16 sm:mt-32"}>
                           <ul className="space-y-8 text-slate-800">
                             {paths.map((path) => (

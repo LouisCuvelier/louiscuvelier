@@ -17,8 +17,9 @@ import {
   ArrowRightIcon,
   ClockIcon,
 } from "@heroicons/react/24/outline";
+import CardEffect from "../../../components/CardEffect";
 
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({ params }) {
   const data = await getPostData(params.id, "guide-seo");
   const { frontmatter } = data;
 
@@ -125,12 +126,10 @@ export default async function Post({ params }) {
           }
         >
           {Object.keys(prevPost).length > 0 && (
-            <article className={""}>
+            <CardEffect as={"article"} className={""}>
               <Link
                 href={`${prevPost.id}`}
-                className={
-                  "group border-hatch flex-col flex border-[12px] p-5 justify-between h-full"
-                }
+                className={"group flex-col flex p-5 justify-between h-full"}
               >
                 <div className={"mb-5"}>
                   <div className={"surtitle surtitle-2 mb-2"}>
@@ -147,15 +146,16 @@ export default async function Post({ params }) {
                   />
                 </div>
               </Link>
-            </article>
+            </CardEffect>
           )}
           {Object.keys(nextPost).length > 0 && (
-            <article className={"order-first md:order-none md:col-start-2"}>
+            <CardEffect
+              as={"article"}
+              className={"order-first md:order-none md:col-start-2"}
+            >
               <Link
                 href={`${nextPost.id}`}
-                className={
-                  "group border-hatch flex-col flex border-[12px] p-5 justify-between h-full"
-                }
+                className={"group flex-col flex p-5 justify-between h-full"}
               >
                 <div className={"mb-5"}>
                   <div className={"surtitle surtitle-2 mb-2"}>
@@ -172,7 +172,7 @@ export default async function Post({ params }) {
                   />
                 </div>
               </Link>
-            </article>
+            </CardEffect>
           )}
         </div>
       </div>
