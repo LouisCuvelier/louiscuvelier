@@ -9,42 +9,52 @@ cta: "Besoin d'aide pour le référencement de votre site ?"
 
 ## Suprématie de Google
 
-En 2019, Google a représenté, à lui seul, 92,63 % des parts de marché
-des [moteurs de recherche](https://gs.statcounter.com/search-engine-market-share#yearly-2019-2019-bar). À travers le
+En 2022, Google a représenté, à lui seul, 91,85 % des parts de marché
+des [moteurs de recherche](https://gs.statcounter.com/search-engine-market-share/all/worldwide/2022). À travers le
 monde, l'entreprise
-comptabilise [75 866 recherches effectuées par seconde](https://www.internetlivestats.com/one-second/#google-band). Cela
+comptabilise [99 000 recherches effectuées par seconde](https://www.internetlivestats.com/one-second/#google-band). Cela
 représente près de 6,6 milliards de recherches par jour dont
-environ [31 % des clics vont au premier résultat de recherche, 16 % au second et 10 % au troisième](https://www.advancedwebranking.com/ctrstudy/).
+environ [30 % des clics vont au premier résultat de recherche, 15 % au second et 8 % au troisième](https://www.advancedwebranking.com/ctrstudy/).
 
 Ainsi, ces chiffres titanesques mettent en évidence que bien se positionner dans les
-résultats de recherche naturels, en particulier sur Google, est primordial pour augmenter sa visibilité en ligne. De plus, ces chiffres démontrent
-la suprématie de Google sur la "Search". C'est pourquoi quand nous parlons de référencement et de moteur de
-recherche, nous évoquons toujours la firme américaine.
+résultats de recherche, en particulier sur Google, est **primordial pour augmenter sa visibilité en ligne**. De plus, ces chiffres démontrent
+la suprématie de Google sur la "Search". C'est pourquoi **quand nous parlons de référencement et de moteur de
+recherche, nous évoquons Google par défaut**.
 
 ## De nouveaux moyens pour le Search Engine Optimization
 
 Au cours de ces dernières années, de nouveaux moyens de faire du Search Engine Optimization sont apparus.
 
-### Local
+### Référencement local : pour exister dans le monde physique
 
 Tout d'abord, au milieu des années 2000, les moteurs de recherche se sont mis à améliorer leurs résultats de recherches
 comportant une dimension géographique. Cela a ouvert une nouvelle dimension du référencement qui est appelé le
 référencement local.
 
-Aujourd'hui, ce type de référencement est devenu une vraie préoccupation pour les restaurateurs, hôteliers, artisans et
-autres entreprises ayant un rayonnement local. En effet, lorsque l'on tape "restaurant" sur Google, trois
-restaurants apparaissent en première position des résultats de recherche. De plus, associés aux noms des restaurants,
-nous pouvons observer leurs notes, issues d'avis laissés par des internautes.
+Aujourd'hui, **ce type de référencement est devenu une vraie préoccupation pour les restaurateurs, hôteliers, artisans et
+autres entreprises ayant un rayonnement local**. Cela s'est d'autant plus accentué depuis la Covid-19, car il y eu une accélération de la
+transformation numérique des petites entreprises.
+
+Par exemple, lorsque l'on tape "restaurant" sur Google, nous pouvons observer deux choses :
+
+1. Tout en haut, Google suggère de regarder directement les tops 10 de Tripadvisor ou TheFork. Il est donc important pour les restaurants de bien
+   figurer sur ces
+   sites d'avis où il existe aussi une notion de SEO, mais surtout basé sur les avis clients.
+2. Ensuite, en dessous, trois restaurants apparaissent en première position des résultats de recherche. Les notes de chaque restaurant, issues d'avis
+   laissés par des
+   clients, sont directement visibles sur le moteur de recherche.
 
 ![Extrait d'un résultat de recherche pour le mot-clé "restaurant".](/images/recherche_mot-cle_restaurant.png)
 
-Ici, l'enjeu pour les entreprises locales est tout d'abord de sortir en première position des résultats mais aussi
-d'avoir la meilleure note possible. Le but évident est d'attirer le plus de clients possible. Pour l'exemple des
-restaurants, sur Yelp pour chaque étoile gagnée sur une note moyenne, cela correspond à une augmentation du chiffre
+Ici, l'enjeu pour les entreprises locales est tout d'abord de sortir en première position des résultats, mais aussi
+d'avoir la meilleure note possible. Le but évident est d'attirer le plus de clients possible.
+
+Pour l'exemple des
+restaurants, **sur Yelp, chaque étoile gagnée sur une note moyenne correspond à une augmentation du chiffre
 d'affaires
-de [5 à 9 %](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/) et
-ces chiffres sont sans doute du même acabit concernant Google et ses avis. Cela démontre donc l'importance pour un
-commerce local de se battre au quotidien pour ses étoiles, et donc son référencement.
+de [5 à 9 %](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/)** et
+ces chiffres sont sans doute du même acabit concernant Google et ses avis. **Cela démontre donc l'importance pour un
+commerce local de se battre au quotidien pour ses étoiles, et donc son référencement**.
 
 ### Sites d'avis
 

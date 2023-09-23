@@ -22,6 +22,11 @@ const nextConfig = {
         destination: '/blog/notifications-maitresses-votre-attention',
         permanent: true,
       },
+      {
+        source: '/guide-seo/seo-aujourdhui',
+        destination: '/guide-seo/seo-aujourdhui-etat-art',
+        permanent: true,
+      },
     ]
   },
   webpack(config) {

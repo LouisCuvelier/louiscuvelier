@@ -201,4 +201,4 @@ pertinents et de qualité possible, tout en luttant contre les abus.
 
 Malgré ces mises à jour, le SEO a longtemps été dominé par certaines techniques discutables. Cependant, il s'oriente aujourd'hui vers des
 **pratiques plus éthiques et durables, basées sur la véritable création boostée par de la technique**. C'est ce que nous abordons dans
-le [chapitre suivant](/guide-seo/seo-aujourdhui).
+le [chapitre suivant](/guide-seo/seo-aujourdhui-etat-art).
