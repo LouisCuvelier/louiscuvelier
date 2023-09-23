@@ -545,7 +545,7 @@
   }
 
   .anchor {
-    @apply flex items-baseline;
+    @apply flex items-baseline pt-40 -mt-40;
 
     & > a {
       @apply transition duration-150 ease-in-out cursor-pointer flex items-baseline mr-1;

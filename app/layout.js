@@ -75,6 +75,16 @@ const RocGrotesk = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
+      <head>
+        <link
+          rel="webmention"
+          href="https://webmention.io/louiscuvelier.com/webmention"
+        />
+        <link
+          rel="pingback"
+          href="https://webmention.io/louiscuvelier.com/xmlrpc"
+        />
+      </head>
       <body
         className={`${QanelasSoft.variable} ${RocGrotesk.variable} font-body antialiased bg-slate-50 text-slate-950`}
       >

@@ -147,7 +147,7 @@ export default async function Post({ params }) {
               >
                 <div className={"mb-5"}>
                   <div className={"surtitle surtitle-2 mb-2"}>
-                    Chapitre précédente
+                    Chapitre précédent
                   </div>
                   <h6 className={"title-4 title mb-5"}>{prevPost.title}</h6>
                   <p className={"body body-1"}>{prevPost.description}</p>

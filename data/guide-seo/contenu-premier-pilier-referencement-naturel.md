@@ -7,14 +7,13 @@ introduction: "Le contenu est la clé n°1 du succès en SEO car sans lui il n'y
 cta: "Besoin d'aide pour le référencement de votre site ?"
 ---
 
-## Définition du contenu
+## Définition du contenu en SEO
 
-Avant toutes choses, il faut d'abord définir ce premier pilier qu'est le contenu. Le contenu rédactionnel d'un site est
-ce que nous appelons le "content marketing" (marketing de contenu [traduction libre]). Concrètement, le marketing de
-contenu est "
-[une stratégie marketing qui repose sur la création et la diffusion de contenu de valeur, utile et informatif, afin de communiquer avec son audience et développer sa visibilité](https://blog.hubspot.fr/marketing/content-marketing-information)".
+Le contenu SEO est du contenu (articles, vidéos, infographies etc.) créé spécifiquement **dans le but d'être bien référencé par les moteurs de
+recherche**. Il doit répondre de manière pertinente à une intention de recherche donnée tout en informant, divertissant ou aidant l'utilisateur. Le
+contenu SEO est une sous-branche du content marketing.
 
-## Trouver des sujets et des mots-clés
+## Trouver des idées sujets et des mots-clés pour se référencer
 
 Pour ce faire, de nombreuses façons de trouver des sujets et de nombreux outils, gratuits ou payants, sont apparues pour
 permettre de faciliter ce travail de recherche. Cependant, nous allons nous intéresser uniquement aux outils gratuits,

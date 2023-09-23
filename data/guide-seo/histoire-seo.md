@@ -192,3 +192,13 @@ Par ailleurs, en plus d'avoir une influence sur le SEO, le SMO permet aussi d'ac
 médias sociaux grâce aux phénomènes de tendances et autres systèmes de partages, "like" et "retweet". Ces systèmes
 permettent alors d'avoir de la popularité beaucoup plus rapidement qu'avec le SEO, mais cette popularité est éphémère si
 du contenu n'est pas régulièrement posté.
+
+## Conclusion
+
+À l'inverse du SMO est relativement éphémère, **le référencement naturel reste le meilleur moyen d'obtenir une bonne visibilité sur le long terme**.
+Les moteurs de recherche ont mis en place des règles et mis à jour leurs algorithmes dans le but de fournir aux internautes les contenus les plus
+pertinents et de qualité possible, tout en luttant contre les abus.
+
+Malgré ces mises à jour, le SEO a longtemps été dominé par certaines techniques discutables. Cependant, il s'oriente aujourd'hui vers des
+**pratiques plus éthiques et durables, basées sur la véritable création boostée par de la technique**. C'est ce que nous abordons dans
+le [chapitre suivant](/guide-seo/seo-aujourdhui).
