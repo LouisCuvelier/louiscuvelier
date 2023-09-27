@@ -27,6 +27,16 @@ const nextConfig = {
         destination: '/guide-seo/seo-aujourdhui-etat-art',
         permanent: true,
       },
+      {
+        source: '/blog/seo-aujourdhui-etat-art',
+        destination: '/guide-seo/seo-aujourdhui-etat-art',
+        permanent: true,
+      },
+      {
+        source: '/guide-seo/etat-art-referencement-naturel',
+        destination: '/guide-seo/seo-aujourdhui-etat-art',
+        permanent: true,
+      },
     ]
   },
   webpack(config) {
