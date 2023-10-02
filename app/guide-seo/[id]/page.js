@@ -3,7 +3,7 @@ import {
   getPostData,
   getPreviousAndNextPost,
   getSortedPostsData,
-} from "/lib/posts";
+} from "/Users/louiscuvelier/Dev/louiscuvelier/utils/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
@@ -11,7 +11,7 @@ import PostContent from "../../../components/PostContent";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
 import { parseISO } from "date-fns";
-import getMetadata from "../../../lib/getMetadata";
+import getMetadata from "../../../utils/getMetadata";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,

@@ -1,4 +1,4 @@
-import getBase64 from "../lib/getBase64";
+import getBase64 from "../utils/getBase64";
 import AnimatedImage from "./AnimatedImage";
 
 export default async function ResponsiveImage(props) {

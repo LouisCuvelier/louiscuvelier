@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CardEffect from "./CardEffect";
 import Image from "next/image";
-import getBase64 from "../lib/getBase64";
+import getBase64 from "../utils/getBase64";
 import { ArrowUpRightIcon, ClockIcon } from "@heroicons/react/24/outline";
 
 export default async function RealizationCard({

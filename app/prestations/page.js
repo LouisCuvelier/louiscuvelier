@@ -1,5 +1,5 @@
 import PrestationCard from "../../components/PrestationCard";
-import getMetadata from "../../lib/getMetadata";
+import getMetadata from "../../utils/getMetadata";
 
 const title = "Prestations";
 const description =

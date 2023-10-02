@@ -1,13 +1,16 @@
-import {getAllPostIds, getPostData} from "/lib/posts";
+import {
+  getAllPostIds,
+  getPostData,
+} from "/Users/louiscuvelier/Dev/louiscuvelier/utils/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
 import TableOfContent from "../../../components/PostContent";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
-import {parseISO} from "date-fns";
-import getMetadata from "../../../lib/getMetadata";
-import {ClockIcon} from "@heroicons/react/24/outline";
+import { parseISO } from "date-fns";
+import getMetadata from "../../../utils/getMetadata";
+import { ClockIcon } from "@heroicons/react/24/outline";
 
 export async function generateMetadata({ params }) {
   const data = await getPostData(params.id, "blog");
@@ -75,8 +78,7 @@ export default async function Post({ params }) {
           <p className={"subtitle subtitle-1 mb-12"}>
             {frontmatter.description}
           </p>
-          <TableOfContent />
-          {content}
+          <TableOfContent content={content} />
         </div>
         <aside className={"col-span-12 lg:col-span-3 relative"}>
           <div className={"sticky top-6"}>

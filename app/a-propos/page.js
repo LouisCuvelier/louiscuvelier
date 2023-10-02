@@ -1,6 +1,6 @@
 import CustomLink from "../../components/CustomLink";
 import Link from "next/link";
-import getMetadata from "../../lib/getMetadata";
+import getMetadata from "../../utils/getMetadata";
 
 const title = "À propos";
 const description =

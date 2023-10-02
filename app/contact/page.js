@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CopyClipboard from "../../components/CopyClipboard";
 import { contact } from "/data/contact";
-import getMetadata from "../../lib/getMetadata";
+import getMetadata from "../../utils/getMetadata";
 
 const title = "Contact";
 const description =

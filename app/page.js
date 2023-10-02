@@ -1,5 +1,5 @@
 import Profile from "components/Profile";
-import getMetadata from "lib/getMetadata";
+import getMetadata from "utils/getMetadata";
 import Link from "next/link";
 
 const description =

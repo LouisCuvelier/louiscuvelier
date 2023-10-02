@@ -1,7 +1,7 @@
-import {ImageResponse} from "next/server";
-import {baseUrl} from "../../../lib/baseUrl";
-import {format, parseISO} from "date-fns";
-import {fr} from "date-fns/locale";
+import { ImageResponse } from "next/server";
+import { baseUrl } from "../../../utils/baseUrl";
+import { format, parseISO } from "date-fns";
+import { fr } from "date-fns/locale";
 
 // Route segment config
 export const runtime = "edge";

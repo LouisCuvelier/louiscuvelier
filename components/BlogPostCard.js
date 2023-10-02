@@ -1,4 +1,4 @@
-import getBase64 from "lib/getBase64";
+import getBase64 from "utils/getBase64";
 import CardEffect from "./CardEffect";
 import Link from "next/link";
 import Image from "next/image";

@@ -1,6 +1,6 @@
-import { getSortedPostsData } from "../../lib/posts";
+import { getSortedPostsData } from "../../utils/posts";
 import BlogPostCard from "../../components/BlogPostCard";
-import getMetadata from "../../lib/getMetadata";
+import getMetadata from "../../utils/getMetadata";
 
 const title = "Blog";
 const description =
