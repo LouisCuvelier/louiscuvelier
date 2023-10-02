@@ -3,7 +3,7 @@ import {
   getPostData,
   getPreviousAndNextPost,
   getSortedPostsData,
-} from "/Users/louiscuvelier/Dev/louiscuvelier/utils/posts";
+} from "../../../utils/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
