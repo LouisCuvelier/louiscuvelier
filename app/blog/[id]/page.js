@@ -1,4 +1,4 @@
-import { getAllPostIds, getPostData } from "../../../louiscuvelier/utils/posts";
+import { getAllPostIds, getPostData } from "../../../utils/posts";
 import Date from "/components/Date";
 import "styles/prism.css";
 import SocialShare from "../../../components/SocialShare";
