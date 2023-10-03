@@ -176,7 +176,7 @@ plateformes**. En effet, d'après Guy KAWASAKI, "_chaque nouvelle plateforme cr�
 beaucoup plus facile d'obtenir de nombreux abonnés lorsqu'une plateforme vient d'être lancée_". La raison à cela est
 qu'il y a "_moins de personnes à suivre et beaucoup moins de bruit_". "_Une nouvelle plateforme, c'est la conquête
 d'un nouveau territoire : si vous voulez y attirer de nombreux abonnés, vous devez agir vite, et cela signifie agir
-avant qu'il ne devienne évident que la plateforme aura du succès_". (L'art des médias sociaux : Stratégies gagnantes
+avant qu'il ne devienne évident que la plateforme aura du succès_". (Source : L'art des médias sociaux : Stratégies gagnantes
 pour un usage professionnel).
 
 Ainsi, **les nouveaux canaux sociaux sont une très bonne opportunité si ceux-ci correspondent au ton et à la cible de
