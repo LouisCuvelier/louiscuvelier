@@ -56,10 +56,10 @@ de [5 à 9 %](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-
 ces chiffres sont sans doute du même acabit concernant Google et ses avis. **Cela démontre donc l'importance pour un
 commerce local de se battre au quotidien pour ses étoiles, et donc son référencement**.
 
-### Sites d'avis
+### Se référencer sur les sites d'avis
 
 Précédemment, nous parlions du site Yelp, spécialisé dans les avis de commerces locaux. Or, des sites comme Yelp, il en
-existe des dizaines, pour différents domaines. Les plus connus sont sans doute TripAdvisor, La Fourchette ou Booking.
+existe des dizaines, pour différents domaines. Les plus connus sont sans doute TripAdvisor, TheFork ou Booking.
 
 ![Exemple des résultats de recherche avec la requête "10 meilleurs hôtels
 bordeaux".](/images/requete_top10.png)
@@ -69,15 +69,15 @@ Booking. Ensuite, nous avons une carte avec une liste d'hôtels. Puis, il y a un
 
 Le premier résultat naturel est donc celui de TripAdvisor. Si l'on clique dessus, nous tombons sur une page listant près
 de 400 hôtels Bordelais classés par rapport qualité-prix. Par conséquent, encore une fois, la note et les avis prennent
-tout leur importance car près de 80 % des internautes considèrent que les avis sont extrêmement importants ou très
+tout leur importance car près de **80 % des internautes considèrent que les avis sont extrêmement importants ou très
 importants afin
-de [choisir un hôtel](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/).
+de [choisir un hôtel](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/)**.
 
 De la même manière que les sites d'avis, Google et Facebook proposent de donner un avis et une note à des
 établissements. Sur Google, ces avis sont visibles directement sur les résultats de recherche et sur Google Maps.
 
-Ainsi, se classer sur ce genre de sites permet non seulement d'être plus visible sur les sites en eux-mêmes mais aussi
-sur les moteurs de recherche provoquant alors une augmentation de la visibilité et donc du chiffre d'affaires.
+Ainsi, se classer sur ce genre de sites permet non seulement d'**être plus visible sur les sites en eux-mêmes mais aussi
+sur les moteurs de recherche provoquant alors une augmentation de la visibilité et donc du chiffre d'affaires**.
 
 ### Position zéro : le Graal à double tranchant
 
@@ -89,81 +89,81 @@ Avoir son site cité en position zéro est un signe de reconnaissance de la part
 moteur de recherche a une confiance élevée pour le site placé en position zéro et qu'il a estimé que c'était la réponse
 la plus pertinente à la requête.
 
-Cette position permet d'augmenter le trafic naturel de 100 à 500 % selon
-des [recherches de Search Engine Land](https://searchengineland.com/seo-featured-snippets-leads-big-gains-236212) et
+**La position zéro permet d'augmenter le trafic naturel de 100 à 500 %** selon
+des recherches de [Search Engine Land](https://searchengineland.com/seo-featured-snippets-leads-big-gains-236212) et
 de [Hubspot](https://blog.hubspot.com/marketing/how-to-featured-snippet-box#sm.0000hu1eyb3asdb0vvl2okm237oao). Réussir à
 se positionner dans une telle position est donc un enjeu très important.
 
-Cependant, la position zéro est à double tranchant puisque si l'internaute trouve satisfaction tout de suite, en lisant
+Cependant, la position zéro est à double tranchant puisque **si l'internaute trouve satisfaction tout de suite, en lisant
 le résultat de la position zéro, et qu'il n'a pas besoin de lire la page du site dont la réponse est tirée, alors le
-site n'y gagne pas à être à cette position.
+site n'y gagne pas à être à cette position**.
 
 ![Exemple de position
 zéro.](/images/position_zero.png)
 
 Selon
 une [étude menée par Jumpshot](https://sparktoro.com/blog/how-much-of-googles-search-traffic-is-left-for-anyone-but-themselves/)
-aux États-Unis, au premier trimestre 2019, près de 49 % des recherches sur Google étaient des "zero-click searches",
-littéralement, des recherches à zéro clic. Celles-ci ont augmenté de presque 12 % en trois ans, ce qui a provoqué une
+aux États-Unis, au premier trimestre 2019, près de **49 % des recherches sur Google étaient des "zero-click searches",
+littéralement, des recherches à zéro clic**. Celles-ci ont augmenté de presque 12 % en trois ans, ce qui a provoqué une
 baisse de plus de 13 % des clics liés aux résultats naturels, appelés organiques.
 
 Certes, ces 50 % de recherches à zéro clic et leur croissance d'année en année sont inquiétantes pour les résultats
 organiques. Néanmoins, certains comme Rand FISHKIN voient cela comme un panneau publicitaire ou une mention dans la
 presse qui permet d'exposer son nom de marque à une cible tout en partageant de l'information et dont le suivi de trafic
-est compliqué. Ainsi, avec cette vision, qu'elle amène ou non du trafic sur le site, la position zéro est une position
-intéressante, signe de "bonne santé SEO" d'un site.
+est compliqué. Ainsi, avec cette vision, qu'elle amène ou non du trafic sur le site, **la position zéro est une position
+intéressante, signe de "bonne santé SEO" d'un site**.
 
-### Voix
+### Recherche par la voix
 
 Avec la montée en puissance des assistants vocaux, au moyen d'un smartphone, d'une enceinte connectée ou d'autres
 appareils, la recherche vocale devient, d'année en année, un véritable enjeu.
 
-Selon Gartner, d'ici
-2020, [30 % des sessions de navigation sur internet devraient être réalisées sans écran,](https://www.gartner.com/smarterwithgartner/gartner-predicts-a-virtual-world-of-exponential-change/)
+Selon Gartner, à partir de
+2020, [30 % des sessions de navigation sur internet auraient du être réalisées sans écran,](https://www.gartner.com/smarterwithgartner/gartner-predicts-a-virtual-world-of-exponential-change/)
 c'est-à-dire avec la voix. Parmi ces sessions, il y aurait donc potentiellement une grande partie de recherche.
 
-Néanmoins, aujourd'hui, mi 2020, nous semblons être encore assez loin de cette proportion. Mais, il est clair que d'ici
+Néanmoins, aujourd'hui, nous sommes encore assez loin de cette proportion. Mais, il est clair que d'ici
 quelques années, cela deviendra une part importante de la recherche.
 
-Quoi qu'il en soit, pour le moment, les assistants vocaux se contentent de taper la requête dans leur moteur de
-recherche et lire un extrait du site ayant la première position.
+Quoi qu'il en soit, pour le moment, les **assistants vocaux se contentent de taper la requête dans leur moteur de
+recherche et lire un extrait du site ayant la première position**.
 
-Cependant, nous rencontrons la même problématique qu'évoquée précédemment avec la position zéro, à savoir si
-l'utilisateur a sa réponse lors de la dictée, alors il ne visitera pas le site dont l'assistant vocal a tiré son savoir.
+Cependant, nous rencontrons la même problématique qu'évoquée précédemment avec la position zéro, à savoir **si
+l'utilisateur a sa réponse lors de la dictée, alors il ne visitera pas le site dont l'assistant vocal a tiré son savoir**.
 
-### Image
+### Recherches visuelles : le créneau des images
 
 En Février 2018, Google Images représentait 22,6 % des recherches réalisées aux États-Unis. Ce pourcentage révèle donc
-une opportunité immense de se référencer sur des images.
+une opportunité immense de se référencer sur des images afin d'acquérir du trafic et de la visibilité.
 
 ![Graphique montrant la répartition des canaux de recherche sur internet en Février 2018, aux
 États-Unis.](/images/repartition_canaux_recherche.png)
 
-Graphique montrant la répartition des canaux de recherche sur internet en Février 2018, aux États-Unis.
+Cependant, cela va encore plus loin grâce à Google Lens. En effet, il est maintenant possible de faire une recherche visuelle inversée en
+prenant en photo ce que l'on recherche. L'utilisation est très simple : vous prenez une photo, Google l'analyse et montre des résultats de recherches
+imagées qui ressemblent à votre photo.
 
-De plus, avec l'arrivée d'outils comme Google Lens, qui permet de rechercher directement ce que l'on voit à partir de
-l'appareil photo, cela ouvre de nouvelles perspectives pour la recherche d'images et donc le référencement lié à cette
-recherche.
+Dans la grande majorité des cas, **les premières images qui ressortent sont des images provenant des sites marchands**. L'utilisateur peut alors
+acheter directement le produit qu'il vient de prendre en photo. Ainsi, **avoir ses images bien référencées est crucial, surtout quand on le sait qu'en
+2022, [8 milliards de requêtes](https://blog.google/products/search/new-search-technology/) étaient réalisées avec Google Lens**.
 
-### Vidéo
+### Référencement avec des vidéos
 
 Dans les résultats de recherches, les moteurs de recherche ont l'habitude d'afficher des vidéos. Pour Google, elles sont
 majoritairement tirées de YouTube.
 
 ![Exemple de vidéos mises en avant dans les résultats de recherche.](/images/video_resultats_recherches.png)
 
-Exemple de vidéos mises en avant dans les résultats de recherche.
+D'après le [graphique précédent](#recherches-visuelles-le-creneau-des-images), YouTube représente 4,3 % des recherches aux États-Unis en 2018. Ainsi,
+**nous pouvons considérer YouTube comme un moteur de recherche à part entière**.
 
-D'après la figure 8, visible ci-dessus, YouTube représente 4,3 % des recherches aux États-Unis en 2018. Ainsi, nous
-pouvons presque considérer YouTube comme un moteur de recherche à part entière.
+Qui dit moteur de recherche à part entière, dit Search Engine Optimization. En effet, **il est aussi possible de
+travailler son SEO sur YouTube** afin que l'on soit plus facilement trouvable et ainsi mieux remonter dans les résultats
+de recherche.
 
-Qui dit moteur de recherche à part entière, dit Search Engine Optimization. En effet, il est aussi possible de
-travailler son SEO sur YouTube afin que l'on soit plus facilement trouvable et ainsi mieux remonter dans les résultats
-de recherche
-
-Par conséquent, afin qu'une vidéo remonte dans les résultats de recherche, de la même manière qu'évoquée dans le
-paragraphe sur les réseaux sociaux, celle-ci doit être bien positionnée sur le site hébergeur et bien répondre à la
-requête de l'internaute.
+Par conséquent, **afin qu'une vidéo remonte dans les résultats de recherche, celle-ci doit être bien positionnée sur le site hébergeur** et bien
+répondre
+à la requête de l'internaute.
 
 ## De nouveaux canaux de Social Media Optimization
 
@@ -171,16 +171,16 @@ Régulièrement, les médias sociaux mettent à disposition de leurs utilisateur
 nouveaux moyens de faire du SMO. Par exemple, Instagram a ouvertement copié Snapchat en sortant ses "stories" en
 Août 2016. Celles-ci ont ainsi apporté un nouveau moyen d'acquérir de la visibilité sur la plateforme.
 
-De plus, l'apparition de nouvelles plateformes sociales sont une très bonne opportunité de devenir une référence sur ces
-plateformes. En effet, d'après Guy KAWASAKI, "chaque nouvelle plateforme crée de nouvelles "stars"" car "il est
-beaucoup plus facile d'obtenir de nombreux abonnés lorsqu'une plateforme vient d'être lancée". La raison à cela est
-qu'il y a "moins de personnes à suivre et beaucoup moins de bruit". "Une nouvelle plateforme, c'est la conquête
+De plus, **l'apparition de nouvelles plateformes sociales sont une occasion parfaite pour devenir une référence sur ces
+plateformes**. En effet, d'après Guy KAWASAKI, "_chaque nouvelle plateforme crée de nouvelles stars_" car "_il est
+beaucoup plus facile d'obtenir de nombreux abonnés lorsqu'une plateforme vient d'être lancée_". La raison à cela est
+qu'il y a "_moins de personnes à suivre et beaucoup moins de bruit_". "_Une nouvelle plateforme, c'est la conquête
 d'un nouveau territoire : si vous voulez y attirer de nombreux abonnés, vous devez agir vite, et cela signifie agir
-avant qu'il ne devienne évident que la plateforme aura du succès" (L'art des médias sociaux : Stratégies gagnantes
+avant qu'il ne devienne évident que la plateforme aura du succès_". (L'art des médias sociaux : Stratégies gagnantes
 pour un usage professionnel).
 
-Ainsi, les nouveaux canaux sociaux sont une très bonne opportunité si ceux-ci correspondent au ton et à la cible de
-l'entreprise.
+Ainsi, **les nouveaux canaux sociaux sont une très bonne opportunité si ceux-ci correspondent au ton et à la cible de
+l'entreprise**.
 
 ## Principales bonnes pratiques du Search Engine Optimization
 
