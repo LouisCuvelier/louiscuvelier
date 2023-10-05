@@ -13,6 +13,7 @@ import rehypeFigure from "rehype-figure";
 import rehypeSanitize from "rehype-sanitize";
 import rehypePrism from "rehype-prism-plus";
 import readingTime from "reading-time";
+import { notFound } from "next/navigation";
 
 function getDirectoryPath(directory) {
   return path.join(process.cwd(), `data/${directory}`);
@@ -90,27 +91,31 @@ export async function getPostData(id, directory) {
   const fullPath = fs.existsSync(`${getDirectoryPath(directory)}${id}.mdx`)
     ? path.join(getDirectoryPath(directory), `${id}.mdx`)
     : path.join(getDirectoryPath(directory), `${id}.md`);
+  console.log(fullPath);
 
-  const fileContent = fs.readFileSync(fullPath, "utf8");
-
-  const mdxContent = await compileMDX({
-    source: fileContent,
-    components: components,
-    options: {
-      parseFrontmatter: true,
-      mdxOptions: {
-        rehypePlugins: [
-          [rehypeSanitize],
-          [rehypeImgSize, { dir: "public" }],
-          [rehypeFigure, { className: "my-5" }],
-          [rehypePrism, { showLineNumbers: true }],
-        ],
+  if (fs.existsSync(fullPath)) {
+    const fileContent = fs.readFileSync(fullPath, "utf8");
+    const mdxContent = await compileMDX({
+      source: fileContent,
+      components: components,
+      options: {
+        parseFrontmatter: true,
+        mdxOptions: {
+          rehypePlugins: [
+            [rehypeSanitize],
+            [rehypeImgSize, { dir: "public" }],
+            [rehypeFigure, { className: "my-5" }],
+            [rehypePrism, { showLineNumbers: true }],
+          ],
+        },
       },
-    },
-  });
+    });
 
-  return {
-    readingTime: readingTime(fileContent),
-    ...mdxContent,
-  };
+    return {
+      readingTime: readingTime(fileContent),
+      ...mdxContent,
+    };
+  } else {
+    return notFound();
+  }
 }
