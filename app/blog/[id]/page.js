@@ -107,3 +107,5 @@ export default async function Post({ params }) {
 export function generateStaticParams() {
   return getAllPostIds("blog");
 }
+
+export const dynamicParams = false;

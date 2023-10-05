@@ -220,3 +220,5 @@ export default async function Post({ params }) {
 export function generateStaticParams() {
   return getAllPostIds("guide-seo");
 }
+
+export const dynamicParams = false;
