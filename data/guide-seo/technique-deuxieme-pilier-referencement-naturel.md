@@ -183,9 +183,9 @@ bien construire les URLs de ses pages pour, encore une fois, augmenter ses chanc
 Par exemple, pour Coursier Job, nous avons construit les URLs suivantes qui sont claires, courtes et qui utilisent les
 termes-clés :
 
-- /devenir-coursier/
-- /devenir-coursier/devenir-coursier-micro-entrepreneur/
-- /devenir-coursier/acre-coursier/
+- `/devenir-coursier/`
+- `/devenir-coursier/devenir-coursier-micro-entrepreneur/`
+- `/devenir-coursier/acre-coursier/`
 
 ## Optimiser pour le mobile
 

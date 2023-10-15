@@ -26,7 +26,6 @@ export const metadata = {
       template: "%s - Louis Cuvelier",
       default: title,
     },
-    description: {},
   },
 };
 
