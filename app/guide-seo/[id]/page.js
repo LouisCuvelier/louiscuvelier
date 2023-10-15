@@ -207,7 +207,9 @@ export default async function Post({ params }) {
               </Link>
             </div>
             <SocialShare
-              url={`${new URL("https://louiscuvelier.com")}blog/${params.id}`}
+              url={`${new URL("https://louiscuvelier.com")}guide-seo/${
+                params.id
+              }`}
               title={frontmatter.title}
             />
           </Sidebar>
