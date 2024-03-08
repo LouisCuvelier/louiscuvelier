@@ -37,6 +37,36 @@ const nextConfig = {
         destination: '/guide-seo/seo-aujourdhui-etat-art',
         permanent: true,
       },
+      {
+        source: '/blog/contenu-premier-pilier-referencement-naturel',
+        destination: '/guide-seo/contenu-premier-pilier-referencement-naturel',
+        permanent: true,
+      },
+      {
+        source: '/blog/seo-cest-quoi',
+        destination: '/guide-seo/pourquoire-integrer-SEO-strategie-marketing',
+        permanent: true,
+      },
+      {
+        source: '/guide-seo/pourquoire-integrer-SEO-strategie-marketing',
+        destination: '/guide-seo/pourquoi-integrer-SEO-strategie-marketing',
+        permanent: true,
+      },
+      {
+        source: '/guide-seo/conclusion-guide-referencement-naturel-seo',
+        destination: '/guide-seo/seo-cest-quoi',
+        permanent: true,
+      },
+      {
+        source: '/guide-seo/introduction',
+        destination: '/guide-seo/seo-cest-quoi',
+        permanent: true,
+      },
+      {
+        source: '/blog/technique-deuxieme-pilier-referencement-naturel',
+        destination: '/guide-seo/technique-deuxieme-pilier-referencement-naturel',
+        permanent: true,
+      },
     ]
   },
   webpack(config) {
