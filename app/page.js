@@ -3,7 +3,7 @@ import getMetadata from "utils/getMetadata";
 import Link from "next/link";
 
 const description =
-  "Je code votre site, je le classe sur Google et j'automatise vos processus. Freelance passionné par le code et l'entrepreneuriat, je vous aide à atteindre vos objectifs avec des solutions sur-mesure.";
+  "Co-fondateur de Subrequest, l'agence de développement web qui délivre sans exploser votre budget, et j'y interviens en tant que développeur front-end senior";
 export const metadata = getMetadata({ url: "/", description });
 
 export default function Home() {

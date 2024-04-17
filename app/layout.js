@@ -7,7 +7,7 @@ import { baseUrl } from "../utils/baseUrl";
 import { Analytics } from "@vercel/analytics/react";
 
 const title =
-  "Louis Cuvelier - Création de site, SEO et automatisation des processus";
+  "Louis Cuvelier - Co-fondateur Subrequest & Développeur front-end senior";
 
 export const metadata = {
   metadataBase: new URL(baseUrl),

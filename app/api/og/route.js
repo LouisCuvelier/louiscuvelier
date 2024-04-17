@@ -1,7 +1,7 @@
-import { ImageResponse } from "next/server";
 import { baseUrl } from "../../../utils/baseUrl";
 import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
+import { ImageResponse } from "next/og";
 
 // Route segment config
 export const runtime = "edge";
@@ -18,7 +18,7 @@ export const contentType = "image/png";
 // Image generation
 export async function GET(request) {
   const font = fetch(
-    new URL("public/fonts/QanelasSoft-ExtraBold.woff", import.meta.url)
+    new URL("public/fonts/QanelasSoft-ExtraBold.woff", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
   const { searchParams } = new URL(request.url);
@@ -27,7 +27,7 @@ export async function GET(request) {
   const title =
     hasTitle && searchParams.get("title")?.trim().length > 0
       ? searchParams.get("title")?.trim()
-      : "Création de site, SEO et automatisation des processus";
+      : "Co-fondateur Subrequest & Développeur front-end senior";
 
   const hasSurtitle = searchParams.has("surtitle");
   const surtitle =
@@ -73,7 +73,7 @@ export async function GET(request) {
           </div>
           <div
             tw={"h-2 w-full flex my-6 bg-slate-500 rounded-full"}
-            // TODO : Apply when repeating-linear-gradient available
+            // TODO : Apply when repeating-linear-gradient available https://github.com/vercel/satori/pull/564
             // style={{
             //   backgroundImage:
             //     "repeating-linear-gradient(-45deg, transparent, transparent 3px, #64748b 4px)",
@@ -119,6 +119,6 @@ export async function GET(request) {
       headers: {
         "X-Robots-Tag": "noindex",
       },
-    }
+    },
   );
 }
