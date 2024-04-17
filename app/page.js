@@ -24,8 +24,8 @@ export default function Home() {
           </h2>
           <p className={"body body-1"}>
             J'ai co-fondé Subrequest, l'agence de développement web qui délivre
-            sans exploser votre budget, et j'interviens en tant que développeur
-            front-end senior.
+            sans exploser votre budget, et j'y interviens en tant que
+            développeur front-end senior.
           </p>
           <div className={"mt-9 flex flex-wrap gap-8"}>
             <Link href={"https://subrequest.com"} className={"btn btn-primary"}>
