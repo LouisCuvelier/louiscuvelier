@@ -57,7 +57,7 @@ export default async function RealizationCard({
               {duration}
             </div>
             <h2 className={"title title-3 mt-8 mb-4 text-pretty"}>{client}</h2>
-            {website != null && (
+            {website && (
               <Link
                 href={website}
                 className={"btn btn-tertiary"}
