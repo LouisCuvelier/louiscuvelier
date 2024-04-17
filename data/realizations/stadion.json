@@ -1,0 +1,21 @@
+{
+  "date": "2024-02-01",
+  "client": "Stadion",
+  "description": "Stadion crée des expériences numériques sur mesure soutenues par des produits conçus à cet effet, propulsant certaines des marques les plus respectées dans le domaine du sport, comme Chelsea, Manchester City ou encore le PSG. Ils créent des produits performants pour soutenir des expériences uniques et innovantes, alimentant tout, des sites web aux applications et aux interactions vocales.",
+  "website": "https://www.sixnationsrugby.com/fr",
+  "categories": ["Création de site internet"],
+  "work": "Je suis intervenu pour renforcer l'équipe dédié à la conception du site internet d'un très gros client de Stadion. En trois mois, en tant que lead \"back-end du front\" avec Next.js, j'ai conçu l'architecture de A à Z en lien avec Contentful, intégré un sitemap dynamique de plus de 35 000 URLs, géré les langues avec des routes localisées et des slugs dynamiques, et optimisé la génération statique des pages. J'ai surmonté les limitations de l'API Contentful, créé et implémenté une stratégie de revalidation du contenu, et facilité le mode preview/draft pour les éditeurs. En outre, j'ai intégré des composants Figma en React et optimisé les requêtes GraphQL.",
+  "duration": "De Septembre 2023 à Février 2024",
+  "technologies": [
+    "Next.js",
+    "React.js",
+    "TypeScript",
+    "GraphQL",
+    "Storybook",
+    "Contentful",
+    "Vercel",
+    "Jest",
+    "Figma"
+  ],
+  "cover": "/images/fisicaly.jpg"
+}

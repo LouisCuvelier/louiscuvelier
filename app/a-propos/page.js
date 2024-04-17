@@ -1,5 +1,4 @@
-import CustomLink from "../../components/CustomLink";
-import Link from "next/link";
+import CustomLink from "../../components/atoms/CustomLink";
 import getMetadata from "../../utils/getMetadata";
 
 const title = "À propos";
@@ -25,7 +24,7 @@ export default function About() {
           <p className={"body body-1"}>
             Je m'appelle Louis Cuvelier, freelance et entrepreneur de{" "}
             {Math.floor(
-              (new Date() - new Date("1997-04-01").getTime()) / 3.15576e10
+              (new Date() - new Date("1997-04-01").getTime()) / 3.15576e10,
             )}{" "}
             ans diplômé d'un Master 2 chef de projet web à Ynov Informatique
             (ex-Ingésup). Passionné par l'informatique, et plus particulièrement
@@ -54,27 +53,21 @@ export default function About() {
           <p className={"body body-1"}>
             Fort de mon parcours entrepreneurial, j'ai acquis une vision à 360°
             qui me permet de comprendre tous les enjeux business autour d'une
-            problématique. J'y apporte des solutions sur-mesure en{" "}
-            <Link className={"link link-primary"} href={"/prestations"}>
-              création de site internet
-            </Link>
-            ,{" "}
-            <Link className={"link link-primary"} href={"/prestations"}>
-              référencement naturel (SEO)
-            </Link>{" "}
-            et{" "}
-            <Link className={"link link-primary"} href={"/prestations"}>
-              automatisation des processus
-            </Link>{" "}
-            afin de faire gagner à mes clients du temps, de l'argent et de la
-            productivité.
+            problématique. C'est pourquoi, en 2024, avec deux anciens camarades
+            de promotion, nous avons créé{" "}
+            <CustomLink href={"https://subrequest.com"}>Subrequest</CustomLink>,
+            une agence de développement web qui délivre sans exploser votre
+            budget.
           </p>
           <p className={"body body-1"}>
-            Si vous avez besoin d'un développeur de site internet expérimenté,
-            d'un professionnel en référencement naturel (SEO) ou d'un expert en
-            automatisation des processus, n'hésitez pas à me{" "}
-            <CustomLink href={"/contact"}>contacter</CustomLink> pour discuter
-            de votre projet.
+            Subrequest remplace les difficultés des freelances peu fiables,
+            l'énorme coût des agences et la gestion des employés par un tarif
+            mensuel fixe. Pas de contrats, pas de négociations, pas de surprises
+            – juste un processus fluide.{" "}
+            <CustomLink href={"https://subrequest.com"}>
+              Démarrez votre projet dès maintenant.
+            </CustomLink>
+            .
           </p>
         </div>
       </section>

@@ -1,5 +1,5 @@
-import getBase64 from "../utils/getBase64";
-import AnimatedImage from "./AnimatedImage";
+import getBase64 from "../../utils/getBase64";
+import AnimatedImage from "../atoms/AnimatedImage";
 
 export default async function ResponsiveImage(props) {
   const base64 = await getBase64(props.src);

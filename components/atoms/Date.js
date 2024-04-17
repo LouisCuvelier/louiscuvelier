@@ -1,4 +1,4 @@
-import { parseISO, format } from "date-fns";
+import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
 
 export default function Date({ dateString, isPubDate = false }) {

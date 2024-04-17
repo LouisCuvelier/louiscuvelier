@@ -14,7 +14,7 @@ Initialement, je voulais créer un plugin pour connecter Strapi à Jarside via l
 articles optimisés pour le SEO.
 
 Cependant, en discutant sur
-Twitter, [Victor m'a envoyé une vidéo](https://twitter.com/vcoisne/status/1694021354394460533) montrant qu'une
+X, [Victor m'a envoyé une vidéo](https://twitter.com/vcoisne/status/1694021354394460533) montrant qu'une
 entreprise polonaise avait développé un plugin pour générer le titre, l'introduction, le corps, le meta title, la meta
 description, des images, un script vidéo, etc. mais avec l’API d’OpenAI (ChatGPT).
 
@@ -107,22 +107,22 @@ fichier `mon-plugin/admin/src/index.js` en ajoutant la fonction `app.customField
 // mon-plugin/admin/src/index.js
 
 app.customFields.register({
-    name: "generator",
-    pluginId: "generator-ai",
-    type: "string",
-    intlLabel: {
-        id: `${pluginId}.plugin.field.generator.field`,
-        defaultMessage: "Generator button",
-    },
-    intlDescription: {
-        id: `${pluginId}.plugin.field.generator.description`,
-        defaultMessage: "Let AI do your writing !",
-    },
-    icon: PluginIcon,
-    components: {
-        Input: async () =>
-            import("./components/Input"), // Component qui va être appelé à l'affichage de la page d'édition de contenu
-    },
+  name: "generator",
+  pluginId: "generator-ai",
+  type: "string",
+  intlLabel: {
+    id: `${pluginId}.plugin.field.generator.field`,
+    defaultMessage: "Generator button",
+  },
+  intlDescription: {
+    id: `${pluginId}.plugin.field.generator.description`,
+    defaultMessage: "Let AI do your writing !",
+  },
+  icon: PluginIcon,
+  components: {
+    Input: async () =>
+      import("./components/Input"), // Component qui va être appelé à l'affichage de la page d'édition de contenu
+  },
 })
 ```
 
@@ -209,26 +209,26 @@ fonction `app.createSettingSection()` pour ajouter le code suivant :
 // mon-plugin/admin/src/index.js
 
 app.createSettingSection(
-    {
-        id: pluginId,
-        intlLabel: {
-            id: `${pluginId}.plugin.name`,
-            defaultMessage: "Generator AI",
-        },
+  {
+    id: pluginId,
+    intlLabel: {
+      id: `${pluginId}.plugin.name`,
+      defaultMessage: "Generator AI",
     },
-    [
-        {
-            intlLabel: {
-                id: `${pluginId}.plugin.page.configuration`,
-                defaultMessage: "Configuration",
-            },
-            id: "settings.configuration",
-            to: `/settings/${pluginId}/configuration`,
-            Component: async () => {
-                return import("./pages/Settings/Configuration");
-            },
-        },
-    ]
+  },
+  [
+    {
+      intlLabel: {
+        id: `${pluginId}.plugin.page.configuration`,
+        defaultMessage: "Configuration",
+      },
+      id: "settings.configuration",
+      to: `/settings/${pluginId}/configuration`,
+      Component: async () => {
+        return import("./pages/Settings/Configuration");
+      },
+    },
+  ]
 );
 ```
 
@@ -363,15 +363,15 @@ import {useState} from "react";
 import {useFetchClient} from "@strapi/helper-plugin";
 
 const Component = () => {
-    const {get} = useFetchClient();
-    const requestURL = "/some-endpoint";
+  const {get} = useFetchClient();
+  const requestURL = "/some-endpoint";
 
-    const handleGetData = async () => {
-        const {data} = await get(requestURL);
-        setItems(data.items);
-    };
+  const handleGetData = async () => {
+    const {data} = await get(requestURL);
+    setItems(data.items);
+  };
 
-    return <button onClick={handleGetData}>Show Items</button>;
+  return <button onClick={handleGetData}>Show Items</button>;
 };
 ```
 
@@ -424,95 +424,95 @@ existent dans la base de données et réagir en fonction :
 const {array, object, string, number} = require("yup");
 
 const settingsValidationSchema = object({
-    prompts: object({
-        base: string().required().trim(),
-        title: string().required().trim(),
-        introduction: string().required().trim(),
-        body: string().required().trim(),
-        metaTitle: string().required().trim(),
-        metaDescription: string().required().trim(),
-    }),
-    model: string().required().trim(),
-    target: string().trim(),
-    language: string().trim(),
-    tone: string().trim(),
-    length: number().integer().positive(),
-    contentTypes: array().of(
+  prompts: object({
+    base: string().required().trim(),
+    title: string().required().trim(),
+    introduction: string().required().trim(),
+    body: string().required().trim(),
+    metaTitle: string().required().trim(),
+    metaDescription: string().required().trim(),
+  }),
+  model: string().required().trim(),
+  target: string().trim(),
+  language: string().trim(),
+  tone: string().trim(),
+  length: number().integer().positive(),
+  contentTypes: array().of(
+    object().shape({
+      uid: string().required().trim(),
+      mapping: array().of(
         object().shape({
-            uid: string().required().trim(),
-            mapping: array().of(
-                object().shape({
-                    generatedField: string().required().trim(),
-                    normalField: string().required().trim(),
-                })
-            ),
+          generatedField: string().required().trim(),
+          normalField: string().required().trim(),
         })
-    ),
+      ),
+    })
+  ),
 });
 
 module.exports = ({strapi}) => {
-    // Création du store (connexion avec la base de données)
-    const pluginStore = strapi.store({
-        environment: "",
-        type: "plugin",
-        name: "generator-ai",
+  // Création du store (connexion avec la base de données)
+  const pluginStore = strapi.store({
+    environment: "",
+    type: "plugin",
+    name: "generator-ai",
+  });
+
+  async function createDefaultConfig() {
+    const settings = {
+      prompts: {
+        base: strapi.plugin("generator-ai").config("prompts.base"),
+        title: strapi.plugin("generator-ai").config("prompts.title"),
+        introduction: strapi
+          .plugin("generator-ai")
+          .config("prompts.introduction"),
+        body: strapi.plugin("generator-ai").config("prompts.body"),
+        metaTitle: strapi.plugin("generator-ai").config("prompts.metaTitle"),
+        metaDescription: strapi
+          .plugin("generator-ai")
+          .config("prompts.metaDescription"),
+      },
+      language: strapi.plugin("generator-ai").config("language"),
+      length: strapi.plugin("generator-ai").config("length"),
+      model: strapi.plugin("generator-ai").config("model"),
+      contentTypes: [],
+    };
+
+    // Enregistrer dans la base de données les réglages par défaut
+    await pluginStore.set({
+      key: "settings",
+      value: settings,
     });
 
-    async function createDefaultConfig() {
-        const settings = {
-            prompts: {
-                base: strapi.plugin("generator-ai").config("prompts.base"),
-                title: strapi.plugin("generator-ai").config("prompts.title"),
-                introduction: strapi
-                    .plugin("generator-ai")
-                    .config("prompts.introduction"),
-                body: strapi.plugin("generator-ai").config("prompts.body"),
-                metaTitle: strapi.plugin("generator-ai").config("prompts.metaTitle"),
-                metaDescription: strapi
-                    .plugin("generator-ai")
-                    .config("prompts.metaDescription"),
-            },
-            language: strapi.plugin("generator-ai").config("language"),
-            length: strapi.plugin("generator-ai").config("length"),
-            model: strapi.plugin("generator-ai").config("model"),
-            contentTypes: [],
-        };
+    // Renvoie des settings par défaut
+    return settings;
+  }
 
-        // Enregistrer dans la base de données les réglages par défaut
-        await pluginStore.set({
-            key: "settings",
-            value: settings,
-        });
+  return {
+    async getSettings() {
+      // Appel à la base de données pour récupérer les settings
+      let config = await pluginStore.get({key: "settings"});
+      // Si ça ne récupère rien, ça vient récupérer les réglages par défaut
+      if (config === null) {
+        config = await createDefaultConfig();
+      }
 
-        // Renvoie des settings par défaut
-        return settings;
-    }
+      return config;
+    },
 
-    return {
-        async getSettings() {
-            // Appel à la base de données pour récupérer les settings
-            let config = await pluginStore.get({key: "settings"});
-            // Si ça ne récupère rien, ça vient récupérer les réglages par défaut
-            if (config === null) {
-                config = await createDefaultConfig();
-            }
+    async setSettings(settings) {
+      // Valider si l'objet settings est correct
+      await settingsValidationSchema.validate(settings);
+      // Enregistrer dans la base de données si la validation est bonne
+      await pluginStore.set({key: "settings", value: settings});
+      // Renvoie de tous les réglages
+      return settings;
+    },
 
-            return config;
-        },
-
-        async setSettings(settings) {
-            // Valider si l'objet settings est correct
-            await settingsValidationSchema.validate(settings);
-            // Enregistrer dans la base de données si la validation est bonne
-            await pluginStore.set({key: "settings", value: settings});
-            // Renvoie de tous les réglages
-            return settings;
-        },
-
-        async resetDefaultPrompt({prompt}) {
-            return strapi.plugin("generator-ai").config(`prompts.${prompt}`);
-        },
-    };
+    async resetDefaultPrompt({prompt}) {
+      return strapi.plugin("generator-ai").config(`prompts.${prompt}`);
+    },
+  };
 };
 ```
 
@@ -809,8 +809,8 @@ récupérer la clé de traduction correspondante dans notre fichier de langue (e
 
 ```jsx
 formatMessage({
-    id: getTrad("global.notification.generation.get.warning.title"),
-    defaultMessage: "Attention il y a une erreur"
+  id: getTrad("global.notification.generation.get.warning.title"),
+  defaultMessage: "Attention il y a une erreur"
 })
 ```
 
@@ -828,4 +828,4 @@ développeur est bonne, l’architecture est simple, les API sont biens faites e
 
 Je compte mettre le plugin en open source prochainement. J’attends d’abord de l’utiliser dans des cas réels pour
 peaufiner ce qui est nécessaire. L’objectif est de le mettre sur le store de plugin Strapi. Pensez donc à me suivre
-sur [Twitter/X](https://twitter.com/LouisCuvelier_) pour être tenu au courant.
+sur [X/X](https://twitter.com/LouisCuvelier_) pour être tenu au courant.

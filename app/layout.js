@@ -1,8 +1,8 @@
 import "/styles/global.css";
 import localFont from "next/font/local";
-import CustomToaster from "../components/CustomToaster";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import CustomToaster from "../components/molecules/CustomToaster";
+import Navbar from "../components/organisms/Navbar";
+import Footer from "../components/organisms/Footer";
 import { baseUrl } from "../utils/baseUrl";
 import { Analytics } from "@vercel/analytics/react";
 

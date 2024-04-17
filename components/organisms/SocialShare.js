@@ -1,8 +1,8 @@
 "use client";
 
-import TwitterIcon from "../public/images/twitter.svg";
-import LinkedInIcon from "../public/images/linkedin.svg";
-import FacebookIcon from "../public/images/facebook.svg";
+import XIcon from "../../public/images/twitter.svg";
+import LinkedInIcon from "../../public/images/linkedin.svg";
+import FacebookIcon from "../../public/images/facebook.svg";
 import Link from "next/link";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
@@ -13,7 +13,7 @@ export default function SocialShare({ url, title }) {
       <ul className={"flex space-x-2"}>
         {[
           {
-            icon: <TwitterIcon />,
+            icon: <XIcon />,
             url: `https://twitter.com/intent/tweet?text=${title}&via=LouisCuvelier_&url=${url}`,
           },
           {

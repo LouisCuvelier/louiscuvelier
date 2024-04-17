@@ -1,4 +1,4 @@
-import TwitterIcon from "/public/images/twitter.svg";
+import XIcon from "/public/images/twitter.svg";
 import MaltIcon from "/public/images/malt.svg";
 import LinkedInIcon from "/public/images/linkedin.svg";
 import GitHub from "/public/images/github.svg";
@@ -6,9 +6,9 @@ import GitHub from "/public/images/github.svg";
 export const contact = {
   socials: [
     {
-      name: "Twitter",
+      name: "X",
       url: "https://twitter.com/LouisCuvelier_",
-      icon: <TwitterIcon />,
+      icon: <XIcon />,
     },
     {
       name: "GitHub",

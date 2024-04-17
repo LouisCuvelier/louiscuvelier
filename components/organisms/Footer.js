@@ -1,6 +1,6 @@
-import { contact } from "../data/contact";
+import { contact } from "../../data/contact";
 import Link from "next/link";
-import CopyClipboard from "./CopyClipboard";
+import CopyClipboard from "../atoms/CopyClipboard";
 
 export default function Footer({ className }) {
   const { socials, emails } = contact;

@@ -166,7 +166,7 @@ Le Search Engine Optimization (SMO) est globalement la même chose que le SEO, m
 donc à se placer dans les meilleures positions d'un site social et de tirer profit du trafic et de la visibilité que
 celui-ci peut apporter.
 
-En 2010, Danny SULLIVAN a eu la confirmation, de la part de Google et Bing, que Twitter et Facebook avaient une
+En 2010, Danny SULLIVAN a eu la confirmation, de la part de Google et Bing, que X et Facebook avaient une
 influence sur
 les [résultats de recherche](https://searchengineland.com/what-social-signals-do-google-bing-really-count-55389). Avant
 ça, nous étions dans une
@@ -175,7 +175,7 @@ où le terme SMO est apparu pour la première fois dans la publication de blog
 de [Rohit BHARGAVA](https://www.rohitbhargava.com/2006/08/5_rules_of_soci.html).
 
 Depuis la confirmation de 2010, les moteurs de recherche ne cessent de s'appuyer de plus en plus sur les réseaux sociaux
-comme Reddit, Twitter, Facebook, Pinterest ou Instagram et affichent même le contenu de certains directement dans les
+comme Reddit, X, Facebook, Pinterest ou Instagram et affichent même le contenu de certains directement dans les
 résultats de recherche.
 
 ![Exemple de résultat de recherche Google avec le mot clé "#bordeaux".](/images/resultat_mot_cle_bordeaux.png)
@@ -195,10 +195,14 @@ du contenu n'est pas régulièrement posté.
 
 ## Conclusion
 
-À l'inverse du SMO est relativement éphémère, **le référencement naturel reste le meilleur moyen d'obtenir une bonne visibilité sur le long terme**.
-Les moteurs de recherche ont mis en place des règles et mis à jour leurs algorithmes dans le but de fournir aux internautes les contenus les plus
+À l'inverse du SMO est relativement éphémère, **le référencement naturel reste le meilleur moyen d'obtenir une bonne
+visibilité sur le long terme**.
+Les moteurs de recherche ont mis en place des règles et mis à jour leurs algorithmes dans le but de fournir aux
+internautes les contenus les plus
 pertinents et de qualité possible, tout en luttant contre les abus.
 
-Malgré ces mises à jour, le SEO a longtemps été dominé par certaines techniques discutables. Cependant, il s'oriente aujourd'hui vers des
-**pratiques plus éthiques et durables, basées sur la véritable création boostée par de la technique**. C'est ce que nous abordons dans
+Malgré ces mises à jour, le SEO a longtemps été dominé par certaines techniques discutables. Cependant, il s'oriente
+aujourd'hui vers des
+**pratiques plus éthiques et durables, basées sur la véritable création boostée par de la technique**. C'est ce que nous
+abordons dans
 le [chapitre suivant](/guide-seo/seo-aujourdhui-etat-art).

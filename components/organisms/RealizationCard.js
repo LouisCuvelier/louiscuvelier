@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CardEffect from "./CardEffect";
 import Image from "next/image";
-import getBase64 from "../utils/getBase64";
+import getBase64 from "../../utils/getBase64";
 import { ArrowUpRightIcon, ClockIcon } from "@heroicons/react/24/outline";
 
 export default async function RealizationCard({
@@ -50,34 +50,33 @@ export default async function RealizationCard({
       </div>
 
       <div className={"p-5 @md:p-14"}>
+        <div className={"flex justify-between items-stretch mb-14"}>
+          <div>
+            <div className={"surtitle surtitle-2 flex text-slate-500"}>
+              <ClockIcon className={"mr-2 h-5 w-5"} />
+              {duration}
+            </div>
+            <h2 className={"title title-3 mt-8 mb-4 text-pretty"}>{client}</h2>
+            {website != null && (
+              <Link
+                href={website}
+                className={"btn btn-tertiary"}
+                rel="nofollow noopener noreferrer"
+                target={"_blank"}
+              >
+                <span>Voir la réalisation</span>
+                <ArrowUpRightIcon />
+              </Link>
+            )}
+          </div>
+        </div>
+
         <div className={"gap-14 grid @2xl:grid-cols-2"}>
           <div>
-            <div className={"flex justify-between items-stretch mb-14"}>
-              <div>
-                <div className={"surtitle surtitle-2 flex text-slate-500"}>
-                  <ClockIcon className={"mr-2 h-5 w-5"} />
-                  {duration}
-                </div>
-                <h2 className={"title title-3 mt-8 mb-4"}>{client}</h2>
-                {website != null && (
-                  <Link
-                    href={website}
-                    className={"btn btn-tertiary"}
-                    rel="nofollow noopener noreferrer"
-                    target={"_blank"}
-                  >
-                    <span>Voir la réalisation</span>
-                    <ArrowUpRightIcon />
-                  </Link>
-                )}
-              </div>
-            </div>
-            <div>
-              <p className={"subtitle subtitle-2 @xl:mb-0"}>{work}</p>
-            </div>
+            <p className={"subtitle subtitle-2 @xl:mb-0"}>{work}</p>
           </div>
 
-          <div className={"@2xl:mt-16 space-y-14 self-end"}>
+          <div className={"space-y-14 self-start"}>
             <div>
               <h3 className={"title title-5 mb-3"}>Client</h3>
               <p className={"body body-1"}>{description}</p>

@@ -72,7 +72,7 @@ export default memo(function PostContent(props) {
     };
 
     const titlesNodes = contentRef.current.querySelectorAll(
-      "article h2, article h3, article h4, article h5, article h6"
+      "article h2, article h3, article h4, article h5, article h6",
     );
 
     setHeadings(getTocStructure(titlesNodes));

@@ -4,11 +4,11 @@ import {
   getPreviousAndNextPost,
   getSortedPostsData,
 } from "../../../utils/posts";
-import Date from "/components/Date";
+import Date from "/components/atoms/Date";
 import "styles/prism.css";
-import SocialShare from "../../../components/SocialShare";
-import PostContent from "../../../components/PostContent";
-import Sidebar from "../../../components/Sidebar";
+import SocialShare from "../../../components/organisms/SocialShare";
+import PostContent from "../../../components/organisms/PostContent";
+import Sidebar from "../../../components/molecules/Sidebar";
 import Link from "next/link";
 import { parseISO } from "date-fns";
 import getMetadata from "../../../utils/getMetadata";
@@ -17,13 +17,13 @@ import {
   ArrowRightIcon,
   ClockIcon,
 } from "@heroicons/react/24/outline";
-import CardEffect from "../../../components/CardEffect";
+import CardEffect from "../../../components/organisms/CardEffect";
 
 export async function generateMetadata({ params }) {
   const data = await getPostData(params.id, "guide-seo");
   const sortedPostsData = await getSortedPostsData("guide-seo", "desc");
   const actualIndex = sortedPostsData.findIndex(
-    (post) => post.id === params.id
+    (post) => post.id === params.id,
   );
   const { frontmatter, readingTime } = data;
 
@@ -53,16 +53,16 @@ export async function generateMetadata({ params }) {
 export default async function Post({ params }) {
   const { frontmatter, content, readingTime } = await getPostData(
     params.id,
-    "guide-seo"
+    "guide-seo",
   );
   const { prev: prevPost, next: nextPost } = getPreviousAndNextPost(
     params.id,
     "guide-seo",
-    "desc"
+    "desc",
   );
   const sortedPostsData = await getSortedPostsData("guide-seo", "desc");
   const actualIndex = sortedPostsData.findIndex(
-    (post) => post.id === params.id
+    (post) => post.id === params.id,
   );
 
   return (

@@ -1,4 +1,4 @@
-import Profile from "components/Profile";
+import Profile from "components/atoms/Profile";
 import getMetadata from "utils/getMetadata";
 import Link from "next/link";
 
@@ -19,26 +19,17 @@ export default function Home() {
         </div>
         <div className={"md:col-span-7"}>
           <h1 className={"title title-1"}>Louis Cuvelier</h1>
-          <h2 className={"title title-4 mt-2 mb-6 [text-wrap:balance]"}>
-            Je code votre site, je le classe sur Google et j'automatise vos
-            process
+          <h2 className={"title title-4 mt-2 mb-6 text-balance"}>
+            Co-fondateur de Subrequest et développeur front-end sénior
           </h2>
           <p className={"body body-1"}>
-            Freelance passionné par le code et l'entrepreneuriat, j'ai une
-            expertise en <strong>création de site internet</strong>,{" "}
-            <strong>référencement naturel (SEO)</strong> et{" "}
-            <strong>automatisation</strong>. J'aide mes clients à gagner du
-            temps, de l'argent et de la productivité en créant des solutions
-            sur-mesure.
+            J'ai co-fondé Subrequest, l'agence de développement web qui délivre
+            sans exploser votre budget, et j'interviens en tant que développeur
+            front-end senior.
           </p>
           <div className={"mt-9 flex flex-wrap gap-8"}>
-            <Link
-              href={"https://calendly.com/louiscuvelier/intro"}
-              target={"_blank"}
-              rel="nofollow noopener noreferrer"
-              className={"btn btn-primary"}
-            >
-              Commencer votre projet
+            <Link href={"https://subrequest.com"} className={"btn btn-primary"}>
+              Faire appel à Subrequest
             </Link>
             <Link href={"/realisations"} className={"btn btn-secondary"}>
               Voir mes réalisations

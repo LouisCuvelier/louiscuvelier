@@ -1,9 +1,9 @@
 import { getAllPostIds, getPostData } from "../../../utils/posts";
-import Date from "/components/Date";
+import Date from "/components/atoms/Date";
 import "styles/prism.css";
-import SocialShare from "../../../components/SocialShare";
-import TableOfContent from "../../../components/PostContent";
-import Sidebar from "../../../components/Sidebar";
+import SocialShare from "../../../components/organisms/SocialShare";
+import TableOfContent from "../../../components/organisms/PostContent";
+import Sidebar from "../../../components/molecules/Sidebar";
 import Link from "next/link";
 import { parseISO } from "date-fns";
 import getMetadata from "../../../utils/getMetadata";
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
 export default async function Post({ params }) {
   const { frontmatter, content, readingTime } = await getPostData(
     params.id,
-    "blog"
+    "blog",
   );
 
   return (

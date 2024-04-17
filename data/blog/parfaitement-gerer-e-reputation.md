@@ -44,7 +44,7 @@ sur la page « Ce jour-là » (dans la colonne de gauche sur la page d’accueil
 et autres identifications**. À la base, c’est pour vous rappeler des souvenirs, mais, personnellement, grâce à cette
 fonctionnalité, je supprime de vieux trucs tous les jours.
 
-Puis, sur Twitter et Instagram, **passez vos comptes en privé si nécessaire**.
+Puis, sur X et Instagram, **passez vos comptes en privé si nécessaire**.
 
 Enfin, en dernier recours, vous avez la possibilité
 de  [demander à Google de supprimer des informations](https://support.google.com/websearch/troubleshooter/3111061?hl=fr)

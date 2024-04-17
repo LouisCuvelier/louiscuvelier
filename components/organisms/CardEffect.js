@@ -1,5 +1,6 @@
 "use client";
-import {createElement, useId} from "react";
+
+import { createElement, useId } from "react";
 
 export default function CardEffect(props) {
   const { as = "div", children, ...rest } = props;
@@ -56,6 +57,6 @@ export default function CardEffect(props) {
       onMouseEnter: (e) => handleMouseEnter(e),
       onMouseLeave: (e) => handleMouseLeave(e),
     },
-    children
+    children,
   );
 }

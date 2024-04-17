@@ -1,6 +1,6 @@
 import React from "react";
 import getMetadata from "../../utils/getMetadata";
-import RealizationCard from "components/RealizationCard";
+import RealizationCard from "components/organisms/RealizationCard";
 import { getSortedRealizationsData } from "utils/realizations";
 
 const title = "Réalisations";

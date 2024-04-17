@@ -1,6 +1,6 @@
 import { getSortedPostsData } from "../../utils/posts";
 import getMetadata from "../../utils/getMetadata";
-import GuidePostCard from "../../components/GuidePostCard";
+import GuidePostCard from "../../components/organisms/GuidePostCard";
 
 const title = `Guide complet du SEO (édition ${new Date().getFullYear()})`;
 const description =

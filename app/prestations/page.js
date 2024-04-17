@@ -1,5 +1,6 @@
-import PrestationCard from "../../components/PrestationCard";
 import getMetadata from "../../utils/getMetadata";
+import Link from "next/link";
+import Text from "../../components/atoms/Text";
 
 const title = "Prestations";
 const description =
@@ -24,51 +25,62 @@ export default function Prestations() {
           "max-w-screen-lg mx-auto gap-16 grid grid-cols-1 [perspective:20000px]"
         }
       >
-        {[
-          {
-            title: "Création de site internet",
-            subtitle:
-              "Performant, sur-mesure, adapté à tous les écrans et optimisé pour le SEO",
-            technologies: [
-              "Next.js",
-              "Tailwind CSS",
-              "Strapi",
-              "React.js",
-              "JavaScript",
-              "HTML",
-              "CSS",
-            ],
-            services: [
-              "Site vitrine / institutionnel",
-              "Application web",
-              "MVP",
-              "Intégration web",
-              "Outil interne",
-              "Intranet / Extranet",
-            ],
-          },
-          {
-            title: "Référencement naturel (SEO)",
-            subtitle:
-              "Pour augmenter votre visiblité sur Google et les autres moteurs de recherche",
-            services: [
-              "Conception d'architecture",
-              "Optimisation technique",
-              "Génération programmatique",
-              "Rédaction",
-              "Consulting",
-              "Formation",
-            ],
-          },
-          {
-            title: "Automatisation des processus",
-            technologies: ["Zapier", "Make", "Zoho Flow", "Code personnalisé"],
-            subtitle: "Pour vous faire gagner du temps et de l'argent",
-            services: ["Opérationnels", "Support", "Pilotage", "Mesure"],
-          },
-        ].map((props, index) => (
-          <PrestationCard key={index} index={index} {...props} />
-        ))}
+        {/*{[*/}
+        {/*  {*/}
+        {/*    title: "Création de site internet",*/}
+        {/*    subtitle:*/}
+        {/*      "Performant, sur-mesure, adapté à tous les écrans et optimisé pour le SEO",*/}
+        {/*    technologies: [*/}
+        {/*      "Next.js",*/}
+        {/*      "Tailwind CSS",*/}
+        {/*      "Strapi",*/}
+        {/*      "React.js",*/}
+        {/*      "JavaScript",*/}
+        {/*      "HTML",*/}
+        {/*      "CSS",*/}
+        {/*    ],*/}
+        {/*    services: [*/}
+        {/*      "Site vitrine / institutionnel",*/}
+        {/*      "Application web",*/}
+        {/*      "MVP",*/}
+        {/*      "Intégration web",*/}
+        {/*      "Outil interne",*/}
+        {/*      "Intranet / Extranet",*/}
+        {/*    ],*/}
+        {/*  },*/}
+        {/*  {*/}
+        {/*    title: "Référencement naturel (SEO)",*/}
+        {/*    subtitle:*/}
+        {/*      "Pour augmenter votre visiblité sur Google et les autres moteurs de recherche",*/}
+        {/*    services: [*/}
+        {/*      "Conception d'architecture",*/}
+        {/*      "Optimisation technique",*/}
+        {/*      "Génération programmatique",*/}
+        {/*      "Rédaction",*/}
+        {/*      "Consulting",*/}
+        {/*      "Formation",*/}
+        {/*    ],*/}
+        {/*  },*/}
+        {/*  {*/}
+        {/*    title: "Automatisation des processus",*/}
+        {/*    technologies: ["Zapier", "Make", "Zoho Flow", "Code personnalisé"],*/}
+        {/*    subtitle: "Pour vous faire gagner du temps et de l'argent",*/}
+        {/*    services: ["Opérationnels", "Support", "Pilotage", "Mesure"],*/}
+        {/*  },*/}
+        {/*].map((props, index) => (*/}
+        {/*  <PrestationCard key={index} index={index} {...props} />*/}
+        {/*))}*/}
+
+        <Text>
+          Je ne réalise plus de prestations en direct. Vous pouvez désormais
+          passer par l'agence que j'ai co-fondé, Subrequest.
+        </Text>
+
+        <div>
+          <Link className={"btn btn-primary"} href={"https://subrequest.com"}>
+            Voir les prestations de Subrequest
+          </Link>
+        </div>
       </section>
     </>
   );

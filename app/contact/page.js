@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CopyClipboard from "../../components/CopyClipboard";
+import CopyClipboard from "../../components/atoms/CopyClipboard";
 import { contact } from "/data/contact";
 import getMetadata from "../../utils/getMetadata";
 
@@ -22,16 +22,10 @@ export default function Contact() {
       >
         <h1 className={"title title-2"}>Besoin de mes services&nbsp;?</h1>
         <h2 className={"title title-4 mt-4 mb-10"}>
-          Contactez-moi, je vous réponds dans les 24h.
+          Faites appel à mon agence de développement web
         </h2>
-
-        <Link
-          href={"https://calendly.com/louiscuvelier/intro"}
-          target={"_blank"}
-          rel="nofollow noopener noreferrer"
-          className={"btn btn-primary"}
-        >
-          Commencer votre projet
+        <Link href={"https://subrequest.com"} className={"btn btn-primary"}>
+          Démarrer votre projet avec Subrequest
         </Link>
       </section>
 

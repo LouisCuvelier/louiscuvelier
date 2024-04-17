@@ -2,7 +2,7 @@ import getBase64 from "utils/getBase64";
 import CardEffect from "./CardEffect";
 import Link from "next/link";
 import Image from "next/image";
-import Date from "./Date";
+import Date from "../atoms/Date";
 import { ClockIcon } from "@heroicons/react/24/outline";
 
 export default async function BlogPostCard({

@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-import Logo from "../public/images/logo.svg";
+import Logo from "../../public/images/logo.svg";
 import { usePathname } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
 import { contact } from "/data/contact";
-import CopyClipboard from "./CopyClipboard";
+import CopyClipboard from "../atoms/CopyClipboard";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 
@@ -17,9 +17,8 @@ const paths = [
   { url: "/a-propos", title: "À propos", isPrimary: false },
   { url: "/contact", title: "Contact", isPrimary: false },
   {
-    url: "https://calendly.com/louiscuvelier/intro",
-    title: "Commencer votre projet",
-    rel: "noopener noreferrer nofollow",
+    url: "https://subrequest.com",
+    title: "Subrequest – l'agence de développement web",
     isPrimary: true,
   },
 ];

@@ -50,7 +50,7 @@ d’informations pour pas que tu restes sans rien 😉
   Je l’adore.
 * [MKBHD](https://www.youtube.com/user/marquesbrownlee)  — Un YouTubeur tech qui fait les vidéos les plus qualitatives
   du YouTube game.
-* [Mon Twitter ](https://twitter.com/LouisCuvelier_) — Si jamais tu veux continuer à me suivre. ❤️
+* [Mon X ](https://twitter.com/LouisCuvelier_) — Si jamais tu veux continuer à me suivre. ❤️
 
 ## #LaBonneConclusion
 
