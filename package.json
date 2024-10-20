@@ -13,7 +13,7 @@
     "lint:types": "tsc --noemit",
     "lint": "npm run lint:js && npm run lint:types",
     "lint:fix": "npx eslint --fix",
-    "gen:svgs": "npx @svgr/cli --no-prettier --typescript --out-dir src/assets/svgs/__generated__ -- ./src/assets/svgs/source/**",
+    "gen:svgs": "rm -rf ./src/assets/svgs/__generated__ && npx @svgr/cli --no-prettier --typescript --out-dir src/assets/svgs/__generated__ -- ./src/assets/svgs/source/**",
     "nuke": "rm -rf node_modules && rm -rf .next && rm -f package-lock.json",
     "prepare": "husky install && ggshield auth login",
     "scan:full": "ggshield secret scan repo ./ --exclude **/__generated__",
