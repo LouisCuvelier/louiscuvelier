@@ -1,26 +1,41 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ReactNode } from "react";
+import { Metadata } from "next";
 
+const url = process.env.NEXT_PUBLIC_BASE_URL ?? "";
 const title = "Louis Cuvelier - Co-Founder & Web Engineer at Subrequest";
+const description = "Louis Cuvelier, Co-Founder & Web Engineer at Subrequest.";
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? ""),
   title: {
     template: "%s - Louis Cuvelier",
     default: title,
   },
+  alternates: {
+    canonical: url,
+  },
+  authors: [{ name: "Louis Cuvelier" }],
+  description,
   openGraph: {
+    type: "website",
     title: {
       template: "%s - Louis Cuvelier",
       default: title,
     },
+    description,
+    url,
+    images: [`/api/og`],
   },
   twitter: {
+    card: "summary_large_image",
     title: {
       template: "%s - Louis Cuvelier",
       default: title,
     },
+    description,
+    images: [`/api/og`],
   },
 };
 
