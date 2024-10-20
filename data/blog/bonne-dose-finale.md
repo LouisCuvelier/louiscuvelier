@@ -9,7 +9,7 @@ cover: "/images/bonne_dose.jpeg"
 > Bonne Dose, c’était la dose hebdomadaire de culture digitale pour les étudiants et les entrepreneurs qui fournissait
 > la quantité parfaite de ce qu’il fallait savoir et découvrir dans la semaine.
 
-![Logo de Bonne Dose](/images/bonne_dose.jpeg)
+![Logo de Bonne Dose](/assets/images/bonne_dose.jpeg)
 
 ## #LesBonnesQuestions
 

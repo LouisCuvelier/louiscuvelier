@@ -81,7 +81,7 @@ d'obtenir des backlinks. Ainsi, en supplément de la qualité, il est important 
 augmenter ses chances d'avoir
 des backlinks.
 
-![Nombre de backlinks de Coursier Job mesuré via l'outil d'Ahrefs.](/images/backlinks_coursier_job.png)
+![Nombre de backlinks de Coursier Job mesuré via l'outil d'Ahrefs.](/assets/images/backlinks_coursier_job.png)
 
 Nombre de backlinks de Coursier Job mesuré via l'outil d'Ahrefs.
 
@@ -111,7 +111,7 @@ Par exemple, pour Coursier Job, nous avons une page qui comptabilise le nombre d
 entreprises comme Uber Eats ou
 Deliveroo.
 
-![Page comptabilisant le nombre de ville où chaque entreprise est présente.](/images/nombre_villes.png)
+![Page comptabilisant le nombre de ville où chaque entreprise est présente.](/assets/images/nombre_villes.png)
 
 Page comptabilisant le nombre de ville où chaque entreprise est présente.
 
@@ -172,7 +172,7 @@ Or, en faisant une recherche de la sorte, cela signale aux moteurs de recherche 
 Ainsi, cela sera interprété
 comme un signal positif qui permet de renforcer la marque aux yeux des moteurs de recherche.
 
-![Recherches de marques pour Coursier Job.](/images/recherches_marques_coursier_job.png)
+![Recherches de marques pour Coursier Job.](/assets/images/recherches_marques_coursier_job.png)
 
 Recherches de marques pour Coursier Job.
 
@@ -217,7 +217,7 @@ votre marque.
 Ainsi, plus les avis sont positifs, plus le signal renvoyé aux moteurs de recherche sera bon et plus la marque sera
 considérée comme étant forte
 
-![Affichage dans les résultats de recherches pour le terme "coursier job".](/images/resultat_recherche_coursier_job.png)
+![Affichage dans les résultats de recherches pour le terme "coursier job".](/assets/images/resultat_recherche_coursier_job.png)
 
 Affichage dans les résultats de recherches pour le terme "coursier job".
 

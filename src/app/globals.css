@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --input-border-width: theme("borderWidth.2");
+    --radius: 8px;
+  }
+
+  [data-theme="light"] {
+    --layout-background-color: theme("colors.slate.50");
+    --layout-foreground-heading-color: theme("colors.slate.950");
+    --layout-foreground-body-color: theme("colors.slate.700");
+
+    --section-background-color: theme("colors.white");
+
+    --primary-background-color: theme("colors.teal.600");
+    --primary-foreground-color: theme("colors.slate.950");
+
+    --secondary-background-color: theme("colors.slate.500");
+    --secondary-foreground-color: theme("colors.white");
+
+    --destructive-foreground-color: theme("colors.white");
+    --destructive-background-color: theme("colors.red.500");
+
+    --neutral-background-color: theme("colors.gray.500");
+
+    --warning-background-color: theme("colors.yellow.600");
+
+    --info-background-color: theme("colors.blue.500");
+
+    --success-background-color: theme("colors.emerald.500");
+
+    --input-border-color: #dbdbdb;
+    --input-background-color: theme("colors.white");
+    --input-foreground-color: #1d1d1e;
+
+    --muted-background-color: theme("colors.gray.100");
+    --muted-foreground-color: theme("colors.gray.400");
+
+    --hover-background-color: theme("colors.teal.100");
+    --hover-foreground-color: theme("colors.gray.700");
+
+    --focus-ring-color: #23b2a4;
+  }
+
+  .focus-ring {
+    @apply outline-none ring-input-width ring-focus ring-offset-2 ring-offset-background;
+  }
+
+  .bg-hatch-primary {
+    background: repeating-linear-gradient(
+      -45deg,
+      theme("colors.transparent"),
+      theme("colors.transparent") 3px,
+      var(--primary-background-color) 4px
+    );
+  }
+
+  .bg-hatch-secondary {
+    background: repeating-linear-gradient(
+      -45deg,
+      theme("colors.transparent"),
+      theme("colors.transparent") 3px,
+      var(--secondary-background-color) 4px
+    );
+  }
+
+  .border-hatch {
+    border-image: repeating-linear-gradient(
+        -45deg,
+        theme("colors.transparent"),
+        theme("colors.transparent") 3px,
+        var(--secondary-background-color) 4px
+      )
+      13;
+  }
+
+  .bg-paper {
+    @apply fixed size-full left-0 top-0 opacity-25;
+    background-image: url("/assets/images/background.webp");
+    background-size: 100px 100px;
+    background-repeat: repeat;
+    top: -300%;
+    left: -300%;
+    height: 600%;
+    width: 600%;
+  }
+}
+
+@layer utilities {
+  .btn-radius {
+    border-radius: 40% 30% 50% 20% / 50% 70% 70% 70%;
+  }
+
+  .btn-text-shadow {
+    text-shadow: 0 0 3px var(--layout-background-color);
+  }
+}

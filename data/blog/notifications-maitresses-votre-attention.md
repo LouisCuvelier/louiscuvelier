@@ -6,7 +6,7 @@ description: Les premières vraies notifications sont apparues avec le premier i
 cover: "/images/notifications.jpeg"
 ---
 
-![Trop de notifications](/images/notifications.jpeg)
+![Trop de notifications](/assets/images/notifications.jpeg)
 
 ## Comprendre la nocivité des notifications
 

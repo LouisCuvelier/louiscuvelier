@@ -17,7 +17,8 @@ représente près de 6,6 milliards de recherches par jour dont
 environ [30 % des clics vont au premier résultat de recherche, 15 % au second et 8 % au troisième](https://www.advancedwebranking.com/ctrstudy/).
 
 Ainsi, ces chiffres titanesques mettent en évidence que bien se positionner dans les
-résultats de recherche, en particulier sur Google, est **primordial pour augmenter sa visibilité en ligne**. De plus, ces chiffres démontrent
+résultats de recherche, en particulier sur Google, est **primordial pour augmenter sa visibilité en ligne**. De plus,
+ces chiffres démontrent
 la suprématie de Google sur la "Search". C'est pourquoi **quand nous parlons de référencement et de moteur de
 recherche, nous évoquons Google par défaut**.
 
@@ -31,20 +32,24 @@ Tout d'abord, au milieu des années 2000, les moteurs de recherche se sont mis �
 comportant une dimension géographique. Cela a ouvert une nouvelle dimension du référencement qui est appelé le
 référencement local.
 
-Aujourd'hui, **ce type de référencement est devenu une vraie préoccupation pour les restaurateurs, hôteliers, artisans et
-autres entreprises ayant un rayonnement local**. Cela s'est d'autant plus accentué depuis la Covid-19, car il y eu une accélération de la
+Aujourd'hui, **ce type de référencement est devenu une vraie préoccupation pour les restaurateurs, hôteliers, artisans
+et
+autres entreprises ayant un rayonnement local**. Cela s'est d'autant plus accentué depuis la Covid-19, car il y eu une
+accélération de la
 transformation numérique des petites entreprises.
 
 Par exemple, lorsque l'on tape "restaurant" sur Google, nous pouvons observer deux choses :
 
-1. Tout en haut, Google suggère de regarder directement les tops 10 de Tripadvisor ou TheFork. Il est donc important pour les restaurants de bien
+1. Tout en haut, Google suggère de regarder directement les tops 10 de Tripadvisor ou TheFork. Il est donc important
+   pour les restaurants de bien
    figurer sur ces
    sites d'avis où il existe aussi une notion de SEO, mais surtout basé sur les avis clients.
-2. Ensuite, en dessous, trois restaurants apparaissent en première position des résultats de recherche. Les notes de chaque restaurant, issues d'avis
+2. Ensuite, en dessous, trois restaurants apparaissent en première position des résultats de recherche. Les notes de
+   chaque restaurant, issues d'avis
    laissés par des
    clients, sont directement visibles sur le moteur de recherche.
 
-![Extrait d'un résultat de recherche pour le mot-clé "restaurant".](/images/recherche_mot-cle_restaurant.png)
+![Extrait d'un résultat de recherche pour le mot-clé "restaurant".](/assets/images/recherche_mot-cle_restaurant.png)
 
 Ici, l'enjeu pour les entreprises locales est tout d'abord de sortir en première position des résultats, mais aussi
 d'avoir la meilleure note possible. Le but évident est d'attirer le plus de clients possible.
@@ -52,7 +57,8 @@ d'avoir la meilleure note possible. Le but évident est d'attirer le plus de cli
 Pour l'exemple des
 restaurants, **sur Yelp, chaque étoile gagnée sur une note moyenne correspond à une augmentation du chiffre
 d'affaires
-de [5 à 9 %](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/)** et
+de [5 à 9 %](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/)**
+et
 ces chiffres sont sans doute du même acabit concernant Google et ses avis. **Cela démontre donc l'importance pour un
 commerce local de se battre au quotidien pour ses étoiles, et donc son référencement**.
 
@@ -62,7 +68,7 @@ Précédemment, nous parlions du site Yelp, spécialisé dans les avis de commer
 existe des dizaines, pour différents domaines. Les plus connus sont sans doute TripAdvisor, TheFork ou Booking.
 
 ![Exemple des résultats de recherche avec la requête "10 meilleurs hôtels
-bordeaux".](/images/requete_top10.png)
+bordeaux".](/assets/images/requete_top10.png)
 
 Par exemple, pour la requête ci-dessus, nous pouvons observer que le premier résultat est une annonce payante de
 Booking. Ensuite, nous avons une carte avec une liste d'hôtels. Puis, il y a un lien vers TripAdvisor.
@@ -71,7 +77,8 @@ Le premier résultat naturel est donc celui de TripAdvisor. Si l'on clique dessu
 de 400 hôtels Bordelais classés par rapport qualité-prix. Par conséquent, encore une fois, la note et les avis prennent
 tout leur importance car près de **80 % des internautes considèrent que les avis sont extrêmement importants ou très
 importants afin
-de [choisir un hôtel](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/)**.
+de [choisir un hôtel](https://www.modernrestaurantmanagement.com/the-impact-of-reviews-on-the-restaurant-market-infographic/)
+**.
 
 De la même manière que les sites d'avis, Google et Facebook proposent de donner un avis et une note à des
 établissements. Sur Google, ces avis sont visibles directement sur les résultats de recherche et sur Google Maps.
@@ -94,12 +101,13 @@ des recherches de [Search Engine Land](https://searchengineland.com/seo-featured
 de [Hubspot](https://blog.hubspot.com/marketing/how-to-featured-snippet-box#sm.0000hu1eyb3asdb0vvl2okm237oao). Réussir à
 se positionner dans une telle position est donc un enjeu très important.
 
-Cependant, la position zéro est à double tranchant puisque **si l'internaute trouve satisfaction tout de suite, en lisant
+Cependant, la position zéro est à double tranchant puisque **si l'internaute trouve satisfaction tout de suite, en
+lisant
 le résultat de la position zéro, et qu'il n'a pas besoin de lire la page du site dont la réponse est tirée, alors le
 site n'y gagne pas à être à cette position**.
 
 ![Exemple de position
-zéro.](/images/position_zero.png)
+zéro.](/assets/images/position_zero.png)
 
 Selon
 une [étude menée par Jumpshot](https://sparktoro.com/blog/how-much-of-googles-search-traffic-is-left-for-anyone-but-themselves/)
@@ -129,7 +137,8 @@ Quoi qu'il en soit, pour le moment, les **assistants vocaux se contentent de tap
 recherche et lire un extrait du site ayant la première position**.
 
 Cependant, nous rencontrons la même problématique qu'évoquée précédemment avec la position zéro, à savoir **si
-l'utilisateur a sa réponse lors de la dictée, alors il ne visitera pas le site dont l'assistant vocal a tiré son savoir**.
+l'utilisateur a sa réponse lors de la dictée, alors il ne visitera pas le site dont l'assistant vocal a tiré son savoir
+**.
 
 ### Recherches visuelles : le créneau des images
 
@@ -137,31 +146,38 @@ En Février 2018, Google Images représentait 22,6 % des recherches réalisées 
 une opportunité immense de se référencer sur des images afin d'acquérir du trafic et de la visibilité.
 
 ![Graphique montrant la répartition des canaux de recherche sur internet en Février 2018, aux
-États-Unis.](/images/repartition_canaux_recherche.png)
+États-Unis.](/assets/images/repartition_canaux_recherche.png)
 
-Cependant, cela va encore plus loin grâce à Google Lens. En effet, il est maintenant possible de faire une recherche visuelle inversée en
-prenant en photo ce que l'on recherche. L'utilisation est très simple : vous prenez une photo, Google l'analyse et montre des résultats de recherches
+Cependant, cela va encore plus loin grâce à Google Lens. En effet, il est maintenant possible de faire une recherche
+visuelle inversée en
+prenant en photo ce que l'on recherche. L'utilisation est très simple : vous prenez une photo, Google l'analyse et
+montre des résultats de recherches
 imagées qui ressemblent à votre photo.
 
-Dans la grande majorité des cas, **les premières images qui ressortent sont des images provenant des sites marchands**. L'utilisateur peut alors
-acheter directement le produit qu'il vient de prendre en photo. Ainsi, **avoir ses images bien référencées est crucial, surtout quand on le sait qu'en
-2022, [8 milliards de requêtes](https://blog.google/products/search/new-search-technology/) étaient réalisées avec Google Lens**.
+Dans la grande majorité des cas, **les premières images qui ressortent sont des images provenant des sites marchands**.
+L'utilisateur peut alors
+acheter directement le produit qu'il vient de prendre en photo. Ainsi, **avoir ses images bien référencées est crucial,
+surtout quand on le sait qu'en
+2022, [8 milliards de requêtes](https://blog.google/products/search/new-search-technology/) étaient réalisées avec
+Google Lens**.
 
 ### Référencement avec des vidéos
 
 Dans les résultats de recherches, les moteurs de recherche ont l'habitude d'afficher des vidéos. Pour Google, elles sont
 majoritairement tirées de YouTube.
 
-![Exemple de vidéos mises en avant dans les résultats de recherche.](/images/video_resultats_recherches.png)
+![Exemple de vidéos mises en avant dans les résultats de recherche.](/assets/images/video_resultats_recherches.png)
 
-D'après le [graphique précédent](#recherches-visuelles-le-creneau-des-images), YouTube représente 4,3 % des recherches aux États-Unis en 2018. Ainsi,
+D'après le [graphique précédent](#recherches-visuelles-le-creneau-des-images), YouTube représente 4,3 % des recherches
+aux États-Unis en 2018. Ainsi,
 **nous pouvons considérer YouTube comme un moteur de recherche à part entière**.
 
 Qui dit moteur de recherche à part entière, dit Search Engine Optimization. En effet, **il est aussi possible de
 travailler son SEO sur YouTube** afin que l'on soit plus facilement trouvable et ainsi mieux remonter dans les résultats
 de recherche.
 
-Par conséquent, **afin qu'une vidéo remonte dans les résultats de recherche, celle-ci doit être bien positionnée sur le site hébergeur** et bien
+Par conséquent, **afin qu'une vidéo remonte dans les résultats de recherche, celle-ci doit être bien positionnée sur le
+site hébergeur** et bien
 répondre
 à la requête de l'internaute.
 
@@ -176,7 +192,8 @@ plateformes**. En effet, d'après Guy KAWASAKI, "_chaque nouvelle plateforme cr�
 beaucoup plus facile d'obtenir de nombreux abonnés lorsqu'une plateforme vient d'être lancée_". La raison à cela est
 qu'il y a "_moins de personnes à suivre et beaucoup moins de bruit_". "_Une nouvelle plateforme, c'est la conquête
 d'un nouveau territoire : si vous voulez y attirer de nombreux abonnés, vous devez agir vite, et cela signifie agir
-avant qu'il ne devienne évident que la plateforme aura du succès_". (Source : L'art des médias sociaux : Stratégies gagnantes
+avant qu'il ne devienne évident que la plateforme aura du succès_". (Source : L'art des médias sociaux : Stratégies
+gagnantes
 pour un usage professionnel).
 
 Ainsi, **les nouveaux canaux sociaux sont une très bonne opportunité si ceux-ci correspondent au ton et à la cible de

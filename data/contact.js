@@ -1,7 +1,7 @@
-import XIcon from "/public/images/twitter.svg";
-import MaltIcon from "/public/images/malt.svg";
-import LinkedInIcon from "/public/images/linkedin.svg";
-import GitHub from "/public/images/github.svg";
+import XIcon from "/public/assets/images/twitter.svg";
+import MaltIcon from "/src/assets/svgs/source/malt.svg";
+import LinkedInIcon from "/src/assets/svgs/source/linkedin.svg";
+import GitHub from "/src/assets/svgs/source/github.svg";
 
 export const contact = {
   socials: [

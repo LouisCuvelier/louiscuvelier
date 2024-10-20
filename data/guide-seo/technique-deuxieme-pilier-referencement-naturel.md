@@ -35,7 +35,7 @@ faire indexer ces pages par les robots d'indexation d'autant plus qu'il peut y a
 épuiserait donc le budget de crawl pour rien, privant alors d'autres pages d'être indexées. Sur Coursier Job, nous avons
 donc bloqué l'indexation du moteur de recherche interne.
 
-![Message d'erreur montant que Google ne peut pas crawler cette page.](/images/impossible_crawler.png)
+![Message d'erreur montant que Google ne peut pas crawler cette page.](/assets/images/impossible_crawler.png)
 
 ## Avoir la bonne architecture
 
@@ -43,7 +43,7 @@ L'architecture d'un site correspond à la structure des pages et à la liaison q
 la plus performante possible, et éviter aux humains ainsi qu'aux robots d'indexation de se perdre, il est nécessaire de
 viser la simplicité avec une architecture horizontale plutôt que verticale.
 
-![ Schéma d'une bonne architecture.](/images/bonne_architecture.jpg)
+![ Schéma d'une bonne architecture.](/assets/images/bonne_architecture.jpg)
 
 Ainsi, en suivant une architecture horizontale, nous facilitons le travail d'indexation des pages de notre site en
 offrant un schéma logique et cohérent, tout en permettant quatre choses.
@@ -67,9 +67,9 @@ d'une page pilier (ou contenu principal) et de pages enfants (ou contenus de gro
 [couvre tous les aspects d'un sujet donné sur une seule page et propose des liens vers des articles plus approfondis](https://blog.hubspot.fr/marketing/page-pilier-strategie-seo)"
 qui sont les contenus de groupe.
 
-![Exemple d'une architecture en groupes thématiques](/images/architecture_groupe_thematique.png)
+![Exemple d'une architecture en groupes thématiques](/assets/images/architecture_groupe_thematique.png)
 
-![Exemple d'un groupe thématique](/images/groupe_thematique.png)
+![Exemple d'un groupe thématique](/assets/images/groupe_thematique.png)
 
 Par conséquent, comme nous l'avons expliqué précédemment, grâce aux liens internes entre les pages du groupe thématique,
 lorsqu'une page remonte dans les résultats de recherche, son autorité sera distribuée. Cela permet ainsi de faire
@@ -106,7 +106,7 @@ d'avoir un site rapide et optimisé.
 Un sitemap est un fichier au format XML qui est lu par les robots d'indexation. Il permet de répertorier, à un seul
 endroit, tous les liens des pages et médias (images, vidéo, PDF …) d'un site.
 
-![Exemple d'un sitemap.xml de Coursier Job](/images/sitemap.png)
+![Exemple d'un sitemap.xml de Coursier Job](/assets/images/sitemap.png)
 
 Pour les petits sites, même si c'est l'une des premières bonnes pratiques SEO, le sitemap n'est pas forcément pertinent,
 car les robots d'indexation ne devraient pas avoir de mal à trouver et indexer toutes les pages du site.
@@ -125,7 +125,7 @@ intervention humaine.
 Le fichier robots.txt est un fichier texte qui donne des directives aux robots d'indexation, notamment sur ce qu'ils ont
 le droit de parcourir (et donc d'indexer) ou non, et qui permet de spécifier où se trouve le fichier sitemap.xml.
 
-![Exemple d'un robots.txt de Coursier Job](/images/robots.png)
+![Exemple d'un robots.txt de Coursier Job](/assets/images/robots.png)
 
 Les directives de parcours données, via le fichier robots.txt, aux robots d'indexation permettent trois choses.
 
@@ -163,7 +163,7 @@ référencement.
 Ainsi, avoir un site en HTTPS peut non seulement améliorer le SEO mais aussi l'expérience utilisateur. C'est pourquoi,
 sur Coursier Job, depuis ses débuts, le site a toujours été en HTTPS.
 
-![Affichage dans Google Chrome d'un site sécurisé avec HTTPS.](/images/https.png)
+![Affichage dans Google Chrome d'un site sécurisé avec HTTPS.](/assets/images/https.png)
 
 ## Adapter ses URLs pour le SEO
 
@@ -243,7 +243,7 @@ types d'appareils.
 Dans le cas de Coursier Job, c'est particulièrement important que le site soit parfaitement adapté au mobile, car 75 %
 des sessions du site sont réalisées sur celui-ci.
 
-![Répartition des sessions en fonction du type d'appareil](/images/sessions_par_type_appareil.png)
+![Répartition des sessions en fonction du type d'appareil](/assets/images/sessions_par_type_appareil.png)
 
 ## Rich Snippets
 
@@ -252,14 +252,14 @@ qu'un résultat classique. À l'heure actuelle, il existe une trentaine
 de [Rich Snippets](https://developers.google.com/search/docs/guides/search-gallery) différents comme les articles, les
 livres, les notes ou encore les extraits d'avis.
 
-![Exemple de Rich Snippet pour la recherche "recette de cookie".](/images/resultat_cookie.png)
+![Exemple de Rich Snippet pour la recherche "recette de cookie".](/assets/images/resultat_cookie.png)
 
 Exemple de Rich Snippet pour la recherche "recette de cookie".
 
 Afin de générer ces Rich Snippets, les moteurs de recherche se servent des données structurées qui sont un format
 normalisé permettant de fournir des informations sur une page et son contenu.
 
-![Exemple de données structurées.](/images/donnees_structurees.png)
+![Exemple de données structurées.](/assets/images/donnees_structurees.png)
 
 Concrètement, les données structurées permettent aux webmasters de prémâcher le travail des robots d'indexation en leur
 fournissant des données facilement exploitables. Comme nous l'avons évoqué précédemment, plus le travail des robots

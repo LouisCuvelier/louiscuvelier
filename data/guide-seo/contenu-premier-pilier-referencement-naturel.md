@@ -9,8 +9,10 @@ cta: "Besoin d'aide pour le référencement de votre site ?"
 
 ## Définition du contenu en SEO
 
-Le contenu SEO est du contenu (articles, vidéos, infographies etc.) créé spécifiquement **dans le but d'être bien référencé par les moteurs de
-recherche**. Il doit répondre de manière pertinente à une intention de recherche donnée tout en informant, divertissant ou aidant l'utilisateur. Le
+Le contenu SEO est du contenu (articles, vidéos, infographies etc.) créé spécifiquement **dans le but d'être bien
+référencé par les moteurs de
+recherche**. Il doit répondre de manière pertinente à une intention de recherche donnée tout en informant, divertissant
+ou aidant l'utilisateur. Le
 contenu SEO est une sous-branche du content marketing.
 
 ## Trouver des idées sujets et des mots-clés pour se référencer
@@ -31,7 +33,7 @@ notre recherche mais aussi tout en bas des résultats de recherche.
 
 Par exemple, pour le terme "coursier", voici ci-dessous les différentes suggestions de Google.
 
-![Exemple de suggestions Google pour le terme "coursier"](/images/resultat_recherche_coursier.png)
+![Exemple de suggestions Google pour le terme "coursier"](/assets/images/resultat_recherche_coursier.png)
 
 Deuxièmement, sur certaines recherches, mélangées aux résultats, un encart appelé "People Also Asked" (Autres
 questions posées) peut apparaître. Il met en évidence des phrases sous forme de questions en lien avec la recherche
@@ -40,7 +42,7 @@ facilement apparaître en position zéro.
 
 Par exemple, toujours avec le terme "coursier", nous pouvons observer les questions en lien avec notre recherche.
 
-![Exemple d'autres questions posées](/images/questions_liees.png)
+![Exemple d'autres questions posées](/assets/images/questions_liees.png)
 
 ### YouTube
 
@@ -54,7 +56,7 @@ de vues et donc le succès d'une vidéo. C'est alors un excellent indicateur de 
 
 Par exemple, avec le terme "devenir livreur", voici les suggestions de YouTube.
 
-![Exemple de suggestions YouTube](/images/suggestions_youtube.png)
+![Exemple de suggestions YouTube](/assets/images/suggestions_youtube.png)
 
 ### Google Trends
 
@@ -66,7 +68,7 @@ mots-clés différents de Google (ou YouTube) Suggest.
 Par exemple, pour le terme "coursier", Google Trends nous propose une liste de 25 requêtes les plus fréquentes,
 associées au terme recherché.
 
-![ Exemple du résultat "coursier" sur Google Trends sur les 12 derniers mois.](/images/google_trends.png)
+![ Exemple du résultat "coursier" sur Google Trends sur les 12 derniers mois.](/assets/images/google_trends.png)
 
 ### Planificateur de mots-clés Google Ads
 
@@ -77,7 +79,7 @@ d'idées de mots-clés liés.
 Par exemple, en tapant deux termes-clés "devenir coursier" et "devenir livreur" dans le planificateur de mots-clés,
 Google donne une liste de 64 idées de mots-clés.
 
-![Exemple d'une planification de mots-clés sur Google Ads pour les termes "devenir coursier" et "devenir livreur"](/images/google_ads_planification_mots_cles.png)
+![Exemple d'une planification de mots-clés sur Google Ads pour les termes "devenir coursier" et "devenir livreur"](/assets/images/google_ads_planification_mots_cles.png)
 
 Mais ce n'est pas tout puisqu'une fois la liste générée, il est possible de regrouper les idées générées par thème. Cela
 permet alors de former des sujets et de constituer, par sujet, un champ lexical qui sera utile lors de la rédaction.
@@ -85,7 +87,7 @@ permet alors de former des sujets et de constituer, par sujet, un champ lexical 
 Ainsi, toujours avec le même exemple, l'outil a généré des sujets comme "Deliveroo" ou "Uber Devenir" (comprendre "
 Devenir Uber").
 
-![Exemple d'une planification de mots-clés regroupés.](/images/planification_mots_cles_groupes.png)
+![Exemple d'une planification de mots-clés regroupés.](/assets/images/planification_mots_cles_groupes.png)
 
 ### Visiteurs, utilisateurs et clients
 
@@ -128,13 +130,13 @@ Ainsi, petit à petit, les requêtes qui apparaissent dans la Search Console gro
 nouvelle couche à notre arbre, ce qui le fait alors grandir. La recherche de sujets et de mots-clés est donc
 auto-alimentée au fur et à mesure que l'arbre grossit.
 
-![Positionnement de Coursier Job sur les requêtes, classés par position décroissante.](/images/positionnement_coursier_job.png)
+![Positionnement de Coursier Job sur les requêtes, classés par position décroissante.](/assets/images/positionnement_coursier_job.png)
 
 Une fois que nous avons pris conscience de cela, il est alors intéressant de classer les requêtes en fonction de la
 position décroissante. En effet, plus la position est élevée, plus nous apparaissons loin dans les résultats d'une
 recherche. Il peut donc être pertinent de creuser le sujet.
 
-![Classement des requêtes concernant Coursier Job en fonction du taux de clic.](/images/coursier_job_taux_clic.png)
+![Classement des requêtes concernant Coursier Job en fonction du taux de clic.](/assets/images/coursier_job_taux_clic.png)
 
 De plus, il est aussi intéressant de classer les requêtes en fonction du CTR croissant. Cela permet alors de faire
 ressortir des requêtes pour lesquelles nous enregistrons très peu de clics par rapport au nombre de fois où elles
@@ -160,9 +162,9 @@ Ainsi, en ajoutant comme données le nombre de clics et le nombre d'impressions,
 décroissante ou par CTR croissant, nous pouvons à la fois mesurer le volume et les performances que nous avons sur les
 requêtes.
 
-![Positionnement de Coursier Job sur les requêtes, classés par position décroissante.](/images/positionnement_cousier_job_position_decroissante.png)
+![Positionnement de Coursier Job sur les requêtes, classés par position décroissante.](/assets/images/positionnement_cousier_job_position_decroissante.png)
 
-![Positionnement de Coursier Job sur les requêtes, classés par taux de clic décroissant.](/images/position_coursier_job_taux_clic_decroissant.png)
+![Positionnement de Coursier Job sur les requêtes, classés par taux de clic décroissant.](/assets/images/position_coursier_job_taux_clic_decroissant.png)
 
 Par exemple, sur le site nous avons une page par ville reprenant les entreprises présentes dans ces villes. Or, d'après
 la dernière figure ci-dessus, nous pouvons observer que le même pattern ressort deux fois : "uber eat annemasse" et "
@@ -184,7 +186,7 @@ recherches.
 Par exemple, pour le sujet "crème solaire", nous pouvons clairement voir des pics de recherches correspondant aux
 périodes estivales.
 
-![Exemple de "crème solaire" sur Google Trends.](/images/resultat_creme_solaire.png)
+![Exemple de "crème solaire" sur Google Trends.](/assets/images/resultat_creme_solaire.png)
 
 Deuxièmement, il est possible de comparer deux termes synonymes pour savoir lequel est le plus recherché et donc
 déterminer lequel utiliser en priorité dans notre contenu.
@@ -192,7 +194,7 @@ déterminer lequel utiliser en priorité dans notre contenu.
 Par exemple, entre "livreur" et "coursier", nous voyons qu'il est préférable d'utiliser le terme "livreur" (en
 rouge sur le graphique ci-dessous), car il est plus recherché.
 
-![Exemple de "coursier" versus "livreur" sur Google Trends.](/images/versus_google_trends.png)
+![Exemple de "coursier" versus "livreur" sur Google Trends.](/assets/images/versus_google_trends.png)
 
 Troisièmement, nous pouvons savoir quel terme de recherche performe le plus en fonction de la région, du département ou
 de la ville. Ainsi, en ayant ces données géographiques, il est donc possible de faire du référencement local en créant
@@ -202,7 +204,7 @@ des pages dédiées à des villes ou des départements.
 départements de Corse, le terme "burger" est plus recherché. Ainsi, en Corse, il vaut mieux créer du contenu sur des
 burgers plutôt que sur des kebabs.
 
-![Exemple de "burger" versus "kebab" sur Google Trends.](/images/versus_google_trends_2.png)
+![Exemple de "burger" versus "kebab" sur Google Trends.](/assets/images/versus_google_trends_2.png)
 
 Quatrièmement, comme nous l'avons vu précédemment, Google Trends permet de sortir des requêtes associées au terme que
 nous avons tapé. Mais, ce n'est pas tout puisqu'il est aussi possible d'avoir une certaine idée des volumes de ces
@@ -214,7 +216,7 @@ le mieux.
 Par exemple, nous observons qu'avec la requête "coursier", les deux requêtes les plus fréquentes associées à la
 requête saisie sont "uber" et "uber coursier".
 
-![Exemple de "coursier" sur Google Trends.](/images/coursier_google_trends.png)
+![Exemple de "coursier" sur Google Trends.](/assets/images/coursier_google_trends.png)
 
 ### Planificateur de mots-clés Google Ads
 
@@ -236,7 +238,7 @@ De même, si l'on reprend l'exemple cité précédemment avec les termes "deveni
 pouvons observer qu'ils ont un volume de recherche correct avec une concurrence moyenne.
 
 ![Exemple d'une planification de mots-clés sur Google Ads pour les termes "devenir coursier" et "devenir
-livreur".](/images/planification_mots_cles_google_ads.png)
+livreur".](/assets/images/planification_mots_cles_google_ads.png)
 
 ### Google
 
@@ -249,7 +251,7 @@ de voir si ce sont des sites qui sont déjà connus, qui ont une réputation et 
 Par exemple, d'après la figure ci-dessous, nous pouvons déjà repérer deux gros sites comme legalplace.fr ou
 legalstart.fr.
 
-![Exemple d'un résultat Google pour la recherche "devenir micro entrepreneur coursier".](/images/resultat_devenir_coursier_micro_entrepreneur.png)
+![Exemple d'un résultat Google pour la recherche "devenir micro entrepreneur coursier".](/assets/images/resultat_devenir_coursier_micro_entrepreneur.png)
 
 Exemple d'un résultat Google pour la recherche "devenir micro entrepreneur coursier".
 
@@ -268,7 +270,7 @@ Il sera donc plus facilement affiché au-dessus du site concurrent.
 Par exemple, en analysant les sites de la figure précédente, nous pouvons voir qu'ils ont une autorité élevée et qu'il
 faudra créer du très bon contenu pour passer devant eux.
 
-![Mesure de l'autorité des domaines LegalPlace.fr et LegalStart.fr](/images/comparatif_autorite_domaine.png)
+![Mesure de l'autorité des domaines LegalPlace.fr et LegalStart.fr](/assets/images/comparatif_autorite_domaine.png)
 
 Mesure de l'autorité des domaines LegalPlace.fr et LegalStart.fr
 
@@ -378,7 +380,7 @@ structure soit claire et logique, aussi bien pour un humain que pour un robot.
 Par exemple, pour Coursier Job, la structure qui est classiquement utilisée est la suivante : un seul h1, beaucoup de h2
 et quelques h3. Rarement des h4 sont utilisés.
 
-![Exemple d'une bonne utilisation des titres.](/images/bonne_utilisation_titres.png)
+![Exemple d'une bonne utilisation des titres.](/assets/images/bonne_utilisation_titres.png)
 
 En regardant attentivement la figure ci-dessus, il est possible d'observer que le titre (h1) dit tout de suite de quoi
 traite la page. En l'occurrence, le sujet de cette page tourne autour de la micro-entreprise pour les coursiers. Donc,
@@ -401,7 +403,7 @@ située [entre 40 et 50 mots](https://www.semrush.com/blog/how-to-earn-your-feat
 ses chances d'apparaître en position zéro, il est nécessaire de concevoir au moins un paragraphe par page qui répond au
 terme de recherche et dont la longueur est comprise entre 40 et 50 mots.
 
-![Exemple d'une page de Coursier Job qui apparaît dans un Featured Snippet](/images/featured_snippet.png)
+![Exemple d'une page de Coursier Job qui apparaît dans un Featured Snippet](/assets/images/featured_snippet.png)
 
 Dans le cas de Coursier Job, comme le montre la figure ci-dessus, nous ressortons régulièrement sur des positions zéros
 de type liste.

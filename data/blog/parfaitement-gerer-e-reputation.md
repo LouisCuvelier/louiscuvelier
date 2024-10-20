@@ -23,7 +23,7 @@ Toutefois, si vous avez de la chance, plusieurs personnes portent le même nom e
 de ces personnes, **les résultats qui vous concerne pourront être éventuellement masqués**. Cependant, en cherchant
 bien, **ils restent toujours trouvables**. Il faut donc que vous fassiez le ménage dans tous les cas.
 
-![Exemple de recherche pour mon propre nom](/images/louis_cuvelier_search.png)
+![Exemple de recherche pour mon propre nom](/assets/images/louis_cuvelier_search.png)
 
 ## Faites le ménage
 

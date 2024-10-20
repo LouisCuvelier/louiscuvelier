@@ -178,7 +178,7 @@ Depuis la confirmation de 2010, les moteurs de recherche ne cessent de s'appuyer
 comme Reddit, X, Facebook, Pinterest ou Instagram et affichent même le contenu de certains directement dans les
 résultats de recherche.
 
-![Exemple de résultat de recherche Google avec le mot clé "#bordeaux".](/images/resultat_mot_cle_bordeaux.png)
+![Exemple de résultat de recherche Google avec le mot clé "#bordeaux".](/assets/images/resultat_mot_cle_bordeaux.png)
 
 Lorsqu'une page est "likée", "retweeté" ou partagée sur un réseau social, cela est assimilé à une sorte de vote
 pour cette page. **Ce vote est alors traité comme un signal par les moteurs de recherche, à l'instar d'une citation d'un

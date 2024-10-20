@@ -6,7 +6,7 @@ description: Imaginez pouvoir générer du contenu directement dans votre CMS. L
 cover: "/images/strapi.jpg"
 ---
 
-![](/images/strapi.jpg)
+![](/assets/images/strapi.jpg)
 
 ## L’objectif de base
 
@@ -129,7 +129,7 @@ app.customFields.register({
 Après cet ajout, si l’on va dans le Content-Type Builder et que l’on ajoute un nouveau champ, notre champ apparaît dans
 l’onglet “Custom”. Parfait !
 
-![Le champ personnalisé](/images/field.png)
+![Le champ personnalisé](/assets/images/field.png)
 
 ## Développer l’interface utilisateur du plugin
 
@@ -173,7 +173,7 @@ system de Strapi.
 
 Finalement, je suis arrivé à ce résultat pour ma modal :
 
-![Interface de paramètrages de la génération](/images/generate.gif)
+![Interface de paramètrages de la génération](/assets/images/generate.gif)
 
 Comme vous pouvez le voir dans le gif ci-dessus, les champs demandés sont uniquement des champs de paramètre, comme le
 ton ou la longueur du contenu demandé. Ces paramètres sont ensuite envoyés dans la requête à l’IA.
@@ -186,7 +186,7 @@ complets ?
 Tout d’abord, je voulais pouvoir faire cela individuellement par champ. Je me suis donc dit qu’il fallait profiter de
 l’onglet “Advanced” à la création du champ et de mettre mes réglages ici.
 
-![Réglages avancés du champs](/images/advanced_settings.png)
+![Réglages avancés du champs](/assets/images/advanced_settings.png)
 
 Cependant, après avoir galéré à essayer, j’ai enfin trouvé dans
 la [documentation](https://docs.strapi.io/dev-docs/custom-fields) le fait que l’on ne pouvait pas faire ce que l’on
@@ -235,7 +235,7 @@ app.createSettingSection(
 Puis, de la même manière que sur l’`Input` nous pouvons créer le layout de la page en utilisant les components du design
 system pour arriver au résultat ci-dessous.
 
-![Interface de la configuration](/images/configuration.png)
+![Interface de la configuration](/assets/images/configuration.png)
 
 Mais, à partir de là, j’ai rencontré un nouveau problème : comment et où sauvegarde-t-on ces réglages ?
 
@@ -760,12 +760,12 @@ Pour cela, nous avons créé une page de réglages qui permet de faire la corres
 permet de dire : “Pour ce type de contenu, je veux que le champ généré *content* corresponde au champ existant
 *richText”*.
 
-![Interface de la correspondance des champs](/images/correspondances_champs.png)
+![Interface de la correspondance des champs](/assets/images/correspondances_champs.png)
 
 Cependant, une fois que nous avons fait cette correspondance, je ne trouvais pas le moyen de faire le rapprochement
 entre les champs de ma modal et ceux de l’éditeur de contenu.
 
-![Reporter une valeur générer dans le contenu](/images/reporter_valeur.png)
+![Reporter une valeur générer dans le contenu](/assets/images/reporter_valeur.png)
 
 J’ai d’abord pensé qu’il était possible de faire cela en ciblant un id avec `document.getElementById()` ou avec un query
 selector `document.querySelector()` mais je me suis rendu compte que Strapi n’expose, dans le code source, aucun moyen
@@ -791,7 +791,7 @@ Il faut donc passer un nom de champ à la fonction `onChange()`. Ça tombe bien 
 correspondance de champ. Ils sont stockés dans la base de données. Nous avons donc juste à lire ces donner et à appeler
 la fonction `onChange()` pour modifier un-à-un les champs de la correspondance.
 
-![Appliquer le contenu généré au contenu](/images/application_contenu.gif)
+![Appliquer le contenu généré au contenu](/assets/images/application_contenu.gif)
 
 ## Traduire le plugin
 
